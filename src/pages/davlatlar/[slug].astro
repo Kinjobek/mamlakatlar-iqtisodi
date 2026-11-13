@@ -72,6 +72,16 @@ const idx = R.countries.findIndex((c) => c.slug === slug);
 const prev = R.countries[idx - 1];
 const next = R.countries[idx + 1];
 
+/* Yillar kesimi — davlat sahifasidagi ochiladigan panellar uchun ixcham ma'lumot */
+const hist = {};
+for (const ind of R.indicators) {
+  const s = ind.series[iso];
+  if (s && s.length) {
+    hist[ind.slug] = { n: ind.name, u: ind.unit, d: ind.dec, src: ind.source, s };
+  }
+}
+const histJson = JSON.stringify(hist).replace(/</g, '\\u003c');
+
 const title = `${country.nameUz} — iqtisodiy va demografik körsatkiçlar`;
 const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'}, aholi ${popL ? fmtValue(popy, popL.value) : '—'}, inflyatsiya ${inflL ? fmtValue(infl, inflL.value) : '—'}. ${R.indicators.length} körsatkiçning yillar kesimi va reytinglari.`;
 ---
@@ -89,6 +99,9 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
         <span class="badge">{country.regionUz}</span>
         {country.incomeUz && <span class="badge amber">{country.incomeUz}</span>}
         {country.isAggregate && <span class="badge">agregat</span>}
+        <span style="display:block; margin-top:6px; font-size:13.5px;">
+          Körsatkiç nomiga bosing — o'sha davlat üçün yillar kesimi jadvali va grafigi oçiladi.
+        </span>
       </p>
     </div>
     <div style="display:flex; gap:8px;">
@@ -186,7 +199,15 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
             const rk = rankOf(ind, iso);
             return (
               <tr>
-                <td><a href={u(`/korsatkichlar/${ind.slug}`)}>{ind.name}</a></td>
+                <td>
+                  <details class="ind-hist" data-ind={ind.slug} data-link={u(`/korsatkichlar/${ind.slug}`)}>
+                    <summary>
+                      <span>{ind.name}</span>
+                      <a class="row-link" href={u(`/korsatkichlar/${ind.slug}`)} title="Barcha davlatlar körsatkiçi" aria-label="Barcha davlatlar körsatkiçi">↗</a>
+                    </summary>
+                    <div class="hist-body"></div>
+                  </details>
+                </td>
                 <td class="num" data-v={l ? l.year : ''}>{l ? l.year : '—'}</td>
                 <td class="num" data-v={l ? l.value : ''}>{l ? fmtValue(ind, l.value) : '—'}</td>
                 <td class="num rank-cell" data-v={rk ? rk.rank : ''}>{rk ? `${rk.rank} / ${rk.total}` : '—'}</td>
@@ -206,4 +227,147 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
       <a class="btn" style="background:var(--surface-2); color:var(--ink);" href={u(`/davlatlar/${next.slug}`)}>{next.nameUz} →</a>
     )}
   </nav>
+
+  <script is:inline type="application/json" id="histData" set:html={histJson} />
+
+  <script>
+    /* ============================================================
+       Körsatkiç yillar kesimi: davlat sahifasidagi ochiladigan panellar
+       ============================================================ */
+    (() => {
+      'use strict';
+      let HIST = null;
+      try { HIST = JSON.parse(document.getElementById('histData').textContent); } catch (e) { return; }
+      if (!HIST) return;
+
+      /* ---- o'zbekça son formati (server tomonidagi fmtValue bilan bir xil) ---- */
+      const fmtNum = (v, dec) => {
+        if (v == null || !Number.isFinite(v)) return '—';
+        const neg = v < 0;
+        const [i, f] = Math.abs(v).toFixed(dec).split('.');
+        const g = i.replace(/\B(?=(\d{3})+(?!\d))/g, '\u00A0');
+        return (neg ? '−' : '') + g + (f ? ',' + f : '');
+      };
+      const fmtMoney = (v, dec) => {
+        const a = Math.abs(v);
+        if (a >= 1e12) return fmtNum(v / 1e12, 2) + '\u00A0trln\u00A0$';
+        if (a >= 1e9) return fmtNum(v / 1e9, 1) + '\u00A0mlrd\u00A0$';
+        if (a >= 1e6) return fmtNum(v / 1e6, 1) + '\u00A0mln\u00A0$';
+        return fmtNum(v, dec ?? 0) + '\u00A0$';
+      };
+      const fmtVal = (u, d, v) => {
+        if (v == null || !Number.isFinite(v)) return '—';
+        if (u === 'USD' || u === 'xalqaro dollar') return fmtMoney(v, d);
+        if (u === "o'rin") return fmtNum(v, 0) + "-örin";
+        if (u && u[0] === '%') return fmtNum(v, d) + '%';
+        return fmtNum(v, d);
+      };
+      const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+      /* ---- SVG chizma grafik ---- */
+      const fmtTick = (v) => {
+        const a = Math.abs(v);
+        if (a >= 1e12) return (v / 1e12).toFixed(1).replace('.', ',') + ' trln';
+        if (a >= 1e9) return (v / 1e9).toFixed(1).replace('.', ',') + ' mlrd';
+        if (a >= 1e6) return (v / 1e6).toFixed(1).replace('.', ',') + ' mln';
+        return String(Math.round(v * 100) / 100).replace('.', ',');
+      };
+      function chartSvg(pts, label) {
+        const W = 640, H = 190, padL = 10, padR = 12, padT = 14, padB = 24;
+        const xs = pts.map((p) => p[0]);
+        const ys = pts.map((p) => p[1]);
+        const xMin = xs[0], xMax = xs[xs.length - 1];
+        const yMin = Math.min(...ys), yMax = Math.max(...ys);
+        const span = yMax - yMin || 1;
+        const px = (x) => padL + ((x - xMin) / (xMax - xMin || 1)) * (W - padL - padR);
+        const py = (y) => padT + (H - padT - padB) - ((y - yMin) / span) * (H - padT - padB);
+        const path = pts.map((p, i) => (i ? 'L' : 'M') + px(p[0]).toFixed(1) + ',' + py(p[1]).toFixed(1)).join(' ');
+        const area = path + ' L' + px(xMax).toFixed(1) + ',' + (H - padB) + ' L' + px(xMin).toFixed(1) + ',' + (H - padB) + ' Z';
+        const grids = [0, 0.5, 1].map((t) => yMax - span * t).map((gy) =>
+          '<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + py(gy).toFixed(1) + '" y2="' + py(gy).toFixed(1) + '" stroke="#e6ecf1" stroke-width="1"/>' +
+          '<text x="' + (padL + 2) + '" y="' + (py(gy) - 4).toFixed(1) + '" font-size="10.5" fill="#8296a8">' + fmtTick(gy) + '</text>'
+        ).join('');
+        const xTicks = [...new Set([xMin, Math.round((xMin + xMax) / 2), xMax])];
+        const xt = xTicks.map((x) =>
+          '<text x="' + px(x).toFixed(1) + '" y="' + (H - 7) + '" font-size="11" fill="#8296a8" text-anchor="' + (x === xMin ? 'start' : x === xMax ? 'end' : 'middle') + '">' + x + '</text>'
+        ).join('');
+        const dots = pts.map((p) =>
+          '<circle cx="' + px(p[0]).toFixed(1) + '" cy="' + py(p[1]).toFixed(1) + '" r="2.4" fill="#fff" stroke="#134e70" stroke-width="1.5"/>'
+        ).join('');
+        return '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(label) + '">' +
+          grids +
+          '<path d="' + area + '" fill="#134e70" opacity="0.09"/>' +
+          '<path d="' + path + '" fill="none" stroke="#134e70" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>' +
+          dots + xt + '</svg>';
+      }
+
+      /* ---- panelni to'ldirish ---- */
+      function renderHist(det) {
+        const body = det.querySelector('.hist-body');
+        const info = HIST[det.dataset.ind];
+        if (!info || !info.s || !info.s.length) {
+          body.innerHTML = '<div class="hist-empty">Bu davlat üçün bu körsatkiç bo\'yicha yillik ma\'lumotlar mövcut değil.</div>';
+          return;
+        }
+        const pts = info.s;
+
+        const vals = pts.map((p) => p[1]).filter((v) => Number.isFinite(v));
+        const min = vals.length ? Math.min(...vals) : null;
+        const max = vals.length ? Math.max(...vals) : null;
+        const avg = vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
+
+        let stats = '<div class="hist-stats">' +
+          '<span>Yillar: <b>' + pts[0][0] + '–' + pts[pts.length - 1][0] + '</b></span>' +
+          '<span>Ballari: <b>' + pts.length + '</b></span>';
+        if (min != null) {
+          stats += '<span>Eng past: <b>' + fmtVal(info.u, info.d, min) + '</b> (' + pts.find((p) => p[1] === min)[0] + ')</span>';
+          stats += '<span>Eng yuqori: <b>' + fmtVal(info.u, info.d, max) + '</b> (' + pts.find((p) => p[1] === max)[0] + ')</span>';
+        }
+        if (avg != null) stats += '<span>Örtacha: <b>' + fmtVal(info.u, info.d, avg) + '</b></span>';
+        stats += '</div>';
+
+        const rows = [];
+        for (let i = pts.length - 1; i >= 0; i--) {
+          const y = pts[i][0];
+          const v = pts[i][1];
+          let delta = '';
+          if (i > 0) {
+            const prev = pts[i - 1][1];
+            if (Number.isFinite(prev) && prev !== 0) {
+              const pct = ((v - prev) / Math.abs(prev)) * 100;
+              if (Number.isFinite(pct)) {
+                const cls = pct > 0 ? 'pos' : 'neg';
+                delta = '<span class="' + cls + '">' + (pct > 0 ? '+' : '−') + fmtNum(Math.abs(pct), 1) + '%</span>';
+              }
+            }
+          }
+          rows.push(
+            '<tr><td class="num" data-v="' + y + '">' + y + '</td>' +
+            '<td class="num" data-v="' + v + '">' + fmtVal(info.u, info.d, v) + '</td>' +
+            '<td class="num">' + delta + '</td></tr>'
+          );
+        }
+
+        const tbl = '<table class="data compact" data-name="' + det.dataset.ind + '-yıllar">' +
+          '<thead><tr><th class="num">Yil</th><th class="num">' + esc(info.n) + '</th><th class="num">Ötgan yilga özgariş</th></tr></thead>' +
+          '<tbody>' + rows.join('') + '</tbody></table>';
+
+        body.innerHTML =
+          chartSvg(pts, info.n) +
+          stats +
+          tbl +
+          '<div class="hist-more">Manba: ' + esc(info.src) + ' · <a href="' + det.dataset.link + '">Barcha davlatlar üçün bu körsatkiç →</a></div>';
+
+        document.dispatchEvent(new Event('tables:render'));
+      }
+
+      document.addEventListener('toggle', (e) => {
+        const det = e.target;
+        if (det && det.tagName === 'DETAILS' && det.classList.contains('ind-hist') && det.open && !det.dataset.init) {
+          det.dataset.init = '1';
+          renderHist(det);
+        }
+      }, true);
+    })();
+  </script>
 </Base>

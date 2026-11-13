@@ -113,6 +113,36 @@ table.data th.sortable { cursor: pointer; user-select: none; transition: color .
 table.data th.sortable:hover { color: var(--primary); }
 table.data th .arrow { color: var(--accent); font-size: 10px; margin-left: 3px; }
 
+/* ko'rsatkich tarixi — ochiladigan panel (davlat sahifasi) */
+details.ind-hist > summary {
+  cursor: pointer; display: flex; align-items: center; gap: 8px;
+  list-style: none; font-weight: 600;
+}
+details.ind-hist > summary::-webkit-details-marker { display: none; }
+details.ind-hist > summary::before {
+  content: '▸'; color: var(--muted); font-size: 11px; flex: none;
+  transition: transform .15s ease; display: inline-block;
+}
+details.ind-hist[open] > summary::before { transform: rotate(90deg); }
+details.ind-hist > summary:hover { color: var(--primary); }
+details.ind-hist > summary .row-link {
+  font-size: 12px; color: var(--muted); text-decoration: none; font-weight: 400;
+  opacity: 0; transition: opacity .12s;
+}
+details.ind-hist > summary:hover .row-link { opacity: 1; }
+details.ind-hist > summary .row-link:hover { color: var(--primary); }
+.hist-body { padding: 6px 0 10px; }
+.hist-body svg { width: 100%; height: auto; max-width: 640px; }
+.hist-stats {
+  display: flex; gap: 16px; flex-wrap: wrap;
+  font-size: 12.5px; color: var(--muted); margin: 8px 0 12px;
+}
+.hist-stats b { color: var(--ink); }
+.hist-empty { color: var(--muted); font-size: 13.5px; padding: 4px 0; }
+.hist-more { margin-top: 8px; font-size: 13px; }
+table.data.compact th, table.data.compact td { padding: 5px 12px; font-size: 13px; }
+.hist-body table.data { font-size: 13px; }
+
 /* jadval ustidagi asboblar (eksport) */
 .table-tools { display: flex; gap: 8px; justify-content: flex-end; padding: 10px 18px 0; flex-wrap: wrap; }
 .btn-dl {

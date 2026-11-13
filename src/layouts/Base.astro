@@ -94,6 +94,7 @@ const desc =
             .replace(/"/g, '&quot;');
 
         /* ---- eksport ma'lumotlarini yig'ish ---- */
+        const cleanText = (td) => td.textContent.replace(/↗/g, '').trim();
         function exportData(table) {
           const ths = Array.from(table.tHead?.rows[0]?.cells ?? []);
           const header = ths.map((th) => th.textContent.replace(/[▲▼]/g, '').trim());
@@ -103,7 +104,7 @@ const desc =
             rows.push(
               Array.from(tr.cells).map((td) => {
                 const raw = rawVal(td);
-                return raw != null ? raw : td.textContent.trim();
+                return raw != null ? raw : cleanText(td);
               })
             );
           }
@@ -182,8 +183,8 @@ const desc =
                 if (A !== B) return (A - B) * dir;
                 return 0;
               }
-              const A = (atd?.textContent || '').trim();
-              const B = (btd?.textContent || '').trim();
+              const A = (atd?.textContent || '').replace(/↗/g, '').trim();
+              const B = (btd?.textContent || '').replace(/↗/g, '').trim();
               return A.localeCompare(B, 'uz') * dir;
             });
             const frag = document.createDocumentFragment();
