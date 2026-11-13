@@ -260,5 +260,72 @@ const desc =
         enhanceAll(document);
       })();
     </script>
+
+    <script>
+      /* ============================================================
+         Grafik nuqtalari üçün qalqib chiquvchi qiymat oynasi:
+         sichqonça uçini nuqta ustiga olib kelganda qiymat körsatiladi.
+         Barcha SVG grafiklarda (asosiy grafiklar + ochiladigan panellar) ishlaydi.
+         ============================================================ */
+      (() => {
+        'use strict';
+        let tip = null;
+
+        const ensure = () => {
+          if (!tip) {
+            tip = document.createElement('div');
+            tip.className = 'chart-tip';
+            document.body.appendChild(tip);
+          }
+          return tip;
+        };
+
+        const position = (e) => {
+          const t = ensure();
+          const w = t.offsetWidth || 120;
+          const h = t.offsetHeight || 26;
+          let x = e.clientX + 14;
+          let y = e.clientY - h - 10;
+          if (x + w > window.innerWidth - 8) x = e.clientX - w - 14;
+          if (y < 8) y = e.clientY + 18;
+          t.style.left = x + 'px';
+          t.style.top = y + 'px';
+        };
+
+        document.addEventListener('mouseover', (e) => {
+          const target = e.target;
+          if (!target || typeof target.closest !== 'function') return;
+          const hit = target.closest('circle.hit[data-tip]');
+          const t = ensure();
+          if (hit) {
+            const txt = hit.getAttribute('data-tip');
+            const sep = txt.indexOf(': ');
+            if (sep > 0) {
+              t.innerHTML = '<span class="chart-tip-year">' + txt.slice(0, sep) + '</span><br>' + txt.slice(sep + 2);
+            } else {
+              t.textContent = txt;
+            }
+            t.style.display = 'block';
+            position(e);
+          } else {
+            t.style.display = 'none';
+          }
+        });
+
+        document.addEventListener('mousemove', (e) => {
+          if (tip && tip.style.display === 'block') position(e);
+        });
+
+        document.addEventListener('mouseout', (e) => {
+          const target = e.target;
+          if (!target || typeof target.closest !== 'function') return;
+          if (target.closest('circle.hit[data-tip]') && !e.relatedTarget?.closest?.('circle.hit[data-tip]')) {
+            ensure().style.display = 'none';
+          }
+        });
+
+        window.addEventListener('blur', () => { if (tip) tip.style.display = 'none'; });
+      })();
+    </script>
   </body>
 </html>
