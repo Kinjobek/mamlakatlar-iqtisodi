@@ -1,0 +1,449 @@
+{
+  "categories": {
+    "hukumat": "Hukumat",
+    "soliqlar": "Soliqlar",
+    "mehnat": "Mehnat",
+    "pul-bozori": "Pul bozori",
+    "narxlar": "Narxlar",
+    "bozorlar": "Bozorlar",
+    "tashqi-savdo": "Tashqi savdo",
+    "biznes": "Biznes",
+    "demografiya": "Demografiya",
+    "energetika": "Energetika va atrof-muhit",
+    "taraqqiyot": "Taraqqiyot"
+  },
+  "indicators": [
+    {
+      "code": "NY.GDP.MKTP.CD", "slug": "yaim", "cat": "hukumat", "dec": 0,
+      "name": "YaIM (joriy narxlarda)", "unit": "USD",
+      "desc": "Yalpi ichki mahsulot (YaIM) — bir davlatda muayyan davrda (odatda bir yilda) ishlab chiqarilgan barcha tayyor tovar va xizmatlarning bozor qiymati. Bu davlat iqtisodiyotining hajmini ko'rsatuvchi eng muhim ko'rsatkich.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NY.GDP.MKTP.KD.ZG", "slug": "yaim-osish", "cat": "hukumat", "dec": 1,
+      "name": "YaIM o'sish sur'ati", "unit": "%",
+      "desc": "YaIMning real (inflyatsiyaga moslashtirilgan) o'sishi. Iqtisodiyotning yildan-yilga qanchalik kengayayotganini ko'rsatadi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NY.GDP.PCAP.CD", "slug": "yaim-jon-boshi", "cat": "hukumat", "dec": 0,
+      "name": "Aholi jon boshiga YaIM", "unit": "USD",
+      "desc": "YaIM aholi soniga bo'lingan qiymat. Aholi turmush darajasi va iqtisodiyot unumdorligini davlatlar o'rtasida taqqoslash uchun ko'p ishlatiladi: YaIM = C + I + G + (X - M).",
+      "source": "World Bank"
+    },
+    {
+      "code": "NY.GDP.PCAP.PP.CD", "slug": "yaim-ppp-jon-boshi", "cat": "hukumat", "dec": 0,
+      "name": "Aholi jon boshiga YaIM (sotib olish qobiliyati parityti)", "unit": "xalqaro dollar",
+      "desc": "Mahalliy narxlar farqini hisobga olgan holda hisoblangan jon boshiga YaIM. Turli davlatlarda bir xil pul bilan olish mumkin bo'lgan tovarlar miqdorini taqqoslash imkonini beradi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NY.GNS.ICTR.ZS", "slug": "jamgarish", "cat": "hukumat", "dec": 1,
+      "name": "Yalpi jamg'arish", "unit": "% YaIM",
+      "desc": "YaIMning jamg'arishga ketadigan qismi. Yuqori jamg'arish investitsiyalar va uzoq muddatli o'sish uchun resurs bo'ladi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NV.AGR.TOTL.ZS", "slug": "qishloq-xojaligi-ulushi", "cat": "hukumat", "dec": 1,
+      "name": "Qishloq xo'jaligining ulushi", "unit": "% YaIM",
+      "desc": "Qishloq xo'jaligi, o'rmon va baliqchilik sohasining YaIMdagi ulushi. Rivojlanayotgan iqtisodiyotlarda odatda yuqori bo'ladi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NV.IND.TOTL.ZS", "slug": "sanoat-ulushi", "cat": "hukumat", "dec": 1,
+      "name": "Sanoatning ulushi", "unit": "% YaIM",
+      "desc": "Sanoat (konchilik, ishlab chiqarish, qurilish, elektr, gaz va suv) sohasining YaIMdagi ulushi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NV.SRV.TOTL.ZS", "slug": "xizmatlar-ulushi", "cat": "hukumat", "dec": 1,
+      "name": "Xizmatlar sohasining ulushi", "unit": "% YaIM",
+      "desc": "Xizmatlar (savdo, transport, moliya, ta'lim, sog'liqni saqlash va boshqalar) sohasining YaIMdagi ulushi. Rivojlangan davlatlarda ulushi 60-70% va undan yuqori.",
+      "source": "World Bank"
+    },
+    {
+      "code": "GC.XPN.TOTL.GD.ZS", "slug": "davlat-xarajatlari", "cat": "hukumat", "dec": 1,
+      "name": "Davlat xarajatlari", "unit": "% YaIM",
+      "desc": "Davlat sektorining (markaziy va mahalliy byudjetlar) jami xarajatlari YaIMga nisbati. Davlat iqtisodiyotdagi rolini ko'rsatadi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "IMF.GGXWDG_NGDP", "slug": "davlat-qarzi", "cat": "hukumat", "dec": 1,
+      "name": "Davlat qarzi", "unit": "% YaIM",
+      "desc": "Umumiy davlat qarzi (shu jumladan markaziy hukumat, mahalliy byudjetlar va ijtimoiy fondlar majburiyatlari) YaIMga nisbatan. IMF ma'lumotlari asosida.",
+      "source": "IMF"
+    },
+    {
+      "code": "IMF.GGXCNL_NGDP", "slug": "taqchillik", "cat": "hukumat", "dec": 1,
+      "name": "Byudjet taqchilligi", "unit": "% YaIM",
+      "desc": "Davlatning sof kredit berishi / qarz olishi YaIMga nisbatan. Manfiy qiymat — daromad xarajatdan kam, ya'ni taqchillik; ijobiy qiymat — profitsit. IMF ma'lumotlari asosida.",
+      "source": "IMF"
+    },
+    {
+      "code": "FI.RES.TOTL.CD", "slug": "xalqaro-zaxiralar", "cat": "hukumat", "dec": 0,
+      "name": "Xalqaro zaxiralar", "unit": "USD",
+      "desc": "Markaziy bankning oltin, valyuta va boshqa yo'naltiriladigan aktivlari. Import va tashqi qarz xizmatlarini qoplash imkonini ko'rsatadi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SE.XPD.TOTL.GD.ZS", "slug": "talim-xarajatlari", "cat": "hukumat", "dec": 1,
+      "name": "Ta'lim xarajatlari", "unit": "% YaIM",
+      "desc": "Davlatning ta'limga ajratadigan mablag'i YaIMga nisbatan. Inson kapitaliga qilingan investitsiyaning asosiy ko'rsatkichlaridan biri.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SH.XPD.GHED.GD.ZS", "slug": "sogliq-xarajatlari", "cat": "hukumat", "dec": 1,
+      "name": "Sog'liqni saqlash xarajatlari", "unit": "% YaIM",
+      "desc": "Davlat sog'liqni saqlash tizimiga ajratadigan mablag'i YaIMga nisbatan.",
+      "source": "World Bank"
+    },
+    {
+      "code": "MS.MIL.XPND.GD.ZS", "slug": "mudofaa-xarajatlari", "cat": "hukumat", "dec": 1,
+      "name": "Mudofaa xarajatlari", "unit": "% YaIM",
+      "desc": "Davlatning harbiy maqsadlar uchun ajratadigan mablag'i YaIMga nisbatan (NATO ta'rifi asosida).",
+      "source": "World Bank"
+    },
+    {
+      "code": "GC.TAX.TOTL.GD.ZS", "slug": "soliq-daromadlari", "cat": "soliqlar", "dec": 1,
+      "name": "Soliq daromadlari", "unit": "% YaIM",
+      "desc": "Barcha turdagi soliqlardan (daromad, foyda, QQS, boj va boshqalar) davlat byudjetiga tushadigan mablag' YaIMga nisbatan.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SL.UEM.TOTL.ZS", "slug": "ishsizlik", "cat": "mehnat", "dec": 1,
+      "name": "Ishsizlik darajasi", "unit": "% mehnat kuchiga nisbatan",
+      "desc": "Ishga tayyor, faol ish qidirayotgan, lekin ish topa olmagan shaxslar ulushi. Mehnat bozorining asosiy ko'rsatkichi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SL.UEM.1524.ZS", "slug": "yoshlar-ishsizligi", "cat": "mehnat", "dec": 1,
+      "name": "Yoshlar ishsizligi (15-24 yosh)", "unit": "%",
+      "desc": "15-24 yoshdagi mehnat kuchining ishsizlar ulushi. Odatda umumiy ishsizlikdan yuqori bo'ladi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SL.TLF.CACT.ZS", "slug": "mehnat-faolligi", "cat": "mehnat", "dec": 1,
+      "name": "Mehnat faolligi darajasi", "unit": "% 15+ aholiga nisbatan",
+      "desc": "Ishlayotgan yoki faol ish qidirayotgan 15 yoshdan oshgan aholi ulushi. Mehnat bozori salohiyatini ko'rsatadi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SL.EMP.TOTL.SP.ZS", "slug": "bandlik", "cat": "mehnat", "dec": 1,
+      "name": "Bandlik darajasi", "unit": "% 15+ aholiga nisbatan",
+      "desc": "15 yoshdan oshgan aholi ichida band (ishlovchi) shaxslar ulushi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SL.TLF.TOTL.IN", "slug": "mehnat-kuchi", "cat": "mehnat", "dec": 0,
+      "name": "Mehnat kuchi hajmi", "unit": "kishi",
+      "desc": "Ishlayotgan va ish qidirayotgan jami aholi soni (15+).",
+      "source": "World Bank"
+    },
+    {
+      "code": "FM.LBL.BMNY.ZG", "slug": "pul-massasi-osishi", "cat": "pul-bozori", "dec": 1,
+      "name": "Keng pul massasi o'sishi", "unit": "%",
+      "desc": "Naqd pul va depozitlar hisoblanadigan keng pul massasining yillik o'sishi. Tez o'sish odatda inflyatsiya bosimini ko'rsatadi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "FR.INR.LEND", "slug": "kredit-stavkasi", "cat": "pul-bozori", "dec": 1,
+      "name": "Kredit stavkasi", "unit": "%",
+      "desc": "Banklarning tadbirkorlik sub'yektlariga beradigan kreditlari bo'yicha o'rtacha foiz stavkasi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "FR.INR.DPST", "slug": "depozit-stavkasi", "cat": "pul-bozori", "dec": 1,
+      "name": "Depozit stavkasi", "unit": "%",
+      "desc": "Banklarning aholi depozitlari bo'yicha to'laydigan o'rtacha foiz stavkasi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "FR.INR.RINR", "slug": "real-foiz-stavkasi", "cat": "pul-bozori", "dec": 1,
+      "name": "Real foiz stavkasi", "unit": "%",
+      "desc": "Inflyatsiyaga moslashtirilgan foiz stavkasi. Ijobiy real stavka jamg'armalarni jalb qiladi, salbiy — sarflashni rag'batlantiradi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "PA.NUS.FCRF", "slug": "valyuta-kursi", "cat": "pul-bozori", "dec": 2,
+      "name": "Rasmiy valyuta kursi", "unit": "milliy valyuta = 1 AQSH dollari",
+      "desc": "Milliy valyutaning AQSH dollariga nisbatan yillik o'rtacha rasmiy kursi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "PX.REX.REER", "slug": "effektiv-kurs", "cat": "pul-bozori", "dec": 1,
+      "name": "Real effektiv valyuta kursi", "unit": "indeks (2010 = 100)",
+      "desc": "Savdo sheriklari valyutalariga nisbatan inflyatsiya hisobga olingan kurs indeksi. O'sish — milliy valyuta qimmatlashayotgani (shuning uchun eksport qiyinlashadi) belgisi sifatida talqin etiladi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "FP.CPI.TOTL.ZG", "slug": "inflyatsiya", "cat": "narxlar", "dec": 1,
+      "name": "Inflyatsiya (iste'mol narxlari)", "unit": "%",
+      "desc": "Iste'mol narxlari indeksi (INI) yillik o'zgarishi. Aholi xarid qiladigan tovar va xizmatlar narxining qanchalik tez oshayotganini ko'rsatadi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NY.GDP.DEFL.KD.ZG", "slug": "yaim-deflyatori", "cat": "narxlar", "dec": 1,
+      "name": "YaIM deflyatori o'zgarishi", "unit": "%",
+      "desc": "Butun iqtisodiyot bo'yicha narxlar o'zgarishini aks ettiruvchi YaIM deflyatorining yillik o'sishi. INI faqat iste'mol savatini qamrab oladi, deflyator esa butun YaIMni.",
+      "source": "World Bank"
+    },
+    {
+      "code": "BX.KLT.DINV.CD.WD", "slug": "tdi", "cat": "bozorlar", "dec": 0,
+      "name": "To'g'ridan-to'g'ri xorijiy investitsiyalar", "unit": "USD",
+      "desc": "Chet el investorlarning maqsadli davlatga kiritgan to'g'ridan-to'g'ri sarmoyasi (TDS inflatsiyasiga moslashtirilgan oqim).",
+      "source": "World Bank"
+    },
+    {
+      "code": "BX.KLT.DINV.WD.GD.ZS", "slug": "tdi-ulushi", "cat": "bozorlar", "dec": 1,
+      "name": "TDI ning YaIMdagi ulushi", "unit": "% YaIM",
+      "desc": "To'g'ridan-to'g'ri xorijiy investitsiyalar oqimi YaIMga nisbatan. Investitsiyaviy jozibadorlik ko'rsatkichi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NE.EXP.GNFS.CD", "slug": "eksport", "cat": "bozorlar", "dec": 0,
+      "name": "Eksport (tovar va xizmatlar)", "unit": "USD",
+      "desc": "Chet elga sotilgan tovar va xizmatlarning jami qiymati.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NE.IMP.GNFS.CD", "slug": "import", "cat": "bozorlar", "dec": 0,
+      "name": "Import (tovar va xizmatlar)", "unit": "USD",
+      "desc": "Chet eldan sotib olingan tovar va xizmatlarning jami qiymati.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NE.EXP.GNFS.ZS", "slug": "eksport-ulushi", "cat": "bozorlar", "dec": 1,
+      "name": "Eksportning YaIMdagi ulushi", "unit": "% YaIM",
+      "desc": "Iqtisodiyotning tashqi bozorga qanchalik ochiqligini ko'rsatadi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NE.IMP.GNFS.ZS", "slug": "import-ulushi", "cat": "bozorlar", "dec": 1,
+      "name": "Importning YaIMdagi ulushi", "unit": "% YaIM",
+      "desc": "Ichki talabning qancha qismi import bilan qoplanishini ko'rsatadi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NE.RSB.GNFS.ZS", "slug": "savdo-balansi", "cat": "bozorlar", "dec": 1,
+      "name": "Savdo balansi (tovar va xizmatlar)", "unit": "% YaIM",
+      "desc": "Eksport va import farqi YaIMga nisbatan. Ijobiy qiymat — savdo profitsiti, manfiy — taqchilligi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "ST.INT.ARVL", "slug": "turizm", "cat": "tashqi-savdo", "dec": 0,
+      "name": "Xalqaro turizm — kelgan sayyohlar", "unit": "kishi",
+      "desc": "Bir yil davomida davlatga kirgan xorijiy sayyohlar soni (kelishlar, qisqa muddatli).",
+      "source": "World Bank"
+    },
+    {
+      "code": "ST.INT.RCPT.CD", "slug": "turizm-daromadlari", "cat": "tashqi-savdo", "dec": 0,
+      "name": "Turizm daromadlari", "unit": "USD",
+      "desc": "Xorijiy sayyohlardan olingan daromadlar: turar joy, oziq-ovqat, transport, yo'laklarga sarflari.",
+      "source": "World Bank"
+    },
+    {
+      "code": "TX.VAL.TECH.CD", "slug": "yuqori-texnologik-eksport", "cat": "tashqi-savdo", "dec": 0,
+      "name": "Yuqori texnologiyali eksport", "unit": "USD",
+      "desc": "Yuqori texnologiyali sohalarda (aviatsiya, kompyuter, farmatsevtika, ilmiy asboblar va b.) ishlab chiqarilgan mahsulot eksporti.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NV.IND.TOTL.KD.ZG", "slug": "sanoat-osishi", "cat": "biznes", "dec": 1,
+      "name": "Sanoat ishlab chiqarish o'sishi", "unit": "%",
+      "desc": "Sanoat sohasi qo'shilgan qiymatining yillik real o'sishi. Sanoat ishlab chiqarish indeksining o'sishiga mos keladi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "NE.CON.PRVT.CD", "slug": "uy-xojaligi-istemoli", "cat": "biznes", "dec": 0,
+      "name": "Uy xo'jaliklari iste'moli", "unit": "USD",
+      "desc": "Yakuniy iste'mol xarajatlari — aholi tomonidan tovar va xizmatlarga qilingan sarflar. Odatda YaIMning eng katta tarkibiy qismi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "IT.NET.USER.ZS", "slug": "internet", "cat": "biznes", "dec": 1,
+      "name": "Internet foydalanuvchilar", "unit": "% aholi",
+      "desc": "Aholi ichida internetdan foydalanuvchilar ulushi. Raqamli iqtisodiyotning asosiy ko'rsatkichi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "IT.CEL.SETS.P2", "slug": "mobil-obuna", "cat": "biznes", "dec": 0,
+      "name": "Mobil telefon obunalar", "unit": "100 kishiga",
+      "desc": "Mobil telefon faol obunalar soni 100 kishiga nisbatan. 100 dan yuqori qiymat ko'p SIM-karta egaligini bildiradi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SP.POP.TOTL", "slug": "aholi", "cat": "demografiya", "dec": 0,
+      "name": "Aholi soni", "unit": "kishi",
+      "desc": "Davlat hududida yashovchi jami aholi (yil o'rtacha yoki rasmiy hisob-kitob).",
+      "source": "World Bank"
+    },
+    {
+      "code": "SP.POP.GROW", "slug": "aholi-osishi", "cat": "demografiya", "dec": 1,
+      "name": "Aholi o'sish sur'ati", "unit": "%",
+      "desc": "Aholining yillik o'sish foizi — tabiiy o'sish va migratsiya hisobiga.",
+      "source": "World Bank"
+    },
+    {
+      "code": "EN.POP.DNST", "slug": "zichlik", "cat": "demografiya", "dec": 1,
+      "name": "Aholi zichligi", "unit": "kishi / km²",
+      "desc": "Aholi sonining maydoniga nisbati (jami maydon, suv havzalarini hisobga olgan holda).",
+      "source": "World Bank"
+    },
+    {
+      "code": "SP.DYN.LE00.IN", "slug": "umr-davomiyligi", "cat": "demografiya", "dec": 1,
+      "name": "O'rtacha umr davomiyligi", "unit": "yil",
+      "desc": "Tug'ilgan paytdagi kutilayotgan o'rtacha umr davomiyligi. Sog'liqni saqlash va turmush darajasining umumiy ko'rsatkichi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SP.DYN.CBRT.IN", "slug": "tugilish-darajasi", "cat": "demografiya", "dec": 1,
+      "name": "Tug'ilish darajasi", "unit": "1000 kishiga (‰)",
+      "desc": "Yil davomida 1000 aholiga to'g'ri keladigan tirik tug'ilgan bolalar soni.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SP.DYN.CDRT.IN", "slug": "olim-darajasi", "cat": "demografiya", "dec": 1,
+      "name": "O'lim darajasi", "unit": "1000 kishiga (‰)",
+      "desc": "Yil davomida 1000 aholiga to'g'ri keladigan vafot etganlar soni.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SP.DYN.TFRT.IN", "slug": "fertillik", "cat": "demografiya", "dec": 2,
+      "name": "Umumiy fertillik ko'rsatkichi", "unit": "bola / ayol",
+      "desc": "Bir ayolning butun reproduktiv davri (15-49 yosh) davomida o'rtacha nechta bola tug'ishini ko'rsatadi. Aholi o'sishining barqarorligi uchun sath taxminan 2,1.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SP.POP.0014.TO.ZS", "slug": "yosh-0-14", "cat": "demografiya", "dec": 1,
+      "name": "0-14 yoshli aholi ulushi", "unit": "%",
+      "desc": "Jami aholi ichida 14 yoshgacha bo'lganlar ulushi. Yosh aholi strukturasi kelajakdagi mehnat resurslarini belgilaydi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SP.POP.1564.TO.ZS", "slug": "yosh-15-64", "cat": "demografiya", "dec": 1,
+      "name": "15-64 yoshli aholi ulushi", "unit": "%",
+      "desc": "Ishga qobiliyatli yoshdagi aholi ulushi. \"Demografik oltin\" ulushining asosi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SP.POP.65UP.TO.ZS", "slug": "yosh-65", "cat": "demografiya", "dec": 1,
+      "name": "65 va undan katta aholi ulushi", "unit": "%",
+      "desc": "Keksa yoshdagi aholi ulushi. 14% dan yuqori qiymat qariyotgan jamiyat belgisi hisoblanadi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SM.POP.NETM", "slug": "net-migratsiya", "cat": "demografiya", "dec": 0,
+      "name": "Saldo migratsiya", "unit": "ming kishi",
+      "desc": "Yil davomida kelgan va ketganlar farqi. Ijobiy qiymat — ko'proq kishi ko'chib kelmoqda.",
+      "source": "World Bank"
+    },
+    {
+      "code": "BX.TRF.PWKR.DT.GD.ZS", "slug": "pul-otkazmalari", "cat": "demografiya", "dec": 1,
+      "name": "Migrant pul o'tkazmalari", "unit": "% YaIM",
+      "desc": "Chet elda ishlovchi fuqarolar vataniga yuboradigan pul o'tkazmalari YaIMga nisbatan. Ko'pgina rivojlanayotgan davlatlar uchun muhim daromad manbasi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SI.POV.GINI", "slug": "gini", "cat": "demografiya", "dec": 1,
+      "name": "Gini indeksi", "unit": "ball (0-100)",
+      "desc": "Daromadlar taqsimoti tengsizligini o'lchaydi: 0 — mukammal tenglik, 100 — bitta shaxs barcha daromadni oladi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SI.POV.DDAY", "slug": "qashshoqlik", "cat": "demografiya", "dec": 1,
+      "name": "Qashshoqlik darajasi ($2,15/kun)", "unit": "% aholi",
+      "desc": "Kuniga 2,15 dollardan kam daromad bilan yashaydigan aholi ulushi (xalqaro qashshoqlik chizig'i, PPP).",
+      "source": "World Bank"
+    },
+    {
+      "code": "SH.DYN.MORT", "slug": "bola-olimi", "cat": "demografiya", "dec": 1,
+      "name": "5 yoshgacha o'lim darajasi", "unit": "1000 tirik tug'ilganga (‰)",
+      "desc": "Besh yoshga to'lmasdan vafot etgan bolalar soni 1000 tirik tug'ilganga nisbatan. Sog'liqni saqlash tizimi samaradorligining sezgir ko'rsatkichi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SE.ADT.LITR.ZS", "slug": "savodxonlik", "cat": "demografiya", "dec": 1,
+      "name": "Kattalar savodxonligi", "unit": "% (15+)",
+      "desc": "15 yoshdan oshgan aholi ichida o'qish va yozishni biladiganlar ulushi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SE.ENR.PRSC.FM.ZS", "slug": "boshlangich-talim", "cat": "demografiya", "dec": 1,
+      "name": "Boshlang'ich ta'limga jalb etish", "unit": "%",
+      "desc": "Rasmiy boshlang'ich ta'limga jalb etilgan tegishli yoshdagi bolalar ulushi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SG.GEN.PARL.ZS", "slug": "parlament-ayollar", "cat": "demografiya", "dec": 1,
+      "name": "Parlamentda ayollar ulushi", "unit": "%",
+      "desc": "Milliy parlament quyi palatasida ayollar deputatlar ulushi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SP.POP.TOTL.FE.ZS", "slug": "aholida-ayollar", "cat": "demografiya", "dec": 1,
+      "name": "Aholida ayollar ulushi", "unit": "%",
+      "desc": "Jami aholi ichida ayollar ulushi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SH.MED.BEDS.ZS", "slug": "shifoxona-orinlari", "cat": "demografiya", "dec": 1,
+      "name": "Shifoxona o'rinlari", "unit": "1000 kishiga",
+      "desc": "Mavjud shifoxona o'rinlari soni 1000 aholiga nisbatan.",
+      "source": "World Bank"
+    },
+    {
+      "code": "SH.MED.PHYS.ZS", "slug": "shifokorlar", "cat": "demografiya", "dec": 1,
+      "name": "Shifokorlar soni", "unit": "1000 kishiga",
+      "desc": "Sohasidagi shifokorlar soni 1000 aholiga nisbatan.",
+      "source": "World Bank"
+    },
+    {
+      "code": "OWID.CO2_PC", "slug": "co2", "cat": "energetika", "dec": 2,
+      "name": "CO2 chiqindilari jon boshiga", "unit": "tonna / kishi",
+      "desc": "Yanilg'i yoqish va sement ishlab chiqarishdan chiqadigan karbonat angidrid miqdori aholi jon boshiga (Global Carbon Budget ma'lumotlari).",
+      "source": "OWID"
+    },
+    {
+      "code": "EG.USE.PCAP.KG.OE", "slug": "energiya-istemoli", "cat": "energetika", "dec": 1,
+      "name": "Energiya iste'moli jon boshiga", "unit": "kg neft ekvivalenti",
+      "desc": "Birlamchi energiya iste'moli aholi jon boshiga. Sanoatlashtirilgan davlatlarda sezilarli yuqori.",
+      "source": "World Bank"
+    },
+    {
+      "code": "EG.ELC.ACCS.ZS", "slug": "elektrdan-foydalanish", "cat": "energetika", "dec": 1,
+      "name": "Elektr tarmog'iga ulangan aholi", "unit": "%",
+      "desc": "Elektr ta'minotidan foydalana oladigan aholi ulushi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "EG.FEC.RNEW.ZS", "slug": "yangilanuvchi-energiya", "cat": "energetika", "dec": 1,
+      "name": "Yangilanuvchi energiya ulushi", "unit": "% yakuniy energiya",
+      "desc": "Yakuniy energiya iste'molida gidro, biomassa, quyosh, shamol va geotermal manbalar ulushi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "EG.ELC.RNEW.ZS", "slug": "elektr-yangilanuvchi", "cat": "energetika", "dec": 1,
+      "name": "Elektr ishlab chiqarishda yangilanuvchi manbalar", "unit": "%",
+      "desc": "Umumiy elektr ishlab chiqarishda yangilanuvchi manbalar (gidroelektrstansiyalarni hisobga olgan holda) ulushi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "AG.LND.FRST.ZS", "slug": "ormon-ulushi", "cat": "energetika", "dec": 1,
+      "name": "O'rmonzorlar ulushi", "unit": "% hudud",
+      "desc": "Davlat hududining o'rmon bilan qoplangan qismi.",
+      "source": "World Bank"
+    },
+    {
+      "code": "ER.H2O.INTR.PC", "slug": "suv-istemoli", "cat": "energetika", "dec": 1,
+      "name": "Suv iste'moli jon boshiga", "unit": "m³ / yil",
+      "desc": "Yillik chuchuk suv iste'moli aholi jon boshiga — qishloq xo'jaligi, sanoat va uy xo'jaliklari ehtiyojlari uchun.",
+      "source": "World Bank"
+    },
+    {
+      "code": "OWID.HDI", "slug": "itt", "cat": "taraqqiyot", "dec": 3,
+      "name": "Inson taraqqiyoti indeksi (ITT)", "unit": "indeks (0-1)",
+      "desc": "BMT Taraqqiyot dasturining indeksi: sog'liq (umr davomiyligi), ta'lim (o'qish yillari) va daromad (jon boshiga YaIM PPP)ni birlashtiradi. 1 ga yaqin qiymat yuqori taraqqiyotni bildiradi.",
+      "source": "UNDP"
+    }
+  ]
+}

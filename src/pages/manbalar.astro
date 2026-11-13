@@ -1,0 +1,80 @@
+---
+import Base from '../layouts/Base.astro';
+
+const sources = [
+  {
+    name: 'World Bank Open Data',
+    url: 'https://data.worldbank.org',
+    role: "Saytdagi ko'p ko'rsatkichlarning asosiy manbasi: YaIM, aholi, ishsizlik, tashqi savdo, energetika, demografiya va boshqalar.",
+    license: 'Ochiq ma\'lumotlar litsenziyasi — manba ko\'rsatilgan holda erkin ishlatish mumkin.'
+  },
+  {
+    name: 'IMF DataMapper (World Economic Outlook)',
+    url: 'https://www.imf.org/external/datamapper',
+    role: "Davlat qarzi (% YaIM) va byudjet taqchilligi/profitsiti ma'lumotlari.",
+    license: 'IMF ochiq ma\'lumotlar siyosati.'
+  },
+  {
+    name: 'UNDP — Inson taraqqiyoti indeksi (HDI)',
+    url: 'https://hdr.undp.org',
+    role: "Inson taraqqiyoti indeksi (ITT) bo'yicha yillik ma'lumotlar (OWID orqali olingan).",
+    license: 'CC BY 4.0'
+  },
+  {
+    name: 'flagcdn.com',
+    url: 'https://flagcdn.com',
+    role: "Davlat bayroqlari tasvirlari.",
+    license: "Bepul CDN xizmati."
+  }
+];
+---
+
+<Base title="Manbalar | Mamlakatlar iqtisodi" description="Sayt ma'lumotlarining manbalari: World Bank, IMF, UNDP. Har bir manbaning litsenziyasi va qamrovi.">
+  <div class="page-head">
+    <h1>Ma'lumot manbalari</h1>
+    <p class="lead">
+      Saytdagi barcha raqamlar xalqaro tashkilotlarning ochiq ma'lumot bazalaridan olingan.
+      Ular milliy statistika idoralarining rasmiy hisobotlariga asoslanadi, biroq ta'rif,
+      qamrov va hisoblash usullari tufayli milliy manbalardan farq qilishi mumkin.
+    </p>
+  </div>
+
+  <div class="card">
+    <table class="data">
+      <thead>
+        <tr><th>Manba</th><th>Qamrov</th><th>Litsenziya</th></tr>
+      </thead>
+      <tbody>
+        {sources.map((s) => (
+          <tr>
+            <td><a href={s.url} rel="noopener" target="_blank" style="font-weight:700;">{s.name}</a></td>
+            <td>{s.role}</td>
+            <td style="color:var(--muted);">{s.license}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <div class="card-note">
+      Muayyan ko'rsatkich qaysi manbadan olingani har bir ko'rsatkich sahifasida ko'rsatiladi.
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span>Muhim eslatmalar</span></div>
+    <div class="summary">
+      <p>
+        1. Qiymatlar har bir davlat uchun ko'rsatkichning <b>so'nggi mavjud yiliga</b> tegishli —
+        turli davlatlar uchun bu yil har xil bo'lishi mumkin (masalan, ayrim rivojlanayotgan
+        davlatlarda ma'lumotlar kechikib e'lon qilinadi).
+      </p>
+      <p>
+        2. Agregatlar (Jahon, Yevropa Ittifoqi, yevro zonasi) alohida ajratib ko'rsatiladi va
+        reytinglarda qatnashmaydi.
+      </p>
+      <p>
+        3. Manba tashkilotlar eski ma'lumotlarni tuzatib qayta e'lon qilishi mumkin — ma'lumotlar
+        yangilanganda qiymatlar o'zgaradi.
+      </p>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,71 @@
+---
+/**
+ * Yillar kesimini ko'rsatuvchi inline SVG chizma grafik (JS kerak emas).
+ * points: [[yil, qiymat], ...]
+ */
+interface Props {
+  points: [number, number][];
+  width?: number;
+  height?: number;
+  color?: string;
+  label?: string;
+}
+const {
+  points,
+  width = 640,
+  height = 220,
+  color = '#134e70',
+  label = ''
+} = Astro.props;
+
+const padL = 8;
+const padR = 10;
+const padT = 12;
+const padB = 26;
+const n = points.length;
+const xs = points.map((p) => p[0]);
+const ys = points.map((p) => p[1]);
+const xMin = Math.min(...xs);
+const xMax = Math.max(...xs);
+const yMin = Math.min(...ys);
+const yMax = Math.max(...ys);
+const ySpan = yMax - yMin || 1;
+
+const W = width - padL - padR;
+const H = height - padT - padB;
+const px = (x) => padL + ((x - xMin) / (xMax - xMin || 1)) * W;
+const py = (y) => padT + H - ((y - yMin) / ySpan) * H;
+
+const path = points.map((p, i) => `${i === 0 ? 'M' : 'L'}${px(p[0]).toFixed(1)},${py(p[1]).toFixed(1)}`).join(' ');
+const area = `${path} L${px(xMax).toFixed(1)},${padT + H} L${px(xMin).toFixed(1)},${padT + H} Z`;
+
+function fmtTick(v: number) {
+  const a = Math.abs(v);
+  if (a >= 1e12) return (v / 1e12).toFixed(1).replace('.', ',') + ' trln';
+  if (a >= 1e9) return (v / 1e9).toFixed(1).replace('.', ',') + ' mlrd';
+  if (a >= 1e6) return (v / 1e6).toFixed(1).replace('.', ',') + ' mln';
+  if (a >= 1e3 && Number.isInteger(v)) return v.toLocaleString('en-US').replace(/,/g, '\u00A0');
+  return String(Math.round(v * 100) / 100).replace('.', ',');
+}
+
+const gridY = [0, 0.25, 0.5, 0.75, 1].map((t) => yMin + ySpan * (1 - t));
+const xTicks = [...new Set([xMin, Math.round((xMin + xMax) / 2), xMax])].sort((a, b) => a - b);
+---
+<svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label={label}>
+  {gridY.map((gy) => (
+    <g>
+      <line x1={padL} x2={width - padR} y1={py(gy)} y2={py(gy)} stroke="#e6ecf1" stroke-width="1" />
+      <text x={padL + 2} y={py(gy) - 4} font-size="10.5" fill="#8296a8">{fmtTick(gy)}</text>
+    </g>
+  ))}
+  <path d={area} fill={color} opacity="0.09" />
+  <path d={path} fill="none" stroke={color} stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" />
+  {points.map((p) => (
+    <circle cx={px(p[0])} cy={py(p[1])} r="2.6" fill="#fff" stroke={color} stroke-width="1.6" />
+  ))}
+  {xTicks.map((xt) => (
+    <text x={px(xt)} y={height - 8} font-size="11" fill="#8296a8" text-anchor={xt === xMin ? 'start' : xt === xMax ? 'end' : 'middle'}>
+      {xt}
+    </text>
+  ))}
+</svg>

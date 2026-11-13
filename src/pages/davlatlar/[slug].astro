@@ -1,0 +1,209 @@
+---
+import Base from '../../layouts/Base.astro';
+import Flag from '../../components/Flag.astro';
+import LineChart from '../../components/LineChart.astro';
+import { u } from '../../lib/u.mjs';
+import { registry, fmtValue, fmtNum, rankOf, seriesOf } from '../../lib/data.mjs';
+
+export function getStaticPaths() {
+  const R = registry();
+  return R.countries.map((c) => ({ params: { slug: c.slug } }));
+}
+
+const slug = Astro.params.slug;
+const R = registry();
+const country = R.countries.find((c) => c.slug === slug);
+if (!country) throw new Error(`Davlat topilmadi: ${slug}`);
+
+const iso = country.iso3;
+const S = (sl) => R.bySlug.get(sl);
+const L = (sl) => S(sl)?.latest[iso];
+
+const popy = S('aholi');
+const gdp = S('yaim');
+const gdpPc = S('yaim-jon-boshi');
+const gdpG = S('yaim-osish');
+const infl = S('inflyatsiya');
+const dens = S('zichlik');
+const fx = S('valyuta-kursi');
+const life = S('umr-davomiyligi');
+const hdi = S('itt');
+
+const capital = R.capitals[iso] ?? country.capitalEn;
+
+const popL = L('aholi');
+const gdpL = L('yaim');
+const gdpPcL = L('yaim-jon-boshi');
+const inflL = L('inflyatsiya');
+const debtL = L('davlat-qarzi');
+const lifeL = L('umr-davomiyligi');
+const hdiL = L('itt');
+
+const popRank = rankOf(popy, iso);
+const gdpRank = rankOf(gdp, iso);
+const gdpPcRank = rankOf(gdpPc, iso);
+const hdiRank = rankOf(hdi, iso);
+
+function lastPoints(ind, n = 32) {
+  const s = seriesOf(ind, iso);
+  if (!s) return [];
+  return s.slice(-n);
+}
+
+const charts = [
+  { ind: gdp, key: 'yaim' },
+  { ind: gdpG, key: 'yaim-osish' },
+  { ind: infl, key: 'inflyatsiya' },
+  { ind: popy, key: 'aholi' },
+  { ind: life, key: 'umr-davomiyligi' },
+  { ind: fx, key: 'valyuta-kursi' }
+].filter((c) => c.ind && lastPoints(c.ind).length >= 4);
+
+const catKeys = Object.keys(R.catalog.categories);
+const groups = catKeys
+  .map((key) => ({
+    key,
+    label: R.catalog.categories[key],
+    inds: R.indicators.filter((i) => i.cat === key)
+  }))
+  .filter((g) => g.inds.length);
+
+const idx = R.countries.findIndex((c) => c.slug === slug);
+const prev = R.countries[idx - 1];
+const next = R.countries[idx + 1];
+
+const title = `${country.nameUz} — iqtisodiy va demografik ko'rsatkichlar`;
+const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'}, aholi ${popL ? fmtValue(popy, popL.value) : '—'}, inflyatsiya ${inflL ? fmtValue(infl, inflL.value) : '—'}. ${R.indicators.length} ko'rsatkichning yillar kesimi va reytinglari.`;
+---
+
+<Base title={`${title} | Mamlakatlar iqtisodi`} description={desc}>
+  <div class="crumbs">
+    <a href={u('/')}>Bosh sahifa</a> › <a href={u('/davlatlar')}>Davlatlar</a> › {country.nameUz}
+  </div>
+
+  <div class="page-head" style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+    <Flag iso2={country.iso2} iso3={iso} big />
+    <div style="flex:1; min-width:250px;">
+      <h1>{country.nameUz}</h1>
+      <p class="lead" style="margin:0;">
+        <span class="badge">{country.regionUz}</span>
+        {country.incomeUz && <span class="badge amber">{country.incomeUz}</span>}
+        {country.isAggregate && <span class="badge">agregat</span>}
+      </p>
+    </div>
+    <div style="display:flex; gap:8px;">
+      <a class="btn primary" href={u(`/taqqoslash?a=${country.slug}`)}>Taqqoslash</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="facts">
+      <div class="fact">
+        <div class="k">Poytaxt</div>
+        <div class="v">{capital}</div>
+      </div>
+      <div class="fact">
+        <div class="k">Aholi</div>
+        <div class="v">{popL ? fmtValue(popy, popL.value) : '—'}</div>
+        {popL && <small>{popL.year}-yil {popRank ? `· ${popRank.rank}-o'rin` : ''}</small>}
+      </div>
+      <div class="fact">
+        <div class="k">Aholi zichligi</div>
+        <div class="v">{L('zichlik') ? fmtNum(L('zichlik').value, 1) : '—'}<small>kishi / km²</small></div>
+      </div>
+      <div class="fact">
+        <div class="k">YaIM</div>
+        <div class="v">{gdpL ? fmtValue(gdp, gdpL.value) : '—'}</div>
+        {gdpL && <small>{gdpL.year}-yil {gdpRank ? `· ${gdpRank.rank}-o'rin` : ''}</small>}
+      </div>
+      <div class="fact">
+        <div class="k">Jon boshiga YaIM</div>
+        <div class="v">{gdpPcL ? fmtValue(gdpPc, gdpPcL.value) : '—'}</div>
+        {gdpPcL && <small>{gdpPcL.year}-yil {gdpPcRank ? `· ${gdpPcRank.rank}-o'rin` : ''}</small>}
+      </div>
+      <div class="fact">
+        <div class="k">Inflyatsiya</div>
+        <div class="v">{inflL ? fmtValue(infl, inflL.value) : '—'}</div>
+        {inflL && <small>{inflL.year}-yil</small>}
+      </div>
+      <div class="fact">
+        <div class="k">Davlat qarzi</div>
+        <div class="v">{debtL ? fmtValue(S('davlat-qarzi'), debtL.value) : '—'}</div>
+        {debtL && <small>{debtL.year}-yil · YaIMga nisbatan</small>}
+      </div>
+      <div class="fact">
+        <div class="k">Valyuta kursi</div>
+        <div class="v">{L('valyuta-kursi') ? fmtNum(L('valyuta-kursi').value, 2) : '—'}</div>
+        {L('valyuta-kursi') && <small>milliy valyuta = 1 AQSH dollariga</small>}
+      </div>
+    </div>
+    <div class="summary">
+      <p>
+        <b>{country.nameUz}</b> — {country.regionUz.toLowerCase()} mintaqasida joylashgan
+        {country.isAggregate ? 'davlatlar guruhi' : 'davlat'}.
+        {popL && popRank && ` Aholi soni — ${fmtValue(popy, popL.value)} (${popL.year}-yil), bu ${popRank.rank}-o'rin.`}
+        {L('zichlik') && ` Aholi zichligi — km² ga ${fmtNum(L('zichlik').value, 1)} kishi.`}
+      </p>
+      <p>
+        {gdpL && gdpRank &&
+          `Nominal YaIM bo'yicha ${gdpRank.rank}-o'rinda (${gdpL.year}-yilda ${fmtValue(gdp, gdpL.value)}).`}
+        {gdpL && gdpPcL &&
+          ` Aholi jon boshiga YaIM — ${fmtValue(gdpPc, gdpPcL.value)} (${gdpPcL.year}-yil).`}
+        {lifeL && ` O'rtacha umr davomiyligi — ${fmtNum(lifeL.value, 1)} yil (${lifeL.year}-yil).`}
+        {hdiL && hdiRank &&
+          ` Inson taraqqiyoti indeksi — ${fmtNum(hdiL.value, 3)} ball, ${hdiRank.total} davlat orasida ${hdiRank.rank}-o'rin (${hdiL.year}-yil).`}
+      </p>
+    </div>
+  </div>
+
+  {charts.length > 0 && (
+    <div class="chart-grid">
+      {charts.map(({ ind }) => {
+        const pts = lastPoints(ind);
+        return (
+          <div class="chart-card">
+            <h3>{ind.name}</h3>
+            <LineChart points={pts} label={ind.name} />
+            <div class="src">
+              {ind.name}: so'nggi {pts.length} yil · manba: {ind.source}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  )}
+
+  {groups.map((g) => (
+    <div class="card">
+      <div class="card-title"><span>{g.label}</span></div>
+      <table class="data">
+        <thead>
+          <tr><th>Ko'rsatkich</th><th class="num">Sana</th><th class="num">Qiymat</th><th class="num">O'rin</th></tr>
+        </thead>
+        <tbody>
+          {g.inds.map((ind) => {
+            const l = ind.latest[iso];
+            const rk = rankOf(ind, iso);
+            return (
+              <tr>
+                <td><a href={u(`/korsatkichlar/${ind.slug}`)}>{ind.name}</a></td>
+                <td class="num">{l ? l.year : '—'}</td>
+                <td class="num">{l ? fmtValue(ind, l.value) : '—'}</td>
+                <td class="num rank-cell">{rk ? `${rk.rank} / ${rk.total}` : '—'}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  ))}
+
+  <nav style="display:flex; justify-content:space-between; gap:10px; margin:26px 0;">
+    {prev ? (
+      <a class="btn" style="background:var(--surface-2); color:var(--ink);" href={u(`/davlatlar/${prev.slug}`)}>← {prev.nameUz}</a>
+    ) : <span></span>}
+    {next && (
+      <a class="btn" style="background:var(--surface-2); color:var(--ink);" href={u(`/davlatlar/${next.slug}`)}>{next.nameUz} →</a>
+    )}
+  </nav>
+</Base>

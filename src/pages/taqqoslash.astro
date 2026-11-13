@@ -1,0 +1,141 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/u.mjs';
+import { registry } from '../lib/data.mjs';
+
+const R = registry();
+const countries = R.countries;
+---
+
+<Base title="Davlatlarni taqqoslash | Mamlakatlar iqtisodi" description="Ikki yoki undan ortiq davlatning iqtisodiy-demografik ko'rsatkichlarini yonma-yon taqqoslang: YaIM, inflyatsiya, ishsizlik, aholi va boshqalar.">
+  <div class="page-head">
+    <h1>Davlatlarni taqqoslash</h1>
+    <p class="lead">
+      2–3 ta davlatni tanlang — barcha {R.indicators.length} ko'rsatkichni yonma-yon ko'rasiz.
+      Qiymatlar har bir ko'rsatkichning so'nggi mavjud yiliga tegishli.
+    </p>
+  </div>
+
+  <div id="compareApp" data-url={u('/data/latest.json')}>
+    <div class="compare-selects">
+      <select id="selA" aria-label="Birinchi davlat"></select>
+      <select id="selB" aria-label="Ikkinchi davlat"></select>
+      <select id="selC" aria-label="Uchinchi davlat (ixtiyoriy)"></select>
+    </div>
+
+    <div id="compareOut"></div>
+
+    <noscript>
+      <div class="card">
+        <div class="summary">
+          <p>Taqqoslash uchun JavaScript yoqilgan bo'lishi kerak. Davlat sahifalarini to'g'ridan-to'g'ri ochishingiz mumkin:</p>
+          <p><a href={u('/davlatlar')}>Davlatlar katalogi →</a></p>
+        </div>
+      </div>
+    </noscript>
+  </div>
+
+  <script>
+    const app = document.getElementById('compareApp');
+    const DATA_URL = app.dataset.url;
+    const selA = document.getElementById('selA');
+    const selB = document.getElementById('selB');
+    const selC = document.getElementById('selC');
+    const out = document.getElementById('compareOut');
+
+    const params = new URLSearchParams(location.search);
+    const defaultA = params.get('a') || 'ozbekiston';
+    const defaultB = params.get('b') || 'qozogiston';
+
+    function optionHTML(countries, selected) {
+      return (
+        '<option value=""' + (selected ? '' : ' selected') + '>— tanlanmagan —</option>' +
+        countries
+          .map(
+            (c) =>
+              '<option value="' + c.s + '"' + (c.s === selected ? ' selected' : '') + '>' + c.n + '</option>'
+          )
+          .join('')
+      );
+    }
+
+    const fmt = (v, dec) => {
+      if (v == null || !Number.isFinite(v)) return '—';
+      const neg = v < 0;
+      const abs = Math.abs(v);
+      let s;
+      if (abs >= 1e12) s = (abs / 1e12).toFixed(2).replace('.', ',') + ' trln';
+      else if (abs >= 1e9) s = (abs / 1e9).toFixed(1).replace('.', ',') + ' mlrd';
+      else if (abs >= 1e6) s = (abs / 1e6).toFixed(1).replace('.', ',') + ' mln';
+      else s = abs.toFixed(dec).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '\u00A0');
+      return (neg ? '−' : '') + s;
+    };
+
+    const moneyUnits = new Set(['USD', 'xalqaro dollar']);
+
+    function renderValue(ind, l) {
+      if (!l) return '—';
+      const v = l.value;
+      if (moneyUnits.has(ind.u)) return fmt(v, ind.d) + '\u00A0$';
+      if (ind.u === '%') return fmt(v, ind.d) + '%';
+      if (ind.u === "o'rin") return fmt(v, 0) + "-o'rin";
+      return fmt(v, ind.d);
+    }
+
+    let DATA = null;
+
+    function update() {
+      const slugs = [selA.value, selB.value, selC.value].filter(Boolean);
+      const uniq = [...new Set(slugs)];
+      const url = new URL(location);
+      url.search = uniq.length ? '?' + uniq.map((s, i) => 'abc'[i] + '=' + s).join('&') : '';
+      history.replaceState(null, '', url);
+
+      if (uniq.length === 0) {
+        out.innerHTML = '';
+        return;
+      }
+      const bySlug = new Map(DATA.countries.map((c) => [c.s, c]));
+      const catOrder = Object.keys(DATA.cats);
+
+      // guruhlash
+      const groups = {};
+      for (const [slug, ind] of Object.entries(DATA.indicators)) {
+        (groups[ind.c] ??= []).push([slug, ind]);
+      }
+      let html = '';
+      for (const catKey of catOrder) {
+        const inds = groups[catKey];
+        if (!inds || !inds.length) continue;
+        html += '<div class="card"><div class="card-title"><span>' + DATA.cats[catKey] + '</span></div>';
+        html += '<table class="data"><thead><tr><th>Ko\'rsatkich</th>';
+        for (const s of uniq) {
+          const c = bySlug.get(s);
+          html += '<th class="num">' + (c ? c.n : s) + '</th>';
+        }
+        html += '</tr></thead><tbody>';
+        for (const [slug, ind] of inds) {
+          html += '<tr><td>' + ind.n + '</td>';
+          for (const s of uniq) {
+            const l = ind.v[bySlug.get(s)?.i3];
+            html += '<td class="num">' + (l ? renderValue(ind, l) + ' <small style="color:var(--muted)">' + l.year + '</small>' : '—') + '</td>';
+          }
+          html += '</tr>';
+        }
+        html += '</tbody></table></div>';
+      }
+      out.innerHTML = html;
+    }
+
+    fetch(DATA_URL)
+      .then((r) => r.json())
+      .then((data) => {
+        DATA = data;
+        selA.innerHTML = optionHTML(data.countries, defaultA);
+        selB.innerHTML = optionHTML(data.countries, defaultB);
+        selC.innerHTML = optionHTML(data.countries, '');
+        [selA, selB, selC].forEach((s) => s.addEventListener('change', update));
+        update();
+      });
+  </script>
+</Base>

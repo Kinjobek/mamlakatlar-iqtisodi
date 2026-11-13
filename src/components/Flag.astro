@@ -1,0 +1,19 @@
+---
+/** Davlat bayrog'i: flagcdn.com orqali (iso2). Agregatlar (Jahon, YEZ, YI) — globus belgisi. */
+const { iso2, iso3, big = false } = Astro.props;
+const agg = iso3 === 'WLD' || iso3 === 'EMU' || iso3 === 'EUU';
+const flagIso = agg ? 'eu' : iso2?.toLowerCase();
+---
+{iso2 || agg ? (
+  <img
+    class={`flag${big ? ' big' : ''}`}
+    src={`https://flagcdn.com/w80/${flagIso}.png`}
+    srcset={`https://flagcdn.com/w160/${flagIso}.png 2x`}
+    alt=""
+    loading="lazy"
+    width={big ? 54 : 26}
+    height={big ? 40 : 19}
+  />
+) : (
+  <span class={`globe-emoji${big ? ' big' : ''}`} aria-hidden="true">🌐</span>
+)}

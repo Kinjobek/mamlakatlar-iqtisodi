@@ -1,0 +1,101 @@
+---
+import Base from '../../layouts/Base.astro';
+import Flag from '../../components/Flag.astro';
+import { u } from '../../lib/u.mjs';
+import { registry, fmtValue } from '../../lib/data.mjs';
+
+const R = registry();
+const bySlug = R.bySlug;
+const yaim = bySlug.get('yaim');
+const yaimPc = bySlug.get('yaim-jon-boshi');
+const pop = bySlug.get('aholi');
+const infl = bySlug.get('inflyatsiya');
+const growth = bySlug.get('yaim-osish');
+
+const rows = R.countries.map((c) => {
+  return {
+    name: c.nameUz,
+    slug: c.slug,
+    iso2: c.iso2,
+    iso3: c.iso3,
+    region: c.regionUz,
+    agg: c.isAggregate,
+    gdp: fmtValue(yaim, yaim.latest[c.iso3]?.value),
+    gdpPc: fmtValue(yaimPc, yaimPc.latest[c.iso3]?.value),
+    popv: fmtValue(pop, pop.latest[c.iso3]?.value),
+    inflv: fmtValue(infl, infl.latest[c.iso3]?.value),
+    grow: fmtValue(growth, growth.latest[c.iso3]?.value)
+  };
+});
+---
+
+<Base title="Davlatlar — Mamlakatlar iqtisodi" description="Jahon davlatlarining iqtisodiy ko'rsatkichlari: YaIM, aholi, inflyatsiya. Qidiruv va tartiblash bilan to'liq katalog.">
+  <div class="page-head">
+    <h1>Davlatlar</h1>
+    <p class="lead">
+      {R.countries.length} ta davlat va agregat. Har bir qatorda YaIM, aholi va inflyatsiya
+      ko'rsatkichlarining so'nggi rasmiy qiymatlari. Batafsil ma'lumot uchun davlat nomini bosing.
+    </p>
+  </div>
+
+  <input
+    class="filter-input"
+    id="countrySearch"
+    type="search"
+    placeholder="Davlat nomini kiriting... (masalan: O'zbekiston, Qozog'iston, Germaniya)"
+    aria-label="Davlat qidirish"
+  />
+
+  <div class="card">
+    <table class="data" id="countryTable">
+      <thead>
+        <tr>
+          <th data-sort="name">Davlat</th>
+          <th>Mintaqa</th>
+          <th class="num" data-sort="pop">Aholi</th>
+          <th class="num" data-sort="gdp">YaIM</th>
+          <th class="num" data-sort="gdpPc">Jon boshiga YaIM</th>
+          <th class="num" data-sort="grow">O'sish</th>
+          <th class="num" data-sort="infl">Inflyatsiya</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr data-name={r.name} data-pop={r.popv} data-agg={r.agg ? '1' : ''}>
+            <td>
+              <a class="name-cell" href={u(`/davlatlar/${r.slug}`)}>
+                <Flag iso2={r.iso2} iso3={r.iso3} />
+                <span>{r.name}</span>
+              </a>
+            </td>
+            <td>{r.region}</td>
+            <td class="num">{r.popv}</td>
+            <td class="num">{r.gdp}</td>
+            <td class="num">{r.gdpPc}</td>
+            <td class="num">{r.grow}</td>
+            <td class="num">{r.inflv}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <div class="card-note" id="countNote">{rows.length} ta yozuv</div>
+  </div>
+
+  <script>
+    const input = document.getElementById('countrySearch');
+    const tbody = document.querySelector('#countryTable tbody');
+    const note = document.getElementById('countNote');
+    const total = tbody.querySelectorAll('tr').length;
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      let shown = 0;
+      for (const tr of tbody.querySelectorAll('tr')) {
+        const name = tr.dataset.name.toLowerCase();
+        const show = !q || name.includes(q);
+        tr.style.display = show ? '' : 'none';
+        if (show) shown++;
+      }
+      note.textContent = shown + ' ta yozuv' + (q ? ' (filtr: ' + q + ')' : '');
+    });
+  </script>
+</Base>

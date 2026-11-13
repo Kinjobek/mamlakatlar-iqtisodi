@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/u.mjs';
+import { registry } from '../lib/data.mjs';
+
+const R = registry();
+
+const uiTerms = [
+  ['Bosh sahifa', 'Saytning asosiy sahifasi'],
+  ['Davlatlar', 'Barcha davlatlar katalogi'],
+  ['Ko\'rsatkichlar', 'Iqtisodiy va demografik o\'lchovlar katalogi'],
+  ['Taqqoslash', 'Ikki yoki undan ortiq davlat ko\'rsatkichlarini yonma-yon solishtirish'],
+  ['Lug\'at', 'Atamalar ma\'lumotnomasi'],
+  ['Manbalar', 'Ma\'lumot manbalari ro\'yxati'],
+  ['Poytaxt', 'Davlatning ma\'muriy markazi'],
+  ['Mintaqa', 'BMT tasnifidagi geografik-iqtisodiy mintaqa'],
+  ['Daromad darajasi', 'World Bank tasnifi: yuqori, yuqori-o\'rta, quyi-o\'rta, quyi daromadli'],
+  ['Agregat', 'Bir necha davlatni birlashtirgan hisob (masalan, Jahon, Yevropa Ittifoqi)'],
+  ['Yillar kesimi', 'Ko\'rsatkichning yillar bo\'yicha qatori'],
+  ['So\'nggi qiymat', 'Davlat uchun ko\'rsatkichning oxirgi mavjud rasmiy qiymati'],
+  ['O\'rin (reyting)', 'Boshqa davlatlar orasidagi pozitsiya']
+];
+---
+
+<Base title="Lug'at | Mamlakatlar iqtisodi" description="Saytda ishlatiladigan iqtisodiy va demografik atamalarning o'zbekcha izohli lug'ati: YaIM, INI, Gini indeksi, ITT va boshqalar.">
+  <div class="page-head">
+    <h1>Lug'at</h1>
+    <p class="lead">
+      Saytda ishlatiladigan atamalarning qisqacha o'zbekcha izohi. Ko'rsatkichlarning
+      batafsil ta'rifi har bir ko'rsatkich sahifasida beriladi.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span>Interfeys atamalari</span></div>
+    <div class="summary">
+      <dl class="dict">
+        {uiTerms.map(([t, d]) => (
+          <dt>{t}</dt><dd>{d}</dd>
+        ))}
+      </dl>
+    </div>
+  </div>
+
+  {Object.entries(R.catalog.categories).map(([key, label]) => {
+    const inds = R.indicators.filter((i) => i.cat === key);
+    if (!inds.length) return null;
+    return (
+      <div class="card">
+        <div class="card-title"><span>{label}</span></div>
+        <div class="summary">
+          <dl class="dict">
+            {inds.map((ind) => (
+              <dt>{ind.name}</dt>
+              <dd>
+                {ind.desc}
+                <div style="color:var(--muted); font-size:13px;">
+                  Birlik: {ind.unit} · <a href={u(`/korsatkichlar/${ind.slug}`)}>Barcha davlatlar →</a>
+                </div>
+              </dd>
+            ))}
+          </dl>
+        </div>
+      </div>
+    );
+  })}
+</Base>

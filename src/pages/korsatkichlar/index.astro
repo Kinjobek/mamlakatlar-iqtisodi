@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/u.mjs';
+import { registry } from '../../lib/data.mjs';
+
+const R = registry();
+const cats = Object.entries(R.catalog.categories);
+---
+
+<Base title="Ko'rsatkichlar katalogi | Mamlakatlar iqtisodi" description="80 dan ortiq iqtisodiy va demografik ko'rsatkichlar katalogi: YaIM, inflyatsiya, ishsizlik, aholi, davlat qarzi, umr davomiyligi, CO2 chiqindilari va boshqalar.">
+  <div class="page-head">
+    <h1>Ko'rsatkichlar</h1>
+    <p class="lead">
+      {R.indicators.length} ta ko'rsatkich, {Object.keys(R.catalog.categories).length} ta toifada.
+      Har bir ko'rsatkich sahifasida barcha davlatlar uchun so'nggi qiymatlar, reyting va
+      yillar kesimi mavjud.
+    </p>
+  </div>
+
+  {cats.map(([key, label]) => {
+    const inds = R.indicators.filter((i) => i.cat === key);
+    if (!inds.length) return null;
+    return (
+      <div>
+        <div class="ind-cat"><h2>{label} <small>({inds.length})</small></h2></div>
+        <div class="card">
+          <table class="data">
+            <thead>
+              <tr><th>Ko'rsatkich</th><th>Birlik</th><th>Manba</th></tr>
+            </thead>
+            <tbody>
+              {inds.map((ind) => (
+                <tr>
+                  <td>
+                    <a href={u(`/korsatkichlar/${ind.slug}`)} style="font-weight:600;">{ind.name}</a>
+                    <div style="color:var(--muted); font-size:13px; margin-top:2px;">{ind.desc}</div>
+                  </td>
+                  <td>{ind.unit}</td>
+                  <td>{ind.source}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  })}
+</Base>

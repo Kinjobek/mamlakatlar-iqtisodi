@@ -1,0 +1,209 @@
+---
+import Base from '../layouts/Base.astro';
+import Flag from '../components/Flag.astro';
+import { u } from '../lib/u.mjs';
+import { registry, fmtValue, fmtNum, rankOf, latestOf } from '../lib/data.mjs';
+
+const R = registry();
+const bySlug = R.bySlug;
+const yaim = bySlug.get('yaim');
+const yaimG = bySlug.get('yaim-osish');
+const inflation = bySlug.get('inflyatsiya');
+const pop = bySlug.get('aholi');
+const popPc = bySlug.get('yaim-jon-boshi');
+
+const sovereign = R.countries.filter((c) => !c.isAggregate);
+const uzb = R.byIso.get('UZB');
+
+function topList(ind, n = 10) {
+  const arr = [];
+  for (const c of sovereign) {
+    const l = ind.latest[c.iso3];
+    if (l) arr.push({ c, ...l });
+  }
+  arr.sort((a, b) =>
+    ind.lowerBetter ? a.value - b.value : b.value - a.value
+  );
+  return arr.slice(0, n);
+}
+
+const gdpTop = topList(yaim, 10);
+const popTop = topList(pop, 10);
+
+const neighbors = ['UZB', 'KAZ', 'KGZ', 'TJK', 'TKM', 'RUS', 'TUR'].map((iso) => R.byIso.get(iso)).filter(Boolean);
+
+const maxYear = Math.max(
+  ...Object.values(yaim.latest).map((l) => l.year),
+  ...Object.values(pop.latest).map((l) => l.year)
+);
+
+const uzbFacts = [
+  { k: 'YaIM', v: fmtValue(yaim, yaim.latest['UZB']?.value), s: `${yaim.latest['UZB']?.year}-yil · ${rankOf(yaim, 'UZB')?.rank}-o'rin (196 davlat orasida)` },
+  { k: 'YaIM o’sishi', v: fmtValue(yaimG, yaimG.latest['UZB']?.value), s: `${yaimG.latest['UZB']?.year}-yil` },
+  { k: 'Inflyatsiya', v: fmtValue(inflation, inflation.latest['UZB']?.value), s: `${inflation.latest['UZB']?.year}-yil` },
+  { k: 'Aholi', v: fmtValue(pop, pop.latest['UZB']?.value), s: `${pop.latest['UZB']?.year}-yil · ${rankOf(pop, 'UZB')?.rank}-o'rin` },
+  { k: 'Jon boshiga YaIM', v: fmtValue(popPc, popPc.latest['UZB']?.value), s: `${popPc.latest['UZB']?.year}-yil` }
+];
+
+const cats = Object.entries(R.catalog.categories);
+---
+
+<Base title="Mamlakatlar iqtisodi — jahon davlatlari ko'rsatkichlari o'zbek tilida">
+  <section class="hero">
+    <h1>Jahon iqtisodiyoti — raqamlarda, o'zbek tilida</h1>
+    <p>
+      {sovereign.length} davlatning {R.indicators.length} dan ortiq iqtisodiy va demografik
+      ko'rsatkichi: YaIM, inflyatsiya, ishsizlik, davlat qarzi, aholi, umr davomiyligi va
+      boshqalar. Barchasi World Bank, IMF va BMT ma'lumotlariga asoslanadi.
+    </p>
+    <div class="btns">
+      <a class="btn light" href={u('/davlatlar')}>Davlatlar katalogi</a>
+      <a class="btn ghost" href={u('/korsatkichlar')}>Ko'rsatkichlar</a>
+      <a class="btn ghost" href={u('/davlatlar/ozbekiston')}>O'zbekiston sahifasi</a>
+    </div>
+  </section>
+
+  <div class="stat-strip">
+    <div class="stat">
+      <div class="k">Davlatlar</div>
+      <div class="v">{fmtNum(sovereign.length)}</div>
+      <div class="s">shu jumladan Yevropa Ittifoqi va yevro zonasi</div>
+    </div>
+    <div class="stat">
+      <div class="k">Ko'rsatkichlar</div>
+      <div class="v">{fmtNum(R.indicators.length)}</div>
+      <div class="s">10 toifada: iqtisodiyot, moliya, demografiya, energetika</div>
+    </div>
+    <div class="stat">
+      <div class="k">Yillar kesimi</div>
+      <div class="v">1960–{maxYear}</div>
+      <div class="s">ko'pgina ko'rsatkichlar 30 yildan ortiq tarixga ega</div>
+    </div>
+    <div class="stat">
+      <div class="k">Ma'lumot manbalari</div>
+      <div class="v">3</div>
+      <div class="s">World Bank · IMF · UNDP (HDI)</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">
+      <span><Flag iso2="UZ" iso3="UZB" big /> O'zbekiston — qisqacha</span>
+      <a class="more" href={u('/davlatlar/ozbekiston')}>Batafsil →</a>
+    </div>
+    <div class="facts">
+      {uzbFacts.map((f) => (
+        <div class="fact">
+          <div class="k">{f.k}</div>
+          <div class="v">{f.v}</div>
+          {f.s && <small class="sub">{f.s}</small>}
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">
+      <span>YaIM bo'yicha eng yirik iqtisodiyotlar</span>
+      <a class="more" href={u('/korsatkichlar/yaim')}>Barcha davlatlar →</a>
+    </div>
+    <table class="data">
+      <thead>
+        <tr><th>#</th><th>Davlat</th><th class="num">YaIM</th><th class="num">O'sish</th><th class="num">Jon boshiga</th></tr>
+      </thead>
+      <tbody>
+        {gdpTop.map((r, i) => (
+          <tr class={r.c.iso3 === 'UZB' ? 'hl' : ''}>
+            <td class="rank-cell">{i + 1}</td>
+            <td>
+              <a class="name-cell" href={u(`/davlatlar/${r.c.slug}`)}>
+                <Flag iso2={r.c.iso2} iso3={r.c.iso3} />
+                <span>{r.c.nameUz}</span>
+              </a>
+            </td>
+            <td class="num">{fmtValue(yaim, r.value)}</td>
+            <td class="num">{fmtValue(yaimG, yaimG.latest[r.c.iso3]?.value)}</td>
+            <td class="num">{fmtValue(popPc, popPc.latest[r.c.iso3]?.value)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <div class="card-note">Joriy narxlarda, AQSH dollarida. O'sish — real YaIMning yillik o'zgarishi.</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">
+      <span>Aholi soni bo'yicha eng katta davlatlar</span>
+      <a class="more" href={u('/korsatkichlar/aholi')}>Barcha davlatlar →</a>
+    </div>
+    <table class="data">
+      <thead>
+        <tr><th>#</th><th>Davlat</th><th class="num">Aholi</th><th class="num">O'sish</th><th class="num">Zichlik</th></tr>
+      </thead>
+      <tbody>
+        {popTop.map((r, i) => (
+          <tr class={r.c.iso3 === 'UZB' ? 'hl' : ''}>
+            <td class="rank-cell">{i + 1}</td>
+            <td>
+              <a class="name-cell" href={u(`/davlatlar/${r.c.slug}`)}>
+                <Flag iso2={r.c.iso2} iso3={r.c.iso3} />
+                <span>{r.c.nameUz}</span>
+              </a>
+            </td>
+            <td class="num">{fmtValue(pop, r.value)}</td>
+            <td class="num">{fmtValue(bySlug.get('aholi-osishi'), bySlug.get('aholi-osishi').latest[r.c.iso3]?.value)}</td>
+            <td class="num">{fmtValue(bySlug.get('zichlik'), bySlug.get('zichlik').latest[r.c.iso3]?.value)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span>O'zbekiston va qo'shni davlatlar — tezkor taqqoslash</span></div>
+    <table class="data">
+      <thead>
+        <tr><th>Davlat</th><th class="num">YaIM</th><th class="num">O'sish</th><th class="num">Inflyatsiya</th><th class="num">Aholi</th><th class="num">Umr</th></tr>
+      </thead>
+      <tbody>
+        {neighbors.map((c) => (
+          <tr class={c.iso3 === 'UZB' ? 'hl' : ''}>
+            <td>
+              <a class="name-cell" href={u(`/davlatlar/${c.slug}`)}>
+                <Flag iso2={c.iso2} iso3={c.iso3} />
+                <span>{c.nameUz}</span>
+              </a>
+            </td>
+            <td class="num">{fmtValue(yaim, yaim.latest[c.iso3]?.value)}</td>
+            <td class="num">{fmtValue(yaimG, yaimG.latest[c.iso3]?.value)}</td>
+            <td class="num">{fmtValue(inflation, inflation.latest[c.iso3]?.value)}</td>
+            <td class="num">{fmtValue(pop, pop.latest[c.iso3]?.value)}</td>
+            <td class="num">{fmtValue(bySlug.get('umr-davomiyligi'), bySlug.get('umr-davomiyligi').latest[c.iso3]?.value)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <div class="card-note">Har bir qiymat ko'rsatkichning so'nggi mavjud yiliga tegishli. To'liq taqqoslash uchun <a href={u('/taqqoslash')}>Taqqoslash</a> bo'limiga qarang.</div>
+  </div>
+
+  <div class="ind-cat">
+    <h2>Ko'rsatkichlar katalogi</h2>
+  </div>
+  {cats.map(([key, label]) => {
+    const inds = R.indicators.filter((i) => i.cat === key);
+    if (!inds.length) return null;
+    return (
+      <div>
+        <div class="ind-cat"><h2>{label} <small>({inds.length})</small></h2></div>
+        <div class="ind-grid">
+          {inds.map((ind) => (
+            <a class="ind-item" href={u(`/korsatkichlar/${ind.slug}`)}>
+              <div class="n">{ind.name}</div>
+              <div class="u">{ind.unit}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+    );
+  })}
+</Base>
