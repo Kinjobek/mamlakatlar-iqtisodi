@@ -108,23 +108,24 @@ const countries = R.countries;
         const inds = groups[catKey];
         if (!inds || !inds.length) continue;
         html += '<div class="card"><div class="card-title"><span>' + DATA.cats[catKey] + '</span></div>';
-        html += '<table class="data"><thead><tr><th>Körsatkiç</th>';
+        html += '<table class="data" data-name="taqqoslash-' + catKey + '"><thead><tr><th>Körsatkiç</th>';
         for (const s of uniq) {
           const c = bySlug.get(s);
-          html += '<th class="num">' + (c ? c.n : s) + '</th>';
+          html += '<th class="num" data-first="desc">' + (c ? c.n : s) + '</th>';
         }
         html += '</tr></thead><tbody>';
         for (const [slug, ind] of inds) {
           html += '<tr><td>' + ind.n + '</td>';
           for (const s of uniq) {
             const l = ind.v[bySlug.get(s)?.i3];
-            html += '<td class="num">' + (l ? renderValue(ind, l) + ' <small style="color:var(--muted)">' + l.year + '</small>' : '—') + '</td>';
+            html += '<td class="num"' + (l ? ' data-v="' + l.value + '"' : '') + '>' + (l ? renderValue(ind, l) + ' <small style="color:var(--muted)">' + l.year + '</small>' : '—') + '</td>';
           }
           html += '</tr>';
         }
         html += '</tbody></table></div>';
       }
       out.innerHTML = html;
+      document.dispatchEvent(new Event('tables:render'));
     }
 
     fetch(DATA_URL)
@@ -134,7 +135,7 @@ const countries = R.countries;
         selA.innerHTML = optionHTML(data.countries, defaultA);
         selB.innerHTML = optionHTML(data.countries, defaultB);
         selC.innerHTML = optionHTML(data.countries, '');
-        [selA, selB, selC].forEach((s) => s.addEventListener('çange', update));
+        [selA, selB, selC].forEach((s) => s.addEventListener('change', update));
         update();
       });
   </script>

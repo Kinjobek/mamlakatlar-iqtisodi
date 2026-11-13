@@ -107,23 +107,23 @@ const cats = Object.entries(R.catalog.categories);
       <span>YaIM böyiça eng yirik iqtisodiyotlar</span>
       <a class="more" href={u('/korsatkichlar/yaim')}>Barça davlatlar →</a>
     </div>
-    <table class="data">
+    <table class="data" data-name="yaim-top10">
       <thead>
-        <tr><th>#</th><th>Davlat</th><th class="num">YaIM</th><th class="num">Ösiş</th><th class="num">Jon boşiga</th></tr>
+        <tr><th>#</th><th>Davlat</th><th class="num" data-first="desc">YaIM</th><th class="num" data-first="desc">Ösiş</th><th class="num" data-first="desc">Jon boşiga</th></tr>
       </thead>
       <tbody>
         {gdpTop.map((r, i) => (
           <tr class={r.c.iso3 === 'UZB' ? 'hl' : ''}>
-            <td class="rank-cell">{i + 1}</td>
+            <td class="rank-cell" data-v={i + 1}>{i + 1}</td>
             <td>
               <a class="name-cell" href={u(`/davlatlar/${r.c.slug}`)}>
                 <Flag iso2={r.c.iso2} iso3={r.c.iso3} />
                 <span>{r.c.nameUz}</span>
               </a>
             </td>
-            <td class="num">{fmtValue(yaim, r.value)}</td>
-            <td class="num">{fmtValue(yaimG, yaimG.latest[r.c.iso3]?.value)}</td>
-            <td class="num">{fmtValue(popPc, popPc.latest[r.c.iso3]?.value)}</td>
+            <td class="num" data-v={r.value}>{fmtValue(yaim, r.value)}</td>
+            <td class="num" data-v={yaimG.latest[r.c.iso3]?.value ?? ''}>{fmtValue(yaimG, yaimG.latest[r.c.iso3]?.value)}</td>
+            <td class="num" data-v={popPc.latest[r.c.iso3]?.value ?? ''}>{fmtValue(popPc, popPc.latest[r.c.iso3]?.value)}</td>
           </tr>
         ))}
       </tbody>
@@ -136,23 +136,23 @@ const cats = Object.entries(R.catalog.categories);
       <span>Aholi soni böyiça eng katta davlatlar</span>
       <a class="more" href={u('/korsatkichlar/aholi')}>Barça davlatlar →</a>
     </div>
-    <table class="data">
+    <table class="data" data-name="aholi-top10">
       <thead>
-        <tr><th>#</th><th>Davlat</th><th class="num">Aholi</th><th class="num">Ösiş</th><th class="num">Ziçlik</th></tr>
+        <tr><th>#</th><th>Davlat</th><th class="num" data-first="desc">Aholi</th><th class="num" data-first="desc">Ösiş</th><th class="num" data-first="desc">Ziçlik</th></tr>
       </thead>
       <tbody>
         {popTop.map((r, i) => (
           <tr class={r.c.iso3 === 'UZB' ? 'hl' : ''}>
-            <td class="rank-cell">{i + 1}</td>
+            <td class="rank-cell" data-v={i + 1}>{i + 1}</td>
             <td>
               <a class="name-cell" href={u(`/davlatlar/${r.c.slug}`)}>
                 <Flag iso2={r.c.iso2} iso3={r.c.iso3} />
                 <span>{r.c.nameUz}</span>
               </a>
             </td>
-            <td class="num">{fmtValue(pop, r.value)}</td>
-            <td class="num">{fmtValue(bySlug.get('aholi-osishi'), bySlug.get('aholi-osishi').latest[r.c.iso3]?.value)}</td>
-            <td class="num">{fmtValue(bySlug.get('zichlik'), bySlug.get('zichlik').latest[r.c.iso3]?.value)}</td>
+            <td class="num" data-v={r.value}>{fmtValue(pop, r.value)}</td>
+            <td class="num" data-v={bySlug.get('aholi-osishi').latest[r.c.iso3]?.value ?? ''}>{fmtValue(bySlug.get('aholi-osishi'), bySlug.get('aholi-osishi').latest[r.c.iso3]?.value)}</td>
+            <td class="num" data-v={bySlug.get('zichlik').latest[r.c.iso3]?.value ?? ''}>{fmtValue(bySlug.get('zichlik'), bySlug.get('zichlik').latest[r.c.iso3]?.value)}</td>
           </tr>
         ))}
       </tbody>
@@ -161,9 +161,9 @@ const cats = Object.entries(R.catalog.categories);
 
   <div class="card">
     <div class="card-title"><span>Özbekiston va qöşni davlatlar — tezkor taqqoslaş</span></div>
-    <table class="data">
+    <table class="data" data-name="qoshnilar">
       <thead>
-        <tr><th>Davlat</th><th class="num">YaIM</th><th class="num">Ösiş</th><th class="num">Inflyatsiya</th><th class="num">Aholi</th><th class="num">Umr</th></tr>
+        <tr><th>Davlat</th><th class="num" data-first="desc">YaIM</th><th class="num" data-first="desc">Ösiş</th><th class="num" data-first="desc">Inflyatsiya</th><th class="num" data-first="desc">Aholi</th><th class="num" data-first="desc">Umr</th></tr>
       </thead>
       <tbody>
         {neighbors.map((c) => (
@@ -174,11 +174,11 @@ const cats = Object.entries(R.catalog.categories);
                 <span>{c.nameUz}</span>
               </a>
             </td>
-            <td class="num">{fmtValue(yaim, yaim.latest[c.iso3]?.value)}</td>
-            <td class="num">{fmtValue(yaimG, yaimG.latest[c.iso3]?.value)}</td>
-            <td class="num">{fmtValue(inflation, inflation.latest[c.iso3]?.value)}</td>
-            <td class="num">{fmtValue(pop, pop.latest[c.iso3]?.value)}</td>
-            <td class="num">{fmtValue(bySlug.get('umr-davomiyligi'), bySlug.get('umr-davomiyligi').latest[c.iso3]?.value)}</td>
+            <td class="num" data-v={yaim.latest[c.iso3]?.value ?? ''}>{fmtValue(yaim, yaim.latest[c.iso3]?.value)}</td>
+            <td class="num" data-v={yaimG.latest[c.iso3]?.value ?? ''}>{fmtValue(yaimG, yaimG.latest[c.iso3]?.value)}</td>
+            <td class="num" data-v={inflation.latest[c.iso3]?.value ?? ''}>{fmtValue(inflation, inflation.latest[c.iso3]?.value)}</td>
+            <td class="num" data-v={pop.latest[c.iso3]?.value ?? ''}>{fmtValue(pop, pop.latest[c.iso3]?.value)}</td>
+            <td class="num" data-v={bySlug.get('umr-davomiyligi').latest[c.iso3]?.value ?? ''}>{fmtValue(bySlug.get('umr-davomiyligi'), bySlug.get('umr-davomiyligi').latest[c.iso3]?.value)}</td>
           </tr>
         ))}
       </tbody>

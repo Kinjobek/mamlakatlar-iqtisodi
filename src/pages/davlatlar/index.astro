@@ -21,10 +21,15 @@ const rows = R.countries.map((c) => {
     region: c.regionUz,
     agg: c.isAggregate,
     gdp: fmtValue(yaim, yaim.latest[c.iso3]?.value),
+    gdpV: yaim.latest[c.iso3]?.value,
     gdpPc: fmtValue(yaimPc, yaimPc.latest[c.iso3]?.value),
+    gdpPcV: yaimPc.latest[c.iso3]?.value,
     popv: fmtValue(pop, pop.latest[c.iso3]?.value),
+    popV: pop.latest[c.iso3]?.value,
     inflv: fmtValue(infl, infl.latest[c.iso3]?.value),
-    grow: fmtValue(growth, growth.latest[c.iso3]?.value)
+    inflV: infl.latest[c.iso3]?.value,
+    grow: fmtValue(growth, growth.latest[c.iso3]?.value),
+    growV: growth.latest[c.iso3]?.value
   };
 });
 ---
@@ -47,21 +52,21 @@ const rows = R.countries.map((c) => {
   />
 
   <div class="card">
-    <table class="data" id="countryTable">
+    <table class="data" id="countryTable" data-name="davlatlar">
       <thead>
         <tr>
-          <th data-sort="name">Davlat</th>
+          <th>Davlat</th>
           <th>Mintaqa</th>
-          <th class="num" data-sort="pop">Aholi</th>
-          <th class="num" data-sort="gdp">YaIM</th>
-          <th class="num" data-sort="gdpPc">Jon boşiga YaIM</th>
-          <th class="num" data-sort="grow">Ösiş</th>
-          <th class="num" data-sort="infl">Inflyatsiya</th>
+          <th class="num" data-first="desc">Aholi</th>
+          <th class="num" data-first="desc">YaIM</th>
+          <th class="num" data-first="desc">Jon boşiga YaIM</th>
+          <th class="num" data-first="desc">Ösiş</th>
+          <th class="num" data-first="desc">Inflyatsiya</th>
         </tr>
       </thead>
       <tbody>
         {rows.map((r) => (
-          <tr data-name={r.name} data-pop={r.popv} data-agg={r.agg ? '1' : ''}>
+          <tr data-name={r.name} data-agg={r.agg ? '1' : ''}>
             <td>
               <a class="name-cell" href={u(`/davlatlar/${r.slug}`)}>
                 <Flag iso2={r.iso2} iso3={r.iso3} />
@@ -69,11 +74,11 @@ const rows = R.countries.map((c) => {
               </a>
             </td>
             <td>{r.region}</td>
-            <td class="num">{r.popv}</td>
-            <td class="num">{r.gdp}</td>
-            <td class="num">{r.gdpPc}</td>
-            <td class="num">{r.grow}</td>
-            <td class="num">{r.inflv}</td>
+            <td class="num" data-v={r.popV ?? ''}>{r.popv}</td>
+            <td class="num" data-v={r.gdpV ?? ''}>{r.gdp}</td>
+            <td class="num" data-v={r.gdpPcV ?? ''}>{r.gdpPc}</td>
+            <td class="num" data-v={r.growV ?? ''}>{r.grow}</td>
+            <td class="num" data-v={r.inflV ?? ''}>{r.inflv}</td>
           </tr>
         ))}
       </tbody>

@@ -108,6 +108,23 @@ table.data .rank-cell { color: var(--muted); font-size: 13px; }
 .name-cell .sub { font-weight: 400; color: var(--muted); font-size: 12.5px; }
 tr.aggregate-row td { background: #f3f0ff; }
 
+/* saralanadigan ustun sarlavhalari */
+table.data th.sortable { cursor: pointer; user-select: none; transition: color .12s; }
+table.data th.sortable:hover { color: var(--primary); }
+table.data th .arrow { color: var(--accent); font-size: 10px; margin-left: 3px; }
+
+/* jadval ustidagi asboblar (eksport) */
+.table-tools { display: flex; gap: 8px; justify-content: flex-end; padding: 10px 18px 0; flex-wrap: wrap; }
+.btn-dl {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 12px; border-radius: 8px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--primary-ink);
+  font-size: 13px; font-weight: 700; font-family: var(--font);
+  cursor: pointer; transition: border-color .12s, background .12s;
+}
+.btn-dl:hover { border-color: var(--primary); background: #f0f6fa; }
+.btn-dl svg { width: 13px; height: 13px; }
+
 /* ---------- Bayroqlar ---------- */
 .flag { width: 26px; height: 19px; border-radius: 3px; object-fit: cover; box-shadow: 0 0 0 1px rgba(0,0,0,0.12) inset; flex: none; }
 .flag.big { width: 54px; height: 40px; border-radius: 6px; }

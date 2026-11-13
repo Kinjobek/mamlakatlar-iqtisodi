@@ -176,9 +176,9 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
   {groups.map((g) => (
     <div class="card">
       <div class="card-title"><span>{g.label}</span></div>
-      <table class="data">
+      <table class="data" data-name={`${slug}-${g.key}`}>
         <thead>
-          <tr><th>Körsatkiç</th><th class="num">Sana</th><th class="num">Qiymat</th><th class="num">Örin</th></tr>
+          <tr><th>Körsatkiç</th><th class="num">Sana</th><th class="num" data-first="desc">Qiymat</th><th class="num">Örin</th></tr>
         </thead>
         <tbody>
           {g.inds.map((ind) => {
@@ -187,9 +187,9 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
             return (
               <tr>
                 <td><a href={u(`/korsatkichlar/${ind.slug}`)}>{ind.name}</a></td>
-                <td class="num">{l ? l.year : '—'}</td>
-                <td class="num">{l ? fmtValue(ind, l.value) : '—'}</td>
-                <td class="num rank-cell">{rk ? `${rk.rank} / ${rk.total}` : '—'}</td>
+                <td class="num" data-v={l ? l.year : ''}>{l ? l.year : '—'}</td>
+                <td class="num" data-v={l ? l.value : ''}>{l ? fmtValue(ind, l.value) : '—'}</td>
+                <td class="num rank-cell" data-v={rk ? rk.rank : ''}>{rk ? `${rk.rank} / ${rk.total}` : '—'}</td>
               </tr>
             );
           })}

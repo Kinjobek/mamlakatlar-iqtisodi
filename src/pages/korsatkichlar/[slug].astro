@@ -97,27 +97,27 @@ const title = `${ind.name} — barça davlatlar | Mamlakatlar iqtisodi`;
   />
 
   <div class="card">
-    <table class="data" id="indTable">
+    <table class="data" id="indTable" data-name={slug}>
       <thead>
         <tr>
           <th>Örin</th>
           <th>Davlat</th>
           <th class="num">Sana</th>
-          <th class="num">{ind.name}</th>
+          <th class="num" data-first="desc">{ind.name}</th>
         </tr>
       </thead>
       <tbody>
         {ranked.map((r) => (
           <tr class={r.c.iso3 === 'UZB' ? 'hl' : ''} data-name={r.c.nameUz}>
-            <td class="rank-cell">{r.rk}</td>
+            <td class="rank-cell" data-v={r.rk}>{r.rk}</td>
             <td>
               <a class="name-cell" href={u(`/davlatlar/${r.c.slug}`)}>
                 <Flag iso2={r.c.iso2} iso3={r.c.iso3} />
                 <span>{r.c.nameUz}</span>
               </a>
             </td>
-            <td class="num">{r.l.year}</td>
-            <td class="num">{fmtValue(ind, r.l.value)}</td>
+            <td class="num" data-v={r.l.year}>{r.l.year}</td>
+            <td class="num" data-v={r.l.value}>{fmtValue(ind, r.l.value)}</td>
           </tr>
         ))}
         {aggs.map((r) => (
@@ -129,8 +129,8 @@ const title = `${ind.name} — barça davlatlar | Mamlakatlar iqtisodi`;
                 <span>{r.c.nameUz}</span>
               </a>
             </td>
-            <td class="num">{r.l.year}</td>
-            <td class="num">{fmtValue(ind, r.l.value)}</td>
+            <td class="num" data-v={r.l.year}>{r.l.year}</td>
+            <td class="num" data-v={r.l.value}>{fmtValue(ind, r.l.value)}</td>
           </tr>
         ))}
       </tbody>
