@@ -3,11 +3,8 @@ dist/
 .astro/
 node_modules/
 
-# xom bulk ma'lumotlar (270MB zip + CSV — repoga kirmaydi)
+# xom bulk ma'lumotlar (270 MB zip + CSV — repoga kirmaydi)
 data/raw/
-
-# qayta ishlangan ko'rsatkich JSONlari ham katta — repoga kirmaydi (qurilishda yuklanadi yoki lokalda yuritiladi)
-data/wb/*.json
 
 # boshqalar
 .DS_Store

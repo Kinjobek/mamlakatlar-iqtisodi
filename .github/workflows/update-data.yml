@@ -1,0 +1,50 @@
+name: Ma'lumotlarni yangilash
+
+# Har dushanba 04:00 UTC — World Bank / IMF / UNDP dan yangi ma'lumot olinadi,
+# o'zgarish bo'lsa commit qilinadi va deploy.yml avtomatik ishga tushadi.
+on:
+  schedule:
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodni olish
+        uses: actions/checkout@v4
+
+      - name: Node.js o'rnatish
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Paketlarni o'rnatish
+        run: npm ci --no-audit --no-fund
+
+      - name: Bulk arxivni keshdan yuklash (bo'lsa)
+        uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: wdi-bulk
+
+      - name: Ma'lumotlarni yuklab olish
+        run: npm run data || echo "Qismiy xato — mavjud ma'lumotlar saqlanadi"
+        # Yangi WDI chiqsa URL o'zgarishi mumkin — scripts/fetch-data.mjs dagi
+        # BULK_URL ni yangilash kerak (datacatalog.worldbank.org sahifasidan).
+
+      - name: O'zgarishlarni commit qilish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data)" ]; then
+            git add data
+            git commit -m "Ma'lumotlar yangilandi (avtomatik): $(date -u +'%Y-%m-%d')"
+            git push
+          else
+            echo "Yangilanish yo'q."
+          fi
