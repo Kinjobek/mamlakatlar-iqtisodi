@@ -1,6 +1,6 @@
 ---
 /**
- * Yillar kesimini ko'rsatuvchi inline SVG chizma grafik (JS kerak emas).
+ * Yillar kesimini körsatuvçi inline SVG çizma grafik (JS kerak emas).
  * points: [[yil, qiymat], ...]
  */
 interface Props {
@@ -64,7 +64,7 @@ const xTicks = [...new Set([xMin, Math.round((xMin + xMax) / 2), xMax])].sort((a
     <circle cx={px(p[0])} cy={py(p[1])} r="2.6" fill="#fff" stroke={color} stroke-width="1.6" />
   ))}
   {xTicks.map((xt) => (
-    <text x={px(xt)} y={height - 8} font-size="11" fill="#8296a8" text-anchor={xt === xMin ? 'start' : xt === xMax ? 'end' : 'middle'}>
+    <text x={px(xt)} y={height - 8} font-size="11" fill="#8296a8" text-ançor={xt === xMin ? 'start' : xt === xMax ? 'end' : 'middle'}>
       {xt}
     </text>
   ))}

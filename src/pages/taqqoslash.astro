@@ -7,20 +7,20 @@ const R = registry();
 const countries = R.countries;
 ---
 
-<Base title="Davlatlarni taqqoslash | Mamlakatlar iqtisodi" description="Ikki yoki undan ortiq davlatning iqtisodiy-demografik ko'rsatkichlarini yonma-yon taqqoslang: YaIM, inflyatsiya, ishsizlik, aholi va boshqalar.">
+<Base title="Davlatlarni taqqoslaş | Mamlakatlar iqtisodi" description="Ikki yoki undan ortiq davlatning iqtisodiy-demografik körsatkiçlarini yonma-yon taqqoslang: YaIM, inflyatsiya, işsizlik, aholi va boşqalar.">
   <div class="page-head">
-    <h1>Davlatlarni taqqoslash</h1>
+    <h1>Davlatlarni taqqoslaş</h1>
     <p class="lead">
-      2–3 ta davlatni tanlang — barcha {R.indicators.length} ko'rsatkichni yonma-yon ko'rasiz.
-      Qiymatlar har bir ko'rsatkichning so'nggi mavjud yiliga tegishli.
+      2–3 ta davlatni tanlang — barça {R.indicators.length} körsatkiçni yonma-yon körasiz.
+      Qiymatlar har bir körsatkiçning sönggi mavjud yiliga tegişli.
     </p>
   </div>
 
   <div id="compareApp" data-url={u('/data/latest.json')}>
     <div class="compare-selects">
-      <select id="selA" aria-label="Birinchi davlat"></select>
-      <select id="selB" aria-label="Ikkinchi davlat"></select>
-      <select id="selC" aria-label="Uchinchi davlat (ixtiyoriy)"></select>
+      <select id="selA" aria-label="Birinçi davlat"></select>
+      <select id="selB" aria-label="Ikkinçi davlat"></select>
+      <select id="selC" aria-label="Uçinçi davlat (ixtiyoriy)"></select>
     </div>
 
     <div id="compareOut"></div>
@@ -28,7 +28,7 @@ const countries = R.countries;
     <noscript>
       <div class="card">
         <div class="summary">
-          <p>Taqqoslash uchun JavaScript yoqilgan bo'lishi kerak. Davlat sahifalarini to'g'ridan-to'g'ri ochishingiz mumkin:</p>
+          <p>Taqqoslaş uçun JavaScript yöqilgan bölişi kerak. Davlat sahifalarini töğridan-töğri oçişingiz mumkin:</p>
           <p><a href={u('/davlatlar')}>Davlatlar katalogi →</a></p>
         </div>
       </div>
@@ -78,7 +78,7 @@ const countries = R.countries;
       const v = l.value;
       if (moneyUnits.has(ind.u)) return fmt(v, ind.d) + '\u00A0$';
       if (ind.u === '%') return fmt(v, ind.d) + '%';
-      if (ind.u === "o'rin") return fmt(v, 0) + "-o'rin";
+      if (ind.u === "örin") return fmt(v, 0) + "-örin";
       return fmt(v, ind.d);
     }
 
@@ -98,7 +98,7 @@ const countries = R.countries;
       const bySlug = new Map(DATA.countries.map((c) => [c.s, c]));
       const catOrder = Object.keys(DATA.cats);
 
-      // guruhlash
+      // guruhlaş
       const groups = {};
       for (const [slug, ind] of Object.entries(DATA.indicators)) {
         (groups[ind.c] ??= []).push([slug, ind]);
@@ -108,7 +108,7 @@ const countries = R.countries;
         const inds = groups[catKey];
         if (!inds || !inds.length) continue;
         html += '<div class="card"><div class="card-title"><span>' + DATA.cats[catKey] + '</span></div>';
-        html += '<table class="data"><thead><tr><th>Ko\'rsatkich</th>';
+        html += '<table class="data"><thead><tr><th>Körsatkiç</th>';
         for (const s of uniq) {
           const c = bySlug.get(s);
           html += '<th class="num">' + (c ? c.n : s) + '</th>';
@@ -134,7 +134,7 @@ const countries = R.countries;
         selA.innerHTML = optionHTML(data.countries, defaultA);
         selB.innerHTML = optionHTML(data.countries, defaultB);
         selC.innerHTML = optionHTML(data.countries, '');
-        [selA, selB, selC].forEach((s) => s.addEventListener('change', update));
+        [selA, selB, selC].forEach((s) => s.addEventListener('çange', update));
         update();
       });
   </script>

@@ -6,28 +6,28 @@ import { registry } from '../lib/data.mjs';
 const R = registry();
 
 const uiTerms = [
-  ['Bosh sahifa', 'Saytning asosiy sahifasi'],
-  ['Davlatlar', 'Barcha davlatlar katalogi'],
-  ['Ko\'rsatkichlar', 'Iqtisodiy va demografik o\'lchovlar katalogi'],
-  ['Taqqoslash', 'Ikki yoki undan ortiq davlat ko\'rsatkichlarini yonma-yon solishtirish'],
-  ['Lug\'at', 'Atamalar ma\'lumotnomasi'],
-  ['Manbalar', 'Ma\'lumot manbalari ro\'yxati'],
+  ['Boş sahifa', 'Saytning asosiy sahifasi'],
+  ['Davlatlar', 'Barça davlatlar katalogi'],
+  ['Körsatkiçlar', 'Iqtisodiy va demografik ölçovlar katalogi'],
+  ['Taqqoslaş', 'Ikki yoki undan ortiq davlat körsatkiçlarini yonma-yon soliştiriş'],
+  ['Luğat', 'Atamalar ma\'lumotnomasi'],
+  ['Manbalar', 'Ma\'lumot manbalari röyxati'],
   ['Poytaxt', 'Davlatning ma\'muriy markazi'],
   ['Mintaqa', 'BMT tasnifidagi geografik-iqtisodiy mintaqa'],
-  ['Daromad darajasi', 'World Bank tasnifi: yuqori, yuqori-o\'rta, quyi-o\'rta, quyi daromadli'],
-  ['Agregat', 'Bir necha davlatni birlashtirgan hisob (masalan, Jahon, Yevropa Ittifoqi)'],
-  ['Yillar kesimi', 'Ko\'rsatkichning yillar bo\'yicha qatori'],
-  ['So\'nggi qiymat', 'Davlat uchun ko\'rsatkichning oxirgi mavjud rasmiy qiymati'],
-  ['O\'rin (reyting)', 'Boshqa davlatlar orasidagi pozitsiya']
+  ['Daromad darajasi', 'World Bank tasnifi: yuqori, yuqori-örta, quyi-örta, quyi daromadli'],
+  ['Agregat', 'Bir neça davlatni birlaştirgan hisob (masalan, Jahon, Yevropa Ittifoqi)'],
+  ['Yillar kesimi', 'Körsatkiçning yillar böyiça qatori'],
+  ['Sönggi qiymat', 'Davlat uçun körsatkiçning oxirgi mavjud rasmiy qiymati'],
+  ['Örin (reyting)', 'Boşqa davlatlar orasidagi pozitsiya']
 ];
 ---
 
-<Base title="Lug'at | Mamlakatlar iqtisodi" description="Saytda ishlatiladigan iqtisodiy va demografik atamalarning o'zbekcha izohli lug'ati: YaIM, INI, Gini indeksi, ITT va boshqalar.">
+<Base title="Luğat | Mamlakatlar iqtisodi" description="Saytda işlatiladigan iqtisodiy va demografik atamalarning özbekça izohli luğati: YaIM, INI, Gini indeksi, ITT va boşqalar.">
   <div class="page-head">
-    <h1>Lug'at</h1>
+    <h1>Luğat</h1>
     <p class="lead">
-      Saytda ishlatiladigan atamalarning qisqacha o'zbekcha izohi. Ko'rsatkichlarning
-      batafsil ta'rifi har bir ko'rsatkich sahifasida beriladi.
+      Saytda işlatiladigan atamalarning qisqaça özbekça izohi. Körsatkiçlarning
+      batafsil ta'rifi har bir körsatkiç sahifasida beriladi.
     </p>
   </div>
 
@@ -55,7 +55,7 @@ const uiTerms = [
               <dd>
                 {ind.desc}
                 <div style="color:var(--muted); font-size:13px;">
-                  Birlik: {ind.unit} · <a href={u(`/korsatkichlar/${ind.slug}`)}>Barcha davlatlar →</a>
+                  Birlik: {ind.unit} · <a href={u(`/korsatkichlar/${ind.slug}`)}>Barça davlatlar →</a>
                 </div>
               </dd>
             ))}

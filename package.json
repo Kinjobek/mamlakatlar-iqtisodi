@@ -1,7 +1,7 @@
 {
   "name": "mamlakatlar-iqtisodi",
   "version": "0.1.0",
-  "description": "Jahon davlatlarining iqtisodiy-demografik ko'rsatkichlari — o'zbek tilida. Ma'lumotlar: World Bank, UNDP.",
+  "description": "Jahon davlatlarining iqtisodiy-demografik körsatkiçlari — özbek tilida. Ma'lumotlar: World Bank, UNDP.",
   "type": "module",
   "scripts": {
     "dev": "astro dev",

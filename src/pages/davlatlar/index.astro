@@ -29,12 +29,12 @@ const rows = R.countries.map((c) => {
 });
 ---
 
-<Base title="Davlatlar — Mamlakatlar iqtisodi" description="Jahon davlatlarining iqtisodiy ko'rsatkichlari: YaIM, aholi, inflyatsiya. Qidiruv va tartiblash bilan to'liq katalog.">
+<Base title="Davlatlar — Mamlakatlar iqtisodi" description="Jahon davlatlarining iqtisodiy körsatkiçlari: YaIM, aholi, inflyatsiya. Qidiruv va tartiblaş bilan töliq katalog.">
   <div class="page-head">
     <h1>Davlatlar</h1>
     <p class="lead">
       {R.countries.length} ta davlat va agregat. Har bir qatorda YaIM, aholi va inflyatsiya
-      ko'rsatkichlarining so'nggi rasmiy qiymatlari. Batafsil ma'lumot uchun davlat nomini bosing.
+      körsatkiçlarining sönggi rasmiy qiymatlari. Batafsil ma'lumot uçun davlat nomini bosing.
     </p>
   </div>
 
@@ -42,8 +42,8 @@ const rows = R.countries.map((c) => {
     class="filter-input"
     id="countrySearch"
     type="search"
-    placeholder="Davlat nomini kiriting... (masalan: O'zbekiston, Qozog'iston, Germaniya)"
-    aria-label="Davlat qidirish"
+    placeholder="Davlat nomini kiriting... (masalan: Özbekiston, Qozoğiston, Germaniya)"
+    aria-label="Davlat qidiriş"
   />
 
   <div class="card">
@@ -54,8 +54,8 @@ const rows = R.countries.map((c) => {
           <th>Mintaqa</th>
           <th class="num" data-sort="pop">Aholi</th>
           <th class="num" data-sort="gdp">YaIM</th>
-          <th class="num" data-sort="gdpPc">Jon boshiga YaIM</th>
-          <th class="num" data-sort="grow">O'sish</th>
+          <th class="num" data-sort="gdpPc">Jon boşiga YaIM</th>
+          <th class="num" data-sort="grow">Ösiş</th>
           <th class="num" data-sort="infl">Inflyatsiya</th>
         </tr>
       </thead>
@@ -78,7 +78,7 @@ const rows = R.countries.map((c) => {
         ))}
       </tbody>
     </table>
-    <div class="card-note" id="countNote">{rows.length} ta yozuv</div>
+    <div class="card-note" id="countNote">{rows.length} ta yözuv</div>
   </div>
 
   <script>
@@ -95,7 +95,7 @@ const rows = R.countries.map((c) => {
         tr.style.display = show ? '' : 'none';
         if (show) shown++;
       }
-      note.textContent = shown + ' ta yozuv' + (q ? ' (filtr: ' + q + ')' : '');
+      note.textContent = shown + ' ta yözuv' + (q ? ' (filtr: ' + q + ')' : '');
     });
   </script>
 </Base>

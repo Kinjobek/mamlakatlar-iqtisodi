@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const cache = new Map();
 
-/** Boshqaruv "past bo'lsa yaxshi" ko'rsatkichlari — reyting teskari hisoblanadi. */
+/** Boşqaruv "past bölsa yaxşi" körsatkiçlari — reyting teskari hisoblanadi. */
 export const LOWER_BETTER = new Set([
   'ishsizlik',
   'yoshlar-ishsizligi',
@@ -73,8 +73,8 @@ export function latestOf(series, capYear) {
 }
 
 /**
- * Butun sayt uchun ko'rsatkichlar reyestri: har bir ko'rsatkich uchun
- * so'nggi qiymatlar, reytinglar va seriyalar.
+ * Butun sayt uçun körsatkiçlar reyestri: har bir körsatkiç uçun
+ * sönggi qiymatlar, reytinglar va seriyalar.
  */
 let _registry = null;
 export function registry() {
@@ -96,7 +96,7 @@ export function registry() {
     }
     const latest = {};
     for (const [iso3, series] of Object.entries(raw.data)) {
-      if (!byIso.has(iso3)) continue; // faqat ma'lum davlatlar (agregat kodlar tashqarida)
+      if (!byIso.has(iso3)) continue; // faqat ma'lum davlatlar (agregat kodlar taşqarida)
       const l = latestOf(series, CAP_YEAR);
       if (l && l.value != null && Number.isFinite(l.value)) latest[iso3] = l;
     }
@@ -128,7 +128,7 @@ export function registry() {
   return _registry;
 }
 
-/* ---------- Son formatlash (o'zbekcha) ---------- */
+/* ---------- Son formatlaş (özbekça) ---------- */
 
 function groupDigits(intStr) {
   return intStr.replace(/\B(?=(\d{3})+(?!\d))/g, '\u00A0');
@@ -158,15 +158,15 @@ const UNIT_SUFFIX = {
   '% YaIM': '%',
   'USD': null,
   'xalqaro dollar': null,
-  'kishi': null,
-  'ming kishi': null,
+  'kişi': null,
+  'ming kişi': null,
   'yil': null,
   'bola / ayol': null,
   'bola/ayol': null,
   'ball (0-100)': null,
   'indeks (0-1)': null,
   'indeks (2010 = 100)': null,
-  "o'rin": null
+  "örin": null
 };
 
 export function fmtValue(ind, v) {
@@ -178,7 +178,7 @@ export function fmtValue(ind, v) {
   if (suffix === '%') return fmtNum(v, ind.dec) + '%';
   if (suffix === '‰') return fmtNum(v, ind.dec) + '\u00A0‰';
   if (unit === 'ming tonna') return fmtNum(v, 0);
-  if (unit === "o'rin") return fmtNum(v, 0) + "-o'rin";
+  if (unit === "örin") return fmtNum(v, 0) + "-örin";
   return fmtNum(v, ind.dec);
 }
 
@@ -189,7 +189,7 @@ export function fmtDelta(v, dec = 1) {
   return (v > 0 ? '+' : '−') + s;
 }
 
-/* ---------- Yordamchilar ---------- */
+/* ---------- Yordamçilar ---------- */
 
 export function rankOf(ind, iso3) {
   const r = ind.rank.get(iso3);
@@ -201,7 +201,7 @@ export function seriesOf(ind, iso3) {
   return ind.series[iso3] ?? null;
 }
 
-/** UZB boshqa davlatlar bilan solishtirganda ko'rsatiladigan davlat (standart) */
+/** UZB boşqa davlatlar bilan soliştirganda körsatiladigan davlat (standart) */
 export const HOME_ISO = 'UZB';
 
 export function countryUrl(c) {

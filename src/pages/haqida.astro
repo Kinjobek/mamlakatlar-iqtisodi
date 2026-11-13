@@ -5,12 +5,12 @@ const R = registry();
 const dataDate = siteDataDate();
 ---
 
-<Base title="Sayt haqida | Mamlakatlar iqtisodi" description="Mamlakatlar iqtisodi sayti haqida: maqsad, texnologiyalar, yangilanish tartibi.">
+<Base title="Sayt haqida | Mamlakatlar iqtisodi" description="Mamlakatlar iqtisodi sayti haqida: maqsad, texnologiyalar, yangilaniş tartibi.">
   <div class="page-head">
     <h1>Sayt haqida</h1>
     <p class="lead">
       Mamlakatlar iqtisodi — jahon davlatlarining iqtisodiy va demografik
-      ko'rsatkichlarini o'zbek tilida jamlaydigan ochiq ma'lumotnoma.
+      körsatkiçlarini özbek tilida jamlaydigan oçiq ma'lumotnoma.
     </p>
   </div>
 
@@ -18,13 +18,13 @@ const dataDate = siteDataDate();
     <div class="card-title"><span>Maqsad</span></div>
     <div class="summary">
       <p>
-        O'zbek tilidagi ishonchli iqtisodiy ma'lumotlar yetishmasligi bu sayt yaratilishiga
-        turtki bo'ldi. Maqsad — o'quvchilar, talabalar, jurnalistlar va tahlilchilar uchun
-        jahon davlatlarining asosiy ko'rsatkichlarini bir joyda, tushunarli tilda taqdim etish.
+        Özbek tilidagi işonçli iqtisodiy ma'lumotlar yetişmasligi bu sayt yaratilişiga
+        turtki böldi. Maqsad — öquvçilar, talabalar, jurnalistlar va tahlilçilar uçun
+        jahon davlatlarining asosiy körsatkiçlarini bir joyda, tuşunarli tilda taqdim etiş.
       </p>
       <p>
-        Sayt {R.countries.filter((c) => !c.isAggregate).length} davlat va {R.indicators.length} ko'rsatkichni
-        qamrab oladi. Ma'lumotlar {dataDate} holatiga ko'pa yangilandi.
+        Sayt {R.countries.filter((c) => !c.isAggregate).length} davlat va {R.indicators.length} körsatkiçni
+        qamrab oladi. Ma'lumotlar {dataDate} holatiga köpa yangilandi.
       </p>
     </div>
   </div>
@@ -33,29 +33,29 @@ const dataDate = siteDataDate();
     <div class="card-title"><span>Texnologiyalar</span></div>
     <div class="summary">
       <p>
-        Sayt statik tarzda quriladi: <b>Astro</b> (sahifalar oldindan HTML ko'rinishida
-        tayyorlanadi), grafiklar — server tomonida chiziladigan SVG (JavaScript'siz ishlaydi),
+        Sayt statik tarzda quriladi: <b>Astro</b> (sahifalar oldindan HTML körinişida
+        tayyorlanadi), grafiklar — server tomonida çiziladigan SVG (JavaScript'siz işlaydi),
         davlat bayroqlari — flagcdn.com. Hosting: <b>GitHub Pages</b>. Ma'lumotlar
-        <b>World Bank</b>, <b>IMF</b> va <b>UNDP</b> ochiq API'laridan yuklab olinadi.
+        <b>World Bank</b>, <b>IMF</b> va <b>UNDP</b> oçiq API'laridan yuklab olinadi.
       </p>
       <p>
-        Manba kodi ochiq: <a href="https://github.com/Kinjobek/mamlakatlar-iqtisodi" rel="noopener" target="_blank">
-        github.com/Kinjobek/mamlakatlar-iqtisodi</a>. Xatolik yoki taklif bo'lsa — GitHub'da
-        "Issues" bo'limida yozing.
+        Manba kodi oçiq: <a href="https://github.com/Kinjobek/mamlakatlar-iqtisodi" rel="noopener" target="_blank">
+        github.com/Kinjobek/mamlakatlar-iqtisodi</a>. Xatolik yoki taklif bölsa — GitHub'da
+        "Issues" bölimida yözing.
       </p>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-title"><span>Yuklab olish</span></div>
+    <div class="card-title"><span>Yuklab oliş</span></div>
     <div class="summary">
       <p>
-        Sayt ma'lumotlarini JSON ko'rinishida olish mumkin: barcha ko'rsatkichlarning so'nggi
-        qiymatlari — <code>/data/latest.json</code> (to'liq yo'l: GitHub Pages manzili bilan).
+        Sayt ma'lumotlarini JSON körinişida oliş mumkin: barça körsatkiçlarning sönggi
+        qiymatlari — <code>/data/latest.json</code> (töliq yöl: GitHub Pages manzili bilan).
       </p>
       <p style="color:var(--muted); font-size:14px;">
         Sayt "countryeconomy.com" kabi xalqaro ma'lumotnoma saytlaridan ilhomlangan, biroq
-        barcha dizayn, matn va ma'lumot quvuri mustaqil ravishda yaratilgan.
+        barça dizayn, matn va ma'lumot quvuri mustaqil ravişda yaratilgan.
       </p>
     </div>
   </div>

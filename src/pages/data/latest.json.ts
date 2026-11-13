@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { registry } from '../../lib/data.mjs';
 
-/** Taqqoslash sahifasi uchun barcha ko'rsatkichlarning so'nggi qiymatlari. */
+/** Taqqoslaş sahifasi uçun barça körsatkiçlarning sönggi qiymatlari. */
 export const GET: APIRoute = () => {
   const R = registry();
   const countries = R.countries.map((c) => ({

@@ -12,7 +12,7 @@ export function getStaticPaths() {
 const slug = Astro.params.slug;
 const R = registry();
 const ind = R.bySlug.get(slug);
-if (!ind) throw new Error(`Ko'rsatkich topilmadi: ${slug}`);
+if (!ind) throw new Error(`Körsatkiç topilmadi: ${slug}`);
 
 const catLabel = R.catalog.categories[ind.cat];
 
@@ -33,13 +33,13 @@ const maxYear = Math.max(...years);
 const minYear = Math.min(...years);
 const coverCount = ranked.length;
 
-const title = `${ind.name} — barcha davlatlar | Mamlakatlar iqtisodi`;
+const title = `${ind.name} — barça davlatlar | Mamlakatlar iqtisodi`;
 ---
 
-<Base title={title} description={`${ind.name}: ${coverCount} davlat uchun so'nggi qiymatlar va reyting (${minYear}–${maxYear}). ${ind.desc}`}>
+<Base title={title} description={`${ind.name}: ${coverCount} davlat uçun sönggi qiymatlar va reyting (${minYear}–${maxYear}). ${ind.desc}`}>
   <div class="crumbs">
-    <a href={u('/')}>Bosh sahifa</a> ›
-    <a href={u('/korsatkichlar')}>Ko'rsatkichlar</a> ›
+    <a href={u('/')}>Boş sahifa</a> ›
+    <a href={u('/korsatkichlar')}>Körsatkiçlar</a> ›
     <a href={u('/korsatkichlar')} style="pointer-events:none;">{catLabel}</a> ›
     {ind.name}
   </div>
@@ -48,17 +48,17 @@ const title = `${ind.name} — barcha davlatlar | Mamlakatlar iqtisodi`;
     <h1>{ind.name}</h1>
     <p class="lead">
       Birlik: <b>{ind.unit}</b> · Manba: <b>{ind.source}</b> · Qamrov:
-      <b> {coverCount} davlat</b> · So'nggi ma'lumot: <b>{maxYear}-yil</b>
-      {ind.lowerBetter ? ' · reytingda past qiymat = yaxshiroq' : ''}
+      <b> {coverCount} davlat</b> · Sönggi ma'lumot: <b>{maxYear}-yil</b>
+      {ind.lowerBetter ? ' · reytingda past qiymat = yaxşiroq' : ''}
     </p>
   </div>
 
   <div class="card">
-    <div class="card-title"><span>Ko'rsatkich haqida</span></div>
+    <div class="card-title"><span>Körsatkiç haqida</span></div>
     <div class="summary">
       <p>{ind.desc}</p>
       <p style="color:var(--muted); font-size:14px;">
-        Inglizcha nomi: {ind.rawName} ({ind.code}) — {ind.source} ma'lumotlar bazasi.
+        Inglizça nomi: {ind.rawName} ({ind.code}) — {ind.source} ma'lumotlar bazasi.
       </p>
     </div>
   </div>
@@ -66,13 +66,13 @@ const title = `${ind.name} — barcha davlatlar | Mamlakatlar iqtisodi`;
   {uzbRow && (
     <div class="stat-strip">
       <div class="stat">
-        <div class="k">O'zbekiston qiymati</div>
+        <div class="k">Özbekiston qiymati</div>
         <div class="v">{fmtValue(ind, uzbRow.l.value)}</div>
         <div class="s">{uzbRow.l.year}-yil</div>
       </div>
       <div class="stat">
-        <div class="k">O'zbekiston o'rni</div>
-        <div class="v">{uzbRow.rk}-o'rin</div>
+        <div class="k">Özbekiston örni</div>
+        <div class="v">{uzbRow.rk}-örin</div>
         <div class="s">{coverCount} davlat orasida</div>
       </div>
       <div class="stat">
@@ -92,15 +92,15 @@ const title = `${ind.name} — barcha davlatlar | Mamlakatlar iqtisodi`;
     class="filter-input"
     id="indSearch"
     type="search"
-    placeholder="Davlatnomi bo'yicha filtrlash..."
-    aria-label="Davlat qidirish"
+    placeholder="Davlatnomi böyiça filtrlaş..."
+    aria-label="Davlat qidiriş"
   />
 
   <div class="card">
     <table class="data" id="indTable">
       <thead>
         <tr>
-          <th>O'rin</th>
+          <th>Örin</th>
           <th>Davlat</th>
           <th class="num">Sana</th>
           <th class="num">{ind.name}</th>
@@ -137,9 +137,9 @@ const title = `${ind.name} — barcha davlatlar | Mamlakatlar iqtisodi`;
     </table>
     <div class="card-note">
       {ind.lowerBetter
-        ? "Reyting o'sish tartibida: past qiymat kuchli o'rin hisoblanadi."
-        : 'Reyting kamayish tartibida.'}{' '}
-      Qiymatlar har bir davlat uchun ko'rsatkichning so'nggi mavjud yiliga tegishli.
+        ? "Reyting ösiş tartibida: past qiymat kuçli örin hisoblanadi."
+        : 'Reyting kamayiş tartibida.'}{' '}
+      Qiymatlar har bir davlat uçun körsatkiçning sönggi mavjud yiliga tegişli.
     </div>
   </div>
 

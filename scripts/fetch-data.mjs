@@ -2,22 +2,22 @@
 /**
  * Ma'lumot quvuri — Mamlakatlar iqtisodi
  *
- * Bosqichlar:
- *   1. Davlatlar ro'yxati — World Bank API (1 ta so'rov)
- *   2. WDI bulk CSV — barcha ko'rsatkichlar bir arxivda (data/raw/)
- *   3. IMF DataMapper — davlat qarzi va byudjet taqchilligi
+ * Bosqiçlar:
+ *   1. Davlatlar röyxati — World Bank API (1 ta sörov)
+ *   2. WDI bulk CSV — barça körsatkiçlar bir arxivda (data/raw/)
+ *   3. IMF DataMapper — davlat qarzi va byudjet taqçilligi
  *   4. OWID/UNDP — inson taraqqiyoti indeksi (HDI)
  *
- * Ishga tushirish: npm run data
- * Bulk arxivni oldindan yuklab qo'yish (tavsiya):
+ * Işga tuşiriş: npm run data
+ * Bulk arxivni oldindan yuklab qöyiş (tavsiya):
  *   curl -C - -o data/raw/WDI_CSV_2026_10_08.zip \
- *     "https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0095335/WDI_CSV_2026_10_08.zip"
+ *     "https://datacatalogfiles.worldbank.org/ddh-publişed/0037712/DR0095335/WDI_CSV_2026_10_08.zip"
  *   cd data/raw && unzip WDI_CSV_2026_10_08.zip
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { spawnSync } from 'node:child_process';
+import { spawnSync } from 'node:çild_process';
 import readline from 'node:readline';
 import fs from 'node:fs';
 
@@ -35,7 +35,7 @@ mkdirSync(resolve(ROOT, 'data/owid'), { recursive: true });
 mkdirSync(RAW, { recursive: true });
 
 const BULK_URL =
-  'https://datacatalogfiles.worldbank.org/ddh-published/0037712/DR0095335/WDI_CSV_2026_10_08.zip';
+  'https://datacatalogfiles.worldbank.org/ddh-publişed/0037712/DR0095335/WDI_CSV_2026_10_08.zip';
 
 async function fetchJSON(url, tries = 3) {
   for (let i = 1; i <= tries; i++) {
@@ -50,9 +50,9 @@ async function fetchJSON(url, tries = 3) {
   }
 }
 
-/* ---------- 1. Davlatlar ro'yxati ---------- */
+/* ---------- 1. Davlatlar röyxati ---------- */
 async function fetchCountries() {
-  console.log('→ Davlatlar roʻyxati yuklanmoqda...');
+  console.log('→ Davlatlar röyxati yuklanmoqda...');
   const raw = await fetchJSON('https://api.worldbank.org/v2/country?format=json&per_page=400');
   const rows = raw[1] ?? [];
   const agg = new Set(uzMap.aggregates);
@@ -63,7 +63,7 @@ async function fetchCountries() {
     if (isAgg && !agg.has(iso3)) continue;
     const uz = uzMap.countries[iso3];
     if (!uz) {
-      console.warn(`  ⚠ ${iso3} (${r.name}) uchun oʻzbekcha nom yoʻq — oʻtkazib yuborildi`);
+      console.warn(`  ⚠ ${iso3} (${r.name}) uçun özbekça nom yöq — ötkazib yuborildi`);
       continue;
     }
     countries.push({
@@ -87,12 +87,12 @@ async function fetchCountries() {
   console.log(`  ✓ ${countries.length} davlat saqlandi (data/countries.json)`);
 }
 
-/* ---------- 2. WDI bulk: yuklash ---------- */
+/* ---------- 2. WDI bulk: yuklaş ---------- */
 function findWdiCsv() {
   if (!existsSync(RAW)) return null;
   for (const name of readdirSync(RAW)) {
     if (/^WDICSV\.csv$/i.test(name)) return resolve(RAW, name);
-    // zip ichida boshqa nom bo'lishi mumkin
+    // zip içida boşqa nom bölişi mumkin
     if (/\.csv$/i.test(name) && /WDI/i.test(name)) return resolve(RAW, name);
   }
   return null;
@@ -106,9 +106,9 @@ async function ensureBulk() {
     const res = spawnSync('curl', ['-sS', '-C', '-', '-o', zipPath, BULK_URL], {
       stdio: 'inherit'
     });
-    if (res.status !== 0) throw new Error('WDI arxivini yuklash muvaffaqiyatsiz tugadi');
+    if (res.status !== 0) throw new Error('WDI arxivini yuklaş muvaffaqiyatsiz tugadi');
   }
-  console.log('→ Arxiv ochilmoqda...');
+  console.log('→ Arxiv oçilmoqda...');
   const r = spawnSync('unzip', ['-o', '-q', 'WDI_CSV_2026_10_08.zip'], { cwd: RAW, stdio: 'inherit' });
   if (r.status !== 0) throw new Error('unzip muvaffaqiyatsiz');
   const csv = findWdiCsv();
@@ -117,21 +117,21 @@ async function ensureBulk() {
 
 /* ---------- 2b. WDI bulk: tahlil (streaming) ---------- */
 
-/** CSV qatorini vergulga ajratadi (qo'shtirnoq ichidagi vergullarni hisobga oladi). */
+/** CSV qatorini vergulga ajratadi (qöştirnoq içidagi vergullarni hisobga oladi). */
 function splitCSVLine(line) {
   const out = [];
   let cur = '';
   let inQ = false;
   for (let i = 0; i < line.length; i++) {
-    const ch = line[i];
+    const ç = line[i];
     if (inQ) {
-      if (ch === '"') {
+      if (ç === '"') {
         if (line[i + 1] === '"') { cur += '"'; i++; }
         else inQ = false;
-      } else cur += ch;
-    } else if (ch === '"') inQ = true;
-    else if (ch === ',') { out.push(cur); cur = ''; }
-    else cur += ch;
+      } else cur += ç;
+    } else if (ç === '"') inQ = true;
+    else if (ç === ',') { out.push(cur); cur = ''; }
+    else cur += ç;
   }
   out.push(cur);
   return out;
@@ -139,7 +139,7 @@ function splitCSVLine(line) {
 
 async function parseWdi() {
   const csvPath = findWdiCsv();
-  if (!csvPath) throw new Error('WDICSV.csv topilmadi — ensureBulk() ishlamadi');
+  if (!csvPath) throw new Error('WDICSV.csv topilmadi — ensureBulk() işlamadi');
   const wanted = new Map(catalog.indicators.filter((i) => i.source === 'World Bank').map((i) => [i.code, i]));
   const nameEn = {};
   const data = {}; // code -> iso3 -> [[year, value], ...]
@@ -147,9 +147,9 @@ async function parseWdi() {
   const firstLine = fs.readFileSync(csvPath, 'utf8').slice(0, 2000).split('\n')[0].replace(/^\uFEFF/, '');
   const cols = firstLine.split(',');
   const WIDE = /^\d{4}$/.test(cols[4] ?? '');
-  console.log(`→ WDI tahlili (${WIDE ? 'keng' : 'uzun'} format, ${wanted.size} ko'rsatkich)...`);
+  console.log(`→ WDI tahlili (${WIDE ? 'keng' : 'uzun'} format, ${wanted.size} körsatkiç)...`);
 
-  // kerakli kodlar uchun tezkor regex filtr
+  // kerakli kodlar uçun tezkor regex filtr
   const alt = [...wanted.keys()].map((c) => c.replace(/\./g, '\\.')).join('|');
   const lineFilter = new RegExp(`"(?:${alt})"`);
 
@@ -209,7 +209,7 @@ async function parseWdi() {
       JSON.stringify({ code, nameEn: nameEn[code], data: data[code], fetchedAt: new Date().toISOString() })
     );
   }
-  console.log(`  ✓ ${Object.keys(data).length}/${wanted.size} ko'rsatkich saqlandi`);
+  console.log(`  ✓ ${Object.keys(data).length}/${wanted.size} körsatkiç saqlandi`);
   if (failed.length) console.log('  ⚠ topilmadi: ' + failed.join(', '));
   return failed;
 }
@@ -226,7 +226,7 @@ async function fetchIMF(code) {
       .filter(([, v]) => v != null);
     if (arr.length) data[iso3] = arr.sort((a, b) => a[0] - b[0]);
   }
-  if (!Object.keys(data).length) throw new Error('boʻsh javob');
+  if (!Object.keys(data).length) throw new Error('böş javob');
   writeFileSync(
     resolve(ROOT, `data/imf/${code}.json`),
     JSON.stringify({ code, nameEn: code, data, fetchedAt: new Date().toISOString() }, null, 1)
@@ -265,7 +265,7 @@ async function fetchHDI() {
 
 /* ---------- 4b. OWID CO2 (Global Carbon Budget) ---------- */
 async function fetchCO2() {
-  console.log('→ CO2 jon boshiga (OWID / Global Carbon Budget)...');
+  console.log('→ CO2 jon boşiga (OWID / Global Carbon Budget)...');
   const url = 'https://ourworldindata.org/grapher/co-emissions-per-capita.csv?v=1&csvType=full';
   const res = await fetch(url, { headers: { 'User-Agent': UA } });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -292,7 +292,7 @@ async function fetchCO2() {
   console.log(`  ✓ CO2: ${Object.keys(data).length} davlat saqlandi`);
 }
 
-/* ---------- Boshqaruv ---------- */
+/* ---------- Boşqaruv ---------- */
 async function main() {
   const failed = [];
   await fetchCountries();
@@ -313,7 +313,7 @@ async function main() {
     for (const f of failed) console.log(`  ✗ ${f.step ?? f.code}: ${f.error}`);
     process.exitCode = 2;
   } else {
-    console.log('Barcha ma\'lumotlar muvaffaqiyatli yuklandi.');
+    console.log('Barça ma\'lumotlar muvaffaqiyatli yuklandi.');
   }
 }
 

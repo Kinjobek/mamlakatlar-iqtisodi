@@ -72,13 +72,13 @@ const idx = R.countries.findIndex((c) => c.slug === slug);
 const prev = R.countries[idx - 1];
 const next = R.countries[idx + 1];
 
-const title = `${country.nameUz} — iqtisodiy va demografik ko'rsatkichlar`;
-const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'}, aholi ${popL ? fmtValue(popy, popL.value) : '—'}, inflyatsiya ${inflL ? fmtValue(infl, inflL.value) : '—'}. ${R.indicators.length} ko'rsatkichning yillar kesimi va reytinglari.`;
+const title = `${country.nameUz} — iqtisodiy va demografik körsatkiçlar`;
+const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'}, aholi ${popL ? fmtValue(popy, popL.value) : '—'}, inflyatsiya ${inflL ? fmtValue(infl, inflL.value) : '—'}. ${R.indicators.length} körsatkiçning yillar kesimi va reytinglari.`;
 ---
 
 <Base title={`${title} | Mamlakatlar iqtisodi`} description={desc}>
   <div class="crumbs">
-    <a href={u('/')}>Bosh sahifa</a> › <a href={u('/davlatlar')}>Davlatlar</a> › {country.nameUz}
+    <a href={u('/')}>Boş sahifa</a> › <a href={u('/davlatlar')}>Davlatlar</a> › {country.nameUz}
   </div>
 
   <div class="page-head" style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
@@ -92,7 +92,7 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
       </p>
     </div>
     <div style="display:flex; gap:8px;">
-      <a class="btn primary" href={u(`/taqqoslash?a=${country.slug}`)}>Taqqoslash</a>
+      <a class="btn primary" href={u(`/taqqoslash?a=${country.slug}`)}>Taqqoslaş</a>
     </div>
   </div>
 
@@ -105,21 +105,21 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
       <div class="fact">
         <div class="k">Aholi</div>
         <div class="v">{popL ? fmtValue(popy, popL.value) : '—'}</div>
-        {popL && <small>{popL.year}-yil {popRank ? `· ${popRank.rank}-o'rin` : ''}</small>}
+        {popL && <small>{popL.year}-yil {popRank ? `· ${popRank.rank}-örin` : ''}</small>}
       </div>
       <div class="fact">
-        <div class="k">Aholi zichligi</div>
-        <div class="v">{L('zichlik') ? fmtNum(L('zichlik').value, 1) : '—'}<small>kishi / km²</small></div>
+        <div class="k">Aholi ziçligi</div>
+        <div class="v">{L('zichlik') ? fmtNum(L('zichlik').value, 1) : '—'}<small>kişi / km²</small></div>
       </div>
       <div class="fact">
         <div class="k">YaIM</div>
         <div class="v">{gdpL ? fmtValue(gdp, gdpL.value) : '—'}</div>
-        {gdpL && <small>{gdpL.year}-yil {gdpRank ? `· ${gdpRank.rank}-o'rin` : ''}</small>}
+        {gdpL && <small>{gdpL.year}-yil {gdpRank ? `· ${gdpRank.rank}-örin` : ''}</small>}
       </div>
       <div class="fact">
-        <div class="k">Jon boshiga YaIM</div>
+        <div class="k">Jon boşiga YaIM</div>
         <div class="v">{gdpPcL ? fmtValue(gdpPc, gdpPcL.value) : '—'}</div>
-        {gdpPcL && <small>{gdpPcL.year}-yil {gdpPcRank ? `· ${gdpPcRank.rank}-o'rin` : ''}</small>}
+        {gdpPcL && <small>{gdpPcL.year}-yil {gdpPcRank ? `· ${gdpPcRank.rank}-örin` : ''}</small>}
       </div>
       <div class="fact">
         <div class="k">Inflyatsiya</div>
@@ -134,24 +134,24 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
       <div class="fact">
         <div class="k">Valyuta kursi</div>
         <div class="v">{L('valyuta-kursi') ? fmtNum(L('valyuta-kursi').value, 2) : '—'}</div>
-        {L('valyuta-kursi') && <small>milliy valyuta = 1 AQSH dollariga</small>}
+        {L('valyuta-kursi') && <small>milliy valyuta = 1 AQŞ dollariga</small>}
       </div>
     </div>
     <div class="summary">
       <p>
-        <b>{country.nameUz}</b> — {country.regionUz.toLowerCase()} mintaqasida joylashgan
+        <b>{country.nameUz}</b> — {country.regionUz.toLowerCase()} mintaqasida joylaşgan
         {country.isAggregate ? 'davlatlar guruhi' : 'davlat'}.
-        {popL && popRank && ` Aholi soni — ${fmtValue(popy, popL.value)} (${popL.year}-yil), bu ${popRank.rank}-o'rin.`}
-        {L('zichlik') && ` Aholi zichligi — km² ga ${fmtNum(L('zichlik').value, 1)} kishi.`}
+        {popL && popRank && ` Aholi soni — ${fmtValue(popy, popL.value)} (${popL.year}-yil), bu ${popRank.rank}-örin.`}
+        {L('zichlik') && ` Aholi ziçligi — km² ga ${fmtNum(L('zichlik').value, 1)} kişi.`}
       </p>
       <p>
         {gdpL && gdpRank &&
-          `Nominal YaIM bo'yicha ${gdpRank.rank}-o'rinda (${gdpL.year}-yilda ${fmtValue(gdp, gdpL.value)}).`}
+          `Nominal YaIM böyiça ${gdpRank.rank}-örinda (${gdpL.year}-yilda ${fmtValue(gdp, gdpL.value)}).`}
         {gdpL && gdpPcL &&
-          ` Aholi jon boshiga YaIM — ${fmtValue(gdpPc, gdpPcL.value)} (${gdpPcL.year}-yil).`}
-        {lifeL && ` O'rtacha umr davomiyligi — ${fmtNum(lifeL.value, 1)} yil (${lifeL.year}-yil).`}
+          ` Aholi jon boşiga YaIM — ${fmtValue(gdpPc, gdpPcL.value)} (${gdpPcL.year}-yil).`}
+        {lifeL && ` Örtaça umr davomiyligi — ${fmtNum(lifeL.value, 1)} yil (${lifeL.year}-yil).`}
         {hdiL && hdiRank &&
-          ` Inson taraqqiyoti indeksi — ${fmtNum(hdiL.value, 3)} ball, ${hdiRank.total} davlat orasida ${hdiRank.rank}-o'rin (${hdiL.year}-yil).`}
+          ` Inson taraqqiyoti indeksi — ${fmtNum(hdiL.value, 3)} ball, ${hdiRank.total} davlat orasida ${hdiRank.rank}-örin (${hdiL.year}-yil).`}
       </p>
     </div>
   </div>
@@ -165,7 +165,7 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
             <h3>{ind.name}</h3>
             <LineChart points={pts} label={ind.name} />
             <div class="src">
-              {ind.name}: so'nggi {pts.length} yil · manba: {ind.source}
+              {ind.name}: sönggi {pts.length} yil · manba: {ind.source}
             </div>
           </div>
         );
@@ -178,7 +178,7 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
       <div class="card-title"><span>{g.label}</span></div>
       <table class="data">
         <thead>
-          <tr><th>Ko'rsatkich</th><th class="num">Sana</th><th class="num">Qiymat</th><th class="num">O'rin</th></tr>
+          <tr><th>Körsatkiç</th><th class="num">Sana</th><th class="num">Qiymat</th><th class="num">Örin</th></tr>
         </thead>
         <tbody>
           {g.inds.map((ind) => {

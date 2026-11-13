@@ -1,5 +1,5 @@
 ---
-/** Davlat bayrog'i: flagcdn.com orqali (iso2). Agregatlar (Jahon, YEZ, YI) — globus belgisi. */
+/** Davlat bayroği: flagcdn.com orqali (iso2). Agregatlar (Jahon, YEZ, YI) — globus belgisi. */
 const { iso2, iso3, big = false } = Astro.props;
 const agg = iso3 === 'WLD' || iso3 === 'EMU' || iso3 === 'EUU';
 const flagIso = agg ? 'eu' : iso2?.toLowerCase();

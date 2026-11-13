@@ -38,28 +38,28 @@ const maxYear = Math.max(
 );
 
 const uzbFacts = [
-  { k: 'YaIM', v: fmtValue(yaim, yaim.latest['UZB']?.value), s: `${yaim.latest['UZB']?.year}-yil · ${rankOf(yaim, 'UZB')?.rank}-o'rin (196 davlat orasida)` },
-  { k: 'YaIM o’sishi', v: fmtValue(yaimG, yaimG.latest['UZB']?.value), s: `${yaimG.latest['UZB']?.year}-yil` },
+  { k: 'YaIM', v: fmtValue(yaim, yaim.latest['UZB']?.value), s: `${yaim.latest['UZB']?.year}-yil · ${rankOf(yaim, 'UZB')?.rank}-örin (196 davlat orasida)` },
+  { k: 'YaIM ösişi', v: fmtValue(yaimG, yaimG.latest['UZB']?.value), s: `${yaimG.latest['UZB']?.year}-yil` },
   { k: 'Inflyatsiya', v: fmtValue(inflation, inflation.latest['UZB']?.value), s: `${inflation.latest['UZB']?.year}-yil` },
-  { k: 'Aholi', v: fmtValue(pop, pop.latest['UZB']?.value), s: `${pop.latest['UZB']?.year}-yil · ${rankOf(pop, 'UZB')?.rank}-o'rin` },
-  { k: 'Jon boshiga YaIM', v: fmtValue(popPc, popPc.latest['UZB']?.value), s: `${popPc.latest['UZB']?.year}-yil` }
+  { k: 'Aholi', v: fmtValue(pop, pop.latest['UZB']?.value), s: `${pop.latest['UZB']?.year}-yil · ${rankOf(pop, 'UZB')?.rank}-örin` },
+  { k: 'Jon boşiga YaIM', v: fmtValue(popPc, popPc.latest['UZB']?.value), s: `${popPc.latest['UZB']?.year}-yil` }
 ];
 
 const cats = Object.entries(R.catalog.categories);
 ---
 
-<Base title="Mamlakatlar iqtisodi — jahon davlatlari ko'rsatkichlari o'zbek tilida">
+<Base title="Mamlakatlar iqtisodi — jahon davlatlari körsatkiçlari özbek tilida">
   <section class="hero">
-    <h1>Jahon iqtisodiyoti — raqamlarda, o'zbek tilida</h1>
+    <h1>Jahon iqtisodiyoti — raqamlarda, özbek tilida</h1>
     <p>
       {sovereign.length} davlatning {R.indicators.length} dan ortiq iqtisodiy va demografik
-      ko'rsatkichi: YaIM, inflyatsiya, ishsizlik, davlat qarzi, aholi, umr davomiyligi va
-      boshqalar. Barchasi World Bank, IMF va BMT ma'lumotlariga asoslanadi.
+      körsatkiçi: YaIM, inflyatsiya, işsizlik, davlat qarzi, aholi, umr davomiyligi va
+      boşqalar. Barçasi World Bank, IMF va BMT ma'lumotlariga asoslanadi.
     </p>
     <div class="btns">
       <a class="btn light" href={u('/davlatlar')}>Davlatlar katalogi</a>
-      <a class="btn ghost" href={u('/korsatkichlar')}>Ko'rsatkichlar</a>
-      <a class="btn ghost" href={u('/davlatlar/ozbekiston')}>O'zbekiston sahifasi</a>
+      <a class="btn ghost" href={u('/korsatkichlar')}>Körsatkiçlar</a>
+      <a class="btn ghost" href={u('/davlatlar/ozbekiston')}>Özbekiston sahifasi</a>
     </div>
   </section>
 
@@ -67,17 +67,17 @@ const cats = Object.entries(R.catalog.categories);
     <div class="stat">
       <div class="k">Davlatlar</div>
       <div class="v">{fmtNum(sovereign.length)}</div>
-      <div class="s">shu jumladan Yevropa Ittifoqi va yevro zonasi</div>
+      <div class="s">şu jumladan Yevropa Ittifoqi va yevro zonasi</div>
     </div>
     <div class="stat">
-      <div class="k">Ko'rsatkichlar</div>
+      <div class="k">Körsatkiçlar</div>
       <div class="v">{fmtNum(R.indicators.length)}</div>
       <div class="s">10 toifada: iqtisodiyot, moliya, demografiya, energetika</div>
     </div>
     <div class="stat">
       <div class="k">Yillar kesimi</div>
       <div class="v">1960–{maxYear}</div>
-      <div class="s">ko'pgina ko'rsatkichlar 30 yildan ortiq tarixga ega</div>
+      <div class="s">köpgina körsatkiçlar 30 yildan ortiq tarixga ega</div>
     </div>
     <div class="stat">
       <div class="k">Ma'lumot manbalari</div>
@@ -88,7 +88,7 @@ const cats = Object.entries(R.catalog.categories);
 
   <div class="card">
     <div class="card-title">
-      <span><Flag iso2="UZ" iso3="UZB" big /> O'zbekiston — qisqacha</span>
+      <span><Flag iso2="UZ" iso3="UZB" big /> Özbekiston — qisqaça</span>
       <a class="more" href={u('/davlatlar/ozbekiston')}>Batafsil →</a>
     </div>
     <div class="facts">
@@ -104,12 +104,12 @@ const cats = Object.entries(R.catalog.categories);
 
   <div class="card">
     <div class="card-title">
-      <span>YaIM bo'yicha eng yirik iqtisodiyotlar</span>
-      <a class="more" href={u('/korsatkichlar/yaim')}>Barcha davlatlar →</a>
+      <span>YaIM böyiça eng yirik iqtisodiyotlar</span>
+      <a class="more" href={u('/korsatkichlar/yaim')}>Barça davlatlar →</a>
     </div>
     <table class="data">
       <thead>
-        <tr><th>#</th><th>Davlat</th><th class="num">YaIM</th><th class="num">O'sish</th><th class="num">Jon boshiga</th></tr>
+        <tr><th>#</th><th>Davlat</th><th class="num">YaIM</th><th class="num">Ösiş</th><th class="num">Jon boşiga</th></tr>
       </thead>
       <tbody>
         {gdpTop.map((r, i) => (
@@ -128,17 +128,17 @@ const cats = Object.entries(R.catalog.categories);
         ))}
       </tbody>
     </table>
-    <div class="card-note">Joriy narxlarda, AQSH dollarida. O'sish — real YaIMning yillik o'zgarishi.</div>
+    <div class="card-note">Joriy narxlarda, AQŞ dollarida. Ösiş — real YaIMning yillik özgarişi.</div>
   </div>
 
   <div class="card">
     <div class="card-title">
-      <span>Aholi soni bo'yicha eng katta davlatlar</span>
-      <a class="more" href={u('/korsatkichlar/aholi')}>Barcha davlatlar →</a>
+      <span>Aholi soni böyiça eng katta davlatlar</span>
+      <a class="more" href={u('/korsatkichlar/aholi')}>Barça davlatlar →</a>
     </div>
     <table class="data">
       <thead>
-        <tr><th>#</th><th>Davlat</th><th class="num">Aholi</th><th class="num">O'sish</th><th class="num">Zichlik</th></tr>
+        <tr><th>#</th><th>Davlat</th><th class="num">Aholi</th><th class="num">Ösiş</th><th class="num">Ziçlik</th></tr>
       </thead>
       <tbody>
         {popTop.map((r, i) => (
@@ -160,10 +160,10 @@ const cats = Object.entries(R.catalog.categories);
   </div>
 
   <div class="card">
-    <div class="card-title"><span>O'zbekiston va qo'shni davlatlar — tezkor taqqoslash</span></div>
+    <div class="card-title"><span>Özbekiston va qöşni davlatlar — tezkor taqqoslaş</span></div>
     <table class="data">
       <thead>
-        <tr><th>Davlat</th><th class="num">YaIM</th><th class="num">O'sish</th><th class="num">Inflyatsiya</th><th class="num">Aholi</th><th class="num">Umr</th></tr>
+        <tr><th>Davlat</th><th class="num">YaIM</th><th class="num">Ösiş</th><th class="num">Inflyatsiya</th><th class="num">Aholi</th><th class="num">Umr</th></tr>
       </thead>
       <tbody>
         {neighbors.map((c) => (
@@ -183,11 +183,11 @@ const cats = Object.entries(R.catalog.categories);
         ))}
       </tbody>
     </table>
-    <div class="card-note">Har bir qiymat ko'rsatkichning so'nggi mavjud yiliga tegishli. To'liq taqqoslash uchun <a href={u('/taqqoslash')}>Taqqoslash</a> bo'limiga qarang.</div>
+    <div class="card-note">Har bir qiymat körsatkiçning sönggi mavjud yiliga tegişli. Töliq taqqoslaş uçun <a href={u('/taqqoslash')}>Taqqoslaş</a> bölimiga qarang.</div>
   </div>
 
   <div class="ind-cat">
-    <h2>Ko'rsatkichlar katalogi</h2>
+    <h2>Körsatkiçlar katalogi</h2>
   </div>
   {cats.map(([key, label]) => {
     const inds = R.indicators.filter((i) => i.cat === key);

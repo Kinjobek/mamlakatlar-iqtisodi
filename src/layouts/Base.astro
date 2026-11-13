@@ -4,7 +4,7 @@ import { u } from '../lib/u.mjs';
 const { title, description } = Astro.props;
 const desc =
   description ??
-  "Jahon davlatlarining iqtisodiy va demografik ko'rsatkichlari — YaIM, inflyatsiya, ishsizlik, aholi va yana 80 dan ortiq ko'rsatkich o'zbek tilida. Manba: World Bank, IMF, UNDP.";
+  "Jahon davlatlarining iqtisodiy va demografik körsatkiçlari — YaIM, inflyatsiya, işsizlik, aholi va yana 80 dan ortiq körsatkiç özbek tilida. Manba: World Bank, IMF, UNDP.";
 ---
 <!doctype html>
 <html lang="uz">
@@ -21,15 +21,15 @@ const desc =
   <body>
     <header class="site-header">
       <div class="wrap">
-        <a href="/" class="logo" aria-label="Mamlakatlar iqtisodi — bosh sahifa">
+        <a href="/" class="logo" aria-label="Mamlakatlar iqtisodi — boş sahifa">
           <span class="mark">MI</span>
           <span>Mamlakatlar iqtisodi</span>
         </a>
         <nav class="main-nav" aria-label="Asosiy navigatsiya">
           <a href={u('/davlatlar')}>Davlatlar</a>
-          <a href={u('/korsatkichlar')}>Ko'rsatkichlar</a>
-          <a href={u('/taqqoslash')}>Taqqoslash</a>
-          <a href={u('/lugat')}>Lug'at</a>
+          <a href={u('/korsatkichlar')}>Körsatkiçlar</a>
+          <a href={u('/taqqoslash')}>Taqqoslaş</a>
+          <a href={u('/lugat')}>Luğat</a>
           <a href={u('/manbalar')}>Manbalar</a>
         </nav>
       </div>
@@ -44,22 +44,22 @@ const desc =
         <div class="cols">
           <div class="col">
             <a href={u('/')}><b>Mamlakatlar iqtisodi</b></a>
-            <small>Jahon davlatlarining iqtisodiy-demografik ko'rsatkichlari o'zbek tilida.</small>
+            <small>Jahon davlatlarining iqtisodiy-demografik körsatkiçlari özbek tilida.</small>
           </div>
           <div class="col">
             <a href={u('/davlatlar')}>Davlatlar</a>
-            <a href={u('/korsatkichlar')}>Ko'rsatkichlar</a>
-            <a href={u('/taqqoslash')}>Taqqoslash</a>
+            <a href={u('/korsatkichlar')}>Körsatkiçlar</a>
+            <a href={u('/taqqoslash')}>Taqqoslaş</a>
           </div>
           <div class="col">
-            <a href={u('/lugat')}>Lug'at</a>
+            <a href={u('/lugat')}>Luğat</a>
             <a href={u('/manbalar')}>Manbalar</a>
             <a href={u('/haqida')}>Sayt haqida</a>
           </div>
         </div>
         <small>
-          Ma'lumotlar ochiq manbalardan olingan: World Bank, IMF, UNDP (HDI). Ular rasmiy
-          statistikadan farq qilishi mumkin. Sayt matnlari va dizayni mualliflik huquqi bilan himoyalangan.
+          Ma'lumotlar oçiq manbalardan olingan: World Bank, IMF, UNDP (HDI). Ular rasmiy
+          statistikadan farq qilişi mumkin. Sayt matnlari va dizayni mualliflik huquqi bilan himoyalangan.
         </small>
       </div>
     </footer>

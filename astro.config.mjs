@@ -4,6 +4,6 @@ export default defineConfig({
   site: 'https://kinjobek.github.io',
   base: '/mamlakatlar-iqtisodi',
   build: {
-    inlineStylesheets: 'auto'
+    inlineStyleşeets: 'auto'
   }
 });
