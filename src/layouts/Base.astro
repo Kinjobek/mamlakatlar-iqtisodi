@@ -263,13 +263,16 @@ const desc =
 
     <script>
       /* ============================================================
-         Grafik nuqtalari üçün qalqib chiquvchi qiymat oynasi:
-         sichqonça uçini nuqta ustiga olib kelganda qiymat körsatiladi.
-         Barcha SVG grafiklarda (asosiy grafiklar + ochiladigan panellar) ishlaydi.
+         Grafik qiymat oynasi — "eng yaqin nuqta" mantig'i:
+         sichqoncha grafik ustida harakatlangan, o'qqa eng yaqin
+         nuqtaning qiymati barqaror ko'rsatiladi (miltillashsiz).
+         Barcha SVG grafiklarda (asosiy + ochiladigan panellar) ishlaydi.
          ============================================================ */
       (() => {
         'use strict';
         let tip = null;
+        let cache = new WeakMap();
+        let activeDot = null;
 
         const ensure = () => {
           if (!tip) {
@@ -278,6 +281,14 @@ const desc =
             document.body.appendChild(tip);
           }
           return tip;
+        };
+
+        const hide = () => {
+          if (tip) tip.style.display = 'none';
+          if (activeDot) {
+            activeDot.classList.remove('hovered');
+            activeDot = null;
+          }
         };
 
         const position = (e) => {
@@ -292,39 +303,78 @@ const desc =
           t.style.top = y + 'px';
         };
 
-        document.addEventListener('mouseover', (e) => {
-          const target = e.target;
-          if (!target || typeof target.closest !== 'function') return;
-          const hit = target.closest('circle.hit[data-tip]');
-          const t = ensure();
-          if (hit) {
-            const txt = hit.getAttribute('data-tip');
-            const sep = txt.indexOf(': ');
-            if (sep > 0) {
-              t.innerHTML = '<span class="chart-tip-year">' + txt.slice(0, sep) + '</span><br>' + txt.slice(sep + 2);
-            } else {
-              t.textContent = txt;
+        /* svg ichidagi nuqtalarning ekran koordinatalari (keshlanadi) */
+        const pointsOf = (svg) => {
+          let arr = cache.get(svg);
+          if (!arr) {
+            arr = [];
+            for (const c of svg.querySelectorAll('circle.hit[data-tip]')) {
+              const r = c.getBoundingClientRect();
+              if (r.width > 0) {
+                arr.push({ x: r.x + r.width / 2, y: r.y + r.height / 2, hit: c });
+              }
             }
-            t.style.display = 'block';
-            position(e);
-          } else {
-            t.style.display = 'none';
+            cache.set(svg, arr);
           }
-        });
+          return arr;
+        };
+
+        const TH = 42 * 42; /* 42 px radius — nuqta "yaqinida" hisoblanadi */
 
         document.addEventListener('mousemove', (e) => {
-          if (tip && tip.style.display === 'block') position(e);
-        });
+          const el = e.target;
+          if (!el || typeof el.closest !== 'function') return;
+          const svg = el.closest('svg');
+          if (!svg) {
+            hide();
+            return;
+          }
+          const pts = pointsOf(svg);
+          if (!pts.length) {
+            hide();
+            return;
+          }
+          let best = null;
+          let bestD = Infinity;
+          for (const p of pts) {
+            const dx = p.x - e.clientX;
+            const dy = p.y - e.clientY;
+            const d = dx * dx + dy * dy;
+            if (d < bestD) {
+              bestD = d;
+              best = p;
+            }
+          }
+          if (!best || bestD > TH) {
+            hide();
+            return;
+          }
+          const t = ensure();
+          const txt = best.hit.getAttribute('data-tip');
+          const sep = txt.indexOf(': ');
+          if (sep > 0) {
+            t.innerHTML = '<span class="chart-tip-year">' + txt.slice(0, sep) + '</span><br>' + txt.slice(sep + 2);
+          } else {
+            t.textContent = txt;
+          }
+          t.style.display = 'block';
+          position(e);
 
-        document.addEventListener('mouseout', (e) => {
-          const target = e.target;
-          if (!target || typeof target.closest !== 'function') return;
-          if (target.closest('circle.hit[data-tip]') && !e.relatedTarget?.closest?.('circle.hit[data-tip]')) {
-            ensure().style.display = 'none';
+          const dot = best.hit.nextElementSibling;
+          if (activeDot !== dot) {
+            if (activeDot) activeDot.classList.remove('hovered');
+            activeDot = dot;
+            if (activeDot) activeDot.classList.add('hovered');
           }
         });
 
-        window.addEventListener('blur', () => { if (tip) tip.style.display = 'none'; });
+        document.addEventListener('scroll', () => hide(), { capture: true, passive: true });
+        window.addEventListener('resize', () => {
+          cache = new WeakMap();
+          hide();
+        });
+        window.addEventListener('blur', () => hide());
+        document.addEventListener('mouseleave', () => hide());
       })();
     </script>
   </body>

@@ -199,9 +199,11 @@ table.data.compact th, table.data.compact td { padding: 5px 12px; font-size: 13p
 
 /* grafik nuqtalari: hover — qiymat chiqadi */
 circle.hit { cursor: crosshair; }
-circle.dot { transition: r .12s ease, stroke-width .12s ease; }
-circle.hit:hover + circle.dot,
-circle.hit:focus + circle.dot { r: 5px; stroke-width: 2.4px; }
+circle.dot {
+  pointer-events: none; /* sichqoncha faqat katta shaffof "hit" doiraga tushadi — tooltip barqaror */
+  transition: r .12s ease, stroke-width .12s ease;
+}
+circle.dot.hovered { r: 5px; stroke-width: 2.4px; }
 
 /* sichqoncha uchi uchun qalqib chiquvchi qiymat oynasi */
 .chart-tip {
