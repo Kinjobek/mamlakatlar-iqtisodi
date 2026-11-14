@@ -1,0 +1,135 @@
+---
+import Base from '../../layouts/Base.astro';
+import Flag from '../../components/Flag.astro';
+import { u } from '../../lib/u.mjs';
+import { fmtMoney, fmtNum, getCountries } from '../../lib/data.mjs';
+import { allTrade } from '../../lib/comtrade.mjs';
+
+const trade = allTrade();
+const countries = getCountries();
+const byIso = new Map(countries.map((c) => [c.iso3, c]));
+
+const rows = [...trade.values()]
+  .map((t) => {
+    const c = byIso.get(t.iso3);
+    const top = t.partners[0];
+    return {
+      slug: c?.slug ?? t.iso3.toLowerCase(),
+      name: c?.nameUz ?? t.iso3,
+      iso2: c?.iso2,
+      iso3: t.iso3,
+      year: t.year,
+      x: t.totals.x,
+      m: t.totals.m,
+      balance: t.totals.balance,
+      partners: t.partnerCount,
+      topPartner: top?.name ?? '—'
+    };
+  })
+  .sort((a, b) => b.x + b.m - (a.x + a.m));
+
+const sumX = rows.reduce((s, r) => s + r.x, 0);
+const sumM = rows.reduce((s, r) => s + r.m, 0);
+const latestYear = Math.max(...rows.map((r) => r.year));
+---
+
+<Base title="Tashqi savdo tahlili — AG6 | Mamlakatlar iqtisodi" description="Davlatlarning tashqi savdosi chuqur tahlili: hamkorlar kesimi va 6 xonali (AG6) HS mahsulotlar nomklaturasi. Ma'lumot manbai: UN Comtrade Plus.">
+  <div class="crumbs">
+    <a href={u('/')}>Boş sahifa</a> › Tashqi savdo tahlili
+  </div>
+
+  <div class="page-head">
+    <h1>Tashqi savdo tahlili</h1>
+    <p class="lead">
+      Davlatlar tashqi savdosining chuqur tahlili: <b>hamkorlar kesimi</b> (qaysi davlatga nima
+      hajmda sotiladi va olinadi) va <b>6 xonali AG6 mahsulotlar kesimi</b> — 5 600 dan ortiq
+      HS kodiga qadar tushirilgan tovar nomklaturasi. Ma'lumotlar <b>UN Comtrade Plus</b>
+      (BMT Statistika bo'limi) rasmiy bazasidan olinadi.
+    </p>
+  </div>
+
+  <div class="stat-strip">
+    <div class="stat">
+      <div class="k">Qamrab olingan davlatlar</div>
+      <div class="v">{fmtNum(rows.length)}</div>
+      <div class="s">ro'yxat izchil kengaytiriladi</div>
+    </div>
+    <div class="stat">
+      <div class="k">Jami eksport (qamrovda)</div>
+      <div class="v">{fmtMoney(sumX)}</div>
+      <div class="s">{latestYear}-yil, FOB, AQSH dollarida</div>
+    </div>
+    <div class="stat">
+      <div class="k">Jami import (qamrovda)</div>
+      <div class="v">{fmtMoney(sumM)}</div>
+      <div class="s">{latestYear}-yil, CIF, AQSH dollarida</div>
+    </div>
+    <div class="stat">
+      <div class="k">Mahsulotlar kesimi</div>
+      <div class="v">AG6</div>
+      <div class="s">HS 2017, 6 xonali kodlar</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span>Davlatlar — tashqi savdo ko'rsatkichlari</span></div>
+    <table class="data" data-name="tashqi-savdo">
+      <thead>
+        <tr>
+          <th>Davlat</th>
+          <th class="num">Yil</th>
+          <th class="num" data-first="desc">Eksport</th>
+          <th class="num" data-first="desc">Import</th>
+          <th class="num" data-first="desc">Savdo balansi</th>
+          <th class="num">Hamkorlar</th>
+          <th>Eng yirik hamkor</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr class={r.iso3 === 'UZB' ? 'hl' : ''}>
+            <td>
+              <a class="name-cell" href={u(`/tashqi-savdo/${r.slug}`)}>
+                <Flag iso2={r.iso2} iso3={r.iso3} />
+                <span>{r.name}</span>
+              </a>
+            </td>
+            <td class="num" data-v={r.year}>{r.year}</td>
+            <td class="num" data-v={r.x}>{fmtMoney(r.x)}</td>
+            <td class="num" data-v={r.m}>{fmtMoney(r.m)}</td>
+            <td class="num" data-v={r.balance}>
+              <span class={r.balance >= 0 ? 'pos' : 'neg'}>{fmtMoney(r.balance)}</span>
+            </td>
+            <td class="num" data-v={r.partners}>{fmtNum(r.partners)}</td>
+            <td>{r.topPartner}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <div class="card-note">
+      Qiymatlar AQSH dollarida: eksport — FOB, import — CIF. Batafsil tahlil uchun davlat nomini bosing:
+      hamkorlar jadvali, top-100 eksport va import mahsulotlari (AG6), saralash va yuklab olish.
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span>Metodologiya</span></div>
+    <div class="summary">
+      <p>
+        <b>AG6 nima?</b> GS (Harmonized System — uyg'unlashtirilgan tovar nomklaturasi) jahon
+        bozorida savdoni 6 xonali mahsulot kodlari orqali hisoblaydi: masalan, 847130 — og'irligi
+        10 kg gacha bo'lgan portativ kompyuterlar. Bu davlat nima sotayotgani va nimani olayotganini
+        mahsulot darajasida ko'rsatadi.
+      </p>
+      <p>
+        <b>Manba:</b> UN Comtrade Plus — BMT Statistika bo'limining rasmiy tashqi savdo bazasi.
+        Har bir davlat o'z bojxona statistikasini taqdim etadi; ayrim holatlarda aks-hisob
+        (mirror statistics) farq qilishi mumkin.
+      </p>
+      <p>
+        <b>999999 kodi</b> — "Boshqa tovarlar" (reklassifikatsiya qilinmagan pozitsiyalar);
+        yirik savdoda bu qator ma'lumot sifati ko'rsatkichi ham hisoblanadi.
+      </p>
+    </div>
+  </div>
+</Base>

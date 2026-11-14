@@ -12,7 +12,8 @@
 |---|---|
 | **Davlatlar** | 220 davlat va agregat (Jahon, YE, Yevropa İttifoqi): poytaxt, aholi, YaIM, reytinglar |
 | **Körsatkiçlar** | 72 körsatkiç × 10 toifa: iqtisodiyot, moliya, mehnat, demografiya, energetika |
-| **Davlat sahifasi** | Tezkor faktlar + 6 ta SVG grafik (JS'siz) + 72 körsatkiç jadvali |
+| **Tashqi savdo tahlili** | UN Comtrade Plus (AG6): hamkorlar kesimi + 6 xonali HS mahsulotlar, top-100 pozitsiyalar |
+| **Davlat sahifasi** | Tezkor faktlar + 6 ta SVG grafik (JS'siz) + 72 körsatkiçning yillar kesimi (ochiladigan panellar) |
 | **Taqqoslaş** | 3 tagacha davlatni yonma-yon soliştiriş |
 | **Lug'at / Manbalar** | İzohli terminlar va ma'lumot manbalari |
 
@@ -22,6 +23,7 @@
 - **IMF DataMapper** — davlat qarzi, byudjet taqçilligi
 - **UNDP** (OWID orqali) — inson taraqqiyoti indeksi
 - **Global Carbon Budget** (OWID) — CO₂ çiqindilari
+- **UN Comtrade Plus** — tashqi savdo: hamkorlar va AG6 (HS 2017) mahsulotlar kesimi
 
 ## Texnologiyalar
 
@@ -44,12 +46,14 @@ Ma'lumot fayllari repoda saqlanadi (`data/`) — qayta yuklash shart emas.
 ## Papkalar
 
 ```
-├── data/                  # davlatlar, katalog, yuklangan körsatkiçlar (17 MB)
+├── data/                  # davlatlar, katalog, yuklangan körsatkiçlar
 │   ├── uz-countries.json  # o'zbekça nomlar + sluglar (o'zgartirilsa e'tiborli bo'ling!)
 │   ├── indicators-catalog.json  # 72 körsatkiç: nom, birlik, izoh, toifa
+│   ├── comtrade/           # UN Comtrade AG6 tashqi savdo (API kalit .env da)
 │   └── wb/ imf/ owid/     # yuklangan seriyalar (npm run data)
 ├── scripts/
 │   ├── fetch-data.mjs     # ma'lumot quvuri (World Bank bulk, IMF, UNDP)
+│   ├── fetch-comtrade.mjs # UN Comtrade AG6 yuklovchi (kalit: .env dagi COMTRADE_KEY)
 │   └── convert-alphabet.mjs  # yangi alifbo konvertori (faqat matnga ta'sir qiladi)
 ├── src/                   # Astro sahifalar, komponentlar, uslublar
 └── .github/workflows/     # deploy.yml + update-data.yml (haftalik avtomatik yangilanish)

@@ -1,0 +1,3143 @@
+{
+ "iso3": "TUR",
+ "comtradeCode": 792,
+ "year": 2024,
+ "totals": {
+  "x": 38890658,
+  "m": 986704257,
+  "balance": -947813599
+ },
+ "partnerCount": 192,
+ "partners": [
+  {
+   "code": 380,
+   "iso3": "ITA",
+   "name": "Italiya",
+   "x": 12945151495,
+   "m": 55510,
+   "balance": 12945095985,
+   "shareX": 33286.0181871955,
+   "shareM": 0.005625799180067792
+  },
+  {
+   "code": 528,
+   "iso3": "NLD",
+   "name": "Niderlandiya",
+   "x": 8555175262,
+   "m": 541,
+   "balance": 8555174721,
+   "shareX": 21998.021380867354,
+   "shareM": 0.000054828992189095224
+  },
+  {
+   "code": 276,
+   "iso3": "DEU",
+   "name": "Germaniya",
+   "x": 8415315786,
+   "m": 129975,
+   "balance": 8415185811,
+   "shareX": 21638.399088027774,
+   "shareM": 0.01317264003655758
+  },
+  {
+   "code": 643,
+   "iso3": "RUS",
+   "name": "Rossiya",
+   "x": 4942106294,
+   "m": 7869489,
+   "balance": 4934236805,
+   "shareX": 12707.695236218426,
+   "shareM": 0.797552959174068
+  },
+  {
+   "code": 300,
+   "iso3": "GRC",
+   "name": "Gretsiya",
+   "x": 4817377109,
+   "m": 118452,
+   "balance": 4817258657,
+   "shareX": 12386.977636120222,
+   "shareM": 0.012004812907176907
+  },
+  {
+   "code": 682,
+   "iso3": "SAU",
+   "name": "Saudiya Arabistoni",
+   "x": 3985352293,
+   "m": 110330,
+   "balance": 3985241963,
+   "shareX": 10247.582576257773,
+   "shareM": 0.011181668591909198
+  },
+  {
+   "code": 398,
+   "iso3": "KAZ",
+   "name": "Qozoğiston",
+   "x": 3315526768,
+   "m": 648706,
+   "balance": 3314878062,
+   "shareX": 8525.252434659244,
+   "shareM": 0.06574472496676377
+  },
+  {
+   "code": 31,
+   "iso3": "AZE",
+   "name": "Ozarbayjon",
+   "x": 3081610465,
+   "m": 0,
+   "balance": 3081610465,
+   "shareX": 7923.7807316091175,
+   "shareM": 0
+  },
+  {
+   "code": 12,
+   "iso3": "DZA",
+   "name": "Jazoir",
+   "x": 2880268166,
+   "m": 436699,
+   "balance": 2879831467,
+   "shareX": 7406.0669428632455,
+   "shareM": 0.044258347615500356
+  },
+  {
+   "code": 642,
+   "iso3": "ROU",
+   "name": "Rumyniya",
+   "x": 2746293950,
+   "m": 24367,
+   "balance": 2746269583,
+   "shareX": 7061.577487323562,
+   "shareM": 0.0024695342932933148
+  },
+  {
+   "code": 112,
+   "iso3": "BLR",
+   "name": "Belarus",
+   "x": 1614525706,
+   "m": 336994,
+   "balance": 1614188712,
+   "shareX": 4151.448674383447,
+   "shareM": 0.03415349610678735
+  },
+  {
+   "code": 699,
+   "iso3": "IND",
+   "name": "Hindiston",
+   "x": 1516990851,
+   "m": 923110,
+   "balance": 1516067741,
+   "shareX": 3900.656170435584,
+   "shareM": 0.09355488166298648
+  },
+  {
+   "code": 68,
+   "iso3": "BOL",
+   "name": "Boliviya",
+   "x": 0,
+   "m": 1332703539,
+   "balance": -1332703539,
+   "shareX": 0,
+   "shareM": 135.06615883587904
+  },
+  {
+   "code": 100,
+   "iso3": "BGR",
+   "name": "Bolgariya",
+   "x": 1164102836,
+   "m": 305495,
+   "balance": 1163797341,
+   "shareX": 2993.2711243918784,
+   "shareM": 0.03096115151350766
+  },
+  {
+   "code": 422,
+   "iso3": "LBN",
+   "name": "Livan",
+   "x": 1128852738,
+   "m": 0,
+   "balance": 1128852738,
+   "shareX": 2902.632138545972,
+   "shareM": 0
+  },
+  {
+   "code": 788,
+   "iso3": "TUN",
+   "name": "Tunis",
+   "x": 1037118083,
+   "m": 1297,
+   "balance": 1037116786,
+   "shareX": 2666.753756133414,
+   "shareM": 0.00013144769476757206
+  },
+  {
+   "code": 372,
+   "iso3": "IRL",
+   "name": "Irlandiya",
+   "x": 1003651759,
+   "m": 183328,
+   "balance": 1003468431,
+   "shareX": 2580.701409063328,
+   "shareM": 0.018579832680300275
+  },
+  {
+   "code": 410,
+   "iso3": "KOR",
+   "name": "Janubiy Koreya",
+   "x": 971143745,
+   "m": 227,
+   "balance": 971143518,
+   "shareX": 2497.1131756114796,
+   "shareM": 0.000023005880271579696
+  },
+  {
+   "code": 196,
+   "iso3": "CYP",
+   "name": "Kipr",
+   "x": 905225975,
+   "m": 0,
+   "balance": 905225975,
+   "shareX": 2327.618049044066,
+   "shareM": 0
+  },
+  {
+   "code": 56,
+   "iso3": "BEL",
+   "name": "Belgiya",
+   "x": 881042481,
+   "m": 17206828,
+   "balance": 863835653,
+   "shareX": 2265.434750422582,
+   "shareM": 1.7438688318135025
+  },
+  {
+   "code": 470,
+   "iso3": "MLT",
+   "name": "Malta",
+   "x": 882677264,
+   "m": 7275,
+   "balance": 882669989,
+   "shareX": 2269.638286911988,
+   "shareM": 0.0007373029910825651
+  },
+  {
+   "code": 484,
+   "iso3": "MEX",
+   "name": "Meksika",
+   "x": 857497324,
+   "m": 4312176,
+   "balance": 853185148,
+   "shareX": 2204.8928151331356,
+   "shareM": 0.4370282148281033
+  },
+  {
+   "code": 400,
+   "iso3": "JOR",
+   "name": "Iordaniya",
+   "x": 859944266,
+   "m": 1012667,
+   "balance": 858931599,
+   "shareX": 2211.1846654793035,
+   "shareM": 0.10263125884132068
+  },
+  {
+   "code": 579,
+   "iso3": "NOR",
+   "name": "Norvegiya",
+   "x": 776899776,
+   "m": 7568,
+   "balance": 776892208,
+   "shareX": 1997.6514051266502,
+   "shareM": 0.0007669978057062341
+  },
+  {
+   "code": 710,
+   "iso3": "ZAF",
+   "name": "Janubiy Afrika Respublikasi",
+   "x": 653281254,
+   "m": 110747522,
+   "balance": 542533732,
+   "shareX": 1679.7896656826942,
+   "shareM": 11.223983398705455
+  },
+  {
+   "code": 887,
+   "iso3": "YEM",
+   "name": "Yaman",
+   "x": 719372684,
+   "m": 0,
+   "balance": 719372684,
+   "shareX": 1849.7313262223538,
+   "shareM": 0
+  },
+  {
+   "code": 807,
+   "iso3": "MKD",
+   "name": "Şimoliy Makedoniya",
+   "x": 712436414,
+   "m": 0,
+   "balance": 712436414,
+   "shareX": 1831.8960147190105,
+   "shareM": 0
+  },
+  {
+   "code": 566,
+   "iso3": "NGA",
+   "name": "Nigeriya",
+   "x": 456931303,
+   "m": 0,
+   "balance": 456931303,
+   "shareX": 1174.9127592544203,
+   "shareM": 0
+  },
+  {
+   "code": 364,
+   "iso3": "IRN",
+   "name": "Eron",
+   "x": 421144589,
+   "m": 73520,
+   "balance": 421071069,
+   "shareX": 1082.893966463617,
+   "shareM": 0.007451067478266692
+  },
+  {
+   "code": 760,
+   "iso3": "SYR",
+   "name": "Suriya",
+   "x": 410824552,
+   "m": 739435,
+   "balance": 410085117,
+   "shareX": 1056.3579356255684,
+   "shareM": 0.07493988140359265
+  },
+  {
+   "code": 8,
+   "iso3": "ALB",
+   "name": "Albaniya",
+   "x": 388593292,
+   "m": 7148,
+   "balance": 388586144,
+   "shareX": 999.194438931838,
+   "shareM": 0.0007244318598293025
+  },
+  {
+   "code": 706,
+   "iso3": "SOM",
+   "name": "Somali",
+   "x": 362609108,
+   "m": 0,
+   "balance": 362609108,
+   "shareX": 932.3810052275279,
+   "shareM": 0
+  },
+  {
+   "code": 50,
+   "iso3": "BGD",
+   "name": "Bangladeş",
+   "x": 357560211,
+   "m": 7,
+   "balance": 357560204,
+   "shareX": 919.3987178103287,
+   "shareM": 7.094324312821932e-7
+  },
+  {
+   "code": 704,
+   "iso3": "VNM",
+   "name": "Vyetnam",
+   "x": 337345669,
+   "m": 390439,
+   "balance": 336955230,
+   "shareX": 867.420831501488,
+   "shareM": 0.03957001271962689
+  },
+  {
+   "code": 862,
+   "iso3": "VEN",
+   "name": "Venesuela",
+   "x": 306902106,
+   "m": 0,
+   "balance": 306902106,
+   "shareX": 789.1409448510746,
+   "shareM": 0
+  },
+  {
+   "code": 860,
+   "iso3": "UZB",
+   "name": "Özbekiston",
+   "x": 294051631,
+   "m": 6,
+   "balance": 294051625,
+   "shareX": 756.0983694336054,
+   "shareM": 6.080849410990228e-7
+  },
+  {
+   "code": 360,
+   "iso3": "IDN",
+   "name": "Indoneziya",
+   "x": 289646533,
+   "m": 38907,
+   "balance": 289607626,
+   "shareX": 744.7714898523959,
+   "shareM": 0.003943126800556612
+  },
+  {
+   "code": 48,
+   "iso3": "BHR",
+   "name": "Bahrayn",
+   "x": 152785698,
+   "m": 116588931,
+   "balance": 36196767,
+   "shareX": 392.85963739672394,
+   "shareM": 11.815995539988839
+  },
+  {
+   "code": 268,
+   "iso3": "GEO",
+   "name": "Gruziya",
+   "x": 226498814,
+   "m": 0,
+   "balance": 226498814,
+   "shareX": 582.3990275505239,
+   "shareM": 0
+  },
+  {
+   "code": 404,
+   "iso3": "KEN",
+   "name": "Keniya",
+   "x": 220533845,
+   "m": 710459,
+   "balance": 219823386,
+   "shareX": 567.0612335743972,
+   "shareM": 0.07200323652804509
+  },
+  {
+   "code": 764,
+   "iso3": "THA",
+   "name": "Tailand",
+   "x": 211835536,
+   "m": 6154,
+   "balance": 211829382,
+   "shareX": 544.6951707528323,
+   "shareM": 0.000623692454587231
+  },
+  {
+   "code": 124,
+   "iso3": "CAN",
+   "name": "Kanada",
+   "x": 204419390,
+   "m": 150000,
+   "balance": 204269390,
+   "shareX": 525.6259485247074,
+   "shareM": 0.01520212352747557
+  },
+  {
+   "code": 191,
+   "iso3": "HRV",
+   "name": "Xorvatiya",
+   "x": 199386700,
+   "m": 44843,
+   "balance": 199341857,
+   "shareX": 512.6853343545897,
+   "shareM": 0.004544725502283913
+  },
+  {
+   "code": 203,
+   "iso3": "CZE",
+   "name": "Çexiya",
+   "x": 191373691,
+   "m": 15988,
+   "balance": 191357703,
+   "shareX": 492.0813913716759,
+   "shareM": 0.0016203436730485292
+  },
+  {
+   "code": 120,
+   "iso3": "CMR",
+   "name": "Kamerun",
+   "x": 189655635,
+   "m": 0,
+   "balance": 189655635,
+   "shareX": 487.6637340515041,
+   "shareM": 0
+  },
+  {
+   "code": 616,
+   "iso3": "POL",
+   "name": "Polşa",
+   "x": 183671017,
+   "m": 67767,
+   "balance": 183603250,
+   "shareX": 472.2754163737728,
+   "shareM": 0.006868015367242912
+  },
+  {
+   "code": 32,
+   "iso3": "ARG",
+   "name": "Argentina",
+   "x": 164850056,
+   "m": 594,
+   "balance": 164849462,
+   "shareX": 423.88086105408655,
+   "shareM": 0.00006020040916880325
+  },
+  {
+   "code": 504,
+   "iso3": "MAR",
+   "name": "Marokaş",
+   "x": 153447627,
+   "m": 1059971,
+   "balance": 152387656,
+   "shareX": 394.5616631119998,
+   "shareM": 0.10742540051694538
+  },
+  {
+   "code": 620,
+   "iso3": "PRT",
+   "name": "Portugaliya",
+   "x": 127586479,
+   "m": 17176842,
+   "balance": 110409637,
+   "shareX": 328.06459330155843,
+   "shareM": 1.7408298259728698
+  },
+  {
+   "code": 180,
+   "iso3": "COD",
+   "name": "Kongo Demokratik Respublikasi",
+   "x": 142354415,
+   "m": 0,
+   "balance": 142354415,
+   "shareX": 366.0375584285563,
+   "shareM": 0
+  },
+  {
+   "code": 417,
+   "iso3": "KGZ",
+   "name": "Qirğiziston",
+   "x": 137175383,
+   "m": 588102,
+   "balance": 136587281,
+   "shareX": 352.72065337644835,
+   "shareM": 0.05960266167170292
+  },
+  {
+   "code": 490,
+   "iso3": "S19",
+   "name": "Other Asia, nes",
+   "x": 136484840,
+   "m": 16706,
+   "balance": 136468134,
+   "shareX": 350.9450521510847,
+   "shareM": 0.0016931111710000457
+  },
+  {
+   "code": 156,
+   "iso3": "CHN",
+   "name": "Xitoy",
+   "x": 134047456,
+   "m": 114954,
+   "balance": 133932502,
+   "shareX": 344.677778401178,
+   "shareM": 0.011650299386516176
+  },
+  {
+   "code": 586,
+   "iso3": "PAK",
+   "name": "Pokiston",
+   "x": 121152147,
+   "m": 1077384,
+   "balance": 120074763,
+   "shareX": 311.51992079948866,
+   "shareM": 0.10919016436350493
+  },
+  {
+   "code": 388,
+   "iso3": "JAM",
+   "name": "Yamayka",
+   "x": 117901377,
+   "m": 1595,
+   "balance": 117899782,
+   "shareX": 303.161178193488,
+   "shareM": 0.0001616492468421569
+  },
+  {
+   "code": 178,
+   "iso3": "COG",
+   "name": "Kongo Respublikasi",
+   "x": 115897248,
+   "m": 318038,
+   "balance": 115579210,
+   "shareX": 298.0079380503153,
+   "shareM": 0.03223235308287517
+  },
+  {
+   "code": 498,
+   "iso3": "MDA",
+   "name": "Moldova",
+   "x": 108806404,
+   "m": 0,
+   "balance": 108806404,
+   "shareX": 279.77516862790026,
+   "shareM": 0
+  },
+  {
+   "code": 591,
+   "iso3": "PAN",
+   "name": "Panama",
+   "x": 105588376,
+   "m": 0,
+   "balance": 105588376,
+   "shareX": 271.5006159062673,
+   "shareM": 0
+  },
+  {
+   "code": 144,
+   "iso3": "LKA",
+   "name": "Şri-Lanka",
+   "x": 104652609,
+   "m": 52611,
+   "balance": 104599998,
+   "shareX": 269.0944673654017,
+   "shareM": 0.005331992806026781
+  },
+  {
+   "code": 292,
+   "iso3": "GIB",
+   "name": "Gibraltar",
+   "x": 104612214,
+   "m": 0,
+   "balance": 104612214,
+   "shareX": 268.9905992333686,
+   "shareM": 0
+  },
+  {
+   "code": 36,
+   "iso3": "AUS",
+   "name": "Avstraliya",
+   "x": 100729253,
+   "m": 3018,
+   "balance": 100726235,
+   "shareX": 259.00629657641684,
+   "shareM": 0.00030586672537280844
+  },
+  {
+   "code": 899,
+   "iso3": null,
+   "name": "Kod 899",
+   "x": 0,
+   "m": 96870632,
+   "balance": -96870632,
+   "shareX": 0,
+   "shareM": 9.817595425657517
+  },
+  {
+   "code": 266,
+   "iso3": "GAB",
+   "name": "Gabon",
+   "x": 92630775,
+   "m": 0,
+   "balance": 92630775,
+   "shareX": 238.18258616246607,
+   "shareM": 0
+  },
+  {
+   "code": 694,
+   "iso3": "SLE",
+   "name": "Syerra-Leone",
+   "x": 92192593,
+   "m": 16083,
+   "balance": 92176510,
+   "shareX": 237.05588370348477,
+   "shareM": 0.0016299716846159304
+  },
+  {
+   "code": 780,
+   "iso3": "TTO",
+   "name": "Trinidad va Tobago",
+   "x": 91973384,
+   "m": 0,
+   "balance": 91973384,
+   "shareX": 236.49222905922548,
+   "shareM": 0
+  },
+  {
+   "code": 148,
+   "iso3": "TCD",
+   "name": "Çad",
+   "x": 89976014,
+   "m": 0,
+   "balance": 89976014,
+   "shareX": 231.35636841114905,
+   "shareM": 0
+  },
+  {
+   "code": 204,
+   "iso3": "BEN",
+   "name": "Benin",
+   "x": 79979746,
+   "m": 0,
+   "balance": 79979746,
+   "shareX": 205.6528485581293,
+   "shareM": 0
+  },
+  {
+   "code": 784,
+   "iso3": "ARE",
+   "name": "Birlaşgan Arab Amirliklari",
+   "x": 75794259,
+   "m": 120408,
+   "balance": 75673851,
+   "shareX": 194.89065728844187,
+   "shareM": 0.012203048597975188
+  },
+  {
+   "code": 854,
+   "iso3": "BFA",
+   "name": "Burkina-Faso",
+   "x": 74210181,
+   "m": 0,
+   "balance": 74210181,
+   "shareX": 190.8174991536528,
+   "shareM": 0
+  },
+  {
+   "code": 348,
+   "iso3": "HUN",
+   "name": "Vengriya",
+   "x": 73720398,
+   "m": 58517,
+   "balance": 73661881,
+   "shareX": 189.5581144448623,
+   "shareM": 0.005930551083048585
+  },
+  {
+   "code": 688,
+   "iso3": "SRB",
+   "name": "Serbiya",
+   "x": 71883069,
+   "m": 332515,
+   "balance": 71550554,
+   "shareX": 184.8337690763679,
+   "shareM": 0.03369956069825692
+  },
+  {
+   "code": 826,
+   "iso3": "GBR",
+   "name": "Buyuk Britaniya",
+   "x": 69654296,
+   "m": 23980,
+   "balance": 69630316,
+   "shareX": 179.1028992103965,
+   "shareM": 0.0024303128145924274
+  },
+  {
+   "code": 233,
+   "iso3": "EST",
+   "name": "Estoniya",
+   "x": 68957562,
+   "m": 188,
+   "balance": 68957374,
+   "shareX": 177.3113789949247,
+   "shareM": 0.000019053328154436047
+  },
+  {
+   "code": 76,
+   "iso3": "BRA",
+   "name": "Braziliya",
+   "x": 64205309,
+   "m": 3965457,
+   "balance": 60239852,
+   "shareX": 165.09185573563707,
+   "shareM": 0.4018891143792846
+  },
+  {
+   "code": 450,
+   "iso3": "MDG",
+   "name": "Madagaskar",
+   "x": 61493763,
+   "m": 0,
+   "balance": 61493763,
+   "shareX": 158.1196260551827,
+   "shareM": 0
+  },
+  {
+   "code": 608,
+   "iso3": "PHL",
+   "name": "Filippin",
+   "x": 55483329,
+   "m": 274661,
+   "balance": 55208668,
+   "shareX": 142.6649273972171,
+   "shareM": 0.02783620300119978
+  },
+  {
+   "code": 218,
+   "iso3": "ECU",
+   "name": "Ekvador",
+   "x": 55497224,
+   "m": 0,
+   "balance": 55497224,
+   "shareX": 142.70065577188228,
+   "shareM": 0
+  },
+  {
+   "code": 626,
+   "iso3": "TLS",
+   "name": "Şarqiy Timor",
+   "x": 53419523,
+   "m": 0,
+   "balance": 53419523,
+   "shareX": 137.35823909176338,
+   "shareM": 0
+  },
+  {
+   "code": 442,
+   "iso3": "LUX",
+   "name": "Lyuksemburg",
+   "x": 50995390,
+   "m": 169343,
+   "balance": 50826047,
+   "shareX": 131.12503779185224,
+   "shareM": 0.017162488030088636
+  },
+  {
+   "code": 703,
+   "iso3": "SVK",
+   "name": "Slovakiya",
+   "x": 49861034,
+   "m": 231,
+   "balance": 49860803,
+   "shareX": 128.20825505189447,
+   "shareM": 0.000023411270232312374
+  },
+  {
+   "code": 757,
+   "iso3": "CHE",
+   "name": "Şveytsariya",
+   "x": 31273256,
+   "m": 18327902,
+   "balance": 12945354,
+   "shareX": 80.41328588474897,
+   "shareM": 1.8574868680231102
+  },
+  {
+   "code": 368,
+   "iso3": "IRQ",
+   "name": "Iroq",
+   "x": 9635624,
+   "m": 37786744,
+   "balance": -28151120,
+   "shareX": 24.77619175278546,
+   "shareM": 3.8295916665939753
+  },
+  {
+   "code": 332,
+   "iso3": "HTI",
+   "name": "Gaiti",
+   "x": 43541045,
+   "m": 0,
+   "balance": 43541045,
+   "shareX": 111.95759403196521,
+   "shareM": 0
+  },
+  {
+   "code": 800,
+   "iso3": "UGA",
+   "name": "Uganda",
+   "x": 42651277,
+   "m": 0,
+   "balance": 42651277,
+   "shareX": 109.66972325333246,
+   "shareM": 0
+  },
+  {
+   "code": 496,
+   "iso3": "MNG",
+   "name": "Mongoliya",
+   "x": 40711713,
+   "m": 0,
+   "balance": 40711713,
+   "shareX": 104.68249984353568,
+   "shareM": 0
+  },
+  {
+   "code": 232,
+   "iso3": "ERI",
+   "name": "Eritreya",
+   "x": 39666690,
+   "m": 0,
+   "balance": 39666690,
+   "shareX": 101.99542008263269,
+   "shareM": 0
+  },
+  {
+   "code": 795,
+   "iso3": "TKM",
+   "name": "Turkmaniston",
+   "x": 37382717,
+   "m": 0,
+   "balance": 37382717,
+   "shareX": 96.12261381640805,
+   "shareM": 0
+  },
+  {
+   "code": 740,
+   "iso3": "SUR",
+   "name": "Surinam",
+   "x": 35056048,
+   "m": 0,
+   "balance": 35056048,
+   "shareX": 90.14002283016143,
+   "shareM": 0
+  },
+  {
+   "code": 558,
+   "iso3": "NIC",
+   "name": "Nikaragua",
+   "x": 28413622,
+   "m": 0,
+   "balance": 28413622,
+   "shareX": 73.06027581225291,
+   "shareM": 0
+  },
+  {
+   "code": 458,
+   "iso3": "MYS",
+   "name": "Malayziya",
+   "x": 27984103,
+   "m": 328948,
+   "balance": 27655155,
+   "shareX": 71.95584862565195,
+   "shareM": 0.033338054200773556
+  },
+  {
+   "code": 251,
+   "iso3": "FRA",
+   "name": "Fransiya",
+   "x": 28044486,
+   "m": 14805,
+   "balance": 28029681,
+   "shareX": 72.11111213392172,
+   "shareM": 0.0015004495921618385
+  },
+  {
+   "code": 466,
+   "iso3": "MLI",
+   "name": "Mali",
+   "x": 24842682,
+   "m": 1153002,
+   "balance": 23689680,
+   "shareX": 63.878276371667454,
+   "shareM": 0.1168538588761759
+  },
+  {
+   "code": 231,
+   "iso3": "ETH",
+   "name": "Efiopiya",
+   "x": 22607784,
+   "m": 35750,
+   "balance": 22572034,
+   "shareX": 58.13165722215346,
+   "shareM": 0.003623172774048344
+  },
+  {
+   "code": 585,
+   "iso3": "PLW",
+   "name": "Palau",
+   "x": 22228992,
+   "m": 0,
+   "balance": 22228992,
+   "shareX": 57.157664959024345,
+   "shareM": 0
+  },
+  {
+   "code": 116,
+   "iso3": "KHM",
+   "name": "Kambodja",
+   "x": 21878773,
+   "m": 38,
+   "balance": 21878735,
+   "shareX": 56.257142782207495,
+   "shareM": 0.000003851204626960477
+  },
+  {
+   "code": 440,
+   "iso3": "LTU",
+   "name": "Litva",
+   "x": 19538474,
+   "m": 789809,
+   "balance": 18748665,
+   "shareX": 50.23950481886935,
+   "shareM": 0.08004515987407967
+  },
+  {
+   "code": 716,
+   "iso3": "ZWE",
+   "name": "Zimbabve",
+   "x": 17738909,
+   "m": 286580,
+   "balance": 17452329,
+   "shareX": 45.612262461591676,
+   "shareM": 0.029044163736692993
+  },
+  {
+   "code": 804,
+   "iso3": "UKR",
+   "name": "Ukraina",
+   "x": 14843662,
+   "m": 7659,
+   "balance": 14836003,
+   "shareX": 38.16768026912787,
+   "shareM": 0.0007762204273129026
+  },
+  {
+   "code": 70,
+   "iso3": "BIH",
+   "name": "Bosniya va Gertsegovina",
+   "x": 14657650,
+   "m": 145671,
+   "balance": 14511979,
+   "shareX": 37.689385456013625,
+   "shareM": 0.014763390242472625
+  },
+  {
+   "code": 428,
+   "iso3": "LVA",
+   "name": "Latviya",
+   "x": 13843178,
+   "m": 0,
+   "balance": 13843178,
+   "shareX": 35.595124155523415,
+   "shareM": 0
+  },
+  {
+   "code": 842,
+   "iso3": "USA",
+   "name": "Amerika Qöşma Ştatlari (AQŞ)",
+   "x": 6457700,
+   "m": 3691352,
+   "balance": 2766348,
+   "shareX": 16.604758911510316,
+   "shareM": 0.37410926058262667
+  },
+  {
+   "code": 392,
+   "iso3": "JPN",
+   "name": "Yaponiya",
+   "x": 10080360,
+   "m": 10550,
+   "balance": 10069810,
+   "shareX": 25.919746587985216,
+   "shareM": 0.0010692160214324483
+  },
+  {
+   "code": 480,
+   "iso3": "MUS",
+   "name": "Mavrikiy",
+   "x": 9328782,
+   "m": 0,
+   "balance": 9328782,
+   "shareX": 23.987205359189346,
+   "shareM": 0
+  },
+  {
+   "code": 584,
+   "iso3": "MHL",
+   "name": "Marşall orollari",
+   "x": 9205121,
+   "m": 2047,
+   "balance": 9203074,
+   "shareX": 23.669234395571294,
+   "shareM": 0.0002074583124049499
+  },
+  {
+   "code": 752,
+   "iso3": "SWE",
+   "name": "Şvetsiya",
+   "x": 9167378,
+   "m": 5956,
+   "balance": 9161422,
+   "shareX": 23.57218538189814,
+   "shareM": 0.0006036256515309632
+  },
+  {
+   "code": 414,
+   "iso3": "KWT",
+   "name": "Quvayt",
+   "x": 9151749,
+   "m": 8649,
+   "balance": 9143100,
+   "shareX": 23.531998352920642,
+   "shareM": 0.0008765544425942413
+  },
+  {
+   "code": 662,
+   "iso3": "LCA",
+   "name": "Sent-Lyusiya",
+   "x": 8496717,
+   "m": 0,
+   "balance": 8496717,
+   "shareX": 21.847706973741612,
+   "shareM": 0
+  },
+  {
+   "code": 604,
+   "iso3": "PER",
+   "name": "Peru",
+   "x": 7943313,
+   "m": 1230,
+   "balance": 7942083,
+   "shareX": 20.424732849724474,
+   "shareM": 0.00012465741292529966
+  },
+  {
+   "code": 554,
+   "iso3": "NZL",
+   "name": "Yangi Zelandiya",
+   "x": 7612892,
+   "m": 7964,
+   "balance": 7604928,
+   "shareX": 19.575117499940475,
+   "shareM": 0.0008071314118187695
+  },
+  {
+   "code": 344,
+   "iso3": "HKG",
+   "name": "Gonkong",
+   "x": 7315501,
+   "m": 5441,
+   "balance": 7310060,
+   "shareX": 18.810432572264528,
+   "shareM": 0.0005514316940866304
+  },
+  {
+   "code": 834,
+   "iso3": "TZA",
+   "name": "Tanzaniya",
+   "x": 7010786,
+   "m": 12084,
+   "balance": 6998702,
+   "shareX": 18.026915358439037,
+   "shareM": 0.0012246830713734318
+  },
+  {
+   "code": 762,
+   "iso3": "TJK",
+   "name": "Tojikiston",
+   "x": 6350098,
+   "m": 586141,
+   "balance": 5763957,
+   "shareX": 16.328080640857245,
+   "shareM": 0.059403919243453715
+  },
+  {
+   "code": 132,
+   "iso3": "CPV",
+   "name": "Kabo-Verde",
+   "x": 6891430,
+   "m": 0,
+   "balance": 6891430,
+   "shareX": 17.72001389125378,
+   "shareM": 0
+  },
+  {
+   "code": 4,
+   "iso3": "AFG",
+   "name": "Afğoniston",
+   "x": 6869012,
+   "m": 7276,
+   "balance": 6861736,
+   "shareX": 17.662370227832092,
+   "shareM": 0.0007374043385727482
+  },
+  {
+   "code": 40,
+   "iso3": "AUT",
+   "name": "Avstriya",
+   "x": 167703,
+   "m": 6214050,
+   "balance": -6046347,
+   "shareX": 0.4312166690519867,
+   "shareM": 0.6297783713727304
+  },
+  {
+   "code": 540,
+   "iso3": "NCL",
+   "name": "Yangi Kaledoniya",
+   "x": 5820447,
+   "m": 0,
+   "balance": 5820447,
+   "shareX": 14.966182881246185,
+   "shareM": 0
+  },
+  {
+   "code": 188,
+   "iso3": "CRI",
+   "name": "Kosta-Rika",
+   "x": 2296800,
+   "m": 2787205,
+   "balance": -490405,
+   "shareX": 5.905788480102343,
+   "shareM": 0.2824762313759836
+  },
+  {
+   "code": 324,
+   "iso3": "GIN",
+   "name": "Gvineya",
+   "x": 121943,
+   "m": 4932111,
+   "balance": -4810168,
+   "shareX": 0.31355345029132703,
+   "shareM": 0.49985707115480704
+  },
+  {
+   "code": 548,
+   "iso3": "VUT",
+   "name": "Vanuatu",
+   "x": 4977053,
+   "m": 0,
+   "balance": 4977053,
+   "shareX": 12.797554106695753,
+   "shareM": 0
+  },
+  {
+   "code": 418,
+   "iso3": "LAO",
+   "name": "Laos",
+   "x": 4534343,
+   "m": 41250,
+   "balance": 4493093,
+   "shareX": 11.659208748795148,
+   "shareM": 0.004180583970055781
+  },
+  {
+   "code": 72,
+   "iso3": "BWA",
+   "name": "Botsvana",
+   "x": 4465019,
+   "m": 0,
+   "balance": 4465019,
+   "shareX": 11.480955143520585,
+   "shareM": 0
+  },
+  {
+   "code": 678,
+   "iso3": "STP",
+   "name": "San-Tome va Prinsipi",
+   "x": 4444224,
+   "m": 860,
+   "balance": 4443364,
+   "shareX": 11.427484718823735,
+   "shareM": 0.0000871588415575266
+  },
+  {
+   "code": 288,
+   "iso3": "GHA",
+   "name": "Gana",
+   "x": 4320858,
+   "m": 47852,
+   "balance": 4273006,
+   "shareX": 11.110272292127329,
+   "shareM": 0.004849680100245073
+  },
+  {
+   "code": 858,
+   "iso3": "URY",
+   "name": "Urugvay",
+   "x": 4236343,
+   "m": 0,
+   "balance": 4236343,
+   "shareX": 10.892957892355536,
+   "shareM": 0
+  },
+  {
+   "code": 702,
+   "iso3": "SGP",
+   "name": "Singapur",
+   "x": 687470,
+   "m": 3204384,
+   "balance": -2516914,
+   "shareX": 1.7676995848206014,
+   "shareM": 0.32475627598310847
+  },
+  {
+   "code": 262,
+   "iso3": "DJI",
+   "name": "Jibuti",
+   "x": 3433345,
+   "m": 0,
+   "balance": 3433345,
+   "shareX": 8.82819982114985,
+   "shareM": 0
+  },
+  {
+   "code": 690,
+   "iso3": "SYC",
+   "name": "Seyşel orollari",
+   "x": 3310044,
+   "m": 0,
+   "balance": 3310044,
+   "shareX": 8.511154529707365,
+   "shareM": 0
+  },
+  {
+   "code": 320,
+   "iso3": "GTM",
+   "name": "Gvatemala",
+   "x": 0,
+   "m": 3142459,
+   "balance": -3142459,
+   "shareX": 0,
+   "shareM": 0.31848033265351566
+  },
+  {
+   "code": 839,
+   "iso3": null,
+   "name": "Kod 839",
+   "x": 2738524,
+   "m": 0,
+   "balance": 2738524,
+   "shareX": 7.041598524766539,
+   "shareM": 0
+  },
+  {
+   "code": 499,
+   "iso3": "MNE",
+   "name": "Çernogoriya",
+   "x": 2093782,
+   "m": 467695,
+   "balance": 1626087,
+   "shareX": 5.383765941939064,
+   "shareM": 0.04739971442121791
+  },
+  {
+   "code": 212,
+   "iso3": "DMA",
+   "name": "Dominika",
+   "x": 2550131,
+   "m": 163,
+   "balance": 2549968,
+   "shareX": 6.557181418735573,
+   "shareM": 0.000016519640899856784
+  },
+  {
+   "code": 44,
+   "iso3": "BHS",
+   "name": "Bagama orollari",
+   "x": 2445037,
+   "m": 0,
+   "balance": 2445037,
+   "shareX": 6.286951997572271,
+   "shareM": 0
+  },
+  {
+   "code": 242,
+   "iso3": "FJI",
+   "name": "Fidji",
+   "x": 2398301,
+   "m": 0,
+   "balance": 2398301,
+   "shareX": 6.166779178691191,
+   "shareM": 0
+  },
+  {
+   "code": 462,
+   "iso3": "MDV",
+   "name": "Maldiv orollari",
+   "x": 2311284,
+   "m": 48836,
+   "balance": 2262448,
+   "shareX": 5.943031357299225,
+   "shareM": 0.004949406030585312
+  },
+  {
+   "code": 478,
+   "iso3": "MRT",
+   "name": "Mavritaniya",
+   "x": 2316723,
+   "m": 0,
+   "balance": 2316723,
+   "shareX": 5.957016721085048,
+   "shareM": 0
+  },
+  {
+   "code": 768,
+   "iso3": "TGO",
+   "name": "Togo",
+   "x": 0,
+   "m": 2263127,
+   "balance": -2263127,
+   "shareX": 0,
+   "shareM": 0.229362241415768
+  },
+  {
+   "code": 600,
+   "iso3": "PRY",
+   "name": "Paragvay",
+   "x": 2085582,
+   "m": 88,
+   "balance": 2085494,
+   "shareX": 5.362681186828981,
+   "shareM": 0.000008918579136119
+  },
+  {
+   "code": 724,
+   "iso3": "ESP",
+   "name": "Ispaniya",
+   "x": 239437,
+   "m": 1829315,
+   "balance": -1589878,
+   "shareX": 0.6156671352796345,
+   "shareM": 0.18539648400442646
+  },
+  {
+   "code": 340,
+   "iso3": "HND",
+   "name": "Gonduras",
+   "x": 2006194,
+   "m": 0,
+   "balance": 2006194,
+   "shareX": 5.158549901624189,
+   "shareM": 0
+  },
+  {
+   "code": 352,
+   "iso3": "ISL",
+   "name": "Islandiya",
+   "x": 1977377,
+   "m": 0,
+   "balance": 1977377,
+   "shareX": 5.08445241528184,
+   "shareM": 0
+  },
+  {
+   "code": 96,
+   "iso3": "BRN",
+   "name": "Bruney",
+   "x": 1932779,
+   "m": 0,
+   "balance": 1932779,
+   "shareX": 4.969777060598974,
+   "shareM": 0
+  },
+  {
+   "code": 674,
+   "iso3": "SMR",
+   "name": "San-Marino",
+   "x": 1866023,
+   "m": 0,
+   "balance": 1866023,
+   "shareX": 4.798126583510107,
+   "shareM": 0
+  },
+  {
+   "code": 226,
+   "iso3": "GNQ",
+   "name": "Ekvatorial Gvineya",
+   "x": 1494363,
+   "m": 0,
+   "balance": 1494363,
+   "shareX": 3.8424729147035777,
+   "shareM": 0
+  },
+  {
+   "code": 108,
+   "iso3": "BDI",
+   "name": "Burundi",
+   "x": 1315239,
+   "m": 0,
+   "balance": 1315239,
+   "shareX": 3.3818892958818028,
+   "shareM": 0
+  },
+  {
+   "code": 316,
+   "iso3": null,
+   "name": "Kod 316",
+   "x": 1268303,
+   "m": 0,
+   "balance": 1268303,
+   "shareX": 3.2612022146809654,
+   "shareM": 0
+  },
+  {
+   "code": 562,
+   "iso3": "NER",
+   "name": "Niger",
+   "x": 1245797,
+   "m": 0,
+   "balance": 1245797,
+   "shareX": 3.2033322758385827,
+   "shareM": 0
+  },
+  {
+   "code": 328,
+   "iso3": "GUY",
+   "name": "Gayana",
+   "x": 1034386,
+   "m": 0,
+   "balance": 1034386,
+   "shareX": 2.659728719426655,
+   "shareM": 0
+  },
+  {
+   "code": 222,
+   "iso3": "SLV",
+   "name": "Salvador",
+   "x": 797098,
+   "m": 28274,
+   "balance": 768824,
+   "shareX": 2.0495873327728216,
+   "shareM": 0.0028654989374389617
+  },
+  {
+   "code": 581,
+   "iso3": null,
+   "name": "Kod 581",
+   "x": 200389,
+   "m": 593150,
+   "balance": -392761,
+   "shareX": 0.5152625599700575,
+   "shareM": 0.06011426380214755
+  },
+  {
+   "code": 894,
+   "iso3": "ZMB",
+   "name": "Zambiya",
+   "x": 596902,
+   "m": 0,
+   "balance": 596902,
+   "shareX": 1.5348210359413308,
+   "shareM": 0
+  },
+  {
+   "code": 51,
+   "iso3": "ARM",
+   "name": "Armaniston",
+   "x": 467181,
+   "m": 0,
+   "balance": 467181,
+   "shareX": 1.20126792403461,
+   "shareM": 0
+  },
+  {
+   "code": 184,
+   "iso3": "COK",
+   "name": "Cook Isds",
+   "x": 465780,
+   "m": 0,
+   "balance": 465780,
+   "shareX": 1.1976655164847043,
+   "shareM": 0
+  },
+  {
+   "code": 376,
+   "iso3": "ISR",
+   "name": "Isroil",
+   "x": 71584,
+   "m": 341277,
+   "balance": -269693,
+   "shareX": 0.18406476948782918,
+   "shareM": 0.034587567407241865
+  },
+  {
+   "code": 818,
+   "iso3": "EGY",
+   "name": "Misr",
+   "x": 379684,
+   "m": 16924,
+   "balance": 362760,
+   "shareX": 0.9762858730752255,
+   "shareM": 0.0017152049238599767
+  },
+  {
+   "code": 20,
+   "iso3": "AND",
+   "name": "Andorra",
+   "x": 395748,
+   "m": 0,
+   "balance": 395748,
+   "shareX": 1.0175914225981983,
+   "shareM": 0
+  },
+  {
+   "code": 516,
+   "iso3": "NAM",
+   "name": "Namibiya",
+   "x": 383576,
+   "m": 0,
+   "balance": 383576,
+   "shareX": 0.9862934178177185,
+   "shareM": 0
+  },
+  {
+   "code": 52,
+   "iso3": "BRB",
+   "name": "Barbados",
+   "x": 372493,
+   "m": 0,
+   "balance": 372493,
+   "shareX": 0.9577955713683219,
+   "shareM": 0
+  },
+  {
+   "code": 384,
+   "iso3": "CIV",
+   "name": "Kot-d'Ivuar",
+   "x": 49893,
+   "m": 283735,
+   "balance": -233842,
+   "shareX": 0.12829044959846142,
+   "shareM": 0.028755830127121868
+  },
+  {
+   "code": 208,
+   "iso3": "DNK",
+   "name": "Daniya",
+   "x": 0,
+   "m": 290031,
+   "balance": -290031,
+   "shareX": 0,
+   "shareM": 0.02939391392531511
+  },
+  {
+   "code": 246,
+   "iso3": "FIN",
+   "name": "Finlyandiya",
+   "x": 280696,
+   "m": 544,
+   "balance": 280152,
+   "shareX": 0.7217568805341374,
+   "shareM": 0.000055133034659644724
+  },
+  {
+   "code": 275,
+   "iso3": "PSE",
+   "name": "Falastin",
+   "x": 267446,
+   "m": 0,
+   "balance": 267446,
+   "shareX": 0.6876870018501615,
+   "shareM": 0
+  },
+  {
+   "code": 308,
+   "iso3": "GRD",
+   "name": "Grenada",
+   "x": 214902,
+   "m": 0,
+   "balance": 214902,
+   "shareX": 0.5525800052033062,
+   "shareM": 0
+  },
+  {
+   "code": 531,
+   "iso3": "CUW",
+   "name": "Kyurasao",
+   "x": 213798,
+   "m": 0,
+   "balance": 213798,
+   "shareX": 0.5497412771982413,
+   "shareM": 0
+  },
+  {
+   "code": 670,
+   "iso3": "VCT",
+   "name": "Sent-Vinsent va Grenadinlar",
+   "x": 163295,
+   "m": 0,
+   "balance": 163295,
+   "shareX": 0.41988232752451754,
+   "shareM": 0
+  },
+  {
+   "code": 660,
+   "iso3": "AIA",
+   "name": "Anguilla",
+   "x": 150298,
+   "m": 0,
+   "balance": 150298,
+   "shareX": 0.38646299067503564,
+   "shareM": 0
+  },
+  {
+   "code": 598,
+   "iso3": "PNG",
+   "name": "Papua - Yangi Gvineya",
+   "x": 129158,
+   "m": 0,
+   "balance": 129158,
+   "shareX": 0.33210546347660147,
+   "shareM": 0
+  },
+  {
+   "code": 140,
+   "iso3": "CAF",
+   "name": "Markaziy Afrika Respublikasi",
+   "x": 84551,
+   "m": 26370,
+   "balance": 58181,
+   "shareX": 0.21740696698934742,
+   "shareM": 0.002672533316130205
+  },
+  {
+   "code": 876,
+   "iso3": "WLF",
+   "name": "Wallis and Futuna Isds",
+   "x": 93719,
+   "m": 0,
+   "balance": 93719,
+   "shareX": 0.24098075172706,
+   "shareM": 0
+  },
+  {
+   "code": 430,
+   "iso3": "LBR",
+   "name": "Liberiya",
+   "x": 70410,
+   "m": 2705,
+   "balance": 67705,
+   "shareX": 0.18104604967084897,
+   "shareM": 0.0002741449609454761
+  },
+  {
+   "code": 16,
+   "iso3": null,
+   "name": "Kod 16",
+   "x": 47560,
+   "m": 11703,
+   "balance": 35857,
+   "shareX": 0.12229157963848285,
+   "shareM": 0.001186069677613644
+  },
+  {
+   "code": 258,
+   "iso3": "PYF",
+   "name": "Fransiya Polineziyasi",
+   "x": 56786,
+   "m": 0,
+   "balance": 56786,
+   "shareX": 0.14601450044892528,
+   "shareM": 0
+  },
+  {
+   "code": 426,
+   "iso3": "LSO",
+   "name": "Lesoto",
+   "x": 39559,
+   "m": 0,
+   "balance": 39559,
+   "shareX": 0.10171851553655895,
+   "shareM": 0
+  },
+  {
+   "code": 64,
+   "iso3": "BTN",
+   "name": "Butan",
+   "x": 36277,
+   "m": 0,
+   "balance": 36277,
+   "shareX": 0.09327947086932806,
+   "shareM": 0
+  },
+  {
+   "code": 92,
+   "iso3": "VGB",
+   "name": "Britaniya Virgin orollari",
+   "x": 29739,
+   "m": 0,
+   "balance": 29739,
+   "shareX": 0.07646823563643484,
+   "shareM": 0
+  },
+  {
+   "code": 512,
+   "iso3": "OMN",
+   "name": "Omon",
+   "x": 29273,
+   "m": 0,
+   "balance": 29273,
+   "shareX": 0.0752700044313984,
+   "shareM": 0
+  },
+  {
+   "code": 533,
+   "iso3": "ABW",
+   "name": "Aruba",
+   "x": 26246,
+   "m": 0,
+   "balance": 26246,
+   "shareX": 0.06748664422185914,
+   "shareM": 0
+  },
+  {
+   "code": 304,
+   "iso3": "GRL",
+   "name": "Grenlandiya",
+   "x": 23692,
+   "m": 0,
+   "balance": 23692,
+   "shareX": 0.06091951439854785,
+   "shareM": 0
+  },
+  {
+   "code": 104,
+   "iso3": "MMR",
+   "name": "Myanma",
+   "x": 0,
+   "m": 10532,
+   "balance": -10532,
+   "shareX": 0,
+   "shareM": 0.0010673917666091514
+  },
+  {
+   "code": 580,
+   "iso3": "MNP",
+   "name": "Şimoliy Mariana orollari",
+   "x": 10381,
+   "m": 0,
+   "balance": 10381,
+   "shareX": 0.026692785707045634,
+   "shareM": 0
+  },
+  {
+   "code": 748,
+   "iso3": "SWZ",
+   "name": "Esvatini",
+   "x": 8765,
+   "m": 0,
+   "balance": 8765,
+   "shareX": 0.02253754616339996,
+   "shareM": 0
+  },
+  {
+   "code": 238,
+   "iso3": "FLK",
+   "name": "Falkland Isds (Malvinas)",
+   "x": 1402,
+   "m": 4813,
+   "balance": -3411,
+   "shareX": 0.0036049788615044776,
+   "shareM": 0.00048778547025159945
+  },
+  {
+   "code": 577,
+   "iso3": null,
+   "name": "Kod 577",
+   "x": 5957,
+   "m": 0,
+   "balance": 5957,
+   "shareX": 0.015317303193995843,
+   "shareM": 0
+  },
+  {
+   "code": 454,
+   "iso3": "MWI",
+   "name": "Malavi",
+   "x": 4849,
+   "m": 0,
+   "balance": 4849,
+   "shareX": 0.012468289942535815,
+   "shareM": 0
+  },
+  {
+   "code": 170,
+   "iso3": "COL",
+   "name": "Kolumbiya",
+   "x": 4739,
+   "m": 0,
+   "balance": 4739,
+   "shareX": 0.012185445666668843,
+   "shareM": 0
+  },
+  {
+   "code": 646,
+   "iso3": "RWA",
+   "name": "Ruanda",
+   "x": 0,
+   "m": 2575,
+   "balance": -2575,
+   "shareX": 0,
+   "shareM": 0.00026096978722166394
+  },
+  {
+   "code": 570,
+   "iso3": "NIU",
+   "name": "Niue",
+   "x": 2379,
+   "m": 0,
+   "balance": 2379,
+   "shareX": 0.0061171502935229325,
+   "shareM": 0
+  },
+  {
+   "code": 520,
+   "iso3": "NRU",
+   "name": "Nauru",
+   "x": 1800,
+   "m": 0,
+   "balance": 1800,
+   "shareX": 0.0046283608778231525,
+   "shareM": 0
+  },
+  {
+   "code": 214,
+   "iso3": "DOM",
+   "name": "Dominikan Respublikasi",
+   "x": 0,
+   "m": 1090,
+   "balance": -1090,
+   "shareX": 0,
+   "shareM": 0.0001104687642996558
+  },
+  {
+   "code": 446,
+   "iso3": "MAC",
+   "name": "Makao",
+   "x": 0,
+   "m": 907,
+   "balance": -907,
+   "shareX": 0,
+   "shareM": 0.0000919221735961356
+  },
+  {
+   "code": 882,
+   "iso3": "WSM",
+   "name": "Samoa",
+   "x": 517,
+   "m": 0,
+   "balance": 517,
+   "shareX": 0.001329368096574761,
+   "shareM": 0
+  },
+  {
+   "code": 90,
+   "iso3": "SLB",
+   "name": "Solomon orollari",
+   "x": 306,
+   "m": 0,
+   "balance": 306,
+   "shareX": 0.0007868213492299358,
+   "shareM": 0
+  },
+  {
+   "code": 705,
+   "iso3": "SVN",
+   "name": "Sloveniya",
+   "x": 0,
+   "m": 3,
+   "balance": -3,
+   "shareX": 0,
+   "shareM": 3.040424705495114e-7
+  }
+ ],
+ "products": {
+  "x": [
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 6795733725,
+    "share": 17473.948949385223
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 6795451114,
+    "share": 17473.222268442976
+   },
+   {
+    "code": "870421",
+    "name": "870421 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), for transport of goods, (of a gvw not exceeding 5 tonnes), n.e.c. in item no 8704.1",
+    "value": 5406018950,
+    "share": 13900.559229416998
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 3812662778,
+    "share": 9803.544023348744
+   },
+   {
+    "code": "271012",
+    "name": "271012 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; light oils and preparations",
+    "value": 1521556599,
+    "share": 3912.396131225139
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 1375004127,
+    "share": 3535.5640601400987
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 1374721516,
+    "share": 3534.8373791978524
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 1309529557,
+    "share": 3367.208538873269
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 1309529557,
+    "share": 3367.208538873269
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 958527965,
+    "share": 2464.674074169689
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 958527965,
+    "share": 2464.674074169689
+   },
+   {
+    "code": "850423",
+    "name": "850423 - Electrical transformers; liquid dielectric, having a power handling capacity exceeding 10,000kVA",
+    "value": 883477065,
+    "share": 2271.694824500012
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 873361467,
+    "share": 2245.684470033909
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 475050847,
+    "share": 1221.5037529064177
+   },
+   {
+    "code": "711319",
+    "name": "711319 - Jewellery; of precious metal (excluding silver) whether or not plated or clad with precious metal, and parts thereof",
+    "value": 468459997,
+    "share": 1204.5566238555284
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 459301721,
+    "share": 1181.0078425518025
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 455381771,
+    "share": 1170.928429650123
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 356621617,
+    "share": 916.9853001715733
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 356196096,
+    "share": 915.8911530887444
+   },
+   {
+    "code": "871639",
+    "name": "871639 - Trailers and semi-trailers; (other than tanker type)",
+    "value": 355173045,
+    "share": 913.26057018629
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 354978377,
+    "share": 912.7600180999766
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 354978377,
+    "share": 912.7600180999766
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 337505720,
+    "share": 867.8323724941862
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 304140334,
+    "share": 782.0395684742593
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 304140334,
+    "share": 782.0395684742593
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 294803609,
+    "share": 758.0319391870407
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 293143923,
+    "share": 753.7643693248903
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 293143923,
+    "share": 753.7643693248903
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 293143923,
+    "share": 753.7643693248903
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 287092304,
+    "share": 738.2037711987284
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 287092304,
+    "share": 738.2037711987284
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 268560996,
+    "share": 690.5540039975667
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 267655329,
+    "share": 688.2252519358249
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 267655329,
+    "share": 688.2252519358249
+   },
+   {
+    "code": "870332",
+    "name": "870332 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity over 1500 but not over 2500cc",
+    "value": 256070334,
+    "share": 658.4366199203932
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 226973223,
+    "share": 583.6188809147945
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 226973223,
+    "share": 583.6188809147945
+   },
+   {
+    "code": "100199",
+    "name": "100199 - Cereals; wheat and meslin, other than durum wheat, other than seed",
+    "value": 220729133,
+    "share": 567.5633798739018
+   },
+   {
+    "code": "850440",
+    "name": "850440 - Electrical static converters",
+    "value": 208417790,
+    "share": 535.9070808213119
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 205336903,
+    "share": 527.9851603436485
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 205336903,
+    "share": 527.9851603436485
+   },
+   {
+    "code": "854370",
+    "name": "854370 - Electrical machines and apparatus; having individual functions, not specified or included elsewhere in this chapter, n.e.c. in heading no. 8543",
+    "value": 190656402,
+    "share": 490.237017846291
+   },
+   {
+    "code": "854370",
+    "name": "854370 - Electrical machines and apparatus; having individual functions, not specified or included elsewhere in this chapter, n.e.c. in heading no. 8543",
+    "value": 190605684,
+    "share": 490.1066060646236
+   },
+   {
+    "code": "852691",
+    "name": "852691 - Radio navigational aid apparatus",
+    "value": 178083008,
+    "share": 457.9069040179264
+   },
+   {
+    "code": "852691",
+    "name": "852691 - Radio navigational aid apparatus",
+    "value": 168316140,
+    "share": 432.7932430456692
+   },
+   {
+    "code": "890190",
+    "name": "890190 - Vessels; n.e.c. in heading no. 8901, for the transport of goods and other vessels for the transport of both persons and goods",
+    "value": 164413465,
+    "share": 422.75824955185897
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 162129949,
+    "share": 416.88661837503497
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 162129949,
+    "share": 416.88661837503497
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 157996227,
+    "share": 406.2575310502589
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 157996227,
+    "share": 406.2575310502589
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 151280913,
+    "share": 388.99036627253776
+   },
+   {
+    "code": "854370",
+    "name": "854370 - Electrical machines and apparatus; having individual functions, not specified or included elsewhere in this chapter, n.e.c. in heading no. 8543",
+    "value": 142565675,
+    "share": 366.5807737169168
+   },
+   {
+    "code": "854370",
+    "name": "854370 - Electrical machines and apparatus; having individual functions, not specified or included elsewhere in this chapter, n.e.c. in heading no. 8543",
+    "value": 142531362,
+    "share": 366.4925443020275
+   },
+   {
+    "code": "870332",
+    "name": "870332 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity over 1500 but not over 2500cc",
+    "value": 142190786,
+    "share": 365.6168172829578
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 134687074,
+    "share": 346.32243558337325
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 133661644,
+    "share": 343.6857355306254
+   },
+   {
+    "code": "870332",
+    "name": "870332 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity over 1500 but not over 2500cc",
+    "value": 125969827,
+    "share": 323.9076772627504
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 123170836,
+    "share": 316.7105992395397
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 113382092,
+    "share": 291.54068825474747
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 111390855,
+    "share": 286.42059746070635
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 111390855,
+    "share": 286.42059746070635
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 109274686,
+    "share": 280.97926756600515
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 109274686,
+    "share": 280.97926756600515
+   },
+   {
+    "code": "880260",
+    "name": "880260 - Spacecraft; (including satellites) and suborbital and spacecraft launch vehicles",
+    "value": 109087518,
+    "share": 280.49800031668275
+   },
+   {
+    "code": "841112",
+    "name": "841112 - Turbo-jets; of a thrust exceeding 25kN",
+    "value": 106770029,
+    "share": 274.539013970913
+   },
+   {
+    "code": "841112",
+    "name": "841112 - Turbo-jets; of a thrust exceeding 25kN",
+    "value": 106770029,
+    "share": 274.539013970913
+   },
+   {
+    "code": "850440",
+    "name": "850440 - Electrical static converters",
+    "value": 104203756,
+    "share": 267.94032644034974
+   },
+   {
+    "code": "850440",
+    "name": "850440 - Electrical static converters",
+    "value": 104203756,
+    "share": 267.94032644034974
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 104055710,
+    "share": 267.5596540433952
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 104055710,
+    "share": 267.5596540433952
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 103019395,
+    "share": 264.89496526389445
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 101497768,
+    "share": 260.9823881097615
+   },
+   {
+    "code": "870590",
+    "name": "870590 - Vehicles; break-down lorries, road-sweepers, spraying lorries, mobile workshops, mobile radiological units, and other special purpose vehicles n.e.c. in heading no. 8705",
+    "value": 98911486,
+    "share": 254.33225120541803
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 96772389,
+    "share": 248.83196627837978
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 96499706,
+    "share": 248.13081331768672
+   },
+   {
+    "code": "841221",
+    "name": "841221 - Engines; hydraulic power engines and motors, linear acting (cylinders)",
+    "value": 95841708,
+    "share": 246.4388954283057
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 95822862,
+    "share": 246.3904364899149
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 95822862,
+    "share": 246.3904364899149
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 95185953,
+    "share": 244.75274499084074
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 95185953,
+    "share": 244.75274499084074
+   },
+   {
+    "code": "710691",
+    "name": "710691 - Metals; silver, unwrought, (but not powder)",
+    "value": 93238057,
+    "share": 239.74409741280286
+   },
+   {
+    "code": "840310",
+    "name": "840310 - Boilers; central heating boilers (excluding those of heading no. 8402)",
+    "value": 91875928,
+    "share": 236.24163931605375
+   },
+   {
+    "code": "840310",
+    "name": "840310 - Boilers; central heating boilers (excluding those of heading no. 8402)",
+    "value": 89733350,
+    "share": 230.73240365334007
+   },
+   {
+    "code": "710691",
+    "name": "710691 - Metals; silver, unwrought, (but not powder)",
+    "value": 87278560,
+    "share": 224.4203736537448
+   },
+   {
+    "code": "850423",
+    "name": "850423 - Electrical transformers; liquid dielectric, having a power handling capacity exceeding 10,000kVA",
+    "value": 85986145,
+    "share": 221.0971719737938
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 83424071,
+    "share": 214.50928138063387
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 83424071,
+    "share": 214.50928138063387
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 81788457,
+    "share": 210.30360813128954
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 81788457,
+    "share": 210.30360813128954
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 81545146,
+    "share": 209.67797973487617
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 81545146,
+    "share": 209.67797973487617
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 81068767,
+    "share": 208.4530608867559
+   },
+   {
+    "code": "840733",
+    "name": "840733 - Engines; reciprocating piston engines, of a kind used for the propulsion of vehicles of chapter 87, of a cylinder capacity exceeding 250cc but not exceeding 1000cc",
+    "value": 76326239,
+    "share": 196.2585436327665
+   },
+   {
+    "code": "840733",
+    "name": "840733 - Engines; reciprocating piston engines, of a kind used for the propulsion of vehicles of chapter 87, of a cylinder capacity exceeding 250cc but not exceeding 1000cc",
+    "value": 76326239,
+    "share": 196.2585436327665
+   },
+   {
+    "code": "901839",
+    "name": "901839 - Medical, surgical instruments and appliances; catheters, cannulae and the like",
+    "value": 76295353,
+    "share": 196.17912610272626
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 75902379,
+    "share": 195.1686674985031
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 75902379,
+    "share": 195.1686674985031
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 75491032,
+    "share": 194.11096618627536
+   },
+   {
+    "code": "847720",
+    "name": "847720 - Machinery; extruders, for working rubber or plastics or for the manufacture of products from these materials",
+    "value": 75457115,
+    "share": 194.0237550107792
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 74382796,
+    "share": 191.26134610527802
+   }
+  ],
+  "m": [
+   {
+    "code": "390210",
+    "name": "390210 - Propylene, other olefin polymers; polypropylene in primary forms",
+    "value": 2259582084,
+    "share": 229.00297307625786
+   },
+   {
+    "code": "390210",
+    "name": "390210 - Propylene, other olefin polymers; polypropylene in primary forms",
+    "value": 1281951279,
+    "share": 129.9225446637553
+   },
+   {
+    "code": "760120",
+    "name": "760120 - Aluminium; unwrought, alloys",
+    "value": 1186656711,
+    "share": 120.26467936886584
+   },
+   {
+    "code": "390120",
+    "name": "390120 - Ethylene polymers; in primary forms, polyethylene having a specific gravity of 0.94 or more",
+    "value": 1069416695,
+    "share": 108.38269799823111
+   },
+   {
+    "code": "720712",
+    "name": "720712 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (other than square) cross-section",
+    "value": 815976425,
+    "share": 82.69716272238603
+   },
+   {
+    "code": "720712",
+    "name": "720712 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (other than square) cross-section",
+    "value": 815976425,
+    "share": 82.69716272238603
+   },
+   {
+    "code": "740311",
+    "name": "740311 - Copper; refined, unwrought, cathodes and sections of cathodes",
+    "value": 767631567,
+    "share": 77.79753270082426
+   },
+   {
+    "code": "732690",
+    "name": "732690 - Iron or steel; articles n.e.c. in heading 7326",
+    "value": 693113683,
+    "share": 70.24533218366362
+   },
+   {
+    "code": "100199",
+    "name": "100199 - Cereals; wheat and meslin, other than durum wheat, other than seed",
+    "value": 667632212,
+    "share": 67.66284905163837
+   },
+   {
+    "code": "100199",
+    "name": "100199 - Cereals; wheat and meslin, other than durum wheat, other than seed",
+    "value": 667632212,
+    "share": 67.66284905163837
+   },
+   {
+    "code": "260111",
+    "name": "260111 - Iron ores and concentrates; non-agglomerated",
+    "value": 666312087,
+    "share": 67.52905769616032
+   },
+   {
+    "code": "270112",
+    "name": "270112 - Coal; bituminous, whether or not pulverised, but not agglomerated",
+    "value": 544111205,
+    "share": 55.14430500729055
+   },
+   {
+    "code": "760110",
+    "name": "760110 - Aluminium; unwrought, (not alloyed)",
+    "value": 482942859,
+    "share": 48.945046661534775
+   },
+   {
+    "code": "100199",
+    "name": "100199 - Cereals; wheat and meslin, other than durum wheat, other than seed",
+    "value": 452735527,
+    "share": 45.883609378205
+   },
+   {
+    "code": "151211",
+    "name": "151211 - Vegetable oils; sunflower seed or safflower oil and their fractions, crude, not chemically modified",
+    "value": 423628835,
+    "share": 42.933719196470435
+   },
+   {
+    "code": "230630",
+    "name": "230630 - Oil-cake and other solid residues; whether or not ground or in the form of pellets, resulting from the extraction of sunflower seed oils",
+    "value": 406035283,
+    "share": 41.15065685786334
+   },
+   {
+    "code": "230630",
+    "name": "230630 - Oil-cake and other solid residues; whether or not ground or in the form of pellets, resulting from the extraction of sunflower seed oils",
+    "value": 385243538,
+    "share": 39.043465685584856
+   },
+   {
+    "code": "260111",
+    "name": "260111 - Iron ores and concentrates; non-agglomerated",
+    "value": 354862488,
+    "share": 35.964422518955445
+   },
+   {
+    "code": "382499",
+    "name": "382499 - Chemical products, mixtures and preparations; n.e.c. heading 3824",
+    "value": 342901374,
+    "share": 34.75219363526067
+   },
+   {
+    "code": "300213",
+    "name": "300213 - Blood, human or animal, antisera, other blood fractions and immunological products; immunological products, unmixed, not put up in measured doses or in forms or packings for retail sale",
+    "value": 324878631,
+    "share": 32.92563386599436
+   },
+   {
+    "code": "230230",
+    "name": "230230 - Bran, sharps and other residues; of wheat, whether or not in the form of pellets, derived from the sifting, milling or other workings thereof",
+    "value": 319384410,
+    "share": 32.368808357132686
+   },
+   {
+    "code": "230230",
+    "name": "230230 - Bran, sharps and other residues; of wheat, whether or not in the form of pellets, derived from the sifting, milling or other workings thereof",
+    "value": 312909638,
+    "share": 31.71260646542442
+   },
+   {
+    "code": "731815",
+    "name": "731815 - Iron or steel; threaded screws and bolts n.e.c. in item no. 7318.1, whether or not with their nuts or washers",
+    "value": 284863970,
+    "share": 28.870248403113962
+   },
+   {
+    "code": "720711",
+    "name": "720711 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (including square) cross-section, width less than twice thickness",
+    "value": 282044605,
+    "share": 28.58451283645369
+   },
+   {
+    "code": "720711",
+    "name": "720711 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (including square) cross-section, width less than twice thickness",
+    "value": 282044605,
+    "share": 28.58451283645369
+   },
+   {
+    "code": "100590",
+    "name": "100590 - Cereals; maize (corn), other than seed",
+    "value": 258911366,
+    "share": 26.24001712399625
+   },
+   {
+    "code": "291736",
+    "name": "291736 - Acids; aromatic polycarboxylic acids; terephthalic acid and its salts",
+    "value": 251749671,
+    "share": 25.514197310288893
+   },
+   {
+    "code": "400219",
+    "name": "400219 - Rubber; synthetic, styrene-butadiene rubber (SBR) and carboxylated styrene-butadiene rubber (XSBR), (other than latex), in primary forms or in plates, sheets or strip",
+    "value": 244832545,
+    "share": 24.81316395090814
+   },
+   {
+    "code": "720711",
+    "name": "720711 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (including square) cross-section, width less than twice thickness",
+    "value": 243953754,
+    "share": 24.72410068866258
+   },
+   {
+    "code": "291612",
+    "name": "291612 - Acids; unsaturated acyclic monocarboxylic acids; esters of acrylic acid",
+    "value": 243867507,
+    "share": 24.715359771676752
+   },
+   {
+    "code": "291736",
+    "name": "291736 - Acids; aromatic polycarboxylic acids; terephthalic acid and its salts",
+    "value": 231079254,
+    "share": 23.419302426299353
+   },
+   {
+    "code": "290516",
+    "name": "290516 - Alcohols; saturated monohydric, octanol (octyl alcohol) and isomers thereof",
+    "value": 215775586,
+    "share": 21.868314083902852
+   },
+   {
+    "code": "730429",
+    "name": "730429 - Iron or steel (excluding cast iron or stainless steel); seamless, casing and tubing, of a kind used in drilling for oil or gas",
+    "value": 215405898,
+    "share": 21.830847132952016
+   },
+   {
+    "code": "730429",
+    "name": "730429 - Iron or steel (excluding cast iron or stainless steel); seamless, casing and tubing, of a kind used in drilling for oil or gas",
+    "value": 211065593,
+    "share": 21.39096811457255
+   },
+   {
+    "code": "740311",
+    "name": "740311 - Copper; refined, unwrought, cathodes and sections of cathodes",
+    "value": 203972146,
+    "share": 20.67206506437521
+   },
+   {
+    "code": "870840",
+    "name": "870840 - Vehicle parts; gear boxes and parts thereof",
+    "value": 203077956,
+    "share": 20.58144115212832
+   },
+   {
+    "code": "740311",
+    "name": "740311 - Copper; refined, unwrought, cathodes and sections of cathodes",
+    "value": 198793018,
+    "share": 20.14717344023783
+   },
+   {
+    "code": "870894",
+    "name": "870894 - Vehicle parts; steering wheels, steering columns and steering boxes; parts thereof",
+    "value": 194501513,
+    "share": 19.7122401793793
+   },
+   {
+    "code": "843149",
+    "name": "843149 - Machinery; parts of machines handling earth, minerals or ores and n.e.c. in heading no. 8431",
+    "value": 192978041,
+    "share": 19.55784011581497
+   },
+   {
+    "code": "151211",
+    "name": "151211 - Vegetable oils; sunflower seed or safflower oil and their fractions, crude, not chemically modified",
+    "value": 192639644,
+    "share": 19.523544429179452
+   },
+   {
+    "code": "740819",
+    "name": "740819 - Copper; wire, of refined copper, of which the maximum cross-sectional dimension is 6mm or less",
+    "value": 189462719,
+    "share": 19.201571053929285
+   },
+   {
+    "code": "750890",
+    "name": "750890 - Nickel; articles thereof n.e.c. in item no. 7508.1",
+    "value": 177507557,
+    "share": 17.98994539049607
+   },
+   {
+    "code": "720712",
+    "name": "720712 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (other than square) cross-section",
+    "value": 174611074,
+    "share": 17.69639410808785
+   },
+   {
+    "code": "392190",
+    "name": "392190 - Plastics; plates, sheets, film, foil and strip, other than cellular",
+    "value": 169597857,
+    "share": 17.188317147394248
+   },
+   {
+    "code": "271019",
+    "name": "271019 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; not light oils and preparations",
+    "value": 168349839,
+    "share": 17.061833655390828
+   },
+   {
+    "code": "870840",
+    "name": "870840 - Vehicle parts; gear boxes and parts thereof",
+    "value": 166208652,
+    "share": 16.844829726927994
+   },
+   {
+    "code": "100199",
+    "name": "100199 - Cereals; wheat and meslin, other than durum wheat, other than seed",
+    "value": 159737916,
+    "share": 16.189036873690107
+   },
+   {
+    "code": "100199",
+    "name": "100199 - Cereals; wheat and meslin, other than durum wheat, other than seed",
+    "value": 159737916,
+    "share": 16.189036873690107
+   },
+   {
+    "code": "722830",
+    "name": "722830 - Steel, alloy; bars and rods, hot-rolled, hot-drawn or extruded",
+    "value": 152506099,
+    "share": 15.456110371276122
+   },
+   {
+    "code": "392062",
+    "name": "392062 - Plastics; plates, sheets, film, foil and strip (not self-adhesive), of poly(ethylene terephthalate), non-cellular and not reinforced, laminated, supported or similarly combined with other materials",
+    "value": 151649863,
+    "share": 15.369333001671645
+   },
+   {
+    "code": "100590",
+    "name": "100590 - Cereals; maize (corn), other than seed",
+    "value": 147722801,
+    "share": 14.971335124177942
+   },
+   {
+    "code": "870840",
+    "name": "870840 - Vehicle parts; gear boxes and parts thereof",
+    "value": 146682934,
+    "share": 14.86594721360364
+   },
+   {
+    "code": "870840",
+    "name": "870840 - Vehicle parts; gear boxes and parts thereof",
+    "value": 145559462,
+    "share": 14.752086146112573
+   },
+   {
+    "code": "760120",
+    "name": "760120 - Aluminium; unwrought, alloys",
+    "value": 143552838,
+    "share": 14.548719839971259
+   },
+   {
+    "code": "151211",
+    "name": "151211 - Vegetable oils; sunflower seed or safflower oil and their fractions, crude, not chemically modified",
+    "value": 130196647,
+    "share": 13.195103403714208
+   },
+   {
+    "code": "290250",
+    "name": "290250 - Cyclic hydrocarbons; styrene",
+    "value": 120659931,
+    "share": 12.228581172524525
+   },
+   {
+    "code": "540233",
+    "name": "540233 - Yarn, synthetic; filament, monofilament (less than 67 decitex), textured, of polyesters, not for retail sale, not sewing thread",
+    "value": 119049110,
+    "share": 12.06532850704018
+   },
+   {
+    "code": "400219",
+    "name": "400219 - Rubber; synthetic, styrene-butadiene rubber (SBR) and carboxylated styrene-butadiene rubber (XSBR), (other than latex), in primary forms or in plates, sheets or strip",
+    "value": 116336377,
+    "share": 11.790399825953116
+   },
+   {
+    "code": "080252",
+    "name": "080252 - Nuts, edible; pistachios, fresh or dried, shelled",
+    "value": 112415963,
+    "share": 11.393075706574153
+   },
+   {
+    "code": "080252",
+    "name": "080252 - Nuts, edible; pistachios, fresh or dried, shelled",
+    "value": 112415963,
+    "share": 11.393075706574153
+   },
+   {
+    "code": "391732",
+    "name": "391732 - Plastics; tubes, pipes and hoses thereof, other than those of item no. 3917.31, not reinforced or otherwise combined with other materials, without fittings",
+    "value": 111170647,
+    "share": 11.266866055489208
+   },
+   {
+    "code": "392690",
+    "name": "392690 - Plastics; other articles n.e.c. in chapter 39",
+    "value": 110745181,
+    "share": 11.223746144230935
+   },
+   {
+    "code": "390410",
+    "name": "390410 - Vinyl chloride, other halogenated olefin polymers; poly(vinyl chloride), not mixed with any other substances, in primary forms",
+    "value": 108902480,
+    "share": 11.036993022722918
+   },
+   {
+    "code": "731210",
+    "name": "731210 - Iron or steel; stranded wire, ropes and cables, not electrically insulated",
+    "value": 107466810,
+    "share": 10.891491471491644
+   },
+   {
+    "code": "290250",
+    "name": "290250 - Cyclic hydrocarbons; styrene",
+    "value": 105967046,
+    "share": 10.739494154224573
+   },
+   {
+    "code": "830230",
+    "name": "830230 - Mountings, fittings and similar articles; for motor vehicles, of base metal",
+    "value": 104802195,
+    "share": 10.621439428937215
+   },
+   {
+    "code": "151190",
+    "name": "151190 - Vegetable oils; palm oil and its fractions, other than crude, whether or not refined, but not chemically modified",
+    "value": 103084889,
+    "share": 10.447394775960717
+   },
+   {
+    "code": "721913",
+    "name": "721913 - Steel, stainless; flat-rolled, width 600mm or more, hot-rolled, in coils, of a thickness of 3mm or more but less than 4.75mm",
+    "value": 103001753,
+    "share": 10.438969151016849
+   },
+   {
+    "code": "760711",
+    "name": "760711 - Aluminium; foil, (not backed), rolled (but not further worked), of a thickness not exceeding 0.2mm",
+    "value": 102196502,
+    "share": 10.357358983199362
+   },
+   {
+    "code": "270400",
+    "name": "270400 - Coke and semi-coke; of coal, lignite or peat, whether or not agglomerated; retort carbon",
+    "value": 100656316,
+    "share": 10.201264997684104
+   },
+   {
+    "code": "722599",
+    "name": "722599 - Steel, alloy; flat-rolled, width 600mm or more, n.e.c. in heading no. 7225, (other than plated or coated with zinc)",
+    "value": 100164519,
+    "share": 10.15142260605449
+   },
+   {
+    "code": "740311",
+    "name": "740311 - Copper; refined, unwrought, cathodes and sections of cathodes",
+    "value": 99418851,
+    "share": 10.075851025744587
+   },
+   {
+    "code": "720711",
+    "name": "720711 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (including square) cross-section, width less than twice thickness",
+    "value": 97617175,
+    "share": 9.893255685021332
+   },
+   {
+    "code": "390810",
+    "name": "390810 - Polyamides; polyamide-6, -11, -12, -6,6, -6,9, -6,10 or -6,12, in primary forms",
+    "value": 96192071,
+    "share": 9.748824971371334
+   },
+   {
+    "code": "390120",
+    "name": "390120 - Ethylene polymers; in primary forms, polyethylene having a specific gravity of 0.94 or more",
+    "value": 89009498,
+    "share": 9.02088922476393
+   },
+   {
+    "code": "870840",
+    "name": "870840 - Vehicle parts; gear boxes and parts thereof",
+    "value": 85626869,
+    "share": 8.678068265393122
+   },
+   {
+    "code": "720712",
+    "name": "720712 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (other than square) cross-section",
+    "value": 85405842,
+    "share": 8.655667733680406
+   },
+   {
+    "code": "200979",
+    "name": "200979 - Juice; apple, of a Brix value exceeding 20, unfermented, not containing added spirit, whether or not containing added sugar or other sweetening matter",
+    "value": 84870017,
+    "share": 8.60136321475301
+   },
+   {
+    "code": "392310",
+    "name": "392310 - Plastics; boxes, cases, crates and similar articles for the conveyance or packing of goods",
+    "value": 84629683,
+    "share": 8.577005967047329
+   },
+   {
+    "code": "720712",
+    "name": "720712 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (other than square) cross-section",
+    "value": 83254815,
+    "share": 8.437666545914173
+   },
+   {
+    "code": "281410",
+    "name": "281410 - Ammonia; anhydrous",
+    "value": 82664011,
+    "share": 8.377790043323994
+   },
+   {
+    "code": "151211",
+    "name": "151211 - Vegetable oils; sunflower seed or safflower oil and their fractions, crude, not chemically modified",
+    "value": 82622230,
+    "share": 8.373555643836651
+   },
+   {
+    "code": "283620",
+    "name": "283620 - Carbonates; disodium carbonate",
+    "value": 82555942,
+    "share": 8.36683752140739
+   },
+   {
+    "code": "290531",
+    "name": "290531 - Alcohols; acyclic, diols; ethylene glycol (ethanediol)",
+    "value": 82319616,
+    "share": 8.342886474442361
+   },
+   {
+    "code": "290531",
+    "name": "290531 - Alcohols; acyclic, diols; ethylene glycol (ethanediol)",
+    "value": 82319616,
+    "share": 8.342886474442361
+   },
+   {
+    "code": "870840",
+    "name": "870840 - Vehicle parts; gear boxes and parts thereof",
+    "value": 80804778,
+    "share": 8.189361445108268
+   },
+   {
+    "code": "390210",
+    "name": "390210 - Propylene, other olefin polymers; polypropylene in primary forms",
+    "value": 80782473,
+    "share": 8.187100889339732
+   },
+   {
+    "code": "390210",
+    "name": "390210 - Propylene, other olefin polymers; polypropylene in primary forms",
+    "value": 80782473,
+    "share": 8.187100889339732
+   },
+   {
+    "code": "293361",
+    "name": "293361 - Heterocyclic compounds; containing an unfused triazine ring (whether or not hydrogenated) in the structure, melamine",
+    "value": 80533038,
+    "share": 8.161821278125894
+   },
+   {
+    "code": "740311",
+    "name": "740311 - Copper; refined, unwrought, cathodes and sections of cathodes",
+    "value": 77579277,
+    "share": 7.862465014174962
+   },
+   {
+    "code": "830242",
+    "name": "830242 - Mountings, fittings and similar articles; suitable for furniture of base metal",
+    "value": 77407358,
+    "share": 7.845041455010161
+   },
+   {
+    "code": "720712",
+    "name": "720712 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (other than square) cross-section",
+    "value": 75623670,
+    "share": 7.664269152940323
+   },
+   {
+    "code": "843149",
+    "name": "843149 - Machinery; parts of machines handling earth, minerals or ores and n.e.c. in heading no. 8431",
+    "value": 72925477,
+    "share": 7.390814064360524
+   },
+   {
+    "code": "420500",
+    "name": "420500 - Leather articles; n.e.c. in chapter 42, of leather or composition leather",
+    "value": 72013557,
+    "share": 7.298393261112686
+   },
+   {
+    "code": "271019",
+    "name": "271019 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; not light oils and preparations",
+    "value": 71843293,
+    "share": 7.281137432044139
+   },
+   {
+    "code": "720917",
+    "name": "720917 - Iron or non-alloy steel; in coils, flat-rolled, width 600mm or more, cold-rolled, of a thickness of 0.5mm or more but not exceeding 1mm",
+    "value": 71519813,
+    "share": 7.248353545919686
+   },
+   {
+    "code": "720917",
+    "name": "720917 - Iron or non-alloy steel; in coils, flat-rolled, width 600mm or more, cold-rolled, of a thickness of 0.5mm or more but not exceeding 1mm",
+    "value": 71519813,
+    "share": 7.248353545919686
+   },
+   {
+    "code": "760110",
+    "name": "760110 - Aluminium; unwrought, (not alloyed)",
+    "value": 70950402,
+    "share": 7.190645170186998
+   },
+   {
+    "code": "830990",
+    "name": "830990 - Stoppers; caps and lids, of base metal",
+    "value": 70758219,
+    "share": 7.171167905481125
+   },
+   {
+    "code": "720839",
+    "name": "720839 - Iron or non-alloy steel; in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness of less than 3mm",
+    "value": 70460303,
+    "share": 7.140974866595716
+   }
+  ],
+  "xCount": 20000,
+  "mCount": 20000
+ },
+ "source": "UN Comtrade Plus",
+ "fetchedAt": "2026-11-14T06:19:27.261Z"
+}

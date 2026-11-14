@@ -143,6 +143,22 @@ details.ind-hist > summary .row-link:hover { color: var(--primary); }
 table.data.compact th, table.data.compact td { padding: 5px 12px; font-size: 13px; }
 .hist-body table.data { font-size: 13px; }
 
+/* gorizontal ustunli diagramma */
+.barlist { display: grid; gap: 7px; }
+.barlist-row {
+  display: grid; grid-template-columns: minmax(120px, 180px) 1fr max-content;
+  gap: 10px; align-items: center; font-size: 13.5px;
+}
+.barlist-name {
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600;
+}
+.barlist-track { background: var(--surface-2); border-radius: 5px; overflow: hidden; }
+.barlist-bar { display: block; height: 15px; border-radius: 5px; min-width: 2px; }
+.barlist-val { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--muted); font-size: 12.5px; }
+.trade-charts { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 22px; }
+.trade-charts h3 { font-size: 15px; margin: 0 0 10px; }
+@media (max-width: 720px) { .trade-charts { grid-template-columns: 1fr; } .barlist-row { grid-template-columns: minmax(90px, 130px) 1fr max-content; } }
+
 /* jadval ustidagi asboblar (eksport) */
 .table-tools { display: flex; gap: 8px; justify-content: flex-end; padding: 10px 18px 0; flex-wrap: wrap; }
 .btn-dl {

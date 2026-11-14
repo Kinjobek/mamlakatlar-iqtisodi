@@ -1,0 +1,1243 @@
+{
+ "iso3": "FRA",
+ "comtradeCode": 251,
+ "year": 2024,
+ "totals": {
+  "x": 0,
+  "m": 0,
+  "balance": 0
+ },
+ "partnerCount": 2,
+ "partners": [
+  {
+   "code": 842,
+   "iso3": "USA",
+   "name": "Amerika Qöşma Ştatlari (AQŞ)",
+   "x": 0,
+   "m": 310967381.203,
+   "balance": -310967381.203,
+   "shareX": 0,
+   "shareM": 0
+  },
+  {
+   "code": 620,
+   "iso3": "PRT",
+   "name": "Portugaliya",
+   "x": 617055.359,
+   "m": 0,
+   "balance": 617055.359,
+   "shareX": 0,
+   "shareM": 0
+  }
+ ],
+ "products": {
+  "x": [
+   {
+    "code": "880240",
+    "name": "880240 - Aeroplanes and other aircraft, except unmanned; of an unladen weight exceeding 15,000kg",
+    "value": 27619954173.034,
+    "share": 0
+   },
+   {
+    "code": "880240",
+    "name": "880240 - Aeroplanes and other aircraft, except unmanned; of an unladen weight exceeding 15,000kg",
+    "value": 27524465121.71,
+    "share": 0
+   },
+   {
+    "code": "300490",
+    "name": "300490 - Medicaments; consisting of mixed or unmixed products n.e.c. in heading no. 3004, for therapeutic or prophylactic uses, packaged for retail sale",
+    "value": 18181997464.732,
+    "share": 0
+   },
+   {
+    "code": "711319",
+    "name": "711319 - Jewellery; of precious metal (excluding silver) whether or not plated or clad with precious metal, and parts thereof",
+    "value": 14468761572.322,
+    "share": 0
+   },
+   {
+    "code": "841112",
+    "name": "841112 - Turbo-jets; of a thrust exceeding 25kN",
+    "value": 10767007306.648,
+    "share": 0
+   },
+   {
+    "code": "841191",
+    "name": "841191 - Turbines; parts of turbo-jets and turbo-propellers",
+    "value": 9876624598.231,
+    "share": 0
+   },
+   {
+    "code": "330499",
+    "name": "330499 - Cosmetic and toilet preparations; n.e.c. in heading no. 3304, for the care of the skin (excluding medicaments, including sunscreen or sun tan preparations)",
+    "value": 9845421996.267,
+    "share": 0
+   },
+   {
+    "code": "330300",
+    "name": "330300 - Perfumes and toilet waters",
+    "value": 8623735980.207,
+    "share": 0
+   },
+   {
+    "code": "271019",
+    "name": "271019 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; not light oils and preparations",
+    "value": 8525151152.998,
+    "share": 0
+   },
+   {
+    "code": "890110",
+    "name": "890110 - Cruise ships, excursion boats and similar vessels, principally designed for the transport of persons, ferry boats of all kinds",
+    "value": 6759019490.76,
+    "share": 0
+   },
+   {
+    "code": "271121",
+    "name": "271121 - Petroleum gases and other gaseous hydrocarbons; in gaseous state, natural gas",
+    "value": 6699170290.404,
+    "share": 0
+   },
+   {
+    "code": "271121",
+    "name": "271121 - Petroleum gases and other gaseous hydrocarbons; in gaseous state, natural gas",
+    "value": 6699170290.404,
+    "share": 0
+   },
+   {
+    "code": "880730",
+    "name": "880730 - Aircraft and spacecraft; parts of aeroplanes, helicopters or unmanned aircraft n.e.c. in heading no. 8807",
+    "value": 6630920785.086,
+    "share": 0
+   },
+   {
+    "code": "841112",
+    "name": "841112 - Turbo-jets; of a thrust exceeding 25kN",
+    "value": 6519284094.749,
+    "share": 0
+   },
+   {
+    "code": "271600",
+    "name": "271600 - Electrical energy",
+    "value": 6398575079.729,
+    "share": 0
+   },
+   {
+    "code": "271600",
+    "name": "271600 - Electrical energy",
+    "value": 6398575079.729,
+    "share": 0
+   },
+   {
+    "code": "420221",
+    "name": "420221 - Cases and containers; handbags (whether or not with shoulder strap and including those without handle), with outer surface of leather or of composition leather",
+    "value": 5868644520.282,
+    "share": 0
+   },
+   {
+    "code": "870421",
+    "name": "870421 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), for transport of goods, (of a gvw not exceeding 5 tonnes), n.e.c. in item no 8704.1",
+    "value": 5401424636.342,
+    "share": 0
+   },
+   {
+    "code": "890110",
+    "name": "890110 - Cruise ships, excursion boats and similar vessels, principally designed for the transport of persons, ferry boats of all kinds",
+    "value": 5198234985.294,
+    "share": 0
+   },
+   {
+    "code": "870340",
+    "name": "870340 - Vehicles; with both spark-ignition internal combustion piston engine and electric motor for propulsion, incapable of being charged by plugging to external source of electric power",
+    "value": 5175309988.558,
+    "share": 0
+   },
+   {
+    "code": "271012",
+    "name": "271012 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; light oils and preparations",
+    "value": 4451681721.083,
+    "share": 0
+   },
+   {
+    "code": "420221",
+    "name": "420221 - Cases and containers; handbags (whether or not with shoulder strap and including those without handle), with outer surface of leather or of composition leather",
+    "value": 4449397996.809,
+    "share": 0
+   },
+   {
+    "code": "870421",
+    "name": "870421 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), for transport of goods, (of a gvw not exceeding 5 tonnes), n.e.c. in item no 8704.1",
+    "value": 4374818875.601,
+    "share": 0
+   },
+   {
+    "code": "870899",
+    "name": "870899 - Vehicle parts and accessories; n.e.c. in heading no. 8708",
+    "value": 4215043140.041,
+    "share": 0
+   },
+   {
+    "code": "870340",
+    "name": "870340 - Vehicles; with both spark-ignition internal combustion piston engine and electric motor for propulsion, incapable of being charged by plugging to external source of electric power",
+    "value": 4187229131.429,
+    "share": 0
+   },
+   {
+    "code": "841112",
+    "name": "841112 - Turbo-jets; of a thrust exceeding 25kN",
+    "value": 4178071997.909,
+    "share": 0
+   },
+   {
+    "code": "300241",
+    "name": "300241 - Vaccines, toxins, cultures of micro-organisms (excluding yeasts) and similar products; for human medicine",
+    "value": 4007603232.039,
+    "share": 0
+   },
+   {
+    "code": "300439",
+    "name": "300439 - Medicaments; containing hormones (but not insulin), adrenal cortex hormones or antibiotics, for therapeutic or prophylactic uses, packaged for retail sale",
+    "value": 3912120013.664,
+    "share": 0
+   },
+   {
+    "code": "420222",
+    "name": "420222 - Cases and containers; handbags (whether or not with shoulder strap and including those without handle), with outer surface of sheeting of plastics or of textile materials",
+    "value": 3580132184.805,
+    "share": 0
+   },
+   {
+    "code": "870332",
+    "name": "870332 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity over 1500 but not over 2500cc",
+    "value": 3551697396.363,
+    "share": 0
+   },
+   {
+    "code": "854239",
+    "name": "854239 - Electronic integrated circuits; n.e.c. in heading no. 8542",
+    "value": 3467649609.809,
+    "share": 0
+   },
+   {
+    "code": "870121",
+    "name": "870121 - Tractors; road tractors for semi-trailers, with only compression-ignition internal combustion piston engine (diesel or semi-diesel)",
+    "value": 3288940837.359,
+    "share": 0
+   },
+   {
+    "code": "392690",
+    "name": "392690 - Plastics; other articles n.e.c. in chapter 39",
+    "value": 3166132744.596,
+    "share": 0
+   },
+   {
+    "code": "854239",
+    "name": "854239 - Electronic integrated circuits; n.e.c. in heading no. 8542",
+    "value": 3115837526.061,
+    "share": 0
+   },
+   {
+    "code": "300215",
+    "name": "300215 - Blood, human or animal, antisera, other blood fractions and immunological products; immunological products, put up in measured doses or in forms or packings for retail sale",
+    "value": 2947994470.148,
+    "share": 0
+   },
+   {
+    "code": "284420",
+    "name": "284420 - Uranium; enriched in U235, plutonium, their compounds, alloys dispersions (including cermets), ceramic products and mixtures containing uranium enriched in U235, plutonium or compounds of these products",
+    "value": 2947390050.499,
+    "share": 0
+   },
+   {
+    "code": "040690",
+    "name": "040690 - Dairy produce; cheese (not grated, powdered or processed), n.e.c. in heading no. 0406",
+    "value": 2893063604.437,
+    "share": 0
+   },
+   {
+    "code": "870322",
+    "name": "870322 - Vehicles; with only spark-ignition internal combustion piston engine, cylinder capacity over 1000 but not over 1500cc",
+    "value": 2766127815.906,
+    "share": 0
+   },
+   {
+    "code": "870332",
+    "name": "870332 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity over 1500 but not over 2500cc",
+    "value": 2666633548.822,
+    "share": 0
+   },
+   {
+    "code": "190590",
+    "name": "190590 - Food preparations; bakers' wares n.e.c. in heading no. 1605, whether or not containing cocoa; communion wafers, empty cachets suitable for pharmaceutical use, sealing wafers, rice papers and similar products",
+    "value": 2622621867.077,
+    "share": 0
+   },
+   {
+    "code": "284420",
+    "name": "284420 - Uranium; enriched in U235, plutonium, their compounds, alloys dispersions (including cermets), ceramic products and mixtures containing uranium enriched in U235, plutonium or compounds of these products",
+    "value": 2591444602.557,
+    "share": 0
+   },
+   {
+    "code": "870380",
+    "name": "870380 - Vehicles; with only electric motor for propulsion",
+    "value": 2516593952.139,
+    "share": 0
+   },
+   {
+    "code": "870121",
+    "name": "870121 - Tractors; road tractors for semi-trailers, with only compression-ignition internal combustion piston engine (diesel or semi-diesel)",
+    "value": 2493876754.051,
+    "share": 0
+   },
+   {
+    "code": "420222",
+    "name": "420222 - Cases and containers; handbags (whether or not with shoulder strap and including those without handle), with outer surface of sheeting of plastics or of textile materials",
+    "value": 2452000926.091,
+    "share": 0
+   },
+   {
+    "code": "330290",
+    "name": "330290 - Odoriferous substances and mixtures; used as raw materials in industries other than the food or drink industries",
+    "value": 2410232263.538,
+    "share": 0
+   },
+   {
+    "code": "870321",
+    "name": "870321 - Vehicles; with only spark-ignition internal combustion piston engine, cylinder capacity not over 1000cc",
+    "value": 2322076194.792,
+    "share": 0
+   },
+   {
+    "code": "230910",
+    "name": "230910 - Dog or cat food; put up for retail sale, used in animal feeding",
+    "value": 2315863152.359,
+    "share": 0
+   },
+   {
+    "code": "381121",
+    "name": "381121 - Lubricating oil additives; containing petroleum oils or oils obtained from bituminous minerals",
+    "value": 2232991431.705,
+    "share": 0
+   },
+   {
+    "code": "210690",
+    "name": "210690 - Food preparations; n.e.c. in item no. 2106.10",
+    "value": 2170852126.441,
+    "share": 0
+   },
+   {
+    "code": "851762",
+    "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
+    "value": 2142531499.914,
+    "share": 0
+   },
+   {
+    "code": "870829",
+    "name": "870829 - Vehicles; parts and accessories, of bodies, other than safety seat belts",
+    "value": 2077462488.4,
+    "share": 0
+   },
+   {
+    "code": "760612",
+    "name": "760612 - Aluminium; plates, sheets and strip, thickness exceeding 0.2mm, alloys, rectangular (including square)",
+    "value": 2030478531.463,
+    "share": 0
+   },
+   {
+    "code": "382499",
+    "name": "382499 - Chemical products, mixtures and preparations; n.e.c. heading 3824",
+    "value": 2021941906.095,
+    "share": 0
+   },
+   {
+    "code": "880720",
+    "name": "880720 - Aircraft and spacecraft; under-carriages and parts thereof",
+    "value": 2002913081.782,
+    "share": 0
+   },
+   {
+    "code": "732690",
+    "name": "732690 - Iron or steel; articles n.e.c. in heading 7326",
+    "value": 1986180497.308,
+    "share": 0
+   },
+   {
+    "code": "870380",
+    "name": "870380 - Vehicles; with only electric motor for propulsion",
+    "value": 1946342993.077,
+    "share": 0
+   },
+   {
+    "code": "300432",
+    "name": "300432 - Medicaments; containing corticosteroid hormones, their derivatives or structural analogues (but not containing antibiotics), for therapeutic or prophylactic uses, packaged for retail sale",
+    "value": 1942386777.764,
+    "share": 0
+   },
+   {
+    "code": "853710",
+    "name": "853710 - Boards, panels, consoles, desks and other bases; for electric control or the distribution of electricity, (other than switching apparatus of heading no. 8517), for a voltage not exceeding 1000 volts",
+    "value": 1935477530.9,
+    "share": 0
+   },
+   {
+    "code": "854231",
+    "name": "854231 - Electronic integrated circuits; processors and controllers, whether or not combined with memories, converters, logic circuits, amplifiers, clock and timing circuits, or other circuits",
+    "value": 1847585936.408,
+    "share": 0
+   },
+   {
+    "code": "220110",
+    "name": "220110 - Waters; mineral and aerated, including natural or artificial, (not containing added sugar or other sweetening matter nor flavoured)",
+    "value": 1831122460.94,
+    "share": 0
+   },
+   {
+    "code": "880230",
+    "name": "880230 - Aeroplanes and other aircraft, except unmanned; of an unladen weight exceeding 2000kg but not exceeding 15,000kg",
+    "value": 1829193102.617,
+    "share": 0
+   },
+   {
+    "code": "848180",
+    "name": "848180 - Taps, cocks, valves and similar appliances; for pipes, boiler shells, tanks, vats or the like, including thermostatically controlled valves",
+    "value": 1783236200.263,
+    "share": 0
+   },
+   {
+    "code": "710812",
+    "name": "710812 - Metals; gold, non-monetary, unwrought (but not powder)",
+    "value": 1764178014.215,
+    "share": 0
+   },
+   {
+    "code": "010229",
+    "name": "010229 - Cattle; live, other than pure-bred breeding animals",
+    "value": 1763234040.992,
+    "share": 0
+   },
+   {
+    "code": "293379",
+    "name": "293379 - Heterocyclic compounds; lactams; other than 6-hexanelactam (epsilon caprolactam) and clobazam (INN) and methyprylon (INN)",
+    "value": 1763194662.908,
+    "share": 0
+   },
+   {
+    "code": "382219",
+    "name": "382219 - Reagents; diagnostic or laboratory reagents on a backing, prepared diagnostic or laboratory reagents whether or not on a backing, whether or not put up in the form of kits; n.e.c.in item 3822.1",
+    "value": 1743982285.269,
+    "share": 0
+   },
+   {
+    "code": "880230",
+    "name": "880230 - Aeroplanes and other aircraft, except unmanned; of an unladen weight exceeding 2000kg but not exceeding 15,000kg",
+    "value": 1715064883.945,
+    "share": 0
+   },
+   {
+    "code": "010229",
+    "name": "010229 - Cattle; live, other than pure-bred breeding animals",
+    "value": 1712487176.479,
+    "share": 0
+   },
+   {
+    "code": "870331",
+    "name": "870331 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity not over 1500cc",
+    "value": 1702246430.75,
+    "share": 0
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 1695021994.697,
+    "share": 0
+   },
+   {
+    "code": "710812",
+    "name": "710812 - Metals; gold, non-monetary, unwrought (but not powder)",
+    "value": 1680255082.411,
+    "share": 0
+   },
+   {
+    "code": "870840",
+    "name": "870840 - Vehicle parts; gear boxes and parts thereof",
+    "value": 1646638705.995,
+    "share": 0
+   },
+   {
+    "code": "870322",
+    "name": "870322 - Vehicles; with only spark-ignition internal combustion piston engine, cylinder capacity over 1000 but not over 1500cc",
+    "value": 1601067042.33,
+    "share": 0
+   },
+   {
+    "code": "740400",
+    "name": "740400 - Copper; waste and scrap",
+    "value": 1563988959.926,
+    "share": 0
+   },
+   {
+    "code": "890110",
+    "name": "890110 - Cruise ships, excursion boats and similar vessels, principally designed for the transport of persons, ferry boats of all kinds",
+    "value": 1560341901.696,
+    "share": 0
+   },
+   {
+    "code": "300431",
+    "name": "300431 - Medicaments; containing insulin, for therapeutic or prophylactic uses, packaged for retail sale",
+    "value": 1548610252.65,
+    "share": 0
+   },
+   {
+    "code": "170199",
+    "name": "170199 - Sugars; sucrose, chemically pure, in solid form, not containing added flavouring or colouring matter",
+    "value": 1543043684.676,
+    "share": 0
+   },
+   {
+    "code": "850440",
+    "name": "850440 - Electrical static converters",
+    "value": 1536544312.564,
+    "share": 0
+   },
+   {
+    "code": "401110",
+    "name": "401110 - Rubber; new pneumatic tyres, of a kind used on motor cars (including station wagons and racing cars)",
+    "value": 1527753241.197,
+    "share": 0
+   },
+   {
+    "code": "901890",
+    "name": "901890 - Medical, surgical or dental instruments and appliances; n.e.c. in heading no. 9018",
+    "value": 1464888765.921,
+    "share": 0
+   },
+   {
+    "code": "380892",
+    "name": "380892 - Fungicides; other than containing goods specified in Subheading Note 1 to this Chapter; put up in forms or packings for retail sale or as preparations or articles",
+    "value": 1455282599.29,
+    "share": 0
+   },
+   {
+    "code": "390690",
+    "name": "390690 - Acrylic polymers; (other than polymethyl methacrylate), in primary forms",
+    "value": 1449447511.125,
+    "share": 0
+   },
+   {
+    "code": "853890",
+    "name": "853890 - Electrical apparatus; parts suitable for use solely or principally with the apparatus of heading no. 8535, 8536 or 8537",
+    "value": 1430643932.35,
+    "share": 0
+   },
+   {
+    "code": "854231",
+    "name": "854231 - Electronic integrated circuits; processors and controllers, whether or not combined with memories, converters, logic circuits, amplifiers, clock and timing circuits, or other circuits",
+    "value": 1403969195.197,
+    "share": 0
+   },
+   {
+    "code": "190120",
+    "name": "190120 - Food preparations; mixes and doughs for the preparation of bread, pastry, cakes, biscuits and other bakers' wares",
+    "value": 1381944319.041,
+    "share": 0
+   },
+   {
+    "code": "842720",
+    "name": "842720 - Fork-lift and other works trucks; fitted with lifting or handling equipment, self-propelled by other than electric motor",
+    "value": 1364163024.798,
+    "share": 0
+   },
+   {
+    "code": "230990",
+    "name": "230990 - Dog or cat food; (not put up for retail sale), used in animal feeding",
+    "value": 1338203342.814,
+    "share": 0
+   },
+   {
+    "code": "853690",
+    "name": "853690 - Electrical apparatus; n.e.c. in heading no. 8536, for switching or protecting electrical circuits, for a voltage not exceeding 1000 volts",
+    "value": 1291483191.219,
+    "share": 0
+   },
+   {
+    "code": "870423",
+    "name": "870423 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), for transport of goods, (of a g.v.w. exceeding 20 tonnes), n.e.c. in item no 8704.1",
+    "value": 1276411427.559,
+    "share": 0
+   },
+   {
+    "code": "401110",
+    "name": "401110 - Rubber; new pneumatic tyres, of a kind used on motor cars (including station wagons and racing cars)",
+    "value": 1260148634.088,
+    "share": 0
+   },
+   {
+    "code": "180400",
+    "name": "180400 - Cocoa; butter, fat and oil",
+    "value": 1227055402.455,
+    "share": 0
+   },
+   {
+    "code": "840820",
+    "name": "840820 - Engines; compression-ignition internal combustion piston engines (diesel or semi-diesel engines), of a kind used for the propulsion of vehicles of chapter 87",
+    "value": 1203923017.294,
+    "share": 0
+   },
+   {
+    "code": "090121",
+    "name": "090121 - Coffee; roasted, not decaffeinated",
+    "value": 1190696120.256,
+    "share": 0
+   },
+   {
+    "code": "640399",
+    "name": "640399 - Footwear; n.e.c. in heading no. 6403, (not covering the ankle), outer soles of rubber, plastics or composition leather, uppers of leather",
+    "value": 1181575695.669,
+    "share": 0
+   },
+   {
+    "code": "870331",
+    "name": "870331 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity not over 1500cc",
+    "value": 1155885781.861,
+    "share": 0
+   },
+   {
+    "code": "870830",
+    "name": "870830 - Vehicle parts; brakes, servo-brakes and parts thereof",
+    "value": 1146853627.565,
+    "share": 0
+   },
+   {
+    "code": "840999",
+    "name": "840999 - Engines; parts for internal combustion piston engines (excluding spark-ignition)",
+    "value": 1109990873.93,
+    "share": 0
+   },
+   {
+    "code": "854449",
+    "name": "854449 - Insulated electric conductors; for a voltage not exceeding 1000 volts, not fitted with connectors",
+    "value": 1105938712.083,
+    "share": 0
+   },
+   {
+    "code": "842129",
+    "name": "842129 - Machinery; for filtering or purifying liquids, n.e.c. in item no. 8421.2",
+    "value": 1094341540.15,
+    "share": 0
+   },
+   {
+    "code": "854370",
+    "name": "854370 - Electrical machines and apparatus; having individual functions, not specified or included elsewhere in this chapter, n.e.c. in heading no. 8543",
+    "value": 1092194072.422,
+    "share": 0
+   }
+  ],
+  "m": [
+   {
+    "code": "870322",
+    "name": "870322 - Vehicles; with only spark-ignition internal combustion piston engine, cylinder capacity over 1000 but not over 1500cc",
+    "value": 8981846729.177,
+    "share": 0
+   },
+   {
+    "code": "870380",
+    "name": "870380 - Vehicles; with only electric motor for propulsion",
+    "value": 8179508574.012,
+    "share": 0
+   },
+   {
+    "code": "870380",
+    "name": "870380 - Vehicles; with only electric motor for propulsion",
+    "value": 6602117394.144,
+    "share": 0
+   },
+   {
+    "code": "870360",
+    "name": "870360 - Vehicles; with both spark-ignition internal combustion piston engine and electric motor for propulsion, capable of being charged by plugging to external source of electric power",
+    "value": 5685560203.175,
+    "share": 0
+   },
+   {
+    "code": "870321",
+    "name": "870321 - Vehicles; with only spark-ignition internal combustion piston engine, cylinder capacity not over 1000cc",
+    "value": 4807647005.812,
+    "share": 0
+   },
+   {
+    "code": "870421",
+    "name": "870421 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), for transport of goods, (of a gvw not exceeding 5 tonnes), n.e.c. in item no 8704.1",
+    "value": 4373689103.112,
+    "share": 0
+   },
+   {
+    "code": "870321",
+    "name": "870321 - Vehicles; with only spark-ignition internal combustion piston engine, cylinder capacity not over 1000cc",
+    "value": 2471278347.219,
+    "share": 0
+   },
+   {
+    "code": "870323",
+    "name": "870323 - Vehicles; with only spark-ignition internal combustion reciprocating piston engine, cylinder capacity over 1500 but not over 3000cc",
+    "value": 2378942650.091,
+    "share": 0
+   },
+   {
+    "code": "870421",
+    "name": "870421 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), for transport of goods, (of a gvw not exceeding 5 tonnes), n.e.c. in item no 8704.1",
+    "value": 2033044234.247,
+    "share": 0
+   },
+   {
+    "code": "870323",
+    "name": "870323 - Vehicles; with only spark-ignition internal combustion reciprocating piston engine, cylinder capacity over 1500 but not over 3000cc",
+    "value": 1977466294.438,
+    "share": 0
+   },
+   {
+    "code": "851762",
+    "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
+    "value": 1640764485.447,
+    "share": 0
+   },
+   {
+    "code": "870195",
+    "name": "870195 - Tractors; n.e.c. in heading no 8701 (other than tractors of heading no 8709); of an engine power exceeding 130kW",
+    "value": 1284740008.578,
+    "share": 0
+   },
+   {
+    "code": "870331",
+    "name": "870331 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity not over 1500cc",
+    "value": 1170765742.292,
+    "share": 0
+   },
+   {
+    "code": "840820",
+    "name": "840820 - Engines; compression-ignition internal combustion piston engines (diesel or semi-diesel engines), of a kind used for the propulsion of vehicles of chapter 87",
+    "value": 1162486524.315,
+    "share": 0
+   },
+   {
+    "code": "220300",
+    "name": "220300 - Beer; made from malt",
+    "value": 1135540486.336,
+    "share": 0
+   },
+   {
+    "code": "870195",
+    "name": "870195 - Tractors; n.e.c. in heading no 8701 (other than tractors of heading no 8709); of an engine power exceeding 130kW",
+    "value": 1127808216.854,
+    "share": 0
+   },
+   {
+    "code": "220300",
+    "name": "220300 - Beer; made from malt",
+    "value": 1058118474.449,
+    "share": 0
+   },
+   {
+    "code": "840820",
+    "name": "840820 - Engines; compression-ignition internal combustion piston engines (diesel or semi-diesel engines), of a kind used for the propulsion of vehicles of chapter 87",
+    "value": 1044117785.784,
+    "share": 0
+   },
+   {
+    "code": "851762",
+    "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
+    "value": 996371925.006,
+    "share": 0
+   },
+   {
+    "code": "842710",
+    "name": "842710 - Fork-lift and other works trucks; fitted with lifting or handling equipment, self-propelled by electric motor",
+    "value": 916056164.63,
+    "share": 0
+   },
+   {
+    "code": "870194",
+    "name": "870194 - Tractors; n.e.c. in heading no 8701 (other than tractors of heading no 8709); of an engine power exceeding 75kW but not exceeding 130kW",
+    "value": 877500877.516,
+    "share": 0
+   },
+   {
+    "code": "854239",
+    "name": "854239 - Electronic integrated circuits; n.e.c. in heading no. 8542",
+    "value": 860183376.806,
+    "share": 0
+   },
+   {
+    "code": "842710",
+    "name": "842710 - Fork-lift and other works trucks; fitted with lifting or handling equipment, self-propelled by electric motor",
+    "value": 818972730.088,
+    "share": 0
+   },
+   {
+    "code": "870331",
+    "name": "870331 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity not over 1500cc",
+    "value": 809555813.351,
+    "share": 0
+   },
+   {
+    "code": "871150",
+    "name": "871150 - Motorcycles (including mopeds) and cycles; fitted with auxiliary motor, with internal combustion piston engine of a cylinder capacity exceeding 800cc, with or without side-cars; side-cars",
+    "value": 794817472.662,
+    "share": 0
+   },
+   {
+    "code": "842952",
+    "name": "842952 - Mechanical shovels, excavators and shovel loaders; with a 360 degree revolving super structure",
+    "value": 730319260.977,
+    "share": 0
+   },
+   {
+    "code": "901890",
+    "name": "901890 - Medical, surgical or dental instruments and appliances; n.e.c. in heading no. 9018",
+    "value": 708807270.802,
+    "share": 0
+   },
+   {
+    "code": "910121",
+    "name": "910121 - Wrist-watches; (not electrically operated), automatic winding, whether or not incorporating a stop-watch facility, case of precious metal or of metal clad with precious metal",
+    "value": 696124619.554,
+    "share": 0
+   },
+   {
+    "code": "900150",
+    "name": "900150 - Lenses, spectacle; unmounted, of materials other than glass",
+    "value": 685738530.694,
+    "share": 0
+   },
+   {
+    "code": "470329",
+    "name": "470329 - Wood pulp; chemical wood pulp, soda or sulphate, (other than dissolving grades), semi-bleached or bleached, of non-coniferous wood",
+    "value": 658522347.87,
+    "share": 0
+   },
+   {
+    "code": "310210",
+    "name": "310210 - Fertilizers, mineral or chemical; nitrogenous, urea, whether or not in aqueous solution",
+    "value": 608433369.355,
+    "share": 0
+   },
+   {
+    "code": "871150",
+    "name": "871150 - Motorcycles (including mopeds) and cycles; fitted with auxiliary motor, with internal combustion piston engine of a cylinder capacity exceeding 800cc, with or without side-cars; side-cars",
+    "value": 602821544.889,
+    "share": 0
+   },
+   {
+    "code": "842952",
+    "name": "842952 - Mechanical shovels, excavators and shovel loaders; with a 360 degree revolving super structure",
+    "value": 597037604.613,
+    "share": 0
+   },
+   {
+    "code": "845011",
+    "name": "845011 - Washing machines; household or laundry-type, fully-automatic, (of a dry linen capacity not exceeding 10kg)",
+    "value": 595890418.788,
+    "share": 0
+   },
+   {
+    "code": "840130",
+    "name": "840130 - Fuel elements (cartridges); non-irradiated",
+    "value": 529379695.984,
+    "share": 0
+   },
+   {
+    "code": "901839",
+    "name": "901839 - Medical, surgical instruments and appliances; catheters, cannulae and the like",
+    "value": 511870694.029,
+    "share": 0
+   },
+   {
+    "code": "220421",
+    "name": "220421 - Wine; still, in containers holding 2 litres or less",
+    "value": 509956684.943,
+    "share": 0
+   },
+   {
+    "code": "840890",
+    "name": "840890 - Engines; compression-ignition internal combustion piston engines (diesel or semi-diesel engines), of a kind used for other than marine propulsion or the vehicles of chapter 87",
+    "value": 490717472.927,
+    "share": 0
+   },
+   {
+    "code": "870590",
+    "name": "870590 - Vehicles; break-down lorries, road-sweepers, spraying lorries, mobile workshops, mobile radiological units, and other special purpose vehicles n.e.c. in heading no. 8705",
+    "value": 490026783.226,
+    "share": 0
+   },
+   {
+    "code": "870590",
+    "name": "870590 - Vehicles; break-down lorries, road-sweepers, spraying lorries, mobile workshops, mobile radiological units, and other special purpose vehicles n.e.c. in heading no. 8705",
+    "value": 474057504.276,
+    "share": 0
+   },
+   {
+    "code": "851679",
+    "name": "851679 - Electro-thermic appliances; n.e.c. in heading no. 8516, used for domestic purposes",
+    "value": 472030646.203,
+    "share": 0
+   },
+   {
+    "code": "900150",
+    "name": "900150 - Lenses, spectacle; unmounted, of materials other than glass",
+    "value": 461509396.166,
+    "share": 0
+   },
+   {
+    "code": "610462",
+    "name": "610462 - Trousers, bib and brace overalls, breeches and shorts; women's or girls', of cotton, knitted or crocheted",
+    "value": 451177079.968,
+    "share": 0
+   },
+   {
+    "code": "854232",
+    "name": "854232 - Electronic integrated circuits; memories",
+    "value": 445987483.461,
+    "share": 0
+   },
+   {
+    "code": "847160",
+    "name": "847160 - Units of automatic data processing machines; input or output units, whether or not containing storage units in the same housing",
+    "value": 432065739.298,
+    "share": 0
+   },
+   {
+    "code": "854231",
+    "name": "854231 - Electronic integrated circuits; processors and controllers, whether or not combined with memories, converters, logic circuits, amplifiers, clock and timing circuits, or other circuits",
+    "value": 420457662.382,
+    "share": 0
+   },
+   {
+    "code": "310210",
+    "name": "310210 - Fertilizers, mineral or chemical; nitrogenous, urea, whether or not in aqueous solution",
+    "value": 409331045.613,
+    "share": 0
+   },
+   {
+    "code": "901819",
+    "name": "901819 - Medical, surgical instruments and appliances; electro-diagnostic apparatus (including apparatus for functional exploratory examination or for checking physiological parameters), n.e.c. in item no. 9018.1",
+    "value": 394627826.004,
+    "share": 0
+   },
+   {
+    "code": "842129",
+    "name": "842129 - Machinery; for filtering or purifying liquids, n.e.c. in item no. 8421.2",
+    "value": 363039697.438,
+    "share": 0
+   },
+   {
+    "code": "901890",
+    "name": "901890 - Medical, surgical or dental instruments and appliances; n.e.c. in heading no. 9018",
+    "value": 350018722.2,
+    "share": 0
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 345298992.463,
+    "share": 0
+   },
+   {
+    "code": "870390",
+    "name": "870390 - Vehicles; for transport of persons (other than those of heading no. 8702) n.e.c. in heading no. 8703",
+    "value": 341573243.008,
+    "share": 0
+   },
+   {
+    "code": "902150",
+    "name": "902150 - Pacemakers; for stimulating heart muscles (excluding parts and accessories)",
+    "value": 302504310.082,
+    "share": 0
+   },
+   {
+    "code": "852352",
+    "name": "852352 - Semiconductor media; smart cards, whether or not recorded, excluding products of Chapter 37",
+    "value": 296064655.064,
+    "share": 0
+   },
+   {
+    "code": "470329",
+    "name": "470329 - Wood pulp; chemical wood pulp, soda or sulphate, (other than dissolving grades), semi-bleached or bleached, of non-coniferous wood",
+    "value": 294240263.833,
+    "share": 0
+   },
+   {
+    "code": "854232",
+    "name": "854232 - Electronic integrated circuits; memories",
+    "value": 267190916.968,
+    "share": 0
+   },
+   {
+    "code": "848620",
+    "name": "848620 - Machines and apparatus of a kind used solely or principally for the manufacture of semiconductor devices or of electronic integrated circuits",
+    "value": 260356628.199,
+    "share": 0
+   },
+   {
+    "code": "840890",
+    "name": "840890 - Engines; compression-ignition internal combustion piston engines (diesel or semi-diesel engines), of a kind used for other than marine propulsion or the vehicles of chapter 87",
+    "value": 258076240.904,
+    "share": 0
+   },
+   {
+    "code": "848620",
+    "name": "848620 - Machines and apparatus of a kind used solely or principally for the manufacture of semiconductor devices or of electronic integrated circuits",
+    "value": 252969148.848,
+    "share": 0
+   },
+   {
+    "code": "999999",
+    "name": "999999 - Commodities not specified according to kind",
+    "value": 238248208.507,
+    "share": 0
+   },
+   {
+    "code": "870323",
+    "name": "870323 - Vehicles; with only spark-ignition internal combustion reciprocating piston engine, cylinder capacity over 1500 but not over 3000cc",
+    "value": 235471154.702,
+    "share": 0
+   },
+   {
+    "code": "903180",
+    "name": "903180 - Instruments, appliances and machines; for measuring or checking n.e.c. in chapter 90",
+    "value": 232573011.748,
+    "share": 0
+   },
+   {
+    "code": "903289",
+    "name": "903289 - Regulating or controlling instruments and apparatus; automatic, other than hydraulic or pneumatic",
+    "value": 226860741.294,
+    "share": 0
+   },
+   {
+    "code": "845811",
+    "name": "845811 - Lathes; for removing metal, horizontal, numerically controlled",
+    "value": 223716480.176,
+    "share": 0
+   },
+   {
+    "code": "854370",
+    "name": "854370 - Electrical machines and apparatus; having individual functions, not specified or included elsewhere in this chapter, n.e.c. in heading no. 8543",
+    "value": 221850733.353,
+    "share": 0
+   },
+   {
+    "code": "284330",
+    "name": "284330 - Gold compounds",
+    "value": 220613252.102,
+    "share": 0
+   },
+   {
+    "code": "220300",
+    "name": "220300 - Beer; made from malt",
+    "value": 220438030.942,
+    "share": 0
+   },
+   {
+    "code": "252329",
+    "name": "252329 - Cement; portland, other than white, whether or not artificially coloured",
+    "value": 218713475.237,
+    "share": 0
+   },
+   {
+    "code": "610822",
+    "name": "610822 - Briefs and panties; women's or girls', of man-made fibres, knitted or crocheted",
+    "value": 213349167.371,
+    "share": 0
+   },
+   {
+    "code": "841581",
+    "name": "841581 - Air conditioning machines; containing a motor driven fan, other than window or wall types, incorporating a refrigerating unit and a valve for reversal of the cooling/heat cycle (reversible heat pumps)",
+    "value": 211752303.336,
+    "share": 0
+   },
+   {
+    "code": "081020",
+    "name": "081020 - Fruit, edible; raspberries, blackberries, mulberries, and loganberries, fresh",
+    "value": 209494630.877,
+    "share": 0
+   },
+   {
+    "code": "081020",
+    "name": "081020 - Fruit, edible; raspberries, blackberries, mulberries, and loganberries, fresh",
+    "value": 208508448.063,
+    "share": 0
+   },
+   {
+    "code": "851762",
+    "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
+    "value": 204568981.505,
+    "share": 0
+   },
+   {
+    "code": "851679",
+    "name": "851679 - Electro-thermic appliances; n.e.c. in heading no. 8516, used for domestic purposes",
+    "value": 203979677.298,
+    "share": 0
+   },
+   {
+    "code": "960810",
+    "name": "960810 - Pens; ball point",
+    "value": 203335115.405,
+    "share": 0
+   },
+   {
+    "code": "760120",
+    "name": "760120 - Aluminium; unwrought, alloys",
+    "value": 203267807.576,
+    "share": 0
+   },
+   {
+    "code": "851762",
+    "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
+    "value": 201759256.046,
+    "share": 0
+   },
+   {
+    "code": "940171",
+    "name": "940171 - Seats; with metal frames, upholstered, (excluding medical, surgical, dental, veterinary or barber furniture)",
+    "value": 201249329.293,
+    "share": 0
+   },
+   {
+    "code": "621030",
+    "name": "621030 - Garments; overcoats, raincoats, car-coats, capes, cloaks, anoraks (including ski-jackets) and similar articles, women's or girls', of the fabrics of heading no. 5602, 5603, 5903, 5906 or 5907 (not knitted or crocheted)",
+    "value": 198316519.858,
+    "share": 0
+   },
+   {
+    "code": "390110",
+    "name": "390110 - Ethylene polymers; in primary forms, polyethylene having a specific gravity of less than 0.94",
+    "value": 195043362.381,
+    "share": 0
+   },
+   {
+    "code": "760120",
+    "name": "760120 - Aluminium; unwrought, alloys",
+    "value": 192634441.324,
+    "share": 0
+   },
+   {
+    "code": "310420",
+    "name": "310420 - Fertilizers, mineral or chemical; potassic, potassium chloride",
+    "value": 192345051.754,
+    "share": 0
+   },
+   {
+    "code": "940179",
+    "name": "940179 - Seats; with metal frames, not upholstered, (excluding medical, surgical, dental, veterinary or barber furniture)",
+    "value": 190368889.135,
+    "share": 0
+   },
+   {
+    "code": "854239",
+    "name": "854239 - Electronic integrated circuits; n.e.c. in heading no. 8542",
+    "value": 185720536.978,
+    "share": 0
+   },
+   {
+    "code": "841221",
+    "name": "841221 - Engines; hydraulic power engines and motors, linear acting (cylinders)",
+    "value": 181902589.273,
+    "share": 0
+   },
+   {
+    "code": "220300",
+    "name": "220300 - Beer; made from malt",
+    "value": 179764699.531,
+    "share": 0
+   },
+   {
+    "code": "310210",
+    "name": "310210 - Fertilizers, mineral or chemical; nitrogenous, urea, whether or not in aqueous solution",
+    "value": 178772167.473,
+    "share": 0
+   },
+   {
+    "code": "281512",
+    "name": "281512 - Sodium hydroxide (caustic soda); in aqueous solution (soda lye or liquid soda)",
+    "value": 178683713.177,
+    "share": 0
+   },
+   {
+    "code": "290511",
+    "name": "290511 - Alcohols; saturated monohydric, methanol (methyl alcohol)",
+    "value": 176679865.43,
+    "share": 0
+   },
+   {
+    "code": "847050",
+    "name": "847050 - Cash registers",
+    "value": 174792701.544,
+    "share": 0
+   },
+   {
+    "code": "640219",
+    "name": "640219 - Sports footwear; (other than ski-boots, snowboard boots or cross-country ski footwear), with outer soles and uppers of rubber or plastics",
+    "value": 173922262.002,
+    "share": 0
+   },
+   {
+    "code": "970191",
+    "name": "970191 - Paintings, drawings and pastels; executed entirely by hand, other than drawings of heading no. 4906, of an age not exceeding 100 years",
+    "value": 170649936.876,
+    "share": 0
+   },
+   {
+    "code": "280920",
+    "name": "280920 - Phosphoric acid and polyphosphoric acids",
+    "value": 170187193.252,
+    "share": 0
+   },
+   {
+    "code": "300420",
+    "name": "300420 - Medicaments; containing antibiotics (other than penicillins, streptomycins or their derivatives), for therapeutic or prophylactic uses, packaged for retail sale",
+    "value": 169145287.327,
+    "share": 0
+   },
+   {
+    "code": "940171",
+    "name": "940171 - Seats; with metal frames, upholstered, (excluding medical, surgical, dental, veterinary or barber furniture)",
+    "value": 168067346.792,
+    "share": 0
+   },
+   {
+    "code": "901819",
+    "name": "901819 - Medical, surgical instruments and appliances; electro-diagnostic apparatus (including apparatus for functional exploratory examination or for checking physiological parameters), n.e.c. in item no. 9018.1",
+    "value": 168020219.947,
+    "share": 0
+   },
+   {
+    "code": "840130",
+    "name": "840130 - Fuel elements (cartridges); non-irradiated",
+    "value": 167986533.02,
+    "share": 0
+   },
+   {
+    "code": "854231",
+    "name": "854231 - Electronic integrated circuits; processors and controllers, whether or not combined with memories, converters, logic circuits, amplifiers, clock and timing circuits, or other circuits",
+    "value": 165330884.419,
+    "share": 0
+   },
+   {
+    "code": "854340",
+    "name": "854340 - Electrical machines and apparatus; electronic cigarettes and similar personal electric vaporising devices",
+    "value": 163623618.66,
+    "share": 0
+   },
+   {
+    "code": "910129",
+    "name": "910129 - Wrist-watches; (not electrically operated), (not automatic winding), whether or not incorporating a stop-watch facility, case of precious metal or of metal clad with precious metal",
+    "value": 161498808.403,
+    "share": 0
+   }
+  ],
+  "xCount": 20000,
+  "mCount": 20000
+ },
+ "source": "UN Comtrade Plus",
+ "fetchedAt": "2026-11-14T06:26:17.556Z"
+}

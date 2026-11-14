@@ -4,6 +4,7 @@ import Flag from '../../components/Flag.astro';
 import LineChart from '../../components/LineChart.astro';
 import { u } from '../../lib/u.mjs';
 import { registry, fmtValue, fmtNum, rankOf, seriesOf } from '../../lib/data.mjs';
+import { hasTrade } from '../../lib/comtrade.mjs';
 
 export function getStaticPaths() {
   const R = registry();
@@ -106,6 +107,9 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
     </div>
     <div style="display:flex; gap:8px;">
       <a class="btn primary" href={u(`/taqqoslash?a=${country.slug}`)}>Taqqoslaş</a>
+      {hasTrade(iso) && (
+        <a class="btn primary" style="background:var(--surface-2); color:var(--ink);" href={u(`/tashqi-savdo/${country.slug}`)}>Tashqi savdo tahlili →</a>
+      )}
     </div>
   </div>
 

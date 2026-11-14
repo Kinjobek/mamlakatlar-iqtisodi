@@ -1,0 +1,44 @@
+name: Tashqi savdo ma'lumotlarini yangilash (UN Comtrade)
+
+# Oyiga bir marta — UN Comtrade AG6 yillik ma'lumotlari uchun yetarli.
+# Bepul obuna chegarasi: 500 so'rov/kun (davlatga ~4 so'rov).
+on:
+  schedule:
+    - cron: '0 5 2 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-comtrade:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodni olish
+        uses: actions/checkout@v4
+
+      - name: Node.js o'rnatish
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Paketlarni o'rnatish
+        run: npm ci --no-audit --no-fund
+
+      - name: Comtrade ma'lumotlarini yangilash
+        run: node scripts/fetch-comtrade.mjs --force --limit 100
+        env:
+          COMTRADE_KEY: ${{ secrets.COMTRADE_KEY }}
+
+      - name: O'zgarishlarni commit qilish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/comtrade)" ]; then
+            git add data/comtrade
+            git commit -m "Tashqi savdo ma'lumotlari yangilandi (UN Comtrade): $(date -u +'%Y-%m-%d')"
+            git push
+          else
+            echo "O'zgarish yo'q."
+          fi

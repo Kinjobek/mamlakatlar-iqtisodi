@@ -1,0 +1,20 @@
+---
+/**
+ * Gorizontal ustunli diagramma (HTML/CSS, JS'siz).
+ * items: [{ label, sub?, value: string (formatlangan), pct: number (0-100) }]
+ */
+interface Props {
+  items: { label: string; sub?: string; value: string; pct: number }[];
+  color?: string;
+}
+const { items, color = '#134e70' } = Astro.props;
+---
+<div class="barlist">
+  {items.map((it) => (
+    <div class="barlist-row" title={it.sub ?? it.label}>
+      <span class="barlist-name">{it.label}</span>
+      <span class="barlist-track"><span class="barlist-bar" style={`width:${Math.max(it.pct, 0.75)}%;background:${color}`}></span></span>
+      <span class="barlist-val">{it.value}</span>
+    </div>
+  ))}
+</div>

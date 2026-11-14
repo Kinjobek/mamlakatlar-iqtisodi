@@ -1,0 +1,242 @@
+---
+import Base from '../../layouts/Base.astro';
+import Flag from '../../components/Flag.astro';
+import BarList from '../../components/BarList.astro';
+import { u } from '../../lib/u.mjs';
+import { fmtMoney, fmtNum, getCountries } from '../../lib/data.mjs';
+import { allTrade } from '../../lib/comtrade.mjs';
+
+export function getStaticPaths() {
+  const countries = getCountries();
+  const trade = allTrade();
+  const byIso = new Map(countries.map((c) => [c.iso3, c]));
+  return [...trade.keys()]
+    .map((iso3) => byIso.get(iso3))
+    .filter(Boolean)
+    .map((c) => ({ params: { slug: c.slug } }));
+}
+
+const slug = Astro.params.slug;
+const countries = getCountries();
+const country = countries.find((c) => c.slug === slug);
+if (!country) throw new Error(`Davlat topilmadi: ${slug}`);
+
+const trade = allTrade();
+const t = trade.get(country.iso3);
+if (!t) throw new Error(`Savdo ma'lumoti yo'q: ${country.iso3}`);
+
+const { totals } = t;
+const topPartners = t.partners.slice(0, 40);
+const exportProducts = t.products.x.slice(0, 100);
+const importProducts = t.products.m.slice(0, 100);
+const xCount = t.products.xCount ?? t.products.x.length;
+const mCount = t.products.mCount ?? t.products.m.length;
+const maxPX = t.partners[0]?.x || 1;
+const maxPM = [...t.partners].sort((a, b) => b.m - a.m)[0]?.m || 1;
+
+const chartX = t.partners
+  .filter((p) => p.x > 0)
+  .slice(0, 10)
+  .map((p) => ({
+    label: p.name,
+    value: fmtMoney(p.x),
+    pct: (p.x / maxPX) * 100
+  }));
+const chartM = [...t.partners]
+  .sort((a, b) => b.m - a.m)
+  .filter((p) => p.m > 0)
+  .slice(0, 10)
+  .map((p) => ({
+    label: p.name,
+    value: fmtMoney(p.m),
+    pct: (p.m / maxPM) * 100
+  }));
+
+const topProductX = exportProducts[0];
+const topPartner = t.partners[0];
+const topImportPartner = [...t.partners].sort((a, b) => b.m - a.m)[0];
+
+const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iqtisodi`;
+---
+
+<Base title={title} description={`${country.nameUz} tashqi savdosi ${t.year}-yilda: eksport ${fmtMoney(totals.x)}, import ${fmtMoney(totals.m)}. Hamkorlar va 6 xonali (AG6) mahsulotlar kesimi, UN Comtrade Plus ma'lumotlari asosida.`}>
+  <div class="crumbs">
+    <a href={u('/')}>Boş sahifa</a> ›
+    <a href={u('/tashqi-savdo')}>Tashqi savdo</a> › {country.nameUz}
+  </div>
+
+  <div class="page-head" style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+    <Flag iso2={country.iso2} iso3={country.iso3} big />
+    <div style="flex:1; min-width:250px;">
+      <h1>{country.nameUz} — tashqi savdo</h1>
+      <p class="lead" style="margin:0;">
+        <span class="badge">{t.year}-yil</span>
+        <span class="badge">HS 2017, AG6</span>
+        <span class="badge amber">UN Comtrade Plus</span>
+      </p>
+    </div>
+    <a class="btn primary" style="background:var(--surface-2); color:var(--ink);" href={u(`/davlatlar/${country.slug}`)}>Davlat sahifasi →</a>
+  </div>
+
+  <div class="stat-strip">
+    <div class="stat">
+      <div class="k">Eksport (FOB)</div>
+      <div class="v">{fmtMoney(totals.x)}</div>
+      <div class="s">{t.year}-yil, AQŞ dollarida</div>
+    </div>
+    <div class="stat">
+      <div class="k">Import (CIF)</div>
+      <div class="v">{fmtMoney(totals.m)}</div>
+      <div class="s">{t.year}-yil</div>
+    </div>
+    <div class="stat">
+      <div class="k">Savdo balansi</div>
+      <div class="v" style={`color:${totals.balance >= 0 ? 'var(--good)' : 'var(--bad)'}`}>{fmtMoney(totals.balance)}</div>
+      <div class="s">{totals.balance >= 0 ? 'profitsit' : 'taqchillik'}</div>
+    </div>
+    <div class="stat">
+      <div class="k">Savdo hamkorlari</div>
+      <div class="v">{fmtNum(t.partnerCount)}</div>
+      <div class="s">ma'lumot kiritgan davlatlar</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="facts">
+      <div class="fact">
+        <div class="k">Eng yirik hamkor</div>
+        <div class="v">{topPartner?.name ?? '—'}</div>
+        <small>eksportda {(topPartner?.shareX ?? 0).toFixed(1).replace('.', ',')}% ulush</small>
+      </div>
+      <div class="fact">
+        <div class="k">Eng yirik import hamkori</div>
+        <div class="v">{topImportPartner?.name ?? '—'}</div>
+        <small>importda ulush: {topImportPartner ? fmtNum(topImportPartner.shareM, 1) : '—'}%</small>
+      </div>
+      <div class="fact">
+        <div class="k">Top eksport mahsuloti</div>
+        <div class="v" style="font-size:13.5px;">{topProductX ? topProductX.name.split(' - ')[1]?.slice(0, 60) ?? topProductX.name : '—'}</div>
+        {topProductX && <small>HS {topProductX.code} · {(topProductX.share).toFixed(1).replace('.', ',')}% · {fmtMoney(topProductX.value)}</small>}
+      </div>
+      <div class="fact">
+        <div class="k">AG6 pozitsiyalari</div>
+        <div class="v">{fmtNum(xCount + mCount)}</div>
+        <small>eksportda {fmtNum(xCount)} va importda {fmtNum(mCount)} tur</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="trade-charts">
+    <div class="chart-card">
+      <h3>Top-10 eksport hamkorlar</h3>
+      <BarList items={chartX} color="#134e70" />
+    </div>
+    <div class="chart-card">
+      <h3>Top-10 import hamkorlar</h3>
+      <BarList items={chartM} color="#b96a00" />
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span>Asosiy savdo hamkorlari (top-40, savdo hajmi bo'yicha)</span></div>
+    <table class="data" data-name={`${slug}-hamkorlar`}>
+      <thead>
+        <tr>
+          <th>Davlat</th>
+          <th class="num" data-first="desc">Eksport</th>
+          <th class="num" data-first="desc">Import</th>
+          <th class="num" data-first="desc">Balans</th>
+          <th class="num" data-first="desc">Ulush eksportda</th>
+          <th class="num" data-first="desc">Ulush importda</th>
+        </tr>
+      </thead>
+      <tbody>
+        {topPartners.map((p) => (
+          <tr>
+            <td>{p.name}</td>
+            <td class="num" data-v={p.x}>{fmtMoney(p.x)}</td>
+            <td class="num" data-v={p.m}>{fmtMoney(p.m)}</td>
+            <td class="num" data-v={p.balance}>
+              <span class={p.balance >= 0 ? 'pos' : 'neg'}>{fmtMoney(p.balance)}</span>
+            </td>
+            <td class="num" data-v={p.shareX}>{fmtNum(p.shareX, 1)}%</td>
+            <td class="num" data-v={p.shareM}>{fmtNum(p.shareM, 1)}%</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <div class="card-note">Jami {fmtNum(t.partnerCount)} hamkor; jadvalda eng yirik 40 tasi. Saralash va yuklab olish tugmalari yuqorida.</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span>Eksport mahsulotlari — AG6 (top 100 pozitsiya)</span></div>
+    <table class="data" data-name={`${slug}-eksport-ag6`}>
+      <thead>
+        <tr>
+          <th>HS kodi</th>
+          <th>Mahsulot</th>
+          <th class="num" data-first="desc">Qiymat</th>
+          <th class="num" data-first="desc">Ulush</th>
+        </tr>
+      </thead>
+      <tbody>
+        {exportProducts.map((p) => (
+          <tr>
+            <td class="rank-cell">{p.code}</td>
+            <td style="max-width:520px;">{p.name.includes(' - ') ? p.name.split(' - ')[1] : p.name}</td>
+            <td class="num" data-v={p.value}>{fmtMoney(p.value)}</td>
+            <td class="num" data-v={p.share}>{fmtNum(p.share, 1)}%</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <div class="card-note">
+      Jami {fmtNum(xCount)} AG6 pozitsiyasi; jadvalda eng yirik 100 tasi ko'rsatilgan.
+      Mahsulot nomlari — HS 2017 nomklaturasi (inglizcha rasmiy nom).
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span>Import mahsulotlari — AG6 (top 100 pozitsiya)</span></div>
+    <table class="data" data-name={`${slug}-import-ag6`}>
+      <thead>
+        <tr>
+          <th>HS kodi</th>
+          <th>Mahsulot</th>
+          <th class="num" data-first="desc">Qiymat</th>
+          <th class="num" data-first="desc">Ulush</th>
+        </tr>
+      </thead>
+      <tbody>
+        {importProducts.map((p) => (
+          <tr>
+            <td class="rank-cell">{p.code}</td>
+            <td style="max-width:520px;">{p.name.includes(' - ') ? p.name.split(' - ')[1] : p.name}</td>
+            <td class="num" data-v={p.value}>{fmtMoney(p.value)}</td>
+            <td class="num" data-v={p.share}>{fmtNum(p.share, 1)}%</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <div class="card-note">
+      Jami {fmtNum(mCount)} AG6 pozitsiyasi. 999999 — "boshqa tovarlar"
+      (reklassifikatsiya qilinmagan pozitsiyalar).
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span>Metodologiya va manba</span></div>
+    <div class="summary">
+      <p>
+        Ma'lumotlar <b>UN Comtrade Plus</b> (BMT Statistika bo'limi) rasmiy bazasidan olingan.
+        Eksport — FOB qiymatda, import — CIF qiymatda, AQSH dollarida. Mahsulotlar kesimi —
+        HS 2017 nomklaturasining <b>AG6</b> (6 xonali) darajasi.
+      </p>
+      <p>
+        Har bir davlat statistikasini o'zi e'lon qiladi — hamkor davlatlarning aks-hisob
+        ma'lumotlari (mirror statistics) biroz farq qilishi mumkin. Ma'lumotlar
+        {t.year}-yilga tegishli; manba: <a href="https://comtradeplus.un.org" rel="noopener" target="_blank">comtradeplus.un.org</a>.
+      </p>
+    </div>
+  </div>
+</Base>
