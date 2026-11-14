@@ -1,19 +1,19 @@
 #!/usr/bin/env node
 /**
- * UN Comtrade Plus — tashqi savdo ma'lumotlari (AG6) yuklovchi
+ * UN Comtrade Plus — taşqi savdo ma'lumotlari (AG6) yuklovçi
  *
- * MUHIM API xususiyatlari (aniqlangan xatolar bo'yicha):
- *   - javobda standart 'partner2Code' (ikkinchi hamkor) bo'yicha yechimlar keladi —
- *     har so'rovda partner2Code=0 filtri MAJBURIY, aks holda takror qatorlar va
+ * MUHIM API xususiyatlari (aniqlangan xatolar böyiça):
+ *   - javobda standart 'partner2Code' (ikkinçi hamkor) böyiça yeçimlar keladi —
+ *     har sörovda partner2Code=0 filtri MAJBURIY, aks holda takror qatorlar va
  *     fragmentatsiyalangan qiymatlar keladi;
- *   - customsCode=C00, motCode=0 — bojxona rejimi va tashish turi bo'yicha
- *     umumlashtirilgan qatorlar uchun;
- *   - limit ostida API ba'zan 429 o'rniga BO'SH javob (count=0) qaytaradi —
- *     bo'sh javob bir marta qayta so'raladi.
+ *   - customsCode=C00, motCode=0 — bojxona rejimi va taşiş turi böyiça
+ *     umumlaştirilgan qatorlar uçun;
+ *   - limit ostida API ba'zan 429 örniga BÖŞ javob (count=0) qaytaradi —
+ *     böş javob bir marta qayta söraladi.
  *
- * Chegara: bepul obuna — 500 so'rov/kun, 1 so'rov/sekund.
- * Ishga tushirish:  node scripts/fetch-comtrade.mjs [--limit 60] [--force] [--only UZB,KAZ]
- * Kalit:            .env faylda COMTRADE_KEY=... yoki muhit o'zgaruvchisi
+ * Çegara: bepul obuna — 500 sörov/kun, 1 sörov/sekund.
+ * Işga tuşiriş:  node scripts/fetch-comtrade.mjs [--limit 60] [--force] [--only UZB,KAZ]
+ * Kalit:            .env faylda COMTRADE_KEY=... yoki muhit özgaruvçisi
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, rmSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
@@ -34,7 +34,7 @@ if (existsSync(resolve(ROOT, '.env'))) {
 }
 const KEY = process.env.COMTRADE_KEY;
 if (!KEY) {
-  console.error('✗ COMTRADE_KEY topilmadi. .env faylga yozing: COMTRADE_KEY=...');
+  console.error('✗ COMTRADE_KEY topilmadi. .env faylga yözing: COMTRADE_KEY=...');
   process.exit(1);
 }
 
@@ -84,7 +84,7 @@ async function ensureRefs() {
   return { partnerMap, hs6 };
 }
 
-/* ---- API so'rovi: 1 so'rov/~1.3s; 429 → 20s kutish; bo'sh javob → bir marta qayta ---- */
+/* ---- API sörovi: 1 sörov/~1.3s; 429 → 20s kutiş; böş javob → bir marta qayta ---- */
 let lastCall = 0;
 async function comtradeGet(params, tries = 3) {
   const call = async () => {
@@ -102,7 +102,7 @@ async function comtradeGet(params, tries = 3) {
           continue;
         }
         if (res.status === 403) {
-          /* kunlik kvota tugagan — qayta urinish foydasiz */
+          /* kunlik kvota tugagan — qayta uriniş foydasiz */
           const err = new Error('403 — kunlik API kvotasi tugagan');
           err.quotaOver = true;
           throw err;
@@ -118,7 +118,7 @@ async function comtradeGet(params, tries = 3) {
   };
   const first = await call();
   if (first.count === 0) {
-    /* limit ostida API bo'sh javob qaytarishi mumkin — sabr bilan 3 marta qaytamiz */
+    /* limit ostida API böş javob qaytarişi mumkin — sabr bilan 3 marta qaytamiz */
     for (let i = 1; i <= 3; i++) {
       await sleep(8000 * i);
       const again = await call();
@@ -136,10 +136,10 @@ const BASE_PARAMS = {
   motCode: '0'
 };
 
-/* ---- davlat uchun to'liq ma'lumot ---- */
+/* ---- davlat uçun töliq ma'lumot ---- */
 async function fetchCountry(iso3, partnerMap, hs6) {
   const code = parseInt(Object.entries(partnerMap).find(([, p]) => p.iso3 === iso3)?.[0], 10);
-  if (!Number.isFinite(code)) throw new Error(`${iso3} uchun Comtrade kodi topilmadi`);
+  if (!Number.isFinite(code)) throw new Error(`${iso3} uçun Comtrade kodi topilmadi`);
   const rep = String(code);
 
   const YEARS = [2024, 2023, 2022];
@@ -156,7 +156,7 @@ async function fetchCountry(iso3, partnerMap, hs6) {
       maxRecords: '2000'
     });
     if (r.count === 0) {
-      console.log(`  ${y}: ma'lumot yo'q, ${y - 1} sinanadi`);
+      console.log(`  ${y}: ma'lumot yöq, ${y - 1} sinanadi`);
       continue;
     }
     year = y;
@@ -203,8 +203,8 @@ async function fetchCountry(iso3, partnerMap, hs6) {
         x: p.x,
         m: p.m,
         balance: p.x - p.m,
-        shareX: totX ? (p.x / totX) * 100 : 0,
-        shareM: totM ? (p.m / totM) * 100 : 0
+        şareX: totX ? (p.x / totX) * 100 : 0,
+        şareM: totM ? (p.m / totM) * 100 : 0
       };
     })
     .sort((a, b) => b.x + b.m - (a.x + a.m));
@@ -221,7 +221,7 @@ async function fetchCountry(iso3, partnerMap, hs6) {
       maxRecords: '20000'
     });
     const total = flow === 'X' ? totX : totM;
-    /* bir kodga bir nechta qator kelsa — eng kattasini olamiz */
+    /* bir kodga bir neçta qator kelsa — eng kattasini olamiz */
     const best = new Map();
     for (const row of r.rows) {
       const codeStr = String(row.cmdCode);
@@ -231,7 +231,7 @@ async function fetchCountry(iso3, partnerMap, hs6) {
           code: codeStr,
           name: hs6[codeStr] ?? `HS ${codeStr}`,
           value: v,
-          share: total ? (v / total) * 100 : 0
+          şare: total ? (v / total) * 100 : 0
         });
       }
     }
@@ -258,16 +258,16 @@ async function fetchCountry(iso3, partnerMap, hs6) {
   );
 }
 
-/* ---- boshqaruv ---- */
+/* ---- boşqaruv ---- */
 async function main() {
   const { partnerMap, hs6 } = await ensureRefs();
   writeFileSync(resolve(OUT, '_refs.json'), JSON.stringify({ partners: partnerMap, hs6 }, null, 0));
 
   const PRIORITY = [
-    'UZB', 'KAZ', 'KGZ', 'TJK', 'TKM', 'RUS', 'CHN', 'TUR', 'AFG', 'PAK',
+    'UZB', 'KAZ', 'KGZ', 'TJK', 'TKM', 'RUS', 'ÇN', 'TUR', 'AFG', 'PAK',
     'IRN', 'IND', 'KOR', 'JPN', 'DEU', 'FRA', 'ITA', 'NLD', 'POL', 'GBR',
     'USA', 'BLR', 'UKR', 'MDA', 'GEO', 'AZE', 'ARM', 'VNM', 'THA', 'IDN',
-    'MYS', 'BGD', 'SAU', 'ARE', 'ISR', 'EGY', 'BRA', 'MEX', 'CAN', 'CHE',
+    'MYS', 'BGD', 'SAU', 'ARE', 'ISR', 'EGY', 'BRA', 'MEX', 'CAN', 'ÇE',
     'SWE', 'BEL', 'AUT', 'CZE', 'HUN', 'ROU', 'ESP', 'PRT', 'GRC', 'BGR',
     'EST', 'LVA', 'LTU', 'FIN', 'DNK', 'ZAF', 'NGA', 'ETH', 'KEN', 'MAR'
   ];
@@ -282,7 +282,7 @@ async function main() {
   const failed = [];
   for (const iso3 of queue) {
     if (done >= LIMIT) {
-      console.log(`Limit (${LIMIT}) tugadi — qolganlari keyingi ishga tushirishda.`);
+      console.log(`Limit (${LIMIT}) tugadi — qolganlari keyingi işga tuşirişda.`);
       break;
     }
     console.log(`→ ${iso3}...`);
@@ -291,7 +291,7 @@ async function main() {
       done++;
     } catch (e) {
       if (e.quotaOver) {
-        console.log(`  ⛔ ${e.message} — ishni to'xtatamiz. Qolgan davlatlar keyingi ishga tushirishda.`);
+        console.log(`  ⛔ ${e.message} — işni töxtatamiz. Qolgan davlatlar keyingi işga tuşirişda.`);
         failed.push(`${iso3}: kvota tugagan`);
         break;
       }

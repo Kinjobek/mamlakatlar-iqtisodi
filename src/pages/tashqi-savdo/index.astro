@@ -33,18 +33,18 @@ const sumM = rows.reduce((s, r) => s + r.m, 0);
 const latestYear = Math.max(...rows.map((r) => r.year));
 ---
 
-<Base title="Tashqi savdo tahlili — AG6 | Mamlakatlar iqtisodi" description="Davlatlarning tashqi savdosi chuqur tahlili: hamkorlar kesimi va 6 xonali (AG6) HS mahsulotlar nomklaturasi. Ma'lumot manbai: UN Comtrade Plus.">
+<Base title="Taşqi savdo tahlili — AG6 | Mamlakatlar iqtisodi" description="Davlatlarning taşqi savdosi çuqur tahlili: hamkorlar kesimi va 6 xonali (AG6) HS mahsulotlar nomklaturasi. Ma'lumot manbai: UN Comtrade Plus.">
   <div class="crumbs">
-    <a href={u('/')}>Boş sahifa</a> › Tashqi savdo tahlili
+    <a href={u('/')}>Boş sahifa</a> › Taşqi savdo tahlili
   </div>
 
   <div class="page-head">
-    <h1>Tashqi savdo tahlili</h1>
+    <h1>Taşqi savdo tahlili</h1>
     <p class="lead">
-      Davlatlar tashqi savdosining chuqur tahlili: <b>hamkorlar kesimi</b> (qaysi davlatga nima
+      Davlatlar taşqi savdosining çuqur tahlili: <b>hamkorlar kesimi</b> (qaysi davlatga nima
       hajmda sotiladi va olinadi) va <b>6 xonali AG6 mahsulotlar kesimi</b> — 5 600 dan ortiq
-      HS kodiga qadar tushirilgan tovar nomklaturasi. Ma'lumotlar <b>UN Comtrade Plus</b>
-      (BMT Statistika bo'limi) rasmiy bazasidan olinadi.
+      HS kodiga qadar tuşirilgan tovar nomklaturasi. Ma'lumotlar <b>UN Comtrade Plus</b>
+      (BMT Statistika bölimi) rasmiy bazasidan olinadi.
     </p>
   </div>
 
@@ -52,17 +52,17 @@ const latestYear = Math.max(...rows.map((r) => r.year));
     <div class="stat">
       <div class="k">Qamrab olingan davlatlar</div>
       <div class="v">{fmtNum(rows.length)}</div>
-      <div class="s">ro'yxat izchil kengaytiriladi</div>
+      <div class="s">röyxat izçil kengaytiriladi</div>
     </div>
     <div class="stat">
       <div class="k">Jami eksport (qamrovda)</div>
       <div class="v">{fmtMoney(sumX)}</div>
-      <div class="s">{latestYear}-yil, FOB, AQSH dollarida</div>
+      <div class="s">{latestYear}-yil, FOB, AQŞ dollarida</div>
     </div>
     <div class="stat">
       <div class="k">Jami import (qamrovda)</div>
       <div class="v">{fmtMoney(sumM)}</div>
-      <div class="s">{latestYear}-yil, CIF, AQSH dollarida</div>
+      <div class="s">{latestYear}-yil, CIF, AQŞ dollarida</div>
     </div>
     <div class="stat">
       <div class="k">Mahsulotlar kesimi</div>
@@ -72,7 +72,7 @@ const latestYear = Math.max(...rows.map((r) => r.year));
   </div>
 
   <div class="card">
-    <div class="card-title"><span>Davlatlar — tashqi savdo ko'rsatkichlari</span></div>
+    <div class="card-title"><span>Davlatlar — taşqi savdo körsatkiçlari</span></div>
     <table class="data" data-name="tashqi-savdo">
       <thead>
         <tr>
@@ -107,8 +107,8 @@ const latestYear = Math.max(...rows.map((r) => r.year));
       </tbody>
     </table>
     <div class="card-note">
-      Qiymatlar AQSH dollarida: eksport — FOB, import — CIF. Batafsil tahlil uchun davlat nomini bosing:
-      hamkorlar jadvali, top-100 eksport va import mahsulotlari (AG6), saralash va yuklab olish.
+      Qiymatlar AQŞ dollarida: eksport — FOB, import — CIF. Batafsil tahlil uçun davlat nomini bosing:
+      hamkorlar jadvali, top-100 eksport va import mahsulotlari (AG6), saralaş va yuklab oliş.
     </div>
   </div>
 
@@ -116,19 +116,19 @@ const latestYear = Math.max(...rows.map((r) => r.year));
     <div class="card-title"><span>Metodologiya</span></div>
     <div class="summary">
       <p>
-        <b>AG6 nima?</b> GS (Harmonized System — uyg'unlashtirilgan tovar nomklaturasi) jahon
-        bozorida savdoni 6 xonali mahsulot kodlari orqali hisoblaydi: masalan, 847130 — og'irligi
-        10 kg gacha bo'lgan portativ kompyuterlar. Bu davlat nima sotayotgani va nimani olayotganini
-        mahsulot darajasida ko'rsatadi.
+        <b>AG6 nima?</b> GS (Harmonized System — uyğunlaştirilgan tovar nomklaturasi) jahon
+        bozorida savdoni 6 xonali mahsulot kodlari orqali hisoblaydi: masalan, 847130 — oğirligi
+        10 kg gaça bölgan portativ kompyuterlar. Bu davlat nima sotayotgani va nimani olayotganini
+        mahsulot darajasida körsatadi.
       </p>
       <p>
-        <b>Manba:</b> UN Comtrade Plus — BMT Statistika bo'limining rasmiy tashqi savdo bazasi.
-        Har bir davlat o'z bojxona statistikasini taqdim etadi; ayrim holatlarda aks-hisob
-        (mirror statistics) farq qilishi mumkin.
+        <b>Manba:</b> UN Comtrade Plus — BMT Statistika bölimining rasmiy taşqi savdo bazasi.
+        Har bir davlat öz bojxona statistikasini taqdim etadi; ayrim holatlarda aks-hisob
+        (mirror statistics) farq qilişi mumkin.
       </p>
       <p>
-        <b>999999 kodi</b> — "Boshqa tovarlar" (reklassifikatsiya qilinmagan pozitsiyalar);
-        yirik savdoda bu qator ma'lumot sifati ko'rsatkichi ham hisoblanadi.
+        <b>999999 kodi</b> — "Boşqa tovarlar" (reklassifikatsiya qilinmagan pozitsiyalar);
+        yirik savdoda bu qator ma'lumot sifati körsatkiçi ham hisoblanadi.
       </p>
     </div>
   </div>

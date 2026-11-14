@@ -1,9 +1,9 @@
 ---
 /**
- * Yillar kesimini ko'rsatuvchi inline SVG chizma grafik (JS kerak emas).
+ * Yillar kesimini körsatuvçi inline SVG çizma grafik (JS kerak emas).
  * points: [[yil, qiymat], ...]
- * tips: har bir nuqta uchun tayyor matn (masalan "2019-yil: 71,3 mlrd $") —
- *       sichqoncha uchini nuqtaga olib kelganda chiqadi.
+ * tips: har bir nuqta uçun tayyor matn (masalan "2019-yil: 71,3 mlrd $") —
+ *       siçqonça uçini nuqtaga olib kelganda çiqadi.
  */
 interface Props {
   points: [number, number][];
@@ -79,7 +79,7 @@ const xTicks = [...new Set([xMin, Math.round((xMin + xMax) / 2), xMax])].sort((a
     </g>
   ))}
   {xTicks.map((xt) => (
-    <text x={px(xt)} y={height - 8} font-size="11" fill="#8296a8" text-anchor={xt === xMin ? 'start' : xt === xMax ? 'end' : 'middle'}>
+    <text x={px(xt)} y={height - 8} font-size="11" fill="#8296a8" text-ançor={xt === xMin ? 'start' : xt === xMax ? 'end' : 'middle'}>
       {xt}
     </text>
   ))}

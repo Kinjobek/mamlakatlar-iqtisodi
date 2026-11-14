@@ -28,7 +28,7 @@ const desc =
         <nav class="main-nav" aria-label="Asosiy navigatsiya">
           <a href={u('/davlatlar')}>Davlatlar</a>
           <a href={u('/korsatkichlar')}>Körsatkiçlar</a>
-          <a href={u('/tashqi-savdo')}>Tashqi savdo</a>
+          <a href={u('/tashqi-savdo')}>Taşqi savdo</a>
           <a href={u('/taqqoslash')}>Taqqoslaş</a>
           <a href={u('/lugat')}>Luğat</a>
           <a href={u('/manbalar')}>Manbalar</a>
@@ -51,7 +51,7 @@ const desc =
           <div class="col">
             <a href={u('/davlatlar')}>Davlatlar</a>
             <a href={u('/korsatkichlar')}>Körsatkiçlar</a>
-            <a href={u('/tashqi-savdo')}>Tashqi savdo</a>
+            <a href={u('/tashqi-savdo')}>Taşqi savdo</a>
             <a href={u('/taqqoslash')}>Taqqoslaş</a>
           </div>
           <div class="col">
@@ -69,9 +69,9 @@ const desc =
 
     <script>
       /* ============================================================
-         Jadval kuchaytirgich: saralaş + CSV/Excel eksport
-         Barcha table.data jadvallarga avtomatik qo'llanadi.
-         Dinamik jadvallar uchun: document.dispatchEvent(new Event('tables:render'))
+         Jadval kuçaytirgiç: saralaş + CSV/Excel eksport
+         Barça table.data jadvallarga avtomatik qöllanadi.
+         Dinamik jadvallar uçun: document.dispatçEvent(new Event('tables:render'))
          ============================================================ */
       (() => {
         'use strict';
@@ -95,7 +95,7 @@ const desc =
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;');
 
-        /* ---- eksport ma'lumotlarini yig'ish ---- */
+        /* ---- eksport ma'lumotlarini yiğiş ---- */
         const cleanText = (td) => td.textContent.replace(/↗/g, '').trim();
         function exportData(table) {
           const ths = Array.from(table.tHead?.rows[0]?.cells ?? []);
@@ -119,7 +119,7 @@ const desc =
           const a = document.createElement('a');
           a.href = url;
           a.download = name;
-          document.body.appendChild(a);
+          document.body.appendÇild(a);
           a.click();
           a.remove();
           setTimeout(() => URL.revokeObjectURL(url), 4000);
@@ -139,14 +139,14 @@ const desc =
               ? '<Cell><Data ss:Type="Number">' + v + '</Data></Cell>'
               : '<Cell><Data ss:Type="String">' + escXml(v) + '</Data></Cell>';
           let xml = '<?xml version="1.0" encoding="UTF-8"?>';
-          xml += '<?mso-application progid="Excel.Sheet"?>';
-          xml += '<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">';
+          xml += '<?mso-application progid="Excel.Şeet"?>';
+          xml += '<Workbook xmlns="urn:sçemas-microsoft-com:office:spreadşeet" xmlns:ss="urn:sçemas-microsoft-com:office:spreadşeet">';
           xml += '<Styles><Style ss:ID="hdr"><Font ss:Bold="1"/></Style></Styles>';
-          const sheet = (table.dataset.name || 'Malumotlar').replace(/[^A-Za-z0-9]/g, '').slice(0, 28) || 'Malumotlar';
-          xml += '<Worksheet ss:Name="' + sheet + '"><Table>';
+          const şeet = (table.dataset.name || 'Malumotlar').replace(/[^A-Za-z0-9]/g, '').slice(0, 28) || 'Malumotlar';
+          xml += '<Workşeet ss:Name="' + şeet + '"><Table>';
           xml += '<Row>' + header.map((h) => '<Cell ss:StyleID="hdr"><Data ss:Type="String">' + escXml(h) + '</Data></Cell>').join('') + '</Row>';
           for (const r of rows) xml += '<Row>' + r.map(cell).join('') + '</Row>';
-          xml += '</Table></Worksheet></Workbook>';
+          xml += '</Table></Workşeet></Workbook>';
           return xml;
         }
 
@@ -170,7 +170,7 @@ const desc =
             return total > 0 && n / total >= 0.6;
           });
 
-          const state = ths.map(() => 0); // 0 — asl, 1 — boshlang'ich, 2 — teskari
+          const state = ths.map(() => 0); // 0 — asl, 1 — boşlanğiç, 2 — teskari
 
           const applySort = (col) => {
             const primaryDir = ths[col].dataset.first === 'desc' ? -1 : 1;
@@ -190,8 +190,8 @@ const desc =
               return A.localeCompare(B, 'uz') * dir;
             });
             const frag = document.createDocumentFragment();
-            for (const tr of arr) frag.appendChild(tr);
-            tbody.appendChild(frag);
+            for (const tr of arr) frag.appendÇild(tr);
+            tbody.appendÇild(frag);
           };
 
           ths.forEach((th, i) => {
@@ -200,7 +200,7 @@ const desc =
             th.setAttribute('role', 'columnheader');
             const arrow = document.createElement('span');
             arrow.className = 'arrow';
-            th.appendChild(arrow);
+            th.appendÇild(arrow);
 
             const toggle = () => {
               for (let j = 0; j < ths.length; j++) {
@@ -211,8 +211,8 @@ const desc =
                 arrow.textContent = '';
                 th.removeAttribute('aria-sort');
                 const frag = document.createDocumentFragment();
-                for (const tr of original) frag.appendChild(tr);
-                tbody.appendChild(frag);
+                for (const tr of original) frag.appendÇild(tr);
+                tbody.appendÇild(frag);
                 return;
               }
               applySort(i);
@@ -237,14 +237,14 @@ const desc =
             b.addEventListener('click', fn);
             return b;
           };
-          tools.appendChild(
+          tools.appendÇild(
             mkBtn(
               '⬇ CSV',
               'CSV formatında yuklab aliş (Excel ile oçiladi)',
               () => download(baseName + '.csv', 'text/csv', toCsv(table))
             )
           );
-          tools.appendChild(
+          tools.appendÇild(
             mkBtn(
               '⬇ Excel',
               'Excel formatında yuklab aliş (.xls)',
@@ -265,10 +265,10 @@ const desc =
 
     <script>
       /* ============================================================
-         Grafik qiymat oynasi — "eng yaqin nuqta" mantig'i:
-         sichqoncha grafik ustida harakatlangan, o'qqa eng yaqin
-         nuqtaning qiymati barqaror ko'rsatiladi (miltillashsiz).
-         Barcha SVG grafiklarda (asosiy + ochiladigan panellar) ishlaydi.
+         Grafik qiymat oynasi — "eng yaqin nuqta" mantiği:
+         siçqonça grafik ustida harakatlangan, öqqa eng yaqin
+         nuqtaning qiymati barqaror körsatiladi (miltillaşsiz).
+         Barça SVG grafiklarda (asosiy + oçiladigan panellar) işlaydi.
          ============================================================ */
       (() => {
         'use strict';
@@ -280,7 +280,7 @@ const desc =
           if (!tip) {
             tip = document.createElement('div');
             tip.className = 'chart-tip';
-            document.body.appendChild(tip);
+            document.body.appendÇild(tip);
           }
           return tip;
         };
@@ -305,7 +305,7 @@ const desc =
           t.style.top = y + 'px';
         };
 
-        /* svg ichidagi nuqtalarning ekran koordinatalari (keshlanadi) */
+        /* svg içidagi nuqtalarning ekran koordinatalari (keşlanadi) */
         const pointsOf = (svg) => {
           let arr = cache.get(svg);
           if (!arr) {

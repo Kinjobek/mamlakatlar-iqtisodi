@@ -27,7 +27,8 @@ const SELF = path.resolve(fileURLToPath(import.meta.url));
 const CODE_SUBSTRINGS = [
   'fetch', 'Fetch', 'chart', 'Chart', 'cache', 'Cache', 'charset', 'catch', 'Catch',
   'shadow', 'push', 'show', 'shown', 'search', 'Search', 'each', 'Each', 'match',
-  'check', 'chunk', 'switch', 'Change', 'character', 'Character', 'querySelector'
+  'check', 'chunk', 'switch', 'Change', 'character', 'Character', 'querySelector',
+  'share', 'Share', 'hash', 'flush', 'shell'
 ];
 
 /* ---------- himoya: sluglar va kategoriya kalitlari (chegarali) ---------- */
@@ -38,7 +39,7 @@ for (const v of Object.values(uzCountries.countries)) SLUGS.add(v[1]);
 for (const ind of catalog.indicators) SLUGS.add(ind.slug);
 for (const k of Object.keys(catalog.categories)) SLUGS.add(k);
 // sahifa yo'llari (URL) — konvertatsiya qilinmaydi
-for (const p of ['davlatlar', 'korsatkichlar', 'taqqoslash', 'lugat', 'manbalar', 'haqida', 'data']) SLUGS.add(p);
+for (const p of ['davlatlar', 'korsatkichlar', 'taqqoslash', 'lugat', 'manbalar', 'haqida', 'data', 'tashqi-savdo']) SLUGS.add(p);
 
 /* ---------- konvertor ---------- */
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

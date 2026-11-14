@@ -23,9 +23,9 @@ if (!country) throw new Error(`Davlat topilmadi: ${slug}`);
 
 const trade = allTrade();
 const t = trade.get(country.iso3);
-if (!t) throw new Error(`Savdo ma'lumoti yo'q: ${country.iso3}`);
+if (!t) throw new Error(`Savdo ma'lumoti yöq: ${country.iso3}`);
 
-/* HS6 mahsulotlarining o'zbekcha nomlari (tarjima mavjud bo'lmasa — inglizcha) */
+/* HS6 mahsulotlarining özbekça nomlari (tarjima mavjud bölmasa — inglizça) */
 const UZ = hs6Uz();
 const uzName = (p) => UZ[p.code] ?? p.name;
 
@@ -61,19 +61,19 @@ const topProductX = exportProducts[0];
 const topPartner = t.partners[0];
 const topImportPartner = [...t.partners].sort((a, b) => b.m - a.m)[0];
 
-const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iqtisodi`;
+const title = `${country.nameUz} — taşqi savdo tahlili (AG6) | Mamlakatlar iqtisodi`;
 ---
 
-<Base title={title} description={`${country.nameUz} tashqi savdosi ${t.year}-yilda: eksport ${fmtMoney(totals.x)}, import ${fmtMoney(totals.m)}. Hamkorlar va 6 xonali (AG6) mahsulotlar kesimi, UN Comtrade Plus ma'lumotlari asosida.`}>
+<Base title={title} description={`${country.nameUz} taşqi savdosi ${t.year}-yilda: eksport ${fmtMoney(totals.x)}, import ${fmtMoney(totals.m)}. Hamkorlar va 6 xonali (AG6) mahsulotlar kesimi, UN Comtrade Plus ma'lumotlari asosida.`}>
   <div class="crumbs">
     <a href={u('/')}>Boş sahifa</a> ›
-    <a href={u('/tashqi-savdo')}>Tashqi savdo</a> › {country.nameUz}
+    <a href={u('/tashqi-savdo')}>Taşqi savdo</a> › {country.nameUz}
   </div>
 
   <div class="page-head" style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
     <Flag iso2={country.iso2} iso3={country.iso3} big />
     <div style="flex:1; min-width:250px;">
-      <h1>{country.nameUz} — tashqi savdo</h1>
+      <h1>{country.nameUz} — taşqi savdo</h1>
       <p class="lead" style="margin:0;">
         <span class="badge">{t.year}-yil</span>
         <span class="badge">HS 2017, AG6</span>
@@ -97,7 +97,7 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
     <div class="stat">
       <div class="k">Savdo balansi</div>
       <div class="v" style={`color:${totals.balance >= 0 ? 'var(--good)' : 'var(--bad)'}`}>{fmtMoney(totals.balance)}</div>
-      <div class="s">{totals.balance >= 0 ? 'profitsit' : 'taqchillik'}</div>
+      <div class="s">{totals.balance >= 0 ? 'profitsit' : 'taqçillik'}</div>
     </div>
     <div class="stat">
       <div class="k">Savdo hamkorlari</div>
@@ -111,12 +111,12 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
       <div class="fact">
         <div class="k">Eng yirik hamkor</div>
         <div class="v">{topPartner?.name ?? '—'}</div>
-        <small>eksportda {(topPartner?.shareX ?? 0).toFixed(1).replace('.', ',')}% ulush</small>
+        <small>eksportda {(topPartner?.shareX ?? 0).toFixed(1).replace('.', ',')}% uluş</small>
       </div>
       <div class="fact">
         <div class="k">Eng yirik import hamkori</div>
         <div class="v">{topImportPartner?.name ?? '—'}</div>
-        <small>importda ulush: {topImportPartner ? fmtNum(topImportPartner.shareM, 1) : '—'}%</small>
+        <small>importda uluş: {topImportPartner ? fmtNum(topImportPartner.shareM, 1) : '—'}%</small>
       </div>
       <div class="fact">
         <div class="k">Top eksport mahsuloti</div>
@@ -143,7 +143,7 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
   </div>
 
   <div class="card">
-    <div class="card-title"><span>Asosiy savdo hamkorlari (top-40, savdo hajmi bo'yicha)</span></div>
+    <div class="card-title"><span>Asosiy savdo hamkorlari (top-40, savdo hajmi böyiça)</span></div>
     <table class="data" data-name={`${slug}-hamkorlar`}>
       <thead>
         <tr>
@@ -151,8 +151,8 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
           <th class="num" data-first="desc">Eksport</th>
           <th class="num" data-first="desc">Import</th>
           <th class="num" data-first="desc">Balans</th>
-          <th class="num" data-first="desc">Ulush eksportda</th>
-          <th class="num" data-first="desc">Ulush importda</th>
+          <th class="num" data-first="desc">Uluş eksportda</th>
+          <th class="num" data-first="desc">Uluş importda</th>
         </tr>
       </thead>
       <tbody>
@@ -170,7 +170,7 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
         ))}
       </tbody>
     </table>
-    <div class="card-note">Jami {fmtNum(t.partnerCount)} hamkor; jadvalda eng yirik 40 tasi. Saralash va yuklab olish tugmalari yuqorida.</div>
+    <div class="card-note">Jami {fmtNum(t.partnerCount)} hamkor; jadvalda eng yirik 40 tasi. Saralaş va yuklab oliş tugmalari yuqorida.</div>
   </div>
 
   <div class="card">
@@ -181,7 +181,7 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
           <th>HS kodi</th>
           <th>Mahsulot</th>
           <th class="num" data-first="desc">Qiymat</th>
-          <th class="num" data-first="desc">Ulush</th>
+          <th class="num" data-first="desc">Uluş</th>
         </tr>
       </thead>
       <tbody>
@@ -196,9 +196,9 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
       </tbody>
     </table>
     <div class="card-note">
-      Jami {fmtNum(xCount)} AG6 pozitsiyasi; jadvalda eng yirik 100 tasi ko'rsatilgan.
-      Mahsulot nomlari — HS 2017 nomklaturasining o'zbekcha tarjimasi; ustiga sichqonchani
-      olib kelsangiz rasmiy inglizcha nomi ko'rinadi.
+      Jami {fmtNum(xCount)} AG6 pozitsiyasi; jadvalda eng yirik 100 tasi körsatilgan.
+      Mahsulot nomlari — HS 2017 nomklaturasining özbekça tarjimasi; ustiga siçqonçani
+      olib kelsangiz rasmiy inglizça nomi körinadi.
     </div>
   </div>
 
@@ -210,7 +210,7 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
           <th>HS kodi</th>
           <th>Mahsulot</th>
           <th class="num" data-first="desc">Qiymat</th>
-          <th class="num" data-first="desc">Ulush</th>
+          <th class="num" data-first="desc">Uluş</th>
         </tr>
       </thead>
       <tbody>
@@ -225,7 +225,7 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
       </tbody>
     </table>
     <div class="card-note">
-      Jami {fmtNum(mCount)} AG6 pozitsiyasi. 999999 — "boshqa tovarlar"
+      Jami {fmtNum(mCount)} AG6 pozitsiyasi. 999999 — "boşqa tovarlar"
       (reklassifikatsiya qilinmagan pozitsiyalar).
     </div>
   </div>
@@ -234,14 +234,14 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
     <div class="card-title"><span>Metodologiya va manba</span></div>
     <div class="summary">
       <p>
-        Ma'lumotlar <b>UN Comtrade Plus</b> (BMT Statistika bo'limi) rasmiy bazasidan olingan.
-        Eksport — FOB qiymatda, import — CIF qiymatda, AQSH dollarida. Mahsulotlar kesimi —
+        Ma'lumotlar <b>UN Comtrade Plus</b> (BMT Statistika bölimi) rasmiy bazasidan olingan.
+        Eksport — FOB qiymatda, import — CIF qiymatda, AQŞ dollarida. Mahsulotlar kesimi —
         HS 2017 nomklaturasining <b>AG6</b> (6 xonali) darajasi.
       </p>
       <p>
-        Har bir davlat statistikasini o'zi e'lon qiladi — hamkor davlatlarning aks-hisob
-        ma'lumotlari (mirror statistics) biroz farq qilishi mumkin. Ma'lumotlar
-        {t.year}-yilga tegishli; manba: <a href="https://comtradeplus.un.org" rel="noopener" target="_blank">comtradeplus.un.org</a>.
+        Har bir davlat statistikasini özi e'lon qiladi — hamkor davlatlarning aks-hisob
+        ma'lumotlari (mirror statistics) biroz farq qilişi mumkin. Ma'lumotlar
+        {t.year}-yilga tegişli; manba: <a href="https://comtradeplus.un.org" rel="noopener" target="_blank">comtradeplus.un.org</a>.
       </p>
     </div>
   </div>

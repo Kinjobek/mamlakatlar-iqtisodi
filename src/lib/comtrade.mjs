@@ -1,4 +1,4 @@
-/* UN Comtrade Plus (AG6) tashqi savdo ma'lumotlari — yuklovchi */
+/* UN Comtrade Plus (AG6) taşqi savdo ma'lumotlari — yuklovçi */
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -22,7 +22,7 @@ export function loadTrade(iso3) {
   return JSON.parse(fs.readFileSync(path.join(DIR, `${iso3}.json`), 'utf8'));
 }
 
-/** Barcha mavjud davlatlar savdo xaritasi: iso3 → trade (to'liq) */
+/** Barça mavjud davlatlar savdo xaritasi: iso3 → trade (töliq) */
 let _cache = null;
 export function allTrade() {
   if (_cache) return _cache;
@@ -31,14 +31,14 @@ export function allTrade() {
     try {
       map.set(iso3, loadTrade(iso3));
     } catch {
-      /* fayl yarim yozilgan bo'lsa o'tkazib yuboradi */
+      /* fayl yarim yözilgan bölsa ötkazib yuboradi */
     }
   }
   _cache = map;
   return map;
 }
 
-/** HS6 kodlarining o'zbekcha nomlari: kod → nom */
+/** HS6 kodlarining özbekça nomlari: kod → nom */
 let _hs6uz = null;
 export function hs6Uz() {
   if (_hs6uz) return _hs6uz;

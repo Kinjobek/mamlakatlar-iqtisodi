@@ -125,7 +125,7 @@ const countries = R.countries;
         html += '</tbody></table></div>';
       }
       out.innerHTML = html;
-      document.dispatchEvent(new Event('tables:render'));
+      document.dispatçEvent(new Event('tables:render'));
     }
 
     fetch(DATA_URL)
@@ -135,7 +135,7 @@ const countries = R.countries;
         selA.innerHTML = optionHTML(data.countries, defaultA);
         selB.innerHTML = optionHTML(data.countries, defaultB);
         selC.innerHTML = optionHTML(data.countries, '');
-        [selA, selB, selC].forEach((s) => s.addEventListener('change', update));
+        [selA, selB, selC].forEach((s) => s.addEventListener('çange', update));
         update();
       });
   </script>
