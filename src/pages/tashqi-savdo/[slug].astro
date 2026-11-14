@@ -179,7 +179,8 @@ const title = `${country.nameUz} — taşqi savdo tahlili (AG6) | Mamlakatlar iq
       <thead>
         <tr>
           <th>HS kodi</th>
-          <th>Mahsulot</th>
+          <th>Mahsulot (inglizça — HS 2017)</th>
+          <th>Tarjima (özbekçe)</th>
           <th class="num" data-first="desc">Qiymat</th>
           <th class="num" data-first="desc">Uluş</th>
         </tr>
@@ -188,7 +189,8 @@ const title = `${country.nameUz} — taşqi savdo tahlili (AG6) | Mamlakatlar iq
         {exportProducts.map((p) => (
           <tr>
             <td class="rank-cell">{p.code}</td>
-            <td style="max-width:520px;" title={p.name}>{uzName(p)}</td>
+            <td class="hs-en">{p.name.replace(/^\d+ - /, '')}</td>
+            <td class="hs-uz">{UZ[p.code] ?? '—'}</td>
             <td class="num" data-v={p.value}>{fmtMoney(p.value)}</td>
             <td class="num" data-v={p.share}>{fmtNum(p.share, 1)}%</td>
           </tr>
@@ -197,8 +199,8 @@ const title = `${country.nameUz} — taşqi savdo tahlili (AG6) | Mamlakatlar iq
     </table>
     <div class="card-note">
       Jami {fmtNum(xCount)} AG6 pozitsiyasi; jadvalda eng yirik 100 tasi körsatilgan.
-      Mahsulot nomlari — HS 2017 nomklaturasining özbekça tarjimasi; ustiga siçqonçani
-      olib kelsangiz rasmiy inglizça nomi körinadi.
+      Tarjimalar izohlanmoqda — xato topsangiz körsatkiç kodini (masalan, 847130) bilan
+      bizga yozing, tuzatamiz.
     </div>
   </div>
 
@@ -208,7 +210,8 @@ const title = `${country.nameUz} — taşqi savdo tahlili (AG6) | Mamlakatlar iq
       <thead>
         <tr>
           <th>HS kodi</th>
-          <th>Mahsulot</th>
+          <th>Mahsulot (inglizça — HS 2017)</th>
+          <th>Tarjima (özbekçe)</th>
           <th class="num" data-first="desc">Qiymat</th>
           <th class="num" data-first="desc">Uluş</th>
         </tr>
@@ -217,7 +220,8 @@ const title = `${country.nameUz} — taşqi savdo tahlili (AG6) | Mamlakatlar iq
         {importProducts.map((p) => (
           <tr>
             <td class="rank-cell">{p.code}</td>
-            <td style="max-width:520px;" title={p.name}>{uzName(p)}</td>
+            <td class="hs-en">{p.name.replace(/^\d+ - /, '')}</td>
+            <td class="hs-uz">{UZ[p.code] ?? '—'}</td>
             <td class="num" data-v={p.value}>{fmtMoney(p.value)}</td>
             <td class="num" data-v={p.share}>{fmtNum(p.share, 1)}%</td>
           </tr>

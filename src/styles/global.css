@@ -143,6 +143,11 @@ details.ind-hist > summary .row-link:hover { color: var(--primary); }
 table.data.compact th, table.data.compact td { padding: 5px 12px; font-size: 13px; }
 .hist-body table.data { font-size: 13px; }
 
+/* HS mahsulot jadvallari: ikki tilli ustunlar */
+td.hs-en { color: var(--muted); font-size: 13px; max-width: 460px; }
+td.hs-uz { max-width: 420px; font-weight: 500; }
+@media (max-width: 900px) { td.hs-en, td.hs-uz { max-width: 230px; } }
+
 /* gorizontal ustunli diagramma */
 .barlist { display: grid; gap: 7px; }
 .barlist-row {
