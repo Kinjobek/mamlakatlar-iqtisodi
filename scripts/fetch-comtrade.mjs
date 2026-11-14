@@ -101,6 +101,12 @@ async function comtradeGet(params, tries = 3) {
           await sleep(20000);
           continue;
         }
+        if (res.status === 403) {
+          /* kunlik kvota tugagan — qayta urinish foydasiz */
+          const err = new Error('403 — kunlik API kvotasi tugagan');
+          err.quotaOver = true;
+          throw err;
+        }
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const json = await res.json();
         return { count: json.count ?? 0, rows: json.data ?? [] };
@@ -284,6 +290,11 @@ async function main() {
       await fetchCountry(iso3, partnerMap, hs6);
       done++;
     } catch (e) {
+      if (e.quotaOver) {
+        console.log(`  ⛔ ${e.message} — ishni to'xtatamiz. Qolgan davlatlar keyingi ishga tushirishda.`);
+        failed.push(`${iso3}: kvota tugagan`);
+        break;
+      }
       failed.push(`${iso3}: ${e.message}`);
       console.log(`  ✗ ${e.message}`);
     }

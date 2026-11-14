@@ -1,17 +1,21 @@
-name: Tashqi savdo ma'lumotlarini yangilash (UN Comtrade)
+name: Tashqi savdo ma'lumotlari (UN Comtrade)
 
-# Oyiga bir marta — UN Comtrade AG6 yillik ma'lumotlari uchun yetarli.
-# Bepul obuna chegarasi: 500 so'rov/kun (davlatga ~4 so'rov).
+# Ikki rejim:
+#   - KUNLIK (04:00 UTC): faqat yetishmayotgan davlatlarni yuklaydi (resume).
+#     Hammasi bor bo'lsa — 0 so'rov, commit bo'lmaydi.
+#   - OYLIK (oyning 2-si): butun ro'yxatni yangilaydi (--force, ~260 so'rov,
+#     bepul kvota 500/kun ichida).
 on:
   schedule:
-    - cron: '0 5 2 * *'
+    - cron: '0 4 * * *'
+    - cron: '0 4 2 * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-comtrade:
+  fetch:
     runs-on: ubuntu-latest
     steps:
       - name: Kodni olish
@@ -26,7 +30,14 @@ jobs:
       - name: Paketlarni o'rnatish
         run: npm ci --no-audit --no-fund
 
-      - name: Comtrade ma'lumotlarini yangilash
+      - name: Kunlik — yetishmayotgan davlatlar
+        if: github.event.schedule != '0 4 2 * *'
+        run: node scripts/fetch-comtrade.mjs --limit 12
+        env:
+          COMTRADE_KEY: ${{ secrets.COMTRADE_KEY }}
+
+      - name: Oylik — to'liq yangilash
+        if: github.event.schedule == '0 4 2 * *'
         run: node scripts/fetch-comtrade.mjs --force --limit 100
         env:
           COMTRADE_KEY: ${{ secrets.COMTRADE_KEY }}
