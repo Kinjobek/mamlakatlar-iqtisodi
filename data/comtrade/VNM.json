@@ -3,9 +3,9 @@
  "comtradeCode": 704,
  "year": 2023,
  "totals": {
-  "x": 6197699163.06,
+  "x": 353077513296.001,
   "m": 325443689199,
-  "balance": -319245990035.94
+  "balance": 27633824097.000977
  },
  "partnerCount": 97,
  "partners": [
@@ -16,7 +16,7 @@
    "x": 60574277766.053,
    "m": 110654552124.605,
    "balance": -50080274358.551994,
-   "shareX": 977.3671837299306,
+   "shareX": 17.156084849637768,
    "shareM": 34.001136232493586
   },
   {
@@ -26,7 +26,7 @@
    "x": 97071533042.637,
    "m": 13826835117.851,
    "balance": 83244697924.786,
-   "shareX": 1566.2511278574177,
+   "shareX": 27.492980829186227,
    "shareM": 4.2486106127552725
   },
   {
@@ -36,7 +36,7 @@
    "x": 23447750677.936,
    "m": 52385724378.034,
    "balance": -28937973700.097996,
-   "shareX": 378.32992633284096,
+   "shareX": 6.640964036211132,
    "shareM": 16.09670923623335
   },
   {
@@ -46,7 +46,7 @@
    "x": 23313711801.392,
    "m": 21612574127.484,
    "balance": 1701137673.9079971,
-   "shareX": 376.16720637794367,
+   "shareX": 6.60300101916914,
    "shareM": 6.640956590886142
   },
   {
@@ -56,7 +56,7 @@
    "x": 4709339168.779,
    "m": 18419476451.104,
    "balance": -13710137282.325,
-   "shareX": 75.98528171305834,
+   "shareX": 1.3337975349426874,
    "shareM": 5.6598044646184515
   },
   {
@@ -66,7 +66,7 @@
    "x": 6930981926.476,
    "m": 11792443015.552,
    "balance": -4861461089.076,
-   "shareX": 111.83153205929335,
+   "shareX": 1.963019922105728,
    "shareM": 3.623497215317407
   },
   {
@@ -76,7 +76,7 @@
    "x": 8497250441.671,
    "m": 5860317486.581,
    "balance": 2636932955.089999,
-   "shareX": 137.10330588998187,
+   "shareX": 2.406624642376295,
    "shareM": 1.8007162778312702
   },
   {
@@ -86,7 +86,7 @@
    "x": 5267685434.995,
    "m": 8558582395.309,
    "balance": -3290896960.314,
-   "shareX": 84.99420988988722,
+   "shareX": 1.4919345573216551,
    "shareM": 2.629819744353887
   },
   {
@@ -96,7 +96,7 @@
    "x": 5076377075.384,
    "m": 8731295578.052,
    "balance": -3654918502.668,
-   "shareX": 81.9074456798518,
+   "shareX": 1.4377514523640142,
    "shareM": 2.6828898109967803
   },
   {
@@ -106,7 +106,7 @@
    "x": 5767146001.58,
    "m": 6996631360.115,
    "balance": -1229485358.5349998,
-   "shareX": 93.05301612498043,
+   "shareX": 1.6333937405821533,
    "shareM": 2.14987464569846
   },
   {
@@ -116,7 +116,7 @@
    "x": 4862760371.185,
    "m": 7806272934.203,
    "balance": -2943512563.0179996,
-   "shareX": 78.46073588354201,
+   "shareX": 1.3772500904378826,
    "shareM": 2.3986554950308703
   },
   {
@@ -126,7 +126,7 @@
    "x": 9600023506.744,
    "m": 1613785807.598,
    "balance": 7986237699.146,
-   "shareX": 154.89657135930045,
+   "shareX": 2.718956360921196,
    "shareM": 0.49587251532513626
   },
   {
@@ -136,7 +136,7 @@
    "x": 7395705135.615,
    "m": 3688432004.584,
    "balance": 3707273131.0309997,
-   "shareX": 119.32985033696772,
+   "shareX": 2.0946406545621166,
    "shareM": 1.133354901937774
   },
   {
@@ -146,7 +146,7 @@
    "x": 10238667781.955,
    "m": 681968296.658,
    "balance": 9556699485.297,
-   "shareX": 165.2011095178722,
+   "shareX": 2.8998357007718747,
    "shareM": 0.20955032138939245
   },
   {
@@ -156,7 +156,7 @@
    "x": 4288268287.241,
    "m": 4716715918.588,
    "balance": -428447631.3470001,
-   "shareX": 69.19129461462512,
+   "shareX": 1.2145401861505547,
    "shareM": 1.4493185995393065
   },
   {
@@ -166,7 +166,7 @@
    "x": 4748323252.401,
    "m": 3668932974.806,
    "balance": 1079390277.5949998,
-   "shareX": 76.61429068229576,
+   "shareX": 1.3448387602130483,
    "shareM": 1.1273633800784955
   },
   {
@@ -176,7 +176,7 @@
    "x": 5148559399.359,
    "m": 2654079701.503,
    "balance": 2494479697.8560004,
-   "shareX": 83.07210892141775,
+   "shareX": 1.4581952136506433,
    "shareM": 0.8155265533141439
   },
   {
@@ -186,7 +186,7 @@
    "x": 6341117740.113,
    "m": 793379704.545,
    "balance": 5547738035.568,
-   "shareX": 102.31406161027974,
+   "shareX": 1.7959562705985617,
    "shareM": 0.24378401882602488
   },
   {
@@ -196,7 +196,7 @@
    "x": 2437590965.689,
    "m": 4671733491.34,
    "balance": -2234142525.651,
-   "shareX": 39.33057900289378,
+   "shareX": 0.6903840867502249,
    "shareM": 1.435496722286528
   },
   {
@@ -206,7 +206,7 @@
    "x": 5614652284.399,
    "m": 630245934.186,
    "balance": 4984406350.213,
-   "shareX": 90.59252694715934,
+   "shareX": 1.5902038710950084,
    "shareM": 0.19365744523643894
   },
   {
@@ -216,7 +216,7 @@
    "x": 4472791931.542,
    "m": 1626661206.325,
    "balance": 2846130725.217,
-   "shareX": 72.16858730738458,
+   "shareX": 1.2668016973916587,
    "shareM": 0.4998287753954082
   },
   {
@@ -226,7 +226,7 @@
    "x": 69553454.55,
    "m": 5857085952.365,
    "balance": -5787532497.815,
-   "shareX": 1.1222463807949536,
+   "shareX": 0.01969920256340147,
    "shareM": 1.7997233152010979
   },
   {
@@ -236,7 +236,7 @@
    "x": 4433009517.555,
    "m": 831745693.002,
    "balance": 3601263824.5530005,
-   "shareX": 71.52669726173484,
+   "shareX": 1.2555343658599425,
    "shareM": 0.2555728442758065
   },
   {
@@ -246,7 +246,7 @@
    "x": 3084731983.911,
    "m": 1631680060.213,
    "balance": 1453051923.6979997,
-   "shareX": 49.77221227995148,
+   "shareX": 0.8736699075267725,
    "shareM": 0.5013709327807158
   },
   {
@@ -256,7 +256,7 @@
    "x": 4008707387.332,
    "m": 676666975.203,
    "balance": 3332040412.1289997,
-   "shareX": 64.68057390111808,
+   "shareX": 1.1353618501247678,
    "shareM": 0.20792136939832823
   },
   {
@@ -266,7 +266,7 @@
    "x": 3308136035.985,
    "m": 623359095.977,
    "balance": 2684776940.0080004,
-   "shareX": 53.37684113005041,
+   "shareX": 0.936943280557105,
    "shareM": 0.19154130704185596
   },
   {
@@ -276,7 +276,7 @@
    "x": 3227772980.314,
    "m": 615455369.36,
    "balance": 2612317610.954,
-   "shareX": 52.08018161888881,
+   "shareX": 0.9141825403103513,
    "shareM": 0.189112706678932
   },
   {
@@ -286,7 +286,7 @@
    "x": 1744271782.162,
    "m": 1887759073.542,
    "balance": -143487291.3800001,
-   "shareX": 28.143860104703723,
+   "shareX": 0.494019504634864,
    "shareM": 0.5800570532457573
   },
   {
@@ -296,7 +296,7 @@
    "x": 392973249.516,
    "m": 3104823546.381,
    "balance": -2711850296.8650002,
-   "shareX": 6.3406312435787315,
+   "shareX": 0.11129942709961044,
    "shareM": 0.9540278854454862
   },
   {
@@ -306,7 +306,7 @@
    "x": 975763445.325,
    "m": 2470199147.247,
    "balance": -1494435701.9220002,
-   "shareX": 15.743962713466633,
+   "shareX": 0.27635955521952854,
    "shareM": 0.7590250569389718
   },
   {
@@ -316,7 +316,7 @@
    "x": 2535976318.248,
    "m": 393074715.151,
    "balance": 2142901603.0970001,
-   "shareX": 40.918028634934714,
+   "shareX": 0.7182491727027588,
    "shareM": 0.12078117603646188
   },
   {
@@ -326,7 +326,7 @@
    "x": 2450927489.742,
    "m": 373570553.535,
    "balance": 2077356936.207,
-   "shareX": 39.5457640853271,
+   "shareX": 0.6941613094706702,
    "shareM": 0.11478807730285154
   },
   {
@@ -336,7 +336,7 @@
    "x": 1130240261.473,
    "m": 1553634148.383,
    "balance": -423393886.90999985,
-   "shareX": 18.236449232798265,
+   "shareX": 0.3201110857845733,
    "shareM": 0.4773895453947471
   },
   {
@@ -346,7 +346,7 @@
    "x": 630333943.258,
    "m": 2053442966.32,
    "balance": -1423109023.0619998,
-   "shareX": 10.170450786236358,
+   "shareX": 0.17852565499677187,
    "shareM": 0.6309672101413449
   },
   {
@@ -356,7 +356,7 @@
    "x": 1767941249.1,
    "m": 468137503.495,
    "balance": 1299803745.605,
-   "shareX": 28.525767427328812,
+   "shareX": 0.5007232640210236,
    "shareM": 0.14384593065768334
   },
   {
@@ -366,7 +366,7 @@
    "x": 531622835.15,
    "m": 1096284694.595,
    "balance": -564661859.445,
-   "shareX": 8.577745081894568,
+   "shareX": 0.15056830727827075,
    "shareM": 0.3368584891884788
   },
   {
@@ -376,7 +376,7 @@
    "x": 1195058832.241,
    "m": 374889002.296,
    "balance": 820169829.9449999,
-   "shareX": 19.282298169034743,
+   "shareX": 0.33846925596735117,
    "shareM": 0.11519320077113726
   },
   {
@@ -386,7 +386,7 @@
    "x": 330808752.865,
    "m": 1017503004.142,
    "balance": -686694251.277,
-   "shareX": 5.3376058463229645,
+   "shareX": 0.09369295421191776,
    "shareM": 0.31265101703042225
   },
   {
@@ -396,7 +396,7 @@
    "x": 648686654.453,
    "m": 680220336.819,
    "balance": -31533682.366000056,
-   "shareX": 10.466572148570096,
+   "shareX": 0.18372358194025695,
    "shareM": 0.2090132208411218
   },
   {
@@ -406,7 +406,7 @@
    "x": 943683128.675,
    "m": 341790443.521,
    "balance": 601892685.1539999,
-   "shareX": 15.226346162453513,
+   "shareX": 0.267273641944982,
    "shareM": 0.10502291329176902
   },
   {
@@ -416,7 +416,7 @@
    "x": 763613696.203,
    "m": 403180742.545,
    "balance": 360432953.65799993,
-   "shareX": 12.320922266675165,
+   "shareX": 0.21627367007165582,
    "shareM": 0.12388648356873373
   },
   {
@@ -426,7 +426,7 @@
    "x": 953082949.224,
    "m": 175522410.479,
    "balance": 777560538.745,
-   "shareX": 15.378012455083939,
+   "shareX": 0.26993589603792956,
    "shareM": 0.05393326597022221
   },
   {
@@ -436,7 +436,7 @@
    "x": 1037476109.967,
    "m": 65242044.377,
    "balance": 972234065.59,
-   "shareX": 16.739697792216898,
+   "shareX": 0.2938380584710974,
    "shareM": 0.02004710693194799
   },
   {
@@ -446,7 +446,7 @@
    "x": 926310734.059,
    "m": 129973174.202,
    "balance": 796337559.857,
-   "shareX": 14.94604222773619,
+   "shareX": 0.262353364113118,
    "shareM": 0.03993722370893016
   },
   {
@@ -456,7 +456,7 @@
    "x": 418427097.194,
    "m": 429304968.091,
    "balance": -10877870.897000015,
-   "shareX": 6.751329585145744,
+   "shareX": 0.11850856580696871,
    "shareM": 0.13191374801202296
   },
   {
@@ -466,7 +466,7 @@
    "x": 199854883.431,
    "m": 639687895.214,
    "balance": -439833011.783,
-   "shareX": 3.224662542870592,
+   "shareX": 0.05660368499974467,
    "shareM": 0.19655870322403093
   },
   {
@@ -476,7 +476,7 @@
    "x": 450498132.23,
    "m": 282547144.456,
    "balance": 167950987.77400005,
-   "shareX": 7.268796377131265,
+   "shareX": 0.12759185030634532,
    "shareM": 0.08681905774587936
   },
   {
@@ -486,7 +486,7 @@
    "x": 386539675.293,
    "m": 318834218.622,
    "balance": 67705456.671,
-   "shareX": 6.2368253947671946,
+   "shareX": 0.10947728494081303,
    "shareM": 0.09796908933976639
   },
   {
@@ -496,7 +496,7 @@
    "x": 437947810.758,
    "m": 251136025.336,
    "balance": 186811785.42200002,
-   "shareX": 7.066296689072776,
+   "shareX": 0.12403729896863991,
    "shareM": 0.0771672746072016
   },
   {
@@ -506,7 +506,7 @@
    "x": 547706584.938,
    "m": 119632602.514,
    "balance": 428073982.42399997,
-   "shareX": 8.837256706528812,
+   "shareX": 0.1551236100608969,
    "shareM": 0.03675984709012068
   },
   {
@@ -516,7 +516,7 @@
    "x": 214451715.198,
    "m": 430020085.995,
    "balance": -215568370.797,
-   "shareX": 3.4601827154856353,
+   "shareX": 0.060737857020709045,
    "shareM": 0.13213348430672883
   },
   {
@@ -526,7 +526,7 @@
    "x": 356405198.936,
    "m": 210173502.236,
    "balance": 146231696.7,
-   "shareX": 5.75060501581415,
+   "shareX": 0.10094248019618549,
    "shareM": 0.06458060463648585
   },
   {
@@ -536,7 +536,7 @@
    "x": 154314771.984,
    "m": 411966055.689,
    "balance": -257651283.705,
-   "shareX": 2.4898719335033017,
+   "shareX": 0.04370563578050095,
    "shareM": 0.12658597150952708
   },
   {
@@ -546,7 +546,7 @@
    "x": 127071462.248,
    "m": 419420597.568,
    "balance": -292349135.32000005,
-   "shareX": 2.0503005858267698,
+   "shareX": 0.03598967860110372,
    "shareM": 0.12887654961148615
   },
   {
@@ -556,7 +556,7 @@
    "x": 519437864.527,
    "m": 23739408.999,
    "balance": 495698455.528,
-   "shareX": 8.381140337094664,
+   "shareX": 0.147117232042906,
    "shareM": 0.007294475138672607
   },
   {
@@ -566,7 +566,7 @@
    "x": 401981841.234,
    "m": 114677634.885,
    "balance": 287304206.34900004,
-   "shareX": 6.485985051193238,
+   "shareX": 0.11385087582652151,
    "shareM": 0.03523732021574944
   },
   {
@@ -576,8 +576,18 @@
    "x": 211591607.435,
    "m": 285576865.717,
    "balance": -73985258.282,
-   "shareX": 3.414034819504381,
+   "shareX": 0.05992780606722273,
    "shareM": 0.08775000874033771
+  },
+  {
+   "code": 818,
+   "iso3": "EGY",
+   "name": "Misr",
+   "x": 432009737.316,
+   "m": 54674244.558,
+   "balance": 377335492.758,
+   "shareX": 0.12235549448707783,
+   "shareM": 0.016799909284634547
   },
   {
    "code": 604,
@@ -586,7 +596,7 @@
    "x": 439026028.443,
    "m": 47023460.07,
    "balance": 392002568.373,
-   "shareX": 7.0836937529933115,
+   "shareX": 0.12434267601600119,
    "shareM": 0.014449031162883121
   },
   {
@@ -596,18 +606,8 @@
    "x": 391359696.326,
    "m": 93893134.63,
    "balance": 297466561.696,
-   "shareX": 6.314596530573989,
+   "shareX": 0.11084243022803475,
    "shareM": 0.028850808218495484
-  },
-  {
-   "code": 818,
-   "iso3": "EGY",
-   "name": "Misr",
-   "x": 432009737.316,
-   "m": 49909595.966,
-   "balance": 382100141.34999996,
-   "shareX": 6.970485755276689,
-   "shareM": 0.015335862277385145
   },
   {
    "code": 31,
@@ -616,7 +616,7 @@
    "x": 39698873.091,
    "m": 400092460.143,
    "balance": -360393587.052,
-   "shareX": 0.6405421116212973,
+   "shareX": 0.011243670751050809,
    "shareM": 0.12293753832736155
   },
   {
@@ -626,7 +626,7 @@
    "x": 280389934.778,
    "m": 148543586.647,
    "balance": 131846348.13099998,
-   "shareX": 4.524097207705748,
+   "shareX": 0.07941313853735463,
    "shareM": 0.04564340670197161
   },
   {
@@ -636,7 +636,7 @@
    "x": 388812018.925,
    "m": 10795044.544,
    "balance": 378016974.38100004,
-   "shareX": 6.273489704734736,
+   "shareX": 0.11012086702871988,
    "shareM": 0.003317023774702579
   },
   {
@@ -646,7 +646,7 @@
    "x": 375655650.546,
    "m": 6456552.497,
    "balance": 369199098.049,
-   "shareX": 6.061211437705971,
+   "shareX": 0.10639466870581211,
    "shareM": 0.0019839230906247484
   },
   {
@@ -656,7 +656,7 @@
    "x": 195865648.786,
    "m": 179897591.731,
    "balance": 15968057.055000007,
-   "shareX": 3.1602961620566132,
+   "shareX": 0.05547383829618085,
    "shareM": 0.05527764024976914
   },
   {
@@ -666,7 +666,7 @@
    "x": 276344234.947,
    "m": 78127848.921,
    "balance": 198216386.02600002,
-   "shareX": 4.4588197599859,
+   "shareX": 0.07826729954204929,
    "shareM": 0.02400656442694974
   },
   {
@@ -676,7 +676,7 @@
    "x": 7265700.149,
    "m": 324494434.326,
    "balance": -317228734.177,
-   "shareX": 0.11723221727678525,
+   "shareX": 0.002057820131668604,
    "shareM": 0.09970831977865774
   },
   {
@@ -686,7 +686,7 @@
    "x": 239867992.7,
    "m": 85981399.712,
    "balance": 153886592.98799998,
-   "shareX": 3.8702748615111795,
+   "shareX": 0.06793635495526663,
    "shareM": 0.02641974712234309
   },
   {
@@ -696,7 +696,7 @@
    "x": 292218888.886,
    "m": 19505003.922,
    "balance": 272713884.964,
-   "shareX": 4.714957618912923,
+   "shareX": 0.08276338137711409,
    "shareM": 0.0059933575513499105
   },
   {
@@ -706,7 +706,7 @@
    "x": 77934004.64,
    "m": 211700708.027,
    "balance": -133766703.38700001,
-   "shareX": 1.2574667241757749,
+   "shareX": 0.02207277487384601,
    "shareM": 0.06504987346599023
   },
   {
@@ -716,7 +716,7 @@
    "x": 38436310.341,
    "m": 219696638.002,
    "balance": -181260327.661,
-   "shareX": 0.6201706363885977,
+   "shareX": 0.0108860827703794,
    "shareM": 0.06750680541470308
   },
   {
@@ -726,7 +726,7 @@
    "x": 231982226.247,
    "m": 22582448.126,
    "balance": 209399778.12100002,
-   "shareX": 3.7430378620130225,
+   "shareX": 0.06570291720971727,
    "shareM": 0.006938972509063295
   },
   {
@@ -736,7 +736,7 @@
    "x": 78098371.992,
    "m": 175250716.591,
    "balance": -97152344.59899999,
-   "shareX": 1.260118794688969,
+   "shareX": 0.022119327640819364,
    "shareM": 0.05384978182318937
   },
   {
@@ -746,7 +746,7 @@
    "x": 237236672.577,
    "m": 3895591.134,
    "balance": 233341081.443,
-   "shareX": 3.8278184586789257,
+   "shareX": 0.06719110213572668,
    "shareM": 0.001197009271738544
   },
   {
@@ -756,7 +756,7 @@
    "x": 190769338.797,
    "m": 39773860.433,
    "balance": 150995478.364,
-   "shareX": 3.078067098416747,
+   "shareX": 0.05403044136573754,
    "shareM": 0.01222142624147779
   },
   {
@@ -766,7 +766,7 @@
    "x": 25466388.26,
    "m": 201565576.518,
    "balance": -176099188.25800002,
-   "shareX": 0.41090068410849484,
+   "shareX": 0.007212690500244451,
    "shareM": 0.06193562303024046
   },
   {
@@ -776,7 +776,7 @@
    "x": 140392080.898,
    "m": 77102287.106,
    "balance": 63289793.791999996,
-   "shareX": 2.265229034264451,
+   "shareX": 0.039762396530844187,
    "shareM": 0.023691437156384387
   },
   {
@@ -786,7 +786,7 @@
    "x": 158344758.151,
    "m": 34244189.109,
    "balance": 124100569.042,
-   "shareX": 2.5548958409401106,
+   "shareX": 0.04484702429017403,
    "shareM": 0.01052230854231148
   },
   {
@@ -796,7 +796,7 @@
    "x": 91114435.599,
    "m": 98422684.21,
    "balance": -7308248.6109999865,
-   "shareX": 1.4701332414142851,
+   "shareX": 0.025805788295165267,
    "shareM": 0.030242615689443336
   },
   {
@@ -806,7 +806,7 @@
    "x": 138785450.757,
    "m": 50226263.05,
    "balance": 88559187.707,
-   "shareX": 2.2393060247938403,
+   "shareX": 0.039307360432396,
    "shareM": 0.015433165465159165
   },
   {
@@ -816,7 +816,7 @@
    "x": 108453746.377,
    "m": 64408898.071,
    "balance": 44044848.306,
-   "shareX": 1.7499033677435378,
+   "shareX": 0.030716695992496774,
    "shareM": 0.019791103717367125
   },
   {
@@ -826,7 +826,7 @@
    "x": 123145702.701,
    "m": 45132146.172,
    "balance": 78013556.52900001,
-   "shareX": 1.9869583769890353,
+   "shareX": 0.03487780956408894,
    "shareM": 0.013867881808702983
   },
   {
@@ -836,7 +836,7 @@
    "x": 24469052.421,
    "m": 137689719.061,
    "balance": -113220666.63999999,
-   "shareX": 0.39480865039146,
+   "shareX": 0.0069302211269644,
    "shareM": 0.04230830820529645
   },
   {
@@ -846,7 +846,7 @@
    "x": 73504175.209,
    "m": 86203272.456,
    "balance": -12699097.246999994,
-   "shareX": 1.1859913376742324,
+   "shareX": 0.020818141184589713,
    "shareM": 0.026487922585983543
   },
   {
@@ -856,7 +856,7 @@
    "x": 37771348.576,
    "m": 96385119.111,
    "balance": -58613770.535000004,
-   "shareX": 0.609441465005718,
+   "shareX": 0.010697749687710797,
    "shareM": 0.029616527316362586
   },
   {
@@ -866,7 +866,7 @@
    "x": 98332313.093,
    "m": 34506201.662,
    "balance": 63826111.430999994,
-   "shareX": 1.5865938391958059,
+   "shareX": 0.02785006390666503,
    "shareM": 0.010602817878241416
   },
   {
@@ -876,7 +876,7 @@
    "x": 90719815.261,
    "m": 38192891.063,
    "balance": 52526924.19800001,
-   "shareX": 1.463766034365062,
+   "shareX": 0.025694022373196405,
    "shareM": 0.011735637325462496
   },
   {
@@ -886,7 +886,7 @@
    "x": 119565165.963,
    "m": 8933438.815,
    "balance": 110631727.148,
-   "shareX": 1.929186345081759,
+   "shareX": 0.033863715886874694,
    "shareM": 0.002745002933376116
   },
   {
@@ -896,7 +896,7 @@
    "x": 91042538.916,
    "m": 36626171.603,
    "balance": 54416367.31299999,
-   "shareX": 1.4689731869955658,
+   "shareX": 0.025785425434237404,
    "shareM": 0.011254227019471897
   },
   {
@@ -906,7 +906,7 @@
    "x": 55407772.17,
    "m": 45816368.048,
    "balance": 9591404.122000001,
-   "shareX": 0.8940055125657863,
+   "shareX": 0.01569280684367717,
    "shareM": 0.014078124593770976
   },
   {
@@ -916,8 +916,18 @@
    "x": 46929744.816,
    "m": 26853042.09,
    "balance": 20076702.726,
-   "shareX": 0.7572123715799929,
+   "shareX": 0.013291626639688223,
    "shareM": 0.008251209957732533
+  },
+  {
+   "code": 233,
+   "iso3": "EST",
+   "name": "Estoniya",
+   "x": 38519940.852,
+   "m": 24178469.121,
+   "balance": 14341471.730999999,
+   "shareX": 0.010909768932157109,
+   "shareM": 0.007429386380331843
   },
   {
    "code": 112,
@@ -926,18 +936,8 @@
    "x": 24190558.319,
    "m": 32131347.854,
    "balance": -7940789.535,
-   "shareX": 0.3903151424835592,
+   "shareX": 0.006851344933632165,
    "shareM": 0.009873089852528235
-  },
-  {
-   "code": 233,
-   "iso3": "EST",
-   "name": "Estoniya",
-   "x": 38519940.852,
-   "m": 16272263.814,
-   "balance": 22247677.038,
-   "shareX": 0.6215200163568682,
-   "shareM": 0.00500002438334269
   },
   {
    "code": 862,
@@ -946,7 +946,7 @@
    "x": 33631753.075,
    "m": 6339028.966,
    "balance": 27292724.109000005,
-   "shareX": 0.5426490087717478,
+   "shareX": 0.009525317191980156,
    "shareM": 0.0019478113038854643
   },
   {
@@ -956,7 +956,7 @@
    "x": 18441722.958,
    "m": 12615520.108,
    "balance": 5826202.8500000015,
-   "shareX": 0.2975575689106978,
+   "shareX": 0.005223137204588688,
    "shareM": 0.003876406434259031
   },
   {
@@ -966,7 +966,7 @@
    "x": 1120145.926,
    "m": 8102774.316,
    "balance": -6982628.39,
-   "shareX": 0.018073576927973192,
+   "shareX": 0.00031725212844719756,
    "shareM": 0.0024897623106298348
   },
   {
@@ -976,7 +976,7 @@
    "x": 3767926.356,
    "m": 3031398.981,
    "balance": 736527.375,
-   "shareX": 0.06079556714301143,
+   "shareX": 0.0010671669007822585,
    "shareM": 0.0009314665122132332
   }
  ],
@@ -986,601 +986,601 @@
     "code": "851713",
     "name": "851713 - Telephone sets; smartphones for cellular or other wireless networks",
     "value": 26460317776.134,
-    "share": 426.9377567379328
-   },
-   {
-    "code": "851713",
-    "name": "851713 - Telephone sets; smartphones for cellular or other wireless networks",
-    "value": 25064177028.143,
-    "share": 404.4109978350098
+    "share": 7.494195121384325
    },
    {
     "code": "852492",
     "name": "852492 - Flat panel display modules, whether or not incorporating touch-sensitive screens; of organic light-emitting diodes (OLED), with drivers or control circuits",
     "value": 18612623533.225,
-    "share": 300.3150531113446
+    "share": 5.271540336702549
    },
    {
     "code": "851762",
     "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
     "value": 16305643230.321,
-    "share": 263.09187976575464
-   },
-   {
-    "code": "852492",
-    "name": "852492 - Flat panel display modules, whether or not incorporating touch-sensitive screens; of organic light-emitting diodes (OLED), with drivers or control circuits",
-    "value": 11233403479.168,
-    "share": 181.25118989514993
+    "share": 4.618148314829451
    },
    {
     "code": "854231",
     "name": "854231 - Electronic integrated circuits; processors and controllers, whether or not combined with memories, converters, logic circuits, amplifiers, clock and timing circuits, or other circuits",
     "value": 10634206778.626,
-    "share": 171.5831391431325
-   },
-   {
-    "code": "854231",
-    "name": "854231 - Electronic integrated circuits; processors and controllers, whether or not combined with memories, converters, logic circuits, amplifiers, clock and timing circuits, or other circuits",
-    "value": 10488413881.644,
-    "share": 169.2307678332928
-   },
-   {
-    "code": "851762",
-    "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
-    "value": 10038648159.297,
-    "share": 161.97378890427788
+    "share": 3.0118618088574958
    },
    {
     "code": "847330",
     "name": "847330 - Machinery; parts and accessories (other than covers, carrying cases and the like) of the machines of heading no. 8471",
     "value": 8780922213.331,
-    "share": 141.68035560144193
+    "share": 2.486967275644527
    },
    {
     "code": "854143",
     "name": "854143 - Electrical apparatus; photosensitive semiconductor devices, photovoltaic cells assembled in modules or made up into panels",
     "value": 7888905511.577,
-    "share": 127.28764827110449
-   },
-   {
-    "code": "854143",
-    "name": "854143 - Electrical apparatus; photosensitive semiconductor devices, photovoltaic cells assembled in modules or made up into panels",
-    "value": 7871806943.185,
-    "share": 127.01176252799013
+    "share": 2.23432680204796
    },
    {
     "code": "847130",
     "name": "847130 - Automatic data processing machines; portable, weighing not more than 10kg, consisting of at least a central processing unit, a keyboard and a display",
     "value": 7110073934.187,
-    "share": 114.72118518699659
-   },
-   {
-    "code": "847330",
-    "name": "847330 - Machinery; parts and accessories (other than covers, carrying cases and the like) of the machines of heading no. 8471",
-    "value": 6982907903.51,
-    "share": 112.66935873767576
+    "share": 2.0137430638994847
    },
    {
     "code": "851779",
     "name": "851779 - Communication apparatus; parts, other than aerials and aerial reflectors of all kinds",
     "value": 6959712057.43,
-    "share": 112.29509329707075
+    "share": 1.9711569826298614
    },
    {
     "code": "852589",
     "name": "852589 - Television cameras; n.e.c. in item no 8525.8",
     "value": 6380859403.374,
-    "share": 102.95529414215012
-   },
-   {
-    "code": "852492",
-    "name": "852492 - Flat panel display modules, whether or not incorporating touch-sensitive screens; of organic light-emitting diodes (OLED), with drivers or control circuits",
-    "value": 6380179198.394,
-    "share": 102.94431902118824
-   },
-   {
-    "code": "851779",
-    "name": "851779 - Communication apparatus; parts, other than aerials and aerial reflectors of all kinds",
-    "value": 6008263452.593,
-    "share": 96.94345102137115
+    "share": 1.8072120605496147
    },
    {
     "code": "999999",
     "name": "999999 - Commodities not specified according to kind",
     "value": 5983819157.128,
-    "share": 96.54904182496007
-   },
-   {
-    "code": "999999",
-    "name": "999999 - Commodities not specified according to kind",
-    "value": 5768071956.643,
-    "share": 93.06795642844851
-   },
-   {
-    "code": "852589",
-    "name": "852589 - Television cameras; n.e.c. in item no 8525.8",
-    "value": 5359031152.969,
-    "share": 86.46807487704965
-   },
-   {
-    "code": "851762",
-    "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
-    "value": 5031465017.94,
-    "share": 81.18278873438906
+    "share": 1.6947607626633225
    },
    {
     "code": "640399",
     "name": "640399 - Footwear; n.e.c. in heading no. 6403, (not covering the ankle), outer soles of rubber, plastics or composition leather, uppers of leather",
     "value": 4991396908.064,
-    "share": 80.53628897985409
+    "share": 1.4136830356226862
    },
    {
     "code": "640411",
     "name": "640411 - Sports footwear; tennis shoes, basketball shoes, gym shoes, training shoes and the like, with outer soles of rubber or plastics and uppers of textile materials",
     "value": 4916105689.328,
-    "share": 79.3214636591164
-   },
-   {
-    "code": "640411",
-    "name": "640411 - Sports footwear; tennis shoes, basketball shoes, gym shoes, training shoes and the like, with outer soles of rubber or plastics and uppers of textile materials",
-    "value": 4823313826.834,
-    "share": 77.82426510118921
-   },
-   {
-    "code": "640399",
-    "name": "640399 - Footwear; n.e.c. in heading no. 6403, (not covering the ankle), outer soles of rubber, plastics or composition leather, uppers of leather",
-    "value": 4812020589.991,
-    "share": 77.64204849877149
-   },
-   {
-    "code": "847130",
-    "name": "847130 - Automatic data processing machines; portable, weighing not more than 10kg, consisting of at least a central processing unit, a keyboard and a display",
-    "value": 4601485827.109,
-    "share": 74.24506588727519
+    "share": 1.392358760951906
    },
    {
     "code": "100630",
     "name": "100630 - Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",
     "value": 4060727367.804,
-    "share": 65.51991732685345
-   },
-   {
-    "code": "100630",
-    "name": "100630 - Cereals; rice, semi-milled or wholly milled, whether or not polished or glazed",
-    "value": 4013595211.375,
-    "share": 64.75943903984783
+    "share": 1.1500951532984507
    },
    {
     "code": "640419",
     "name": "640419 - Footwear; (other than sportswear), with outer soles of rubber or plastics and uppers of textile materials",
     "value": 3900264437.057,
-    "share": 62.93084472869632
-   },
-   {
-    "code": "640419",
-    "name": "640419 - Footwear; (other than sportswear), with outer soles of rubber or plastics and uppers of textile materials",
-    "value": 3796671600.424,
-    "share": 61.25937223692966
+    "share": 1.1046482118466805
    },
    {
     "code": "854430",
     "name": "854430 - Insulated electric conductors; ignition wiring sets and other wiring sets of a kind used in vehicles, aircraft or ships",
     "value": 3796015214.4,
-    "share": 61.248781435299406
-   },
-   {
-    "code": "854430",
-    "name": "854430 - Insulated electric conductors; ignition wiring sets and other wiring sets of a kind used in vehicles, aircraft or ships",
-    "value": 3646273705.926,
-    "share": 58.832699200032145
+    "share": 1.0751223375751
    },
    {
     "code": "640299",
     "name": "640299 - Footwear; n.e.c. in heading no. 6402, (other than just covering the ankle), with outer soles and uppers of rubber or plastics",
     "value": 3032411205.459,
-    "share": 48.928015472790435
-   },
-   {
-    "code": "640299",
-    "name": "640299 - Footwear; n.e.c. in heading no. 6402, (other than just covering the ankle), with outer soles and uppers of rubber or plastics",
-    "value": 2986018876.017,
-    "share": 48.17947430902258
+    "share": 0.8588514111678337
    },
    {
     "code": "090111",
     "name": "090111 - Coffee; not roasted or decaffeinated",
     "value": 2977954667.295,
-    "share": 48.04935813994381
-   },
-   {
-    "code": "090111",
-    "name": "090111 - Coffee; not roasted or decaffeinated",
-    "value": 2957393779.988,
-    "share": 47.7176078118616
+    "share": 0.8434280165552329
    },
    {
     "code": "080132",
     "name": "080132 - Nuts, edible; cashew nuts, fresh or dried, shelled",
     "value": 2916825905.156,
-    "share": 47.06304433976222
+    "share": 0.8261148884637952
    },
    {
     "code": "852872",
     "name": "852872 - Reception apparatus for television, whether or not incorporating radio-broadcast receivers or sound or video recording or reproducing apparatus; incorporating a colour video display or screen",
     "value": 2686634331.864,
-    "share": 43.34889869900564
-   },
-   {
-    "code": "080132",
-    "name": "080132 - Nuts, edible; cashew nuts, fresh or dried, shelled",
-    "value": 2669029621.691,
-    "share": 43.064846348127936
-   },
-   {
-    "code": "852872",
-    "name": "852872 - Reception apparatus for television, whether or not incorporating radio-broadcast receivers or sound or video recording or reproducing apparatus; incorporating a colour video display or screen",
-    "value": 2665561972.813,
-    "share": 43.00889576410043
+    "share": 0.7609191270166423
    },
    {
     "code": "850440",
     "name": "850440 - Electrical static converters",
     "value": 2464449145.266,
-    "share": 39.76393626774913
+    "share": 0.6979909658534215
    },
    {
     "code": "844331",
     "name": "844331 - Printing, copying, and facsimile machines; machines which perform two or more of the functions of printing, copying or facsimile transmission, capable of connecting to an automatic data processing machine or to a network",
     "value": 2292182912.173,
-    "share": 36.984417150077945
-   },
-   {
-    "code": "844331",
-    "name": "844331 - Printing, copying, and facsimile machines; machines which perform two or more of the functions of printing, copying or facsimile transmission, capable of connecting to an automatic data processing machine or to a network",
-    "value": 2279767669.677,
-    "share": 36.784096963999886
+    "share": 0.6492010467546706
    },
    {
     "code": "440122",
     "name": "440122 - Wood; for fuel, in chips or particles, non-coniferous, whether or not agglomerated",
     "value": 2201068231.334,
-    "share": 35.51427995171135
-   },
-   {
-    "code": "440122",
-    "name": "440122 - Wood; for fuel, in chips or particles, non-coniferous, whether or not agglomerated",
-    "value": 2197055726.428,
-    "share": 35.44953810477055
+    "share": 0.6233951890016696
    },
    {
     "code": "081060",
     "name": "081060 - Fruit, edible; durians, fresh",
     "value": 2098669994.625,
-    "share": 33.86208235362008
+    "share": 0.594393558239884
    },
    {
     "code": "854442",
     "name": "854442 - Insulated electric conductors; for a voltage not exceeding 1000 volts, fitted with connectors",
     "value": 2062142409.281,
-    "share": 33.27270903324799
-   },
-   {
-    "code": "081060",
-    "name": "081060 - Fruit, edible; durians, fresh",
-    "value": 2028450272.539,
-    "share": 32.72908573280104
+    "share": 0.584048072059523
    },
    {
     "code": "400280",
     "name": "400280 - Rubber; mixtures of natural and synthetic rubbers of heading no. 4001 and 4002, in primary forms or in plates, sheets or strip",
     "value": 1996625611.681,
-    "share": 32.21559419310702
-   },
-   {
-    "code": "400280",
-    "name": "400280 - Rubber; mixtures of natural and synthetic rubbers of heading no. 4001 and 4002, in primary forms or in plates, sheets or strip",
-    "value": 1931851323.763,
-    "share": 31.17045976154131
+    "share": 0.5654921473311549
    },
    {
     "code": "940161",
     "name": "940161 - Seats; with wooden frames, upholstered, (excluding medical, surgical, dental, veterinary or barber furniture)",
     "value": 1903671123.346,
-    "share": 30.71577166398146
-   },
-   {
-    "code": "940161",
-    "name": "940161 - Seats; with wooden frames, upholstered, (excluding medical, surgical, dental, veterinary or barber furniture)",
-    "value": 1900200848.899,
-    "share": 30.65977871634561
+    "share": 0.5391652120734366
    },
    {
     "code": "030617",
     "name": "030617 - Crustaceans; frozen, shrimps and prawns, excluding cold-water varieties, in shell or not, smoked, cooked or not before or during smoking; in shell, cooked by steaming or by boiling in water",
     "value": 1878087505.721,
-    "share": 30.302979481723156
+    "share": 0.5319193194120277
    },
    {
     "code": "611020",
     "name": "611020 - Jerseys, pullovers, cardigans, waistcoats and similar articles; of cotton, knitted or crocheted",
     "value": 1870872151.233,
-    "share": 30.18655959269393
+    "share": 0.5298757583761962
    },
    {
     "code": "940360",
     "name": "940360 - Furniture; wooden, other than for office, kitchen or bedroom use",
     "value": 1844149323.327,
-    "share": 29.755386229758287
-   },
-   {
-    "code": "940360",
-    "name": "940360 - Furniture; wooden, other than for office, kitchen or bedroom use",
-    "value": 1837254135.309,
-    "share": 29.644132233128424
+    "share": 0.5223072141048432
    },
    {
     "code": "640391",
     "name": "640391 - Footwear; n.e.c. in heading no. 6403, covering the ankle, outer soles of rubber, plastics or composition leather, uppers of leather",
     "value": 1773509528.213,
-    "share": 28.615611722227612
-   },
-   {
-    "code": "640391",
-    "name": "640391 - Footwear; n.e.c. in heading no. 6403, covering the ankle, outer soles of rubber, plastics or composition leather, uppers of leather",
-    "value": 1746324231.553,
-    "share": 28.176976416693066
-   },
-   {
-    "code": "850440",
-    "name": "850440 - Electrical static converters",
-    "value": 1731877539.16,
-    "share": 27.943878745881516
-   },
-   {
-    "code": "611020",
-    "name": "611020 - Jerseys, pullovers, cardigans, waistcoats and similar articles; of cotton, knitted or crocheted",
-    "value": 1722346648.203,
-    "share": 27.790097629595543
+    "share": 0.5023003339003881
    },
    {
     "code": "852859",
     "name": "852859 - Monitors other than cathode-ray tube; n.e.c. in subheading 8528.52, whether or not colour",
     "value": 1661735745.394,
-    "share": 26.81213950006487
+    "share": 0.4706433241476047
    },
    {
     "code": "420292",
     "name": "420292 - Cases and containers; n.e.c. in heading 4202, with outer surface of sheeting of plastics or of textile materials",
     "value": 1659644043.542,
-    "share": 26.778389848831917
-   },
-   {
-    "code": "030617",
-    "name": "030617 - Crustaceans; frozen, shrimps and prawns, excluding cold-water varieties, in shell or not, smoked, cooked or not before or during smoking; in shell, cooked by steaming or by boiling in water",
-    "value": 1597406324.455,
-    "share": 25.77418300610625
+    "share": 0.4700509041340859
    },
    {
     "code": "270900",
     "name": "270900 - Oils; petroleum oils and oils obtained from bituminous minerals, crude",
     "value": 1552801697.22,
-    "share": 25.054486453216818
-   },
-   {
-    "code": "270900",
-    "name": "270900 - Oils; petroleum oils and oils obtained from bituminous minerals, crude",
-    "value": 1552801697.22,
-    "share": 25.054486453216818
+    "share": 0.4397905951938139
    },
    {
     "code": "620343",
     "name": "620343 - Trousers, bib and brace overalls, breeches and shorts; men's or boys', of synthetic fibres (not knitted or crocheted)",
     "value": 1534825795.222,
-    "share": 24.7644449148159
-   },
-   {
-    "code": "420292",
-    "name": "420292 - Cases and containers; n.e.c. in heading 4202, with outer surface of sheeting of plastics or of textile materials",
-    "value": 1525643024.331,
-    "share": 24.616280722760052
+    "share": 0.43469938963099175
    },
    {
     "code": "030462",
     "name": "030462 - Fish fillets; frozen, catfish (Pangasius spp., Silurus spp., Clarias spp., Ictalurus spp.)",
     "value": 1454673068.698,
-    "share": 23.471179068649434
+    "share": 0.4119982196313027
    },
    {
     "code": "620140",
     "name": "620140 - Coats; men's or boys', overcoats, raincoats, car-coats, capes, cloaks, anoraks (including ski-jackets) and similar articles, of man-made fibres, other than those of heading no. 6203 (not knitted or crocheted)",
     "value": 1451821243.868,
-    "share": 23.42516481795786
+    "share": 0.41119051460263123
    },
    {
     "code": "950300",
     "name": "950300 - Tricycles, scooters, pedal cars and similar wheeled toys; dolls' carriages; dolls; other toys; reduced-size (scale) models and similar recreational models, working or not; puzzles of all kinds",
     "value": 1416365795.891,
-    "share": 22.85309045545372
-   },
-   {
-    "code": "620343",
-    "name": "620343 - Trousers, bib and brace overalls, breeches and shorts; men's or boys', of synthetic fibres (not knitted or crocheted)",
-    "value": 1411590117.495,
-    "share": 22.776034788982127
+    "share": 0.40114868337808757
    },
    {
     "code": "610910",
     "name": "610910 - T-shirts, singlets and other vests; of cotton, knitted or crocheted",
     "value": 1401669879.95,
-    "share": 22.615971557708704
-   },
-   {
-    "code": "950300",
-    "name": "950300 - Tricycles, scooters, pedal cars and similar wheeled toys; dolls' carriages; dolls; other toys; reduced-size (scale) models and similar recreational models, working or not; puzzles of all kinds",
-    "value": 1396833054.731,
-    "share": 22.53792928602458
-   },
-   {
-    "code": "620140",
-    "name": "620140 - Coats; men's or boys', overcoats, raincoats, car-coats, capes, cloaks, anoraks (including ski-jackets) and similar articles, of man-made fibres, other than those of heading no. 6203 (not knitted or crocheted)",
-    "value": 1363722468.596,
-    "share": 22.003689316257276
+    "share": 0.3969864483482176
    },
    {
     "code": "611030",
     "name": "611030 - Jerseys, pullovers, cardigans, waistcoats and similar articles; of man-made fibres, knitted or crocheted",
     "value": 1363580189.978,
-    "share": 22.001393647909126
-   },
-   {
-    "code": "851713",
-    "name": "851713 - Telephone sets; smartphones for cellular or other wireless networks",
-    "value": 1357341388.3,
-    "share": 21.900730458008187
-   },
-   {
-    "code": "030462",
-    "name": "030462 - Fish fillets; frozen, catfish (Pangasius spp., Silurus spp., Clarias spp., Ictalurus spp.)",
-    "value": 1342582610.111,
-    "share": 21.66259727663394
+    "share": 0.3861985367600707
    },
    {
     "code": "721049",
     "name": "721049 - Iron or non-alloy steel; flat-rolled, width 600mm or more, (not corrugated), plated or coated with zinc (not electrolytically)",
     "value": 1324623777.486,
-    "share": 21.3728311529079
-   },
-   {
-    "code": "721049",
-    "name": "721049 - Iron or non-alloy steel; flat-rolled, width 600mm or more, (not corrugated), plated or coated with zinc (not electrolytically)",
-    "value": 1323306112.625,
-    "share": 21.35157060401173
+    "share": 0.3751651486158246
    },
    {
     "code": "620240",
     "name": "620240 - Coats; women's or girls', overcoats, raincoats, car-coats, capes, cloaks anoraks (including ski-jackets) and similar articles, of man-made fibres, other than those of heading no. 6204 (not knitted or crocheted)",
     "value": 1313371206.185,
-    "share": 21.19127068982398
+    "share": 0.3719781511783621
    },
    {
     "code": "853400",
     "name": "853400 - Circuits; printed",
     "value": 1281516871.9,
-    "share": 20.677300368791613
+    "share": 0.362956241516759
    },
    {
     "code": "401120",
     "name": "401120 - Rubber; new pneumatic tyres, of a kind used on buses or lorries",
     "value": 1281017994.684,
-    "share": 20.669250974929877
-   },
-   {
-    "code": "401120",
-    "name": "401120 - Rubber; new pneumatic tyres, of a kind used on buses or lorries",
-    "value": 1275587211.317,
-    "share": 20.581625176643815
-   },
-   {
-    "code": "847130",
-    "name": "847130 - Automatic data processing machines; portable, weighing not more than 10kg, consisting of at least a central processing unit, a keyboard and a display",
-    "value": 1272809807.565,
-    "share": 20.536811711534796
-   },
-   {
-    "code": "610910",
-    "name": "610910 - T-shirts, singlets and other vests; of cotton, knitted or crocheted",
-    "value": 1271230745.251,
-    "share": 20.511333509504407
-   },
-   {
-    "code": "847130",
-    "name": "847130 - Automatic data processing machines; portable, weighing not more than 10kg, consisting of at least a central processing unit, a keyboard and a display",
-    "value": 1235772766.989,
-    "share": 19.939218320801167
-   },
-   {
-    "code": "851762",
-    "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
-    "value": 1235476927.833,
-    "share": 19.93444495009993
-   },
-   {
-    "code": "611030",
-    "name": "611030 - Jerseys, pullovers, cardigans, waistcoats and similar articles; of man-made fibres, knitted or crocheted",
-    "value": 1234818417.492,
-    "share": 19.923819872572373
-   },
-   {
-    "code": "620240",
-    "name": "620240 - Coats; women's or girls', overcoats, raincoats, car-coats, capes, cloaks anoraks (including ski-jackets) and similar articles, of man-made fibres, other than those of heading no. 6204 (not knitted or crocheted)",
-    "value": 1233602617.09,
-    "share": 19.904202908760276
+    "share": 0.3628149475523422
    },
    {
     "code": "847170",
     "name": "847170 - Units of automatic data processing machines; storage units",
     "value": 1227071217.882,
-    "share": 19.798818651858475
+    "share": 0.347535929554735
    },
    {
     "code": "850760",
     "name": "850760 - Electric accumulators; lithium-ion, including separators, whether or not rectangular (including square)",
     "value": 1221875054.774,
-    "share": 19.714978456145676
-   },
-   {
-    "code": "847330",
-    "name": "847330 - Machinery; parts and accessories (other than covers, carrying cases and the like) of the machines of heading no. 8471",
-    "value": 1202678861.211,
-    "share": 19.4052474889278
+    "share": 0.34606425183176315
    },
    {
     "code": "851829",
     "name": "851829 - Loudspeakers; not mounted in their enclosures",
     "value": 1190893983.124,
-    "share": 19.215098245201336
+    "share": 0.3372896710433154
    },
    {
     "code": "940350",
     "name": "940350 - Furniture; wooden, for bedroom use",
     "value": 1182912220.567,
-    "share": 19.086312346644437
-   },
-   {
-    "code": "940350",
-    "name": "940350 - Furniture; wooden, for bedroom use",
-    "value": 1175593769.061,
-    "share": 18.96822898516701
+    "share": 0.33502904490417396
    },
    {
     "code": "271019",
     "name": "271019 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; not light oils and preparations",
     "value": 1168582930.083,
-    "share": 18.85510895798359
+    "share": 0.3309706469761283
    },
    {
     "code": "854239",
     "name": "854239 - Electronic integrated circuits; n.e.c. in heading no. 8542",
     "value": 1164274287.426,
-    "share": 18.78558892250525
-   },
-   {
-    "code": "852859",
-    "name": "852859 - Monitors other than cathode-ray tube; n.e.c. in subheading 8528.52, whether or not colour",
-    "value": 1154001187.323,
-    "share": 18.61983224679839
+    "share": 0.32975033628095596
    },
    {
     "code": "852852",
     "name": "852852 - Monitors; other than cathode-ray tube; capable of directly connecting to and designed for use with an automatic data processing machine of heading 84.71",
     "value": 1109323040.738,
-    "share": 17.898949457725728
+    "share": 0.31418682837725886
    },
    {
     "code": "620463",
     "name": "620463 - Trousers, bib and brace overalls, breeches and shorts; women's or girls', of synthetic fibres (not knitted or crocheted)",
     "value": 1106120451.272,
-    "share": 17.847275612614173
+    "share": 0.3132797784107788
+   },
+   {
+    "code": "610463",
+    "name": "610463 - Trousers, bib and brace overalls, breeches and shorts; women's or girls', of synthetic fibres, knitted or crocheted",
+    "value": 1098384583.569,
+    "share": 0.3110887955779201
+   },
+   {
+    "code": "741110",
+    "name": "741110 - Copper; tubes and pipes, of refined copper",
+    "value": 1085738569.546,
+    "share": 0.3075071418200954
+   },
+   {
+    "code": "610990",
+    "name": "610990 - T-shirts, singlets and other vests; of textile materials (other than cotton), knitted or crocheted",
+    "value": 1066896715.982,
+    "share": 0.3021706780537938
+   },
+   {
+    "code": "110814",
+    "name": "110814 - Starch; manioc (cassava)",
+    "value": 1063358125.665,
+    "share": 0.30116846460667646
+   },
+   {
+    "code": "871120",
+    "name": "871120 - Motorcycles (including mopeds) and cycles; fitted with an auxiliary motor, internal combustion piston engine, of cylinder capacity exceeding 50cc but not exceeding 250cc, with or without side-cars; side-cars",
+    "value": 1046902777.169,
+    "share": 0.29650791617854566
+   },
+   {
+    "code": "392690",
+    "name": "392690 - Plastics; other articles n.e.c. in chapter 39",
+    "value": 1036798203.291,
+    "share": 0.2936460590798952
+   },
+   {
+    "code": "940340",
+    "name": "940340 - Furniture; wooden, for kitchen use",
+    "value": 1012347229.491,
+    "share": 0.2867209582509728
+   },
+   {
+    "code": "391810",
+    "name": "391810 - Floor, wall or ceiling coverings; of polymers of vinyl chloride, whether or not self-adhesive, in rolls or in the form of tiles",
+    "value": 1003189547.285,
+    "share": 0.2841272835305092
+   },
+   {
+    "code": "950450",
+    "name": "950450 - Games; video game consoles and machines, other than those of subheading 9504.30",
+    "value": 1002716158.132,
+    "share": 0.2839932083953977
+   },
+   {
+    "code": "850811",
+    "name": "850811 - Vacuum cleaners, with self-contained electric motor, of a power not exceeding 1,500 W and having a dust bag or other receptacle capacity not exceeding 20L",
+    "value": 990014686.507,
+    "share": 0.2803958477177292
+   },
+   {
+    "code": "720839",
+    "name": "720839 - Iron or non-alloy steel; in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness of less than 3mm",
+    "value": 979729552.963,
+    "share": 0.2774828518013403
+   },
+   {
+    "code": "621210",
+    "name": "621210 - Brassieres; whether or not knitted or crocheted",
+    "value": 945634122.24,
+    "share": 0.2678262100048359
+   },
+   {
+    "code": "852990",
+    "name": "852990 - Reception and transmission apparatus; for use with the apparatus of heading no. 8524 to 8528, excluding aerials and aerial reflectors",
+    "value": 938002310.11,
+    "share": 0.26566469820003236
+   },
+   {
+    "code": "200819",
+    "name": "200819 - Nuts and other seeds; whether or not containing added sugar, other sweetening matter or spirit (excluding ground-nuts except in mixtures)",
+    "value": 936285130.786,
+    "share": 0.2651783519278016
+   },
+   {
+    "code": "160529",
+    "name": "160529 - Crustacean preparations; shrimps and prawns, prepared or preserved, in airtight containers",
+    "value": 935566438.076,
+    "share": 0.264974800955866
+   },
+   {
+    "code": "844332",
+    "name": "844332 - Printing, copying, and facsimile machines; single-function printing, copying or facsimile machines, capable of connecting to an automatic data processing machine or to a network",
+    "value": 932018430.464,
+    "share": 0.2639699203054731
+   },
+   {
+    "code": "081090",
+    "name": "081090 - Fruit, edible; fruits n.e.c. in heading no. 0801 to 0810, fresh",
+    "value": 928540688.241,
+    "share": 0.2629849404945146
+   },
+   {
+    "code": "851714",
+    "name": "851714 - Telephone sets; other than smartphones, for cellular or other wireless networks",
+    "value": 921058092.478,
+    "share": 0.26086569033520834
+   },
+   {
+    "code": "847150",
+    "name": "847150 - Units of automatic data processing machines; processing units other than those of item no. 8471.41 or 8471.49, whether or not containing in the same housing one or two of the following types of unit: storage units, input units or output units",
+    "value": 892502448.044,
+    "share": 0.25277804856855174
+   },
+   {
+    "code": "401110",
+    "name": "401110 - Rubber; new pneumatic tyres, of a kind used on motor cars (including station wagons and racing cars)",
+    "value": 853232339.527,
+    "share": 0.24165581420408846
+   },
+   {
+    "code": "853710",
+    "name": "853710 - Boards, panels, consoles, desks and other bases; for electric control or the distribution of electricity, (other than switching apparatus of heading no. 8517), for a voltage not exceeding 1000 volts",
+    "value": 832836534.74,
+    "share": 0.23587923426938695
+   },
+   {
+    "code": "940391",
+    "name": "940391 - Furniture; parts, of wood",
+    "value": 827733595.153,
+    "share": 0.23443395967816086
+   },
+   {
+    "code": "720712",
+    "name": "720712 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (other than square) cross-section",
+    "value": 827717484.93,
+    "share": 0.23442939687753117
+   },
+   {
+    "code": "392321",
+    "name": "392321 - Ethylene polymers; sacks and bags (including cones), for the conveyance or packing of goods",
+    "value": 798070050.077,
+    "share": 0.2260325339404839
+   },
+   {
+    "code": "252329",
+    "name": "252329 - Cement; portland, other than white, whether or not artificially coloured",
+    "value": 796664235.299,
+    "share": 0.22563437355783122
+   },
+   {
+    "code": "846729",
+    "name": "846729 - Tools; for working in the hand, with self-contained electric motor; other than saws and drills",
+    "value": 786924201.873,
+    "share": 0.22287576303770032
+   },
+   {
+    "code": "850110",
+    "name": "850110 - Electric motors; of an output not exceeding 37.5W",
+    "value": 770361826.63,
+    "share": 0.21818490207394506
+   },
+   {
+    "code": "520512",
+    "name": "520512 - Cotton yarn; (not sewing thread), single, of uncombed fibres, 85% or more by weight of cotton, less than 714.29 but not less than 232.56 decitex (exceeding 14 but not exceeding 43 metric number), not for retail sale",
+    "value": 766601815.156,
+    "share": 0.21711997685712792
+   },
+   {
+    "code": "940320",
+    "name": "940320 - Furniture; metal, other than for office use",
+    "value": 763699752.164,
+    "share": 0.21629804317890833
+   },
+   {
+    "code": "620462",
+    "name": "620462 - Trousers, bib and brace overalls, breeches and shorts; women's or girls', of cotton (not knitted or crocheted)",
+    "value": 762740581.953,
+    "share": 0.21602638322468296
+   },
+   {
+    "code": "851769",
+    "name": "851769 - Communication apparatus (excluding telephone sets or base stations); machines for the transmission or reception of voice, images or other data (including wired/wireless networks), n.e.c. in item no. 8517.6",
+    "value": 762624420.332,
+    "share": 0.21599348347416764
+   },
+   {
+    "code": "850720",
+    "name": "850720 - Electric accumulators; lead-acid, (other than for starting piston engines), including separators, whether or not rectangular (including square)",
+    "value": 751642295.601,
+    "share": 0.21288308297641828
+   },
+   {
+    "code": "852691",
+    "name": "852691 - Radio navigational aid apparatus",
+    "value": 746452746.266,
+    "share": 0.21141327843221064
+   },
+   {
+    "code": "852351",
+    "name": "852351 - Semiconductor media; solid-state non-volatile storage devices, whether or not recorded, excluding products of Chapter 37",
+    "value": 741378657.326,
+    "share": 0.20997617503453653
+   },
+   {
+    "code": "390761",
+    "name": "390761 - Poly(ethylene terephthalate); in primary forms, having a viscosity of 78ml/g or higher",
+    "value": 703167578.359,
+    "share": 0.19915388317848
+   },
+   {
+    "code": "620342",
+    "name": "620342 - Trousers, bib and brace overalls, breeches and shorts; men's or boys', of cotton (not knitted or crocheted)",
+    "value": 701013877.301,
+    "share": 0.19854390350634085
+   },
+   {
+    "code": "845020",
+    "name": "845020 - Washing machines; household or laundry-type, of a dry linen capacity exceeding 10kg",
+    "value": 695984418.842,
+    "share": 0.19711944052877833
+   },
+   {
+    "code": "090411",
+    "name": "090411 - Spices; pepper (of the genus piper), neither crushed nor ground",
+    "value": 683211712.935,
+    "share": 0.1935019045979947
+   },
+   {
+    "code": "847180",
+    "name": "847180 - Units of automatic data processing machines; n.e.c. in item no. 8471.50, 8471.60 or 8471.70",
+    "value": 679171981.57,
+    "share": 0.1923577560150706
+   },
+   {
+    "code": "440131",
+    "name": "440131 - Wood; for fuel, sawdust and wood waste and scrap, agglomerated in wood pellets",
+    "value": 658294041.179,
+    "share": 0.1864446237410543
+   },
+   {
+    "code": "940199",
+    "name": "940199 - Seats; parts, (of other than wood) for use in the assembly of motor vehicles as determined by the minister",
+    "value": 640578095.795,
+    "share": 0.1814270441114085
+   },
+   {
+    "code": "381800",
+    "name": "381800 - Chemical elements; doped for use in electronics, in the form of discs, wafers or similar forms; chemical compounds doped for use in electronics",
+    "value": 623051704.761,
+    "share": 0.17646315080922964
+   },
+   {
+    "code": "760120",
+    "name": "760120 - Aluminium; unwrought, alloys",
+    "value": 618049947.79,
+    "share": 0.17504653355589386
+   },
+   {
+    "code": "620520",
+    "name": "620520 - Shirts; men's or boys', of cotton (not knitted or crocheted)",
+    "value": 614735399.361,
+    "share": 0.17410777413220285
+   },
+   {
+    "code": "730890",
+    "name": "730890 - Iron or steel; structures and parts thereof, n.e.c. in heading 7308",
+    "value": 614236408.479,
+    "share": 0.1739664479748552
+   },
+   {
+    "code": "721061",
+    "name": "721061 - Iron or non-alloy steel; flat-rolled, width 600mm or more, plated or coated with aluminium zinc-alloys",
+    "value": 601462925.824,
+    "share": 0.17034869205045244
+   },
+   {
+    "code": "880730",
+    "name": "880730 - Aircraft and spacecraft; parts of aeroplanes, helicopters or unmanned aircraft n.e.c. in heading no. 8807",
+    "value": 579528125.229,
+    "share": 0.16413623167872352
+   },
+   {
+    "code": "853180",
+    "name": "853180 - Signalling apparatus; electric, sound or visual, apparatus n.e.c. in heading no. 8531, excluding those of heading no. 8512 or 8530",
+    "value": 568719915.697,
+    "share": 0.16107508812667326
+   },
+   {
+    "code": "650500",
+    "name": "650500 - Hats and other headgear; knitted or crocheted, or made up from lace, felt or other textile fabric, in the piece (but not in strips), whether or not lined or trimmed; hair-nets of any material, whether or not lined or trimmed",
+    "value": 548944696.41,
+    "share": 0.15547427285458268
    }
   ],
   "m": [
@@ -1591,34 +1591,16 @@
     "share": 7.925632541823845
    },
    {
-    "code": "854239",
-    "name": "854239 - Electronic integrated circuits; n.e.c. in heading no. 8542",
-    "value": 21763931787.668,
-    "share": 6.687464685898378
-   },
-   {
     "code": "854231",
     "name": "854231 - Electronic integrated circuits; processors and controllers, whether or not combined with memories, converters, logic circuits, amplifiers, clock and timing circuits, or other circuits",
     "value": 17797673473.557,
     "share": 5.468741310474208
    },
    {
-    "code": "854231",
-    "name": "854231 - Electronic integrated circuits; processors and controllers, whether or not combined with memories, converters, logic circuits, amplifiers, clock and timing circuits, or other circuits",
-    "value": 16569713786.522,
-    "share": 5.091422675088368
-   },
-   {
     "code": "852412",
     "name": "852412 - Flat panel display modules, whether or not incorporating touch-sensitive screens; of organic light-emitting diodes (OLED), without drivers or control circuits",
     "value": 11578805995.177,
     "share": 3.557852365696627
-   },
-   {
-    "code": "852412",
-    "name": "852412 - Flat panel display modules, whether or not incorporating touch-sensitive screens; of organic light-emitting diodes (OLED), without drivers or control circuits",
-    "value": 9902790601.289,
-    "share": 3.042858389929851
    },
    {
     "code": "999999",
@@ -1633,28 +1615,10 @@
     "share": 2.2330389883732704
    },
    {
-    "code": "999999",
-    "name": "999999 - Commodities not specified according to kind",
-    "value": 7009748931.587,
-    "share": 2.153905318870918
-   },
-   {
-    "code": "271019",
-    "name": "271019 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; not light oils and preparations",
-    "value": 7005289658.746,
-    "share": 2.152535105531715
-   },
-   {
     "code": "270900",
     "name": "270900 - Oils; petroleum oils and oils obtained from bituminous minerals, crude",
     "value": 6547419822.019,
     "share": 2.01184414979251
-   },
-   {
-    "code": "270900",
-    "name": "270900 - Oils; petroleum oils and oils obtained from bituminous minerals, crude",
-    "value": 6540977837.927,
-    "share": 2.0098647031767665
    },
    {
     "code": "851779",
@@ -1675,28 +1639,10 @@
     "share": 1.4827584136035623
    },
    {
-    "code": "270112",
-    "name": "270112 - Coal; bituminous, whether or not pulverised, but not agglomerated",
-    "value": 4703145836.486,
-    "share": 1.4451488821496716
-   },
-   {
-    "code": "851779",
-    "name": "851779 - Communication apparatus; parts, other than aerials and aerial reflectors of all kinds",
-    "value": 3537391147.855,
-    "share": 1.0869441520164125
-   },
-   {
     "code": "850760",
     "name": "850760 - Electric accumulators; lithium-ion, including separators, whether or not rectangular (including square)",
     "value": 3288449690.675,
     "share": 1.0104512085543016
-   },
-   {
-    "code": "853400",
-    "name": "853400 - Circuits; printed",
-    "value": 3213018784.122,
-    "share": 0.9872733412130559
    },
    {
     "code": "852990",
@@ -1711,28 +1657,10 @@
     "share": 0.9737884981054774
    },
    {
-    "code": "854232",
-    "name": "854232 - Electronic integrated circuits; memories",
-    "value": 3025614905.472,
-    "share": 0.9296892230169866
-   },
-   {
-    "code": "854239",
-    "name": "854239 - Electronic integrated circuits; n.e.c. in heading no. 8542",
-    "value": 2872453461.914,
-    "share": 0.8826268744014798
-   },
-   {
     "code": "100590",
     "name": "100590 - Cereals; maize (corn), other than seed",
     "value": 2830256358.171,
     "share": 0.8696608513555705
-   },
-   {
-    "code": "100590",
-    "name": "100590 - Cereals; maize (corn), other than seed",
-    "value": 2788667347.618,
-    "share": 0.8568816788187297
    },
    {
     "code": "080131",
@@ -1753,28 +1681,10 @@
     "share": 0.804635063274426
    },
    {
-    "code": "520100",
-    "name": "520100 - Cotton; not carded or combed",
-    "value": 2565905499.652,
-    "share": 0.7884330176957336
-   },
-   {
     "code": "230400",
     "name": "230400 - Oil-cake and other solid residues; whether or not ground or in the form of pellets, resulting from the extraction of soya-bean oil",
     "value": 2522926230.019,
     "share": 0.775226656331412
-   },
-   {
-    "code": "230400",
-    "name": "230400 - Oil-cake and other solid residues; whether or not ground or in the form of pellets, resulting from the extraction of soya-bean oil",
-    "value": 2522850897.721,
-    "share": 0.7752035087637988
-   },
-   {
-    "code": "720839",
-    "name": "720839 - Iron or non-alloy steel; in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness of less than 3mm",
-    "value": 2493646888.868,
-    "share": 0.7662299106200221
    },
    {
     "code": "720839",
@@ -1819,24 +1729,6 @@
     "share": 0.6099752035997076
    },
    {
-    "code": "850760",
-    "name": "850760 - Electric accumulators; lithium-ion, including separators, whether or not rectangular (including square)",
-    "value": 1979775660.467,
-    "share": 0.6083312493598303
-   },
-   {
-    "code": "271012",
-    "name": "271012 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; light oils and preparations",
-    "value": 1973063157.783,
-    "share": 0.6062686797335699
-   },
-   {
-    "code": "851713",
-    "name": "851713 - Telephone sets; smartphones for cellular or other wireless networks",
-    "value": 1921855508.233,
-    "share": 0.5905339608714419
-   },
-   {
     "code": "854149",
     "name": "854149 - Electrical apparatus; photosensitive semiconductor devices, diodes other than light emitting diodes and photovoltaic cells whether or not assembled in modules or made up into panels",
     "value": 1887745330.833,
@@ -1849,22 +1741,10 @@
     "share": 0.5598380666843787
    },
    {
-    "code": "854149",
-    "name": "854149 - Electrical apparatus; photosensitive semiconductor devices, diodes other than light emitting diodes and photovoltaic cells whether or not assembled in modules or made up into panels",
-    "value": 1818435768.943,
-    "share": 0.558755885977889
-   },
-   {
     "code": "740311",
     "name": "740311 - Copper; refined, unwrought, cathodes and sections of cathodes",
     "value": 1741199100.813,
     "share": 0.5350231571853599
-   },
-   {
-    "code": "740311",
-    "name": "740311 - Copper; refined, unwrought, cathodes and sections of cathodes",
-    "value": 1735994567.016,
-    "share": 0.5334239454108716
    },
    {
     "code": "260111",
@@ -1879,40 +1759,10 @@
     "share": 0.5097613286394301
    },
    {
-    "code": "852491",
-    "name": "852491 - Flat panel display modules, whether or not incorporating touch-sensitive screens; of liquid crystals, with drivers or control circuits",
-    "value": 1637540201.067,
-    "share": 0.5031715947841559
-   },
-   {
-    "code": "260111",
-    "name": "260111 - Iron ores and concentrates; non-agglomerated",
-    "value": 1623023416.416,
-    "share": 0.49871098143297077
-   },
-   {
-    "code": "270119",
-    "name": "270119 - Coal; (other than anthracite and bituminous), whether or not pulverised but not agglomerated",
-    "value": 1605659605.259,
-    "share": 0.49337555421982165
-   },
-   {
-    "code": "852990",
-    "name": "852990 - Reception and transmission apparatus; for use with the apparatus of heading no. 8524 to 8528, excluding aerials and aerial reflectors",
-    "value": 1603230735.2,
-    "share": 0.49262922846835966
-   },
-   {
     "code": "847989",
     "name": "847989 - Machines and mechanical appliances; having individual functions, n.e.c. or included in this chapter",
     "value": 1583143979.023,
     "share": 0.4864571142613094
-   },
-   {
-    "code": "080131",
-    "name": "080131 - Nuts, edible; cashew nuts, fresh or dried, in shell",
-    "value": 1577387164.945,
-    "share": 0.4846882017676706
    },
    {
     "code": "100199",
@@ -1921,28 +1771,10 @@
     "share": 0.4777234019662709
    },
    {
-    "code": "100199",
-    "name": "100199 - Cereals; wheat and meslin, other than durum wheat, other than seed",
-    "value": 1554460163.526,
-    "share": 0.477643357396766
-   },
-   {
     "code": "720449",
     "name": "720449 - Ferrous waste and scrap; n.e.c. in heading no. 7204",
     "value": 1538396841.233,
     "share": 0.4727075350637117
-   },
-   {
-    "code": "720449",
-    "name": "720449 - Ferrous waste and scrap; n.e.c. in heading no. 7204",
-    "value": 1538396841.233,
-    "share": 0.4727075350637117
-   },
-   {
-    "code": "851779",
-    "name": "851779 - Communication apparatus; parts, other than aerials and aerial reflectors of all kinds",
-    "value": 1429550464.75,
-    "share": 0.43926200205893945
    },
    {
     "code": "761699",
@@ -1963,22 +1795,10 @@
     "share": 0.4163212052342244
    },
    {
-    "code": "720838",
-    "name": "720838 - Iron or non-alloy steel; in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness of 3mm or more but less than 4.75mm",
-    "value": 1354870939.232,
-    "share": 0.4163150136869095
-   },
-   {
     "code": "854142",
     "name": "854142 - Electrical apparatus; photosensitive semiconductor devices, photovoltaic cells not assembled in modules or made up into panels",
     "value": 1320171256.927,
     "share": 0.40565274446595617
-   },
-   {
-    "code": "392690",
-    "name": "392690 - Plastics; other articles n.e.c. in chapter 39",
-    "value": 1311188644.694,
-    "share": 0.40289263187778196
    },
    {
     "code": "390110",
@@ -2005,52 +1825,10 @@
     "share": 0.3782753084532028
    },
    {
-    "code": "852412",
-    "name": "852412 - Flat panel display modules, whether or not incorporating touch-sensitive screens; of organic light-emitting diodes (OLED), without drivers or control circuits",
-    "value": 1188045038.577,
-    "share": 0.36505394881095465
-   },
-   {
-    "code": "390110",
-    "name": "390110 - Ethylene polymers; in primary forms, polyethylene having a specific gravity of less than 0.94",
-    "value": 1183067383.425,
-    "share": 0.3635244506774216
-   },
-   {
-    "code": "852990",
-    "name": "852990 - Reception and transmission apparatus; for use with the apparatus of heading no. 8524 to 8528, excluding aerials and aerial reflectors",
-    "value": 1170377634.449,
-    "share": 0.35962523572959676
-   },
-   {
     "code": "120190",
     "name": "120190 - Soya beans; other than seed, whether or not broken",
     "value": 1168953013.441,
     "share": 0.3591874884156125
-   },
-   {
-    "code": "847989",
-    "name": "847989 - Machines and mechanical appliances; having individual functions, n.e.c. or included in this chapter",
-    "value": 1166576015.487,
-    "share": 0.35845710155211225
-   },
-   {
-    "code": "120190",
-    "name": "120190 - Soya beans; other than seed, whether or not broken",
-    "value": 1157555741.641,
-    "share": 0.35568541657392105
-   },
-   {
-    "code": "854239",
-    "name": "854239 - Electronic integrated circuits; n.e.c. in heading no. 8542",
-    "value": 1149105227.566,
-    "share": 0.35308880328705755
-   },
-   {
-    "code": "600410",
-    "name": "600410 - Fabrics; knitted or crocheted fabrics of a width exceeding 30 cm, other than those of heading 60.01, containing by weight 5% or more of elastomeric yarn but not containing rubber thread",
-    "value": 1148279923.218,
-    "share": 0.35283520969302246
    },
    {
     "code": "847160",
@@ -2059,40 +1837,16 @@
     "share": 0.3482253316136763
    },
    {
-    "code": "852492",
-    "name": "852492 - Flat panel display modules, whether or not incorporating touch-sensitive screens; of organic light-emitting diodes (OLED), with drivers or control circuits",
-    "value": 1122496769.271,
-    "share": 0.34491274728164223
-   },
-   {
-    "code": "850760",
-    "name": "850760 - Electric accumulators; lithium-ion, including separators, whether or not rectangular (including square)",
-    "value": 1096051408.484,
-    "share": 0.3367868067073792
-   },
-   {
     "code": "280461",
     "name": "280461 - Silicon; containing by weight not less than 99.99% of silicon",
     "value": 1045459766.786,
     "share": 0.3212413703148288
    },
    {
-    "code": "600632",
-    "name": "600632 - Fabrics; knitted or crocheted fabrics, other than those of headings 60.01 to 60.04, of synthetic fibres, dyed",
-    "value": 1039517490.136,
-    "share": 0.319415470213762
-   },
-   {
     "code": "151190",
     "name": "151190 - Vegetable oils; palm oil and its fractions, other than crude, whether or not refined, but not chemically modified",
     "value": 1033709908.459,
     "share": 0.31763095821683435
-   },
-   {
-    "code": "151190",
-    "name": "151190 - Vegetable oils; palm oil and its fractions, other than crude, whether or not refined, but not chemically modified",
-    "value": 1033709248.459,
-    "share": 0.31763075541677344
    },
    {
     "code": "210690",
@@ -2119,46 +1873,16 @@
     "share": 0.3069913474558381
    },
    {
-    "code": "853400",
-    "name": "853400 - Circuits; printed",
-    "value": 988965583.421,
-    "share": 0.3038822433014746
-   },
-   {
     "code": "903180",
     "name": "903180 - Instruments, appliances and machines; for measuring or checking n.e.c. in chapter 90",
     "value": 976267715.617,
     "share": 0.2999805336584784
    },
    {
-    "code": "300490",
-    "name": "300490 - Medicaments; consisting of mixed or unmixed products n.e.c. in heading no. 3004, for therapeutic or prophylactic uses, packaged for retail sale",
-    "value": 963088313.723,
-    "share": 0.29593086167791616
-   },
-   {
-    "code": "280461",
-    "name": "280461 - Silicon; containing by weight not less than 99.99% of silicon",
-    "value": 960277769.786,
-    "share": 0.29506725791779487
-   },
-   {
-    "code": "210690",
-    "name": "210690 - Food preparations; n.e.c. in item no. 2106.10",
-    "value": 938644381.976,
-    "share": 0.2884199058479958
-   },
-   {
     "code": "760612",
     "name": "760612 - Aluminium; plates, sheets and strip, thickness exceeding 0.2mm, alloys, rectangular (including square)",
     "value": 937085255.75,
     "share": 0.28794082873642624
-   },
-   {
-    "code": "852491",
-    "name": "852491 - Flat panel display modules, whether or not incorporating touch-sensitive screens; of liquid crystals, with drivers or control circuits",
-    "value": 932681498.64,
-    "share": 0.2865876738724193
    },
    {
     "code": "390210",
@@ -2179,15 +1903,291 @@
     "share": 0.2843362408327946
    },
    {
-    "code": "732690",
-    "name": "732690 - Iron or steel; articles n.e.c. in heading 7326",
-    "value": 919790653.131,
-    "share": 0.28262666742588854
+    "code": "854233",
+    "name": "854233 - Electronic integrated circuits; amplifiers",
+    "value": 904230105.549,
+    "share": 0.27784533409590495
+   },
+   {
+    "code": "721913",
+    "name": "721913 - Steel, stainless; flat-rolled, width 600mm or more, hot-rolled, in coils, of a thickness of 3mm or more but less than 4.75mm",
+    "value": 897256230.797,
+    "share": 0.27570245193734644
+   },
+   {
+    "code": "854442",
+    "name": "854442 - Insulated electric conductors; for a voltage not exceeding 1000 volts, fitted with connectors",
+    "value": 852491625.628,
+    "share": 0.26194750548895246
+   },
+   {
+    "code": "851762",
+    "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
+    "value": 841528134.711,
+    "share": 0.25857872272226745
+   },
+   {
+    "code": "853224",
+    "name": "853224 - Electrical capacitors; fixed, ceramic dielectric, multilayer",
+    "value": 830756885.397,
+    "share": 0.2552690105749799
+   },
+   {
+    "code": "390120",
+    "name": "390120 - Ethylene polymers; in primary forms, polyethylene having a specific gravity of 0.94 or more",
+    "value": 827368947.42,
+    "share": 0.25422798932016966
+   },
+   {
+    "code": "071410",
+    "name": "071410 - Vegetable roots and tubers; manioc (cassava), with high starch or inulin content, fresh, chilled, frozen or dried, whether or not sliced or in the form of pellets",
+    "value": 806881105.365,
+    "share": 0.2479326323244861
+   },
+   {
+    "code": "847130",
+    "name": "847130 - Automatic data processing machines; portable, weighing not more than 10kg, consisting of at least a central processing unit, a keyboard and a display",
+    "value": 793954344.841,
+    "share": 0.24396059017003044
+   },
+   {
+    "code": "870829",
+    "name": "870829 - Vehicles; parts and accessories, of bodies, other than safety seat belts",
+    "value": 788945595.079,
+    "share": 0.24242153750800838
+   },
+   {
+    "code": "291736",
+    "name": "291736 - Acids; aromatic polycarboxylic acids; terephthalic acid and its salts",
+    "value": 767836702.42,
+    "share": 0.2359353485421217
+   },
+   {
+    "code": "271112",
+    "name": "271112 - Petroleum gases and other gaseous hydrocarbons; liquefied, propane",
+    "value": 766924471.386,
+    "share": 0.23565504474018129
+   },
+   {
+    "code": "410799",
+    "name": "410799 - Leather; further prepared after tanning or crusting, incl. parchment-dressed, of bovine (including buffalo) or equine animals, no hair, excluding leather of heading 41.14, and whole hides and skins, and sides, (full grains, unsplit and grain splits)",
+    "value": 755677332.678,
+    "share": 0.23219910471698338
+   },
+   {
+    "code": "870322",
+    "name": "870322 - Vehicles; with only spark-ignition internal combustion piston engine, cylinder capacity over 1000 but not over 1500cc",
+    "value": 750467142.918,
+    "share": 0.2305981550187964
+   },
+   {
+    "code": "760110",
+    "name": "760110 - Aluminium; unwrought, (not alloyed)",
+    "value": 735953019.453,
+    "share": 0.22613835937773696
+   },
+   {
+    "code": "382499",
+    "name": "382499 - Chemical products, mixtures and preparations; n.e.c. heading 3824",
+    "value": 733534638.028,
+    "share": 0.22539525649841788
+   },
+   {
+    "code": "841510",
+    "name": "841510 - Air conditioning machines; comprising a motor-driven fan and elements for changing the temperature and humidity, of a kind designed to be fixed to a window, wall, ceiling or floor, self-contained or 'split-system'",
+    "value": 717861422.69,
+    "share": 0.2205793034293706
+   },
+   {
+    "code": "850450",
+    "name": "850450 - Electrical inductors; n.e.c. in heading no. 8504",
+    "value": 691828688.572,
+    "share": 0.21258015181513185
+   },
+   {
+    "code": "700719",
+    "name": "700719 - Glass; safety glass, toughened (tempered), (not of a size and shape suitable for incorporation in vehicles, aircraft, spacecraft or vessels)",
+    "value": 690634602.137,
+    "share": 0.21221324150940768
+   },
+   {
+    "code": "870323",
+    "name": "870323 - Vehicles; with only spark-ignition internal combustion reciprocating piston engine, cylinder capacity over 1500 but not over 3000cc",
+    "value": 682855839.975,
+    "share": 0.20982303932692092
+   },
+   {
+    "code": "850650",
+    "name": "850650 - Cells and batteries; primary, lithium",
+    "value": 669857665.546,
+    "share": 0.20582905362051748
+   },
+   {
+    "code": "020230",
+    "name": "020230 - Meat; of bovine animals, boneless cuts, frozen",
+    "value": 659775630.482,
+    "share": 0.2027311182791334
+   },
+   {
+    "code": "720851",
+    "name": "720851 - Iron or non-alloy steel; (not in coils), flat-rolled, of a width 600mm or more, hot-rolled, without patterns in relief, of a thickness exceeding 10mm",
+    "value": 647094443.531,
+    "share": 0.1988345342088718
+   },
+   {
+    "code": "851771",
+    "name": "851771 - Communication apparatus; parts, aerials and aerial reflectors of all kinds, part suitable for use therewith",
+    "value": 640741926.539,
+    "share": 0.19688257840120654
+   },
+   {
+    "code": "844399",
+    "name": "844399 - Printing machinery; parts and accessories, n.e.c. in item no. 8443.91",
+    "value": 635503580.495,
+    "share": 0.19527297704224547
+   },
+   {
+    "code": "847170",
+    "name": "847170 - Units of automatic data processing machines; storage units",
+    "value": 615075713.14,
+    "share": 0.18899604864173533
+   },
+   {
+    "code": "100610",
+    "name": "100610 - Cereals; rice in the husk (paddy or rough)",
+    "value": 608498895.646,
+    "share": 0.18697517138638364
+   },
+   {
+    "code": "400129",
+    "name": "400129 - Rubber; natural (excluding latex, technically specified natural rubber and smoked sheets), in primary forms or in plates, sheets or strip",
+    "value": 591034308.709,
+    "share": 0.18160877851516688
+   },
+   {
+    "code": "590320",
+    "name": "590320 - Textile fabrics; impregnated, coated, covered or laminated with polyurethane",
+    "value": 585861574.389,
+    "share": 0.18001933785563792
+   },
+   {
+    "code": "590390",
+    "name": "590390 - Textile fabrics; impregnated, coated, covered or laminated with plastics, (excluding polyvinyl chloride, polyurethane and those of heading no. 5902)",
+    "value": 578867023.148,
+    "share": 0.17787010237400502
+   },
+   {
+    "code": "880730",
+    "name": "880730 - Aircraft and spacecraft; parts of aeroplanes, helicopters or unmanned aircraft n.e.c. in heading no. 8807",
+    "value": 576398233.135,
+    "share": 0.17711151030571928
+   },
+   {
+    "code": "854129",
+    "name": "854129 - Electrical apparatus; transistors, (other than photosensitive), with a dissipation rate of 1W or more",
+    "value": 574934468.989,
+    "share": 0.1766617353693539
+   },
+   {
+    "code": "230990",
+    "name": "230990 - Dog or cat food; (not put up for retail sale), used in animal feeding",
+    "value": 567780234.469,
+    "share": 0.17446343355634028
+   },
+   {
+    "code": "853890",
+    "name": "853890 - Electrical apparatus; parts suitable for use solely or principally with the apparatus of heading no. 8535, 8536 or 8537",
+    "value": 566947227.737,
+    "share": 0.17420747322905594
+   },
+   {
+    "code": "720837",
+    "name": "720837 - Iron or non-alloy steel; in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness of 4.75mm or more but not exceeding 10mm",
+    "value": 566246549.702,
+    "share": 0.17399217391361232
+   },
+   {
+    "code": "271320",
+    "name": "271320 - Petroleum bitumen; obtained from bituminous minerals",
+    "value": 549736429.268,
+    "share": 0.16891906265598258
+   },
+   {
+    "code": "400122",
+    "name": "400122 - Rubber; technically specified natural rubber (TSNR), in primary forms or in plates, sheets or strip (excluding latex and smoked sheets)",
+    "value": 548223443.883,
+    "share": 0.16845416337072563
+   },
+   {
+    "code": "390410",
+    "name": "390410 - Vinyl chloride, other halogenated olefin polymers; poly(vinyl chloride), not mixed with any other substances, in primary forms",
+    "value": 534911608.607,
+    "share": 0.16436379821146754
+   },
+   {
+    "code": "392190",
+    "name": "392190 - Plastics; plates, sheets, film, foil and strip, other than cellular",
+    "value": 525658963.335,
+    "share": 0.1615207118100157
+   },
+   {
+    "code": "470710",
+    "name": "470710 - Paper or paperboard; waste and scrap, of unbleached kraft paper or paperboard or corrugated paper or paperboard",
+    "value": 525184823.602,
+    "share": 0.16137502155737415
+   },
+   {
+    "code": "640690",
+    "name": "640690 - Footwear; parts, n.e.c. in heading 6406",
+    "value": 525034469.009,
+    "share": 0.16132882167764379
+   },
+   {
+    "code": "853669",
+    "name": "853669 - Electrical apparatus; plugs and sockets, for a voltage not exceeding 1000 volts",
+    "value": 512255811.343,
+    "share": 0.15740228750595603
+   },
+   {
+    "code": "300241",
+    "name": "300241 - Vaccines, toxins, cultures of micro-organisms (excluding yeasts) and similar products; for human medicine",
+    "value": 500415467.566,
+    "share": 0.1537640716886077
+   },
+   {
+    "code": "230330",
+    "name": "230330 - Brewing or distilling dregs and waste; whether or not in the form of pellets",
+    "value": 497250881.897,
+    "share": 0.15279168052724001
+   },
+   {
+    "code": "854141",
+    "name": "854141 - Electrical apparatus; photosensitive semiconductor devices, light emitting diodes (LED)",
+    "value": 487006522.074,
+    "share": 0.1496438671994677
+   },
+   {
+    "code": "760120",
+    "name": "760120 - Aluminium; unwrought, alloys",
+    "value": 485796735.954,
+    "share": 0.14927213280726684
+   },
+   {
+    "code": "540761",
+    "name": "540761 - Fabrics, woven; containing 85% or more by weight of non-textured polyester filaments",
+    "value": 484289054.313,
+    "share": 0.1488088632183832
+   },
+   {
+    "code": "540742",
+    "name": "540742 - Fabrics, woven; containing 85% or more by weight of filaments of nylon or other polyamides, dyed",
+    "value": 476124255.059,
+    "share": 0.1463000423301688
    }
   ],
-  "xCount": 14492,
-  "mCount": 18549
+  "xCount": 4334,
+  "mCount": 5010
  },
  "source": "UN Comtrade Plus",
- "fetchedAt": "2026-11-14T06:33:40.424Z"
+ "fetchedAt": "2026-11-14T07:14:37.644Z"
 }

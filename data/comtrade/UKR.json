@@ -2229,28 +2229,10 @@
     "share": 11.871005688135055
    },
    {
-    "code": "100590",
-    "name": "100590 - Cereals; maize (corn), other than seed",
-    "value": 4954135237.64,
-    "share": 11.871005688135055
-   },
-   {
     "code": "151211",
     "name": "151211 - Vegetable oils; sunflower seed or safflower oil and their fractions, crude, not chemically modified",
     "value": 4404019232.24,
     "share": 10.552828061569407
-   },
-   {
-    "code": "151211",
-    "name": "151211 - Vegetable oils; sunflower seed or safflower oil and their fractions, crude, not chemically modified",
-    "value": 4404019232.24,
-    "share": 10.552828061569407
-   },
-   {
-    "code": "100199",
-    "name": "100199 - Cereals; wheat and meslin, other than durum wheat, other than seed",
-    "value": 3732611418.76,
-    "share": 8.944013285516544
    },
    {
     "code": "100199",
@@ -2265,28 +2247,10 @@
     "share": 4.364646470004165
    },
    {
-    "code": "120510",
-    "name": "120510 - Oil seeds; low erucic acid rape or colza seeds, whether or not broken",
-    "value": 1821501012.21,
-    "share": 4.364646470004165
-   },
-   {
     "code": "260111",
     "name": "260111 - Iron ores and concentrates; non-agglomerated",
     "value": 1546395338.54,
     "share": 3.7054434284395352
-   },
-   {
-    "code": "260111",
-    "name": "260111 - Iron ores and concentrates; non-agglomerated",
-    "value": 1546395338.54,
-    "share": 3.7054434284395352
-   },
-   {
-    "code": "120190",
-    "name": "120190 - Soya beans; other than seed, whether or not broken",
-    "value": 1343081679.36,
-    "share": 3.218267061863182
    },
    {
     "code": "120190",
@@ -2301,28 +2265,10 @@
     "share": 3.011532215735951
    },
    {
-    "code": "260112",
-    "name": "260112 - Iron ores and concentrates; agglomerated (excluding roasted iron pyrites)",
-    "value": 1256804879.15,
-    "share": 3.011532215735951
-   },
-   {
     "code": "854430",
     "name": "854430 - Insulated electric conductors; ignition wiring sets and other wiring sets of a kind used in vehicles, aircraft or ships",
     "value": 1060738565.31,
     "share": 2.541721801768514
-   },
-   {
-    "code": "854430",
-    "name": "854430 - Insulated electric conductors; ignition wiring sets and other wiring sets of a kind used in vehicles, aircraft or ships",
-    "value": 1060738565.31,
-    "share": 2.541721801768514
-   },
-   {
-    "code": "230630",
-    "name": "230630 - Oil-cake and other solid residues; whether or not ground or in the form of pellets, resulting from the extraction of sunflower seed oils",
-    "value": 967589546.05,
-    "share": 2.318519873593776
    },
    {
     "code": "230630",
@@ -2337,28 +2283,10 @@
     "share": 1.7194653192867857
    },
    {
-    "code": "151219",
-    "name": "151219 - Vegetable oils; sunflower seed or safflower oil and their fractions, other than crude, whether or not refined, but not chemically modified",
-    "value": 717585683.3,
-    "share": 1.7194653192867857
-   },
-   {
     "code": "100390",
     "name": "100390 - Cereals; barley, other than seed",
     "value": 557056784.54,
     "share": 1.3348089910114591
-   },
-   {
-    "code": "100390",
-    "name": "100390 - Cereals; barley, other than seed",
-    "value": 557056784.54,
-    "share": 1.3348089910114591
-   },
-   {
-    "code": "720711",
-    "name": "720711 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (including square) cross-section, width less than twice thickness",
-    "value": 553178915.33,
-    "share": 1.3255169137383158
    },
    {
     "code": "720711",
@@ -2373,28 +2301,10 @@
     "share": 1.2125242121740492
    },
    {
-    "code": "020714",
-    "name": "020714 - Meat and edible offal; of fowls of the species Gallus domesticus, cuts and offal, frozen",
-    "value": 506023590.91,
-    "share": 1.2125242121740492
-   },
-   {
     "code": "720110",
     "name": "720110 - Iron; non-alloy pig iron containing by weight 0.5% or less of phosphorus, in pigs, blocks or other primary forms",
     "value": 500341090.69,
     "share": 1.198907912012937
-   },
-   {
-    "code": "720110",
-    "name": "720110 - Iron; non-alloy pig iron containing by weight 0.5% or less of phosphorus, in pigs, blocks or other primary forms",
-    "value": 500341090.69,
-    "share": 1.198907912012937
-   },
-   {
-    "code": "720839",
-    "name": "720839 - Iron or non-alloy steel; in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness of less than 3mm",
-    "value": 426577011.7,
-    "share": 1.0221558131567359
    },
    {
     "code": "720839",
@@ -2409,28 +2319,10 @@
     "share": 1.0073389890527438
    },
    {
-    "code": "170199",
-    "name": "170199 - Sugars; sucrose, chemically pure, in solid form, not containing added flavouring or colouring matter",
-    "value": 420393495.97,
-    "share": 1.0073389890527438
-   },
-   {
     "code": "720720",
     "name": "720720 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel, containing by weight 0.25% or more of carbon",
     "value": 306696695.75,
     "share": 0.7349008545666674
-   },
-   {
-    "code": "720720",
-    "name": "720720 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel, containing by weight 0.25% or more of carbon",
-    "value": 306696695.75,
-    "share": 0.7349008545666674
-   },
-   {
-    "code": "150710",
-    "name": "150710 - Vegetable oils; soya-bean oil and its fractions, crude, whether or not degummed, not chemically modified",
-    "value": 304517998.81,
-    "share": 0.7296803019319794
    },
    {
     "code": "150710",
@@ -2445,28 +2337,10 @@
     "share": 0.7295727241552299
    },
    {
-    "code": "230400",
-    "name": "230400 - Oil-cake and other solid residues; whether or not ground or in the form of pellets, resulting from the extraction of soya-bean oil",
-    "value": 304473103.3,
-    "share": 0.7295727241552299
-   },
-   {
     "code": "020712",
     "name": "020712 - Meat and edible offal; of fowls of the species Gallus domesticus, not cut in pieces, frozen",
     "value": 247578094.32,
     "share": 0.5932419736144321
-   },
-   {
-    "code": "020712",
-    "name": "020712 - Meat and edible offal; of fowls of the species Gallus domesticus, not cut in pieces, frozen",
-    "value": 247578094.32,
-    "share": 0.5932419736144321
-   },
-   {
-    "code": "940360",
-    "name": "940360 - Furniture; wooden, other than for office, kitchen or bedroom use",
-    "value": 243521173.91,
-    "share": 0.5835208572231155
    },
    {
     "code": "940360",
@@ -2481,28 +2355,10 @@
     "share": 0.5782043039371542
    },
    {
-    "code": "720838",
-    "name": "720838 - Iron or non-alloy steel; in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness of 3mm or more but less than 4.75mm",
-    "value": 241302412.95,
-    "share": 0.5782043039371542
-   },
-   {
     "code": "851671",
     "name": "851671 - Electro-thermic appliances; coffee or tea makers, of a kind used for domestic purposes",
     "value": 227367110.75,
     "share": 0.5448127948751438
-   },
-   {
-    "code": "851671",
-    "name": "851671 - Electro-thermic appliances; coffee or tea makers, of a kind used for domestic purposes",
-    "value": 227367110.75,
-    "share": 0.5448127948751438
-   },
-   {
-    "code": "151411",
-    "name": "151411 - Vegetable oils; low erucic acid rape or colza oil and its fractions, crude",
-    "value": 226588672.01,
-    "share": 0.5429475146058053
    },
    {
     "code": "151411",
@@ -2517,28 +2373,10 @@
     "share": 0.5227355317138402
    },
    {
-    "code": "440890",
-    "name": "440890 - Wood; n.e.c. in heading no. 4408, sheets for veneer or plywood, other wood sawn lengthwise, sliced or peeled, whether or not planed, sanded or end-jointed, not exceeding 6mm in thickness",
-    "value": 218153590.83,
-    "share": 0.5227355317138402
-   },
-   {
     "code": "200979",
     "name": "200979 - Juice; apple, of a Brix value exceeding 20, unfermented, not containing added spirit, whether or not containing added sugar or other sweetening matter",
     "value": 217680014.03,
     "share": 0.5216007558918448
-   },
-   {
-    "code": "200979",
-    "name": "200979 - Juice; apple, of a Brix value exceeding 20, unfermented, not containing added spirit, whether or not containing added sugar or other sweetening matter",
-    "value": 217680014.03,
-    "share": 0.5216007558918448
-   },
-   {
-    "code": "170490",
-    "name": "170490 - Sugar confectionery; (excluding chewing gum, including white chocolate), not containing cocoa",
-    "value": 215005713.09,
-    "share": 0.5151926462727687
    },
    {
     "code": "170490",
@@ -2553,28 +2391,10 @@
     "share": 0.4928688783912926
    },
    {
-    "code": "440711",
-    "name": "440711 - Wood; coniferous species, of pine (Pinus spp.), sawn or chipped lengthwise, sliced or peeled, whether or not planed, sanded or finger-jointed, of a thickness exceeding 6mm",
-    "value": 205689319.18,
-    "share": 0.4928688783912926
-   },
-   {
     "code": "730439",
     "name": "730439 - Iron or non-alloy steel (excluding cast iron); seamless, (excluding cold-drawn or cold-rolled), tubes, pipes and hollow profiles of circular cross-section",
     "value": 193648928.79,
     "share": 0.464017921372375
-   },
-   {
-    "code": "730439",
-    "name": "730439 - Iron or non-alloy steel (excluding cast iron); seamless, (excluding cold-drawn or cold-rolled), tubes, pipes and hollow profiles of circular cross-section",
-    "value": 193648928.79,
-    "share": 0.464017921372375
-   },
-   {
-    "code": "300490",
-    "name": "300490 - Medicaments; consisting of mixed or unmixed products n.e.c. in heading no. 3004, for therapeutic or prophylactic uses, packaged for retail sale",
-    "value": 190998238.11,
-    "share": 0.45766638621429245
    },
    {
     "code": "300490",
@@ -2589,28 +2409,10 @@
     "share": 0.4316049860164673
    },
    {
-    "code": "020713",
-    "name": "020713 - Meat and edible offal; of fowls of the species Gallus domesticus, cuts and offal, fresh or chilled",
-    "value": 180122015.45,
-    "share": 0.4316049860164673
-   },
-   {
     "code": "860719",
     "name": "860719 - Railway or tramway locomotives or rolling stock; parts, axles and wheels, and parts thereof",
     "value": 175758290.14,
     "share": 0.4211487094935951
-   },
-   {
-    "code": "860719",
-    "name": "860719 - Railway or tramway locomotives or rolling stock; parts, axles and wheels, and parts thereof",
-    "value": 175758290.14,
-    "share": 0.4211487094935951
-   },
-   {
-    "code": "040900",
-    "name": "040900 - Honey; natural",
-    "value": 166952055.91,
-    "share": 0.40004737664318657
    },
    {
     "code": "040900",
@@ -2625,28 +2427,10 @@
     "share": 0.349492458753205
    },
    {
-    "code": "999999",
-    "name": "999999 - Commodities not specified according to kind",
-    "value": 145853936.11,
-    "share": 0.349492458753205
-   },
-   {
     "code": "854449",
     "name": "854449 - Insulated electric conductors; for a voltage not exceeding 1000 volts, not fitted with connectors",
     "value": 139436251.03,
     "share": 0.3341145224565706
-   },
-   {
-    "code": "854449",
-    "name": "854449 - Insulated electric conductors; for a voltage not exceeding 1000 volts, not fitted with connectors",
-    "value": 139436251.03,
-    "share": 0.3341145224565706
-   },
-   {
-    "code": "701090",
-    "name": "701090 - Glass; carboys, bottles, flasks, jars, pots, phials and other containers of glass, (not ampoules), used for the conveyance or packing of goods",
-    "value": 132544896.86,
-    "share": 0.31760158919437853
    },
    {
     "code": "701090",
@@ -2661,28 +2445,10 @@
     "share": 0.2849426551678046
    },
    {
-    "code": "730419",
-    "name": "730419 - Iron or steel (excluding cast iron or stainless steel); seamless, line pipe of a kind used for oil or gas pipelines",
-    "value": 118915320.72,
-    "share": 0.2849426551678046
-   },
-   {
     "code": "441233",
     "name": "441233 - Plywood; with sheets of wood only; not bamboo; each ply 6mm or less, with at least one outer ply of alder, ash, beech, birch, cherry, chestnut, elm, eucalyptus, hickory, horse chestnut, lime, maple, oak, plane, poplar, aspen, robinia, tulipwood or walnut",
     "value": 118486679.66,
     "share": 0.28391555352092823
-   },
-   {
-    "code": "441233",
-    "name": "441233 - Plywood; with sheets of wood only; not bamboo; each ply 6mm or less, with at least one outer ply of alder, ash, beech, birch, cherry, chestnut, elm, eucalyptus, hickory, horse chestnut, lime, maple, oak, plane, poplar, aspen, robinia, tulipwood or walnut",
-    "value": 118486679.66,
-    "share": 0.28391555352092823
-   },
-   {
-    "code": "100510",
-    "name": "100510 - Cereals; maize (corn), seed",
-    "value": 118316809.28,
-    "share": 0.2835085133109831
    },
    {
     "code": "100510",
@@ -2697,28 +2463,10 @@
     "share": 0.27682379447742034
    },
    {
-    "code": "180690",
-    "name": "180690 - Chocolate and other food preparations containing cocoa; n.e.c. in chapter 18",
-    "value": 115527070.82,
-    "share": 0.27682379447742034
-   },
-   {
     "code": "081120",
     "name": "081120 - Fruit, edible; raspberries, blackberries, mulberries, loganberries, black, white or red currants and gooseberries, uncooked or cooked, whether or not containing added sugar or other sweetening matter",
     "value": 115421375.51,
     "share": 0.2765705293633221
-   },
-   {
-    "code": "081120",
-    "name": "081120 - Fruit, edible; raspberries, blackberries, mulberries, loganberries, black, white or red currants and gooseberries, uncooked or cooked, whether or not containing added sugar or other sweetening matter",
-    "value": 115421375.51,
-    "share": 0.2765705293633221
-   },
-   {
-    "code": "071310",
-    "name": "071310 - Vegetables, leguminous; peas (pisum sativum), shelled, whether or not skinned or split, dried",
-    "value": 115291425.09,
-    "share": 0.2762591446107875
    },
    {
     "code": "071310",
@@ -2733,28 +2481,10 @@
     "share": 0.2711451145465366
    },
    {
-    "code": "252329",
-    "name": "252329 - Cement; portland, other than white, whether or not artificially coloured",
-    "value": 113157183.29,
-    "share": 0.2711451145465366
-   },
-   {
     "code": "441520",
     "name": "441520 - Wood; pallets, box pallets and other load boards; pallet collars",
     "value": 111843998.37,
     "share": 0.2679984855372084
-   },
-   {
-    "code": "441520",
-    "name": "441520 - Wood; pallets, box pallets and other load boards; pallet collars",
-    "value": 111843998.37,
-    "share": 0.2679984855372084
-   },
-   {
-    "code": "190532",
-    "name": "190532 - Food preparations; waffles and wafers, whether or not containing cocoa",
-    "value": 111185152.24,
-    "share": 0.2664197708308731
    },
    {
     "code": "190532",
@@ -2769,28 +2499,10 @@
     "share": 0.2583902172752535
    },
    {
-    "code": "250830",
-    "name": "250830 - Clays (excluding expanded clays of heading no. 6806); fireclay, whether or not calcined",
-    "value": 107834172.95,
-    "share": 0.2583902172752535
-   },
-   {
     "code": "940199",
     "name": "940199 - Seats; parts, (of other than wood) for use in the assembly of motor vehicles as determined by the minister",
     "value": 105568826.67,
     "share": 0.2529620371215995
-   },
-   {
-    "code": "940199",
-    "name": "940199 - Seats; parts, (of other than wood) for use in the assembly of motor vehicles as determined by the minister",
-    "value": 105568826.67,
-    "share": 0.2529620371215995
-   },
-   {
-    "code": "730429",
-    "name": "730429 - Iron or steel (excluding cast iron or stainless steel); seamless, casing and tubing, of a kind used in drilling for oil or gas",
-    "value": 104681493.88,
-    "share": 0.25083582697753065
    },
    {
     "code": "730429",
@@ -2805,22 +2517,310 @@
     "share": 0.2433941175796841
    },
    {
-    "code": "721391",
-    "name": "721391 - Iron or non-alloy steel; bars and rods, hot-rolled, in irregularly wound coils, n.e.c. in heading no. 7213, of circular cross-section measuring less than 14mm in diameter",
-    "value": 101575840.01,
-    "share": 0.2433941175796841
-   },
-   {
     "code": "220710",
     "name": "220710 - Undenatured ethyl alcohol; of an alcoholic strength by volume of 80% vol. or higher",
     "value": 95092104.93,
     "share": 0.2278579135151971
    },
    {
-    "code": "220710",
-    "name": "220710 - Undenatured ethyl alcohol; of an alcoholic strength by volume of 80% vol. or higher",
-    "value": 95092104.93,
-    "share": 0.2278579135151971
+    "code": "180632",
+    "name": "180632 - Chocolate and other food preparations containing cocoa; in blocks, slabs or bars, (not filled), weighing 2kg or less",
+    "value": 93879495.29,
+    "share": 0.2249522811003693
+   },
+   {
+    "code": "440791",
+    "name": "440791 - Wood; oak (Quercus spp.), sawn or chipped lengthwise, sliced or peeled, whether or not planed, sanded or finger-jointed, thicker than 6mm",
+    "value": 90397814.97,
+    "share": 0.21660954419464915
+   },
+   {
+    "code": "240220",
+    "name": "240220 - Cigarettes; containing tobacco",
+    "value": 89483087.12,
+    "share": 0.21441769052300447
+   },
+   {
+    "code": "721420",
+    "name": "721420 - Iron or non-alloy steel; bars and rods, hot-rolled, hot-drawn or hot-extruded, containing indentations, ribs, grooves or other deformations produced during the rolling process or twisted after rolling",
+    "value": 88866058.18,
+    "share": 0.2129391773809262
+   },
+   {
+    "code": "830990",
+    "name": "830990 - Stoppers; caps and lids, of base metal",
+    "value": 84964806.83,
+    "share": 0.20359107226364312
+   },
+   {
+    "code": "730441",
+    "name": "730441 - Steel, stainless; cold-drawn or cold-rolled (cold-reduced), tubes and pipes of circular cross-section",
+    "value": 84451945.26,
+    "share": 0.20236216301456983
+   },
+   {
+    "code": "080232",
+    "name": "080232 - Nuts, edible; walnuts, fresh or dried, shelled",
+    "value": 82683581.09,
+    "share": 0.19812484204656888
+   },
+   {
+    "code": "261400",
+    "name": "261400 - Titanium ores and concentrates",
+    "value": 82529421.47,
+    "share": 0.19775544766427655
+   },
+   {
+    "code": "720449",
+    "name": "720449 - Ferrous waste and scrap; n.e.c. in heading no. 7204",
+    "value": 81209223.58,
+    "share": 0.19459201430812142
+   },
+   {
+    "code": "271600",
+    "name": "271600 - Electrical energy",
+    "value": 81021602.64,
+    "share": 0.19414244054012428
+   },
+   {
+    "code": "853110",
+    "name": "853110 - Signalling apparatus; electric, sound or visual, burglar or fire alarms and similar, other than those of heading no. 8512 or 8530",
+    "value": 81019115.27,
+    "share": 0.19413648035090816
+   },
+   {
+    "code": "720916",
+    "name": "720916 - Iron or non-alloy steel; in coils, flat-rolled, width 600mm or more, cold-rolled, of a thickness exceeding 1mm but less than 3mm",
+    "value": 80370414.24,
+    "share": 0.1925820751424025
+   },
+   {
+    "code": "440290",
+    "name": "440290 - Wood; charcoal of wood other than bamboo, nut or shell, whether or not agglomerated",
+    "value": 78771879.32,
+    "share": 0.1887516958294142
+   },
+   {
+    "code": "284410",
+    "name": "284410 - Uranium; natural uranium and its compounds, alloys, dispersions (including cermets), ceramic products and mixtures containing natural uranium or natural uranium compounds",
+    "value": 78315783.03,
+    "share": 0.18765880647673955
+   },
+   {
+    "code": "760120",
+    "name": "760120 - Aluminium; unwrought, alloys",
+    "value": 78066216.46,
+    "share": 0.1870607997550963
+   },
+   {
+    "code": "720230",
+    "name": "720230 - Ferro-alloys; ferro-silico-manganese",
+    "value": 77585635.71,
+    "share": 0.18590924119982843
+   },
+   {
+    "code": "720837",
+    "name": "720837 - Iron or non-alloy steel; in coils, without patterns in relief, flat-rolled, of a width 600mm or more, hot-rolled, of a thickness of 4.75mm or more but not exceeding 10mm",
+    "value": 76857419.86,
+    "share": 0.18416430407500783
+   },
+   {
+    "code": "190531",
+    "name": "190531 - Food preparations; sweet biscuits, whether or not containing cocoa",
+    "value": 75132957.14,
+    "share": 0.18003217893587886
+   },
+   {
+    "code": "220210",
+    "name": "220210 - Waters; including mineral and aerated, containing added sugar or other sweetening matter or flavoured",
+    "value": 74760613.57,
+    "share": 0.17913997627580044
+   },
+   {
+    "code": "721710",
+    "name": "721710 - Iron or non-alloy steel; wire, (not plated or coated), whether or not polished",
+    "value": 74556478.66,
+    "share": 0.1786508320434538
+   },
+   {
+    "code": "853710",
+    "name": "853710 - Boards, panels, consoles, desks and other bases; for electric control or the distribution of electricity, (other than switching apparatus of heading no. 8517), for a voltage not exceeding 1000 volts",
+    "value": 74160408.44,
+    "share": 0.17770177603085277
+   },
+   {
+    "code": "040721",
+    "name": "040721 - Birds' eggs, in shell; fresh, not for incubation, of fowls of the species Gallus domesticus (domestic hens)",
+    "value": 74016117.63,
+    "share": 0.17735602910548795
+   },
+   {
+    "code": "441011",
+    "name": "441011 - Particle board of wood, whether or not agglomerated with resins or other organic binding substances",
+    "value": 70277797.31,
+    "share": 0.16839833625818268
+   },
+   {
+    "code": "440712",
+    "name": "440712 - Wood; coniferous species, of fir (Abies spp.) and spruce (Picea spp.), sawn or chipped lengthwise, sliced or peeled, whether or not planed, sanded or finger-jointed, of a thickness exceeding 6mm",
+    "value": 69022789.15,
+    "share": 0.16539110930708456
+   },
+   {
+    "code": "851690",
+    "name": "851690 - Electro-thermic appliances; parts, of heating resistors, of water, space and soil heaters, hair-dressing apparatus, hand dryers, smoothing irons and other domestic appliances of heading no. 8516",
+    "value": 67100735.24,
+    "share": 0.16078551987441064
+   },
+   {
+    "code": "120600",
+    "name": "120600 - Oil seeds; sunflower seeds, whether or not broken",
+    "value": 65178830.26,
+    "share": 0.15618028730500194
+   },
+   {
+    "code": "851762",
+    "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
+    "value": 65153800.1,
+    "share": 0.15612031050633132
+   },
+   {
+    "code": "190590",
+    "name": "190590 - Food preparations; bakers' wares n.e.c. in heading no. 1605, whether or not containing cocoa; communion wafers, empty cachets suitable for pharmaceutical use, sealing wafers, rice papers and similar products",
+    "value": 64888346.48,
+    "share": 0.15548423553425259
+   },
+   {
+    "code": "441875",
+    "name": "441875 - Wood; assembled flooring panels, not of bamboo or with at least the top layer (wear layer) of bamboo, multilayer",
+    "value": 63186649.61,
+    "share": 0.15140666149675525
+   },
+   {
+    "code": "720712",
+    "name": "720712 - Iron or non-alloy steel; semi-finished products of iron or non-alloy steel; containing by weight less than 0.25% of carbon, of rectangular (other than square) cross-section",
+    "value": 62643673.59,
+    "share": 0.15010559256892933
+   },
+   {
+    "code": "740721",
+    "name": "740721 - Copper; bars, rods and profiles, of copper-zinc base alloys (brass)",
+    "value": 62382162.35,
+    "share": 0.14947896425366555
+   },
+   {
+    "code": "300215",
+    "name": "300215 - Blood, human or animal, antisera, other blood fractions and immunological products; immunological products, put up in measured doses or in forms or packings for retail sale",
+    "value": 62366520.49,
+    "share": 0.149441483522897
+   },
+   {
+    "code": "081190",
+    "name": "081190 - Fruit, edible; fruit and nuts n.e.c. in heading no. 0811, uncooked or cooked, frozen whether or not containing added sugar or other sweetening matter",
+    "value": 62256153.16,
+    "share": 0.1491770234023375
+   },
+   {
+    "code": "280300",
+    "name": "280300 - Carbon; carbon blacks and other forms of carbon n.e.c.",
+    "value": 61660005.52,
+    "share": 0.14774854563862197
+   },
+   {
+    "code": "640690",
+    "name": "640690 - Footwear; parts, n.e.c. in heading 6406",
+    "value": 61011632.96,
+    "share": 0.14619492750375304
+   },
+   {
+    "code": "732690",
+    "name": "732690 - Iron or steel; articles n.e.c. in heading 7326",
+    "value": 60409269.44,
+    "share": 0.1447515553652784
+   },
+   {
+    "code": "940542",
+    "name": "940542 - Luminaires and light fittings; electric, designed for use solely with light-emitting diode (LED) light sources",
+    "value": 60155380.64,
+    "share": 0.14414319179739374
+   },
+   {
+    "code": "230641",
+    "name": "230641 - Oil-cake and other solid residues; whether or not ground or in the form of pellets, resulting from the extraction of low erucic acid rape or colza seed oils",
+    "value": 60005732.25,
+    "share": 0.14378460713958846
+   },
+   {
+    "code": "440131",
+    "name": "440131 - Wood; for fuel, sawdust and wood waste and scrap, agglomerated in wood pellets",
+    "value": 58531148.22,
+    "share": 0.14025123661817696
+   },
+   {
+    "code": "020230",
+    "name": "020230 - Meat; of bovine animals, boneless cuts, frozen",
+    "value": 57886969.76,
+    "share": 0.13870766830685308
+   },
+   {
+    "code": "841850",
+    "name": "841850 - Furniture incorporating refrigerating or freezing equipment; for storage and display, n.e.c. in item no. 8418.1, 8418.2, 8418.3 or 8418.4 (chests, cabinets, display counters, show-cases and the like)",
+    "value": 57841988.27,
+    "share": 0.13859988450644453
+   },
+   {
+    "code": "940161",
+    "name": "940161 - Seats; with wooden frames, upholstered, (excluding medical, surgical, dental, veterinary or barber furniture)",
+    "value": 57716404.99,
+    "share": 0.13829896421264876
+   },
+   {
+    "code": "940350",
+    "name": "940350 - Furniture; wooden, for bedroom use",
+    "value": 56630799.91,
+    "share": 0.13569765773602388
+   },
+   {
+    "code": "730449",
+    "name": "730449 - Steel, stainless; (excluding cold-drawn or cold-rolled), tubes pipes and hollow profiles of circular cross-section",
+    "value": 56613811.19,
+    "share": 0.1356569496846526
+   },
+   {
+    "code": "442199",
+    "name": "442199 - Wood; not of bamboo, articles n.e.c. in heading no. 4414 to 4420 (excluding clothes hangers)",
+    "value": 56450750.43,
+    "share": 0.1352662265580886
+   },
+   {
+    "code": "560122",
+    "name": "560122 - Wadding; other articles thereof, of man-made fibres",
+    "value": 56199371.65,
+    "share": 0.1346638774529241
+   },
+   {
+    "code": "854442",
+    "name": "854442 - Insulated electric conductors; for a voltage not exceeding 1000 volts, fitted with connectors",
+    "value": 55983883.59,
+    "share": 0.13414752901605667
+   },
+   {
+    "code": "721310",
+    "name": "721310 - Iron or non-alloy steel; bars and rods, hot-rolled, in irregularly wound coils, containing indentations, ribs, grooves or other deformations produced during the rolling process",
+    "value": 55113323.19,
+    "share": 0.1320615085574815
+   },
+   {
+    "code": "160232",
+    "name": "160232 - Meat preparations; of the poultry of heading no. 0105, (i.e. of fowls of the species Gallus domesticus)",
+    "value": 52972665.57,
+    "share": 0.12693210502600363
+   },
+   {
+    "code": "220860",
+    "name": "220860 - Vodka",
+    "value": 51586322.36,
+    "share": 0.12361017549800449
    }
   ],
   "m": [
@@ -2831,28 +2831,10 @@
     "share": 8.430603259009434
    },
    {
-    "code": "999999",
-    "name": "999999 - Commodities not specified according to kind",
-    "value": 5966363289,
-    "share": 8.430603259009434
-   },
-   {
     "code": "271019",
     "name": "271019 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; not light oils and preparations",
     "value": 5674855004.04,
     "share": 8.0186956063623
-   },
-   {
-    "code": "271019",
-    "name": "271019 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; not light oils and preparations",
-    "value": 5674855004.04,
-    "share": 8.0186956063623
-   },
-   {
-    "code": "300490",
-    "name": "300490 - Medicaments; consisting of mixed or unmixed products n.e.c. in heading no. 3004, for therapeutic or prophylactic uses, packaged for retail sale",
-    "value": 1408869903.94,
-    "share": 1.990764328007864
    },
    {
     "code": "300490",
@@ -2867,28 +2849,10 @@
     "share": 1.8774551389715355
    },
    {
-    "code": "870380",
-    "name": "870380 - Vehicles; with only electric motor for propulsion",
-    "value": 1328680649.98,
-    "share": 1.8774551389715355
-   },
-   {
     "code": "271012",
     "name": "271012 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; light oils and preparations",
     "value": 1145786323.23,
     "share": 1.6190214110093681
-   },
-   {
-    "code": "271012",
-    "name": "271012 - Petroleum oils and oils from bituminous minerals, not containing biodiesel, not crude, not waste oils; preparations n.e.c, containing by weight 70% or more of petroleum oils or oils from bituminous minerals; light oils and preparations",
-    "value": 1145786323.23,
-    "share": 1.6190214110093681
-   },
-   {
-    "code": "880622",
-    "name": "880622 - Unmanned aircraft; for remote-controlled flight only, for other than for carriage of passengers, with the maximum take-off weight of more than 250g but not more than 7kg",
-    "value": 1050044193.45,
-    "share": 1.4837356645252553
    },
    {
     "code": "880622",
@@ -2903,28 +2867,10 @@
     "share": 1.3685245171052125
    },
    {
-    "code": "870323",
-    "name": "870323 - Vehicles; with only spark-ignition internal combustion reciprocating piston engine, cylinder capacity over 1500 but not over 3000cc",
-    "value": 968508917.82,
-    "share": 1.3685245171052125
-   },
-   {
     "code": "850760",
     "name": "850760 - Electric accumulators; lithium-ion, including separators, whether or not rectangular (including square)",
     "value": 814021034.26,
     "share": 1.1502297215101054
-   },
-   {
-    "code": "850760",
-    "name": "850760 - Electric accumulators; lithium-ion, including separators, whether or not rectangular (including square)",
-    "value": 814021034.26,
-    "share": 1.1502297215101054
-   },
-   {
-    "code": "851713",
-    "name": "851713 - Telephone sets; smartphones for cellular or other wireless networks",
-    "value": 718966567.42,
-    "share": 1.0159156579662103
    },
    {
     "code": "851713",
@@ -2939,28 +2885,10 @@
     "share": 0.946280125002112
    },
    {
-    "code": "271600",
-    "name": "271600 - Electrical energy",
-    "value": 669685291.25,
-    "share": 0.946280125002112
-   },
-   {
     "code": "847130",
     "name": "847130 - Automatic data processing machines; portable, weighing not more than 10kg, consisting of at least a central processing unit, a keyboard and a display",
     "value": 489521001.79,
     "share": 0.6917040000988678
-   },
-   {
-    "code": "847130",
-    "name": "847130 - Automatic data processing machines; portable, weighing not more than 10kg, consisting of at least a central processing unit, a keyboard and a display",
-    "value": 489521001.79,
-    "share": 0.6917040000988678
-   },
-   {
-    "code": "870332",
-    "name": "870332 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity over 1500 but not over 2500cc",
-    "value": 468349300.35,
-    "share": 0.6617879178033235
    },
    {
     "code": "870332",
@@ -2975,28 +2903,10 @@
     "share": 0.659856618623041
    },
    {
-    "code": "271119",
-    "name": "271119 - Petroleum gases and other gaseous hydrocarbons; liquefied, n.e.c. in heading no. 2711",
-    "value": 466982514.11,
-    "share": 0.659856618623041
-   },
-   {
     "code": "380893",
     "name": "380893 - Herbicides, anti-sprouting products and plant-growth regulators; other than containing goods of Subheading Note 1 to this Chapter; put up in forms or packings for retail sale or as preparations or articles",
     "value": 452135078.83,
     "share": 0.6388768642573829
-   },
-   {
-    "code": "380893",
-    "name": "380893 - Herbicides, anti-sprouting products and plant-growth regulators; other than containing goods of Subheading Note 1 to this Chapter; put up in forms or packings for retail sale or as preparations or articles",
-    "value": 452135078.83,
-    "share": 0.6388768642573829
-   },
-   {
-    "code": "870340",
-    "name": "870340 - Vehicles; with both spark-ignition internal combustion piston engine and electric motor for propulsion, incapable of being charged by plugging to external source of electric power",
-    "value": 422859285.61,
-    "share": 0.5975095210743656
    },
    {
     "code": "870340",
@@ -3011,28 +2921,10 @@
     "share": 0.5761753549610902
    },
    {
-    "code": "850220",
-    "name": "850220 - Electric generating sets; with spark-ignition internal combustion piston engines",
-    "value": 407761032.07,
-    "share": 0.5761753549610902
-   },
-   {
     "code": "851762",
     "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
     "value": 383605550.82,
     "share": 0.5420431258149626
-   },
-   {
-    "code": "851762",
-    "name": "851762 - Communication apparatus (excluding telephone sets or base stations); machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus",
-    "value": 383605550.82,
-    "share": 0.5420431258149626
-   },
-   {
-    "code": "870121",
-    "name": "870121 - Tractors; road tractors for semi-trailers, with only compression-ignition internal combustion piston engine (diesel or semi-diesel)",
-    "value": 368935312.34,
-    "share": 0.5213137544459819
    },
    {
     "code": "870121",
@@ -3047,28 +2939,10 @@
     "share": 0.5192360747377509
    },
    {
-    "code": "852589",
-    "name": "852589 - Television cameras; n.e.c. in item no 8525.8",
-    "value": 367464932.16,
-    "share": 0.5192360747377509
-   },
-   {
     "code": "270112",
     "name": "270112 - Coal; bituminous, whether or not pulverised, but not agglomerated",
     "value": 367004099.24,
     "share": 0.5185849076315886
-   },
-   {
-    "code": "270112",
-    "name": "270112 - Coal; bituminous, whether or not pulverised, but not agglomerated",
-    "value": 367004099.24,
-    "share": 0.5185849076315886
-   },
-   {
-    "code": "870421",
-    "name": "870421 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), for transport of goods, (of a gvw not exceeding 5 tonnes), n.e.c. in item no 8704.1",
-    "value": 363336656.16,
-    "share": 0.5134027294629404
    },
    {
     "code": "870421",
@@ -3083,28 +2957,10 @@
     "share": 0.5127315808817354
    },
    {
-    "code": "850440",
-    "name": "850440 - Electrical static converters",
-    "value": 362861682.29,
-    "share": 0.5127315808817354
-   },
-   {
     "code": "310520",
     "name": "310520 - Fertilizers, mineral or chemical; containing the three fertilizing elements nitrogen, phosphorus and potassium",
     "value": 357968828.22,
     "share": 0.5058178698872254
-   },
-   {
-    "code": "310520",
-    "name": "310520 - Fertilizers, mineral or chemical; containing the three fertilizing elements nitrogen, phosphorus and potassium",
-    "value": 357968828.22,
-    "share": 0.5058178698872254
-   },
-   {
-    "code": "840130",
-    "name": "840130 - Fuel elements (cartridges); non-irradiated",
-    "value": 340924790.04,
-    "share": 0.4817342670513223
    },
    {
     "code": "840130",
@@ -3119,28 +2975,10 @@
     "share": 0.4493374912315588
    },
    {
-    "code": "210690",
-    "name": "210690 - Food preparations; n.e.c. in item no. 2106.10",
-    "value": 317997494.33,
-    "share": 0.4493374912315588
-   },
-   {
     "code": "870423",
     "name": "870423 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), for transport of goods, (of a g.v.w. exceeding 20 tonnes), n.e.c. in item no 8704.1",
     "value": 301515300.68,
     "share": 0.4260477871403746
-   },
-   {
-    "code": "870423",
-    "name": "870423 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), for transport of goods, (of a g.v.w. exceeding 20 tonnes), n.e.c. in item no 8704.1",
-    "value": 301515300.68,
-    "share": 0.4260477871403746
-   },
-   {
-    "code": "870333",
-    "name": "870333 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity over 2500cc",
-    "value": 294718941.01,
-    "share": 0.41644438064165545
    },
    {
     "code": "870333",
@@ -3155,28 +2993,10 @@
     "share": 0.41642893590018865
    },
    {
-    "code": "870422",
-    "name": "870422 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), for transport of goods, (of a g.v.w. exceeding 5 tonnes but not exceeding 20 tonnes), n.e.c. in item no 8704.1",
-    "value": 294708010.72,
-    "share": 0.41642893590018865
-   },
-   {
     "code": "854143",
     "name": "854143 - Electrical apparatus; photosensitive semiconductor devices, photovoltaic cells assembled in modules or made up into panels",
     "value": 273215830.2,
     "share": 0.3860600095779867
-   },
-   {
-    "code": "854143",
-    "name": "854143 - Electrical apparatus; photosensitive semiconductor devices, photovoltaic cells assembled in modules or made up into panels",
-    "value": 273215830.2,
-    "share": 0.3860600095779867
-   },
-   {
-    "code": "721070",
-    "name": "721070 - Iron or non-alloy steel; flat-rolled, width 600mm or more, painted, varnished or coated with plastics",
-    "value": 266341604.49,
-    "share": 0.3763465766429289
    },
    {
     "code": "721070",
@@ -3191,28 +3011,10 @@
     "share": 0.3640175809957759
    },
    {
-    "code": "380892",
-    "name": "380892 - Fungicides; other than containing goods specified in Subheading Note 1 to this Chapter; put up in forms or packings for retail sale or as preparations or articles",
-    "value": 257616337.18,
-    "share": 0.3640175809957759
-   },
-   {
     "code": "230910",
     "name": "230910 - Dog or cat food; put up for retail sale, used in animal feeding",
     "value": 252216803.05,
     "share": 0.35638791987248547
-   },
-   {
-    "code": "230910",
-    "name": "230910 - Dog or cat food; put up for retail sale, used in animal feeding",
-    "value": 252216803.05,
-    "share": 0.35638791987248547
-   },
-   {
-    "code": "240411",
-    "name": "240411 - Products containing tobacco or reconstituted tobacco, intended for inhalation without combustion",
-    "value": 251440544.66,
-    "share": 0.355291049602344
    },
    {
     "code": "240411",
@@ -3227,28 +3029,10 @@
     "share": 0.3490136477582222
    },
    {
-    "code": "854449",
-    "name": "854449 - Insulated electric conductors; for a voltage not exceeding 1000 volts, not fitted with connectors",
-    "value": 246998008.49,
-    "share": 0.3490136477582222
-   },
-   {
     "code": "401110",
     "name": "401110 - Rubber; new pneumatic tyres, of a kind used on motor cars (including station wagons and racing cars)",
     "value": 236818240.57,
     "share": 0.3346294105863861
-   },
-   {
-    "code": "401110",
-    "name": "401110 - Rubber; new pneumatic tyres, of a kind used on motor cars (including station wagons and racing cars)",
-    "value": 236818240.57,
-    "share": 0.3346294105863861
-   },
-   {
-    "code": "270400",
-    "name": "270400 - Coke and semi-coke; of coal, lignite or peat, whether or not agglomerated; retort carbon",
-    "value": 235725070.16,
-    "share": 0.33308473662424404
    },
    {
     "code": "270400",
@@ -3263,28 +3047,10 @@
     "share": 0.31983406999044695
    },
    {
-    "code": "330499",
-    "name": "330499 - Cosmetic and toilet preparations; n.e.c. in heading no. 3304, for the care of the skin (excluding medicaments, including sunscreen or sun tan preparations)",
-    "value": 226347533.52,
-    "share": 0.31983406999044695
-   },
-   {
     "code": "870195",
     "name": "870195 - Tractors; n.e.c. in heading no 8701 (other than tractors of heading no 8709); of an engine power exceeding 130kW",
     "value": 223581364.91,
     "share": 0.3159254125774076
-   },
-   {
-    "code": "870195",
-    "name": "870195 - Tractors; n.e.c. in heading no 8701 (other than tractors of heading no 8709); of an engine power exceeding 130kW",
-    "value": 223581364.91,
-    "share": 0.3159254125774076
-   },
-   {
-    "code": "120600",
-    "name": "120600 - Oil seeds; sunflower seeds, whether or not broken",
-    "value": 215815169.91,
-    "share": 0.30495160731184245
    },
    {
     "code": "120600",
@@ -3299,28 +3065,10 @@
     "share": 0.30114890211196366
    },
    {
-    "code": "870350",
-    "name": "870350 - Vehicles; with both compression-ignition internal combustion piston engine (diesel or semi-diesel) and electric motor for propulsion, incapable of being charged by plugging to external source of electric power",
-    "value": 213123984,
-    "share": 0.30114890211196366
-   },
-   {
     "code": "340250",
     "name": "340250 - Washing and cleaning preparations; powders, flakes and granules, surface-active, whether or not containing soap (excluding those of heading no. 3401), put up for retail sale",
     "value": 209051095.82,
     "share": 0.2953938210515805
-   },
-   {
-    "code": "340250",
-    "name": "340250 - Washing and cleaning preparations; powders, flakes and granules, surface-active, whether or not containing soap (excluding those of heading no. 3401), put up for retail sale",
-    "value": 209051095.82,
-    "share": 0.2953938210515805
-   },
-   {
-    "code": "401120",
-    "name": "401120 - Rubber; new pneumatic tyres, of a kind used on buses or lorries",
-    "value": 203386758.55,
-    "share": 0.28738998723599096
    },
    {
     "code": "401120",
@@ -3335,28 +3083,10 @@
     "share": 0.2853531149563807
    },
    {
-    "code": "080390",
-    "name": "080390 - Fruit, edible; bananas, other than plantains, fresh or dried",
-    "value": 201945257.91,
-    "share": 0.2853531149563807
-   },
-   {
     "code": "870324",
     "name": "870324 - Vehicles; with only spark-ignition internal combustion reciprocating piston engine, cylinder capacity over 3000cc",
     "value": 193244151.27,
     "share": 0.27305825887019236
-   },
-   {
-    "code": "870324",
-    "name": "870324 - Vehicles; with only spark-ignition internal combustion reciprocating piston engine, cylinder capacity over 3000cc",
-    "value": 193244151.27,
-    "share": 0.27305825887019236
-   },
-   {
-    "code": "310210",
-    "name": "310210 - Fertilizers, mineral or chemical; nitrogenous, urea, whether or not in aqueous solution",
-    "value": 191815380.88,
-    "share": 0.2710393747153307
    },
    {
     "code": "310210",
@@ -3371,28 +3101,10 @@
     "share": 0.26945466712373695
    },
    {
-    "code": "950300",
-    "name": "950300 - Tricycles, scooters, pedal cars and similar wheeled toys; dolls' carriages; dolls; other toys; reduced-size (scale) models and similar recreational models, working or not; puzzles of all kinds",
-    "value": 190693878.55,
-    "share": 0.26945466712373695
-   },
-   {
     "code": "721049",
     "name": "721049 - Iron or non-alloy steel; flat-rolled, width 600mm or more, (not corrugated), plated or coated with zinc (not electrolytically)",
     "value": 187542135.72,
     "share": 0.2650011848117989
-   },
-   {
-    "code": "721049",
-    "name": "721049 - Iron or non-alloy steel; flat-rolled, width 600mm or more, (not corrugated), plated or coated with zinc (not electrolytically)",
-    "value": 187542135.72,
-    "share": 0.2650011848117989
-   },
-   {
-    "code": "870331",
-    "name": "870331 - Vehicles; with only compression-ignition internal combustion piston engine (diesel or semi-diesel), cylinder capacity not over 1500cc",
-    "value": 184869888.37,
-    "share": 0.2612252402159805
    },
    {
     "code": "870331",
@@ -3407,27 +3119,315 @@
     "share": 0.2569538468996678
    },
    {
-    "code": "630900",
-    "name": "630900 - Clothing; worn, and other worn articles",
-    "value": 181847010.47,
-    "share": 0.2569538468996678
-   },
-   {
     "code": "853710",
     "name": "853710 - Boards, panels, consoles, desks and other bases; for electric control or the distribution of electricity, (other than switching apparatus of heading no. 8517), for a voltage not exceeding 1000 volts",
     "value": 177331673.32,
     "share": 0.250573575660989
    },
    {
-    "code": "853710",
-    "name": "853710 - Boards, panels, consoles, desks and other bases; for electric control or the distribution of electricity, (other than switching apparatus of heading no. 8517), for a voltage not exceeding 1000 volts",
-    "value": 177331673.32,
-    "share": 0.250573575660989
+    "code": "390761",
+    "name": "390761 - Poly(ethylene terephthalate); in primary forms, having a viscosity of 78ml/g or higher",
+    "value": 175422595.85,
+    "share": 0.24787600698126128
+   },
+   {
+    "code": "901890",
+    "name": "901890 - Medical, surgical or dental instruments and appliances; n.e.c. in heading no. 9018",
+    "value": 173227951.71,
+    "share": 0.24477492628220934
+   },
+   {
+    "code": "848180",
+    "name": "848180 - Taps, cocks, valves and similar appliances; for pipes, boiler shells, tanks, vats or the like, including thermostatically controlled valves",
+    "value": 165746962.84,
+    "share": 0.23420412358497594
+   },
+   {
+    "code": "852872",
+    "name": "852872 - Reception apparatus for television, whether or not incorporating radio-broadcast receivers or sound or video recording or reproducing apparatus; incorporating a colour video display or screen",
+    "value": 164535933.68,
+    "share": 0.2324929126029235
+   },
+   {
+    "code": "401699",
+    "name": "401699 - Rubber; vulcanised (other than hard rubber), articles n.e.c. in heading no. 4016, of non-cellular rubber",
+    "value": 164468543.71,
+    "share": 0.2323976890851478
+   },
+   {
+    "code": "871639",
+    "name": "871639 - Trailers and semi-trailers; (other than tanker type)",
+    "value": 161643264.48,
+    "share": 0.22840550705896043
+   },
+   {
+    "code": "901420",
+    "name": "901420 - Navigational instruments and appliances; for aeronautical or space navigation (excluding compasses)",
+    "value": 160870056.35,
+    "share": 0.22731294687364811
+   },
+   {
+    "code": "230990",
+    "name": "230990 - Dog or cat food; (not put up for retail sale), used in animal feeding",
+    "value": 160608695.07,
+    "share": 0.22694363760563732
+   },
+   {
+    "code": "843351",
+    "name": "843351 - Combine harvester-threshers",
+    "value": 159345378.13,
+    "share": 0.22515854283422743
+   },
+   {
+    "code": "090121",
+    "name": "090121 - Coffee; roasted, not decaffeinated",
+    "value": 158663247.24,
+    "share": 0.22419467680298735
+   },
+   {
+    "code": "870322",
+    "name": "870322 - Vehicles; with only spark-ignition internal combustion piston engine, cylinder capacity over 1000 but not over 1500cc",
+    "value": 157515551.14,
+    "share": 0.22257295683517186
+   },
+   {
+    "code": "271112",
+    "name": "271112 - Petroleum gases and other gaseous hydrocarbons; liquefied, propane",
+    "value": 147128621.77,
+    "share": 0.20789599595361288
+   },
+   {
+    "code": "220830",
+    "name": "220830 - Whiskies",
+    "value": 146693677.88,
+    "share": 0.20728141061931374
+   },
+   {
+    "code": "961900",
+    "name": "961900 - Sanitary towels (pads) and tampons, napkins (diapers), napkin liners and similar articles, of any material",
+    "value": 146684037.13,
+    "share": 0.2072677880263819
+   },
+   {
+    "code": "854442",
+    "name": "854442 - Insulated electric conductors; for a voltage not exceeding 1000 volts, fitted with connectors",
+    "value": 145291891.98,
+    "share": 0.20530065614551862
+   },
+   {
+    "code": "390120",
+    "name": "390120 - Ethylene polymers; in primary forms, polyethylene having a specific gravity of 0.94 or more",
+    "value": 142277534.27,
+    "share": 0.20104130204607937
+   },
+   {
+    "code": "870830",
+    "name": "870830 - Vehicle parts; brakes, servo-brakes and parts thereof",
+    "value": 142196684.03,
+    "share": 0.2009270588691524
+   },
+   {
+    "code": "850132",
+    "name": "850132 - Electric motors and generators; DC, of an output exceeding 750W but not exceeding 75kW",
+    "value": 142138576.58,
+    "share": 0.20084495175739714
+   },
+   {
+    "code": "390110",
+    "name": "390110 - Ethylene polymers; in primary forms, polyethylene having a specific gravity of less than 0.94",
+    "value": 141893640.16,
+    "share": 0.20049885117976227
+   },
+   {
+    "code": "151190",
+    "name": "151190 - Vegetable oils; palm oil and its fractions, other than crude, whether or not refined, but not chemically modified",
+    "value": 141778452.61,
+    "share": 0.20033608862451902
+   },
+   {
+    "code": "880623",
+    "name": "880623 - Unmanned aircraft; for remote-controlled flight only, for other than for carriage of passengers, with the maximum take-off weight of more than 7kg but not more than 25kg",
+    "value": 141363846.75,
+    "share": 0.19975024137633604
+   },
+   {
+    "code": "300215",
+    "name": "300215 - Blood, human or animal, antisera, other blood fractions and immunological products; immunological products, put up in measured doses or in forms or packings for retail sale",
+    "value": 141283576.51,
+    "share": 0.19963681775223438
+   },
+   {
+    "code": "392010",
+    "name": "392010 - Plastics; plates, sheets, film, foil and strip (not self-adhesive), of polymers of ethylene, non-cellular and not reinforced, laminated, supported or similarly combined with other materials",
+    "value": 139708203.94,
+    "share": 0.19741078147528113
+   },
+   {
+    "code": "392190",
+    "name": "392190 - Plastics; plates, sheets, film, foil and strip, other than cellular",
+    "value": 138829187.46,
+    "share": 0.1961687117517238
+   },
+   {
+    "code": "850423",
+    "name": "850423 - Electrical transformers; liquid dielectric, having a power handling capacity exceeding 10,000kVA",
+    "value": 136586907.6,
+    "share": 0.19300032072696344
+   },
+   {
+    "code": "841810",
+    "name": "841810 - Refrigerators and freezers; combined refrigerator-freezers, fitted with separate external doors, electric or other",
+    "value": 134975827.28,
+    "share": 0.1907238286096699
+   },
+   {
+    "code": "732690",
+    "name": "732690 - Iron or steel; articles n.e.c. in heading 7326",
+    "value": 134562552.38,
+    "share": 0.19013986203739794
+   },
+   {
+    "code": "870590",
+    "name": "870590 - Vehicles; break-down lorries, road-sweepers, spraying lorries, mobile workshops, mobile radiological units, and other special purpose vehicles n.e.c. in heading no. 8705",
+    "value": 134557477.43,
+    "share": 0.19013269102082772
+   },
+   {
+    "code": "854231",
+    "name": "854231 - Electronic integrated circuits; processors and controllers, whether or not combined with memories, converters, logic circuits, amplifiers, clock and timing circuits, or other circuits",
+    "value": 134165904.9,
+    "share": 0.189579390377261
+   },
+   {
+    "code": "300420",
+    "name": "300420 - Medicaments; containing antibiotics (other than penicillins, streptomycins or their derivatives), for therapeutic or prophylactic uses, packaged for retail sale",
+    "value": 133024967.49,
+    "share": 0.18796722058786755
+   },
+   {
+    "code": "870880",
+    "name": "870880 - Vehicle parts; suspension systems and parts thereof (including shock-absorbers)",
+    "value": 132485973.81,
+    "share": 0.18720561059948967
+   },
+   {
+    "code": "220421",
+    "name": "220421 - Wine; still, in containers holding 2 litres or less",
+    "value": 131990830.69,
+    "share": 0.1865059624220406
+   },
+   {
+    "code": "842720",
+    "name": "842720 - Fork-lift and other works trucks; fitted with lifting or handling equipment, self-propelled by other than electric motor",
+    "value": 129524232.68,
+    "share": 0.18302060489107846
+   },
+   {
+    "code": "390210",
+    "name": "390210 - Propylene, other olefin polymers; polypropylene in primary forms",
+    "value": 129314950.88,
+    "share": 0.18272488507991905
+   },
+   {
+    "code": "841370",
+    "name": "841370 - Pumps; centrifugal, n.e.c. in heading no. 8413, for liquids",
+    "value": 125257555.55,
+    "share": 0.17699169575917273
+   },
+   {
+    "code": "640419",
+    "name": "640419 - Footwear; (other than sportswear), with outer soles of rubber or plastics and uppers of textile materials",
+    "value": 123932461.09,
+    "share": 0.17511930798594286
+   },
+   {
+    "code": "853690",
+    "name": "853690 - Electrical apparatus; n.e.c. in heading no. 8536, for switching or protecting electrical circuits, for a voltage not exceeding 1000 volts",
+    "value": 123765223.41,
+    "share": 0.17488299744604718
+   },
+   {
+    "code": "310559",
+    "name": "310559 - Fertilizers, mineral or chemical; containing the two fertilizing elements nitrogen and phosphorus, other than nitrates and phosphates",
+    "value": 123388582.06,
+    "share": 0.1743507948899873
+   },
+   {
+    "code": "180400",
+    "name": "180400 - Cocoa; butter, fat and oil",
+    "value": 121573237.07,
+    "share": 0.17178567227716604
+   },
+   {
+    "code": "310230",
+    "name": "310230 - Fertilizers, mineral or chemical; nitrogenous, ammonium nitrate, whether or not in aqueous solution",
+    "value": 121406639.63,
+    "share": 0.17155026641054774
+   },
+   {
+    "code": "843239",
+    "name": "843239 - Seeders, planters and transplanters; other than no-till direct seeders, planters and transplanters",
+    "value": 120077168.52,
+    "share": 0.16967169433408885
+   },
+   {
+    "code": "720851",
+    "name": "720851 - Iron or non-alloy steel; (not in coils), flat-rolled, of a width 600mm or more, hot-rolled, without patterns in relief, of a thickness exceeding 10mm",
+    "value": 119348966.59,
+    "share": 0.1686427289045795
+   },
+   {
+    "code": "090111",
+    "name": "090111 - Coffee; not roasted or decaffeinated",
+    "value": 118718620.32,
+    "share": 0.16775203568649064
+   },
+   {
+    "code": "854320",
+    "name": "854320 - Electrical machines and apparatus; signal generators",
+    "value": 118521897.8,
+    "share": 0.16747406241568927
+   },
+   {
+    "code": "845011",
+    "name": "845011 - Washing machines; household or laundry-type, fully-automatic, (of a dry linen capacity not exceeding 10kg)",
+    "value": 115344786.05,
+    "share": 0.16298473325881915
+   },
+   {
+    "code": "070200",
+    "name": "070200 - Vegetables; tomatoes, fresh or chilled",
+    "value": 113169975.15,
+    "share": 0.15991167736645123
+   },
+   {
+    "code": "852610",
+    "name": "852610 - Radar apparatus",
+    "value": 112968521.84,
+    "share": 0.15962701938476992
+   },
+   {
+    "code": "080521",
+    "name": "080521 - Fruit, edible; mandarins (including tangerines and satsumas), fresh or dried",
+    "value": 112866280.32,
+    "share": 0.15948254985618668
+   },
+   {
+    "code": "760612",
+    "name": "760612 - Aluminium; plates, sheets and strip, thickness exceeding 0.2mm, alloys, rectangular (including square)",
+    "value": 111424381.33,
+    "share": 0.1574451146992179
+   },
+   {
+    "code": "870360",
+    "name": "870360 - Vehicles; with both spark-ignition internal combustion piston engine and electric motor for propulsion, capable of being charged by plugging to external source of electric power",
+    "value": 111405072.48,
+    "share": 0.15741783086719952
    }
   ],
-  "xCount": 8080,
-  "mCount": 9772
+  "xCount": 4040,
+  "mCount": 4886
  },
  "source": "UN Comtrade Plus",
- "fetchedAt": "2026-11-14T06:30:42.195Z"
+ "fetchedAt": "2026-11-14T07:13:33.477Z"
 }
