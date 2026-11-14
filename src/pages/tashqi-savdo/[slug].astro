@@ -4,7 +4,7 @@ import Flag from '../../components/Flag.astro';
 import BarList from '../../components/BarList.astro';
 import { u } from '../../lib/u.mjs';
 import { fmtMoney, fmtNum, getCountries } from '../../lib/data.mjs';
-import { allTrade } from '../../lib/comtrade.mjs';
+import { allTrade, hs6Uz } from '../../lib/comtrade.mjs';
 
 export function getStaticPaths() {
   const countries = getCountries();
@@ -25,10 +25,15 @@ const trade = allTrade();
 const t = trade.get(country.iso3);
 if (!t) throw new Error(`Savdo ma'lumoti yo'q: ${country.iso3}`);
 
+/* HS6 mahsulotlarining o'zbekcha nomlari (tarjima mavjud bo'lmasa — inglizcha) */
+const UZ = hs6Uz();
+const uzName = (p) => UZ[p.code] ?? p.name;
+
 const { totals } = t;
 const topPartners = t.partners.slice(0, 40);
 const exportProducts = t.products.x.slice(0, 100);
 const importProducts = t.products.m.slice(0, 100);
+const topUzProduct = exportProducts[0] ? uzName(exportProducts[0]) : null;
 const xCount = t.products.xCount ?? t.products.x.length;
 const mCount = t.products.mCount ?? t.products.m.length;
 const maxPX = t.partners[0]?.x || 1;
@@ -115,7 +120,7 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
       </div>
       <div class="fact">
         <div class="k">Top eksport mahsuloti</div>
-        <div class="v" style="font-size:13.5px;">{topProductX ? topProductX.name.split(' - ')[1]?.slice(0, 60) ?? topProductX.name : '—'}</div>
+        <div class="v" style="font-size:13.5px;">{topUzProduct ? topUzProduct.replace(/^(.*?) — /, '') : '—'}</div>
         {topProductX && <small>HS {topProductX.code} · {(topProductX.share).toFixed(1).replace('.', ',')}% · {fmtMoney(topProductX.value)}</small>}
       </div>
       <div class="fact">
@@ -183,7 +188,7 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
         {exportProducts.map((p) => (
           <tr>
             <td class="rank-cell">{p.code}</td>
-            <td style="max-width:520px;">{p.name.includes(' - ') ? p.name.split(' - ')[1] : p.name}</td>
+            <td style="max-width:520px;" title={p.name}>{uzName(p)}</td>
             <td class="num" data-v={p.value}>{fmtMoney(p.value)}</td>
             <td class="num" data-v={p.share}>{fmtNum(p.share, 1)}%</td>
           </tr>
@@ -192,7 +197,8 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
     </table>
     <div class="card-note">
       Jami {fmtNum(xCount)} AG6 pozitsiyasi; jadvalda eng yirik 100 tasi ko'rsatilgan.
-      Mahsulot nomlari — HS 2017 nomklaturasi (inglizcha rasmiy nom).
+      Mahsulot nomlari — HS 2017 nomklaturasining o'zbekcha tarjimasi; ustiga sichqonchani
+      olib kelsangiz rasmiy inglizcha nomi ko'rinadi.
     </div>
   </div>
 
@@ -211,7 +217,7 @@ const title = `${country.nameUz} — tashqi savdo tahlili (AG6) | Mamlakatlar iq
         {importProducts.map((p) => (
           <tr>
             <td class="rank-cell">{p.code}</td>
-            <td style="max-width:520px;">{p.name.includes(' - ') ? p.name.split(' - ')[1] : p.name}</td>
+            <td style="max-width:520px;" title={p.name}>{uzName(p)}</td>
             <td class="num" data-v={p.value}>{fmtMoney(p.value)}</td>
             <td class="num" data-v={p.share}>{fmtNum(p.share, 1)}%</td>
           </tr>

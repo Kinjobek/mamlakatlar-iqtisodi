@@ -37,3 +37,15 @@ export function allTrade() {
   _cache = map;
   return map;
 }
+
+/** HS6 kodlarining o'zbekcha nomlari: kod → nom */
+let _hs6uz = null;
+export function hs6Uz() {
+  if (_hs6uz) return _hs6uz;
+  try {
+    _hs6uz = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/hs6-uz.json'), 'utf8'));
+  } catch {
+    _hs6uz = {};
+  }
+  return _hs6uz;
+}
