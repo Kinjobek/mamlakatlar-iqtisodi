@@ -32,7 +32,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 5800435000,
    "m": 8892744000,
    "balance": -3092309000,
@@ -192,7 +192,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 960952000,
    "m": 1167007000,
    "balance": -206055000,
@@ -942,7 +942,7 @@
   {
    "code": 637,
    "iso3": null,
-   "name": "Kod 637",
+   "name": "Shimoliy va Markaziy Amerika (aniqlanmagan)",
    "x": 2418000,
    "m": 11931000,
    "balance": -9513000,
@@ -1102,7 +1102,7 @@
   {
    "code": 568,
    "iso3": null,
-   "name": "Kod 568",
+   "name": "Boshqa Yevropa (aniqlanmagan)",
    "x": 105000,
    "m": 4558000,
    "balance": -4453000,
@@ -1572,7 +1572,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 0,
    "m": 170000,
    "balance": -170000,
@@ -1582,7 +1582,7 @@
   {
    "code": 527,
    "iso3": null,
-   "name": "Kod 527",
+   "name": "Boshqa Okeaniya (aniqlanmagan)",
    "x": 22000,
    "m": 132000,
    "balance": -110000,
@@ -1662,7 +1662,7 @@
   {
    "code": 577,
    "iso3": null,
-   "name": "Kod 577",
+   "name": "Boshqa Afrika (aniqlanmagan)",
    "x": 85000,
    "m": 0,
    "balance": 85000,
@@ -1692,7 +1692,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 42000,
    "m": 0,
    "balance": 42000,

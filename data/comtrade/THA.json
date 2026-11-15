@@ -52,7 +52,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 4758873009.768,
    "m": 20686786889.228,
    "balance": -15927913879.460001,
@@ -722,7 +722,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 302635015.855,
    "m": 659092.55,
    "balance": 301975923.305,
@@ -1672,7 +1672,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 12062190.712,
    "m": 103194.067,
    "balance": 11958996.645,
@@ -1962,7 +1962,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 2355846.326,
    "m": 2917.71,
    "balance": 2352928.616,
@@ -2142,7 +2142,7 @@
   {
    "code": 166,
    "iso3": null,
-   "name": "Kod 166",
+   "name": "Kokos orollari",
    "x": 0,
    "m": 404464.468,
    "balance": -404464.468,
@@ -2152,7 +2152,7 @@
   {
    "code": 574,
    "iso3": null,
-   "name": "Kod 574",
+   "name": "Norfolk orollari",
    "x": 381821.442,
    "m": 3686.977,
    "balance": 378134.46499999997,
@@ -2232,7 +2232,7 @@
   {
    "code": 732,
    "iso3": null,
-   "name": "Kod 732",
+   "name": "Ğarbiy Sahroi Kabir",
    "x": 49327.476,
    "m": 3037.959,
    "balance": 46289.517,
@@ -2242,7 +2242,7 @@
   {
    "code": 10,
    "iso3": null,
-   "name": "Kod 10",
+   "name": "Antarktida",
    "x": 25398.008,
    "m": 0,
    "balance": 25398.008,
@@ -2252,7 +2252,7 @@
   {
    "code": 239,
    "iso3": null,
-   "name": "Kod 239",
+   "name": "Janubiy Georgiya va Sendvich orollari",
    "x": 4.004,
    "m": 18753.896,
    "balance": -18749.892,
@@ -2272,7 +2272,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 0,
    "m": 10666.932,
    "balance": -10666.932,
@@ -2282,7 +2282,7 @@
   {
    "code": 162,
    "iso3": null,
-   "name": "Kod 162",
+   "name": "Christmas oroli",
    "x": 0,
    "m": 6634.248,
    "balance": -6634.248,
@@ -2302,7 +2302,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 5669.999,
    "m": 32.599,
    "balance": 5637.4,
@@ -2312,7 +2312,7 @@
   {
    "code": 612,
    "iso3": null,
-   "name": "Kod 612",
+   "name": "Pitkern",
    "x": 0,
    "m": 4565.642,
    "balance": -4565.642,

@@ -52,7 +52,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 8310151006.948,
    "m": 383095969.749,
    "balance": 7927055037.199,
@@ -352,7 +352,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 575303987.911,
    "m": 682347439.187,
    "balance": -107043451.27600002,
@@ -482,7 +482,7 @@
   {
    "code": 839,
    "iso3": null,
-   "name": "Kod 839",
+   "name": "Maxsus kategoriyalar (maxfiy savdo)",
    "x": 435134990.057,
    "m": 355416611.175,
    "balance": 79718378.88199997,
@@ -492,7 +492,7 @@
   {
    "code": 837,
    "iso3": null,
-   "name": "Kod 837",
+   "name": "Kema yoqilığısi (bunker)",
    "x": 779224774.852,
    "m": 0,
    "balance": 779224774.852,
@@ -1702,7 +1702,7 @@
   {
    "code": 10,
    "iso3": null,
-   "name": "Kod 10",
+   "name": "Antarktida",
    "x": 2923474.2,
    "m": 22431.594,
    "balance": 2901042.606,
@@ -2082,7 +2082,7 @@
   {
    "code": 574,
    "iso3": null,
-   "name": "Kod 574",
+   "name": "Norfolk orollari",
    "x": 0,
    "m": 136447.638,
    "balance": -136447.638,
@@ -2092,7 +2092,7 @@
   {
    "code": 260,
    "iso3": null,
-   "name": "Kod 260",
+   "name": "Fransiya Janubiy Antarktika hududi",
    "x": 132021.018,
    "m": 124.996,
    "balance": 131896.022,
@@ -2122,7 +2122,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 45387.012,
    "m": 26663,
    "balance": 18724.012000000002,
@@ -2162,7 +2162,7 @@
   {
    "code": 166,
    "iso3": null,
-   "name": "Kod 166",
+   "name": "Kokos orollari",
    "x": 0,
    "m": 50431.626,
    "balance": -50431.626,
@@ -2172,7 +2172,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 34221.656,
    "m": 2186.085,
    "balance": 32035.571000000004,
@@ -2252,7 +2252,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 2006.039,
    "m": 1717.584,
    "balance": 288.4549999999999,
@@ -2272,7 +2272,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 0,
    "m": 3104.974,
    "balance": -3104.974,
@@ -2282,7 +2282,7 @@
   {
    "code": 162,
    "iso3": null,
-   "name": "Kod 162",
+   "name": "Christmas oroli",
    "x": 0,
    "m": 1908.705,
    "balance": -1908.705,
@@ -2302,7 +2302,7 @@
   {
    "code": 612,
    "iso3": null,
-   "name": "Kod 612",
+   "name": "Pitkern",
    "x": 0,
    "m": 799.131,
    "balance": -799.131,
@@ -2322,7 +2322,7 @@
   {
    "code": 239,
    "iso3": null,
-   "name": "Kod 239",
+   "name": "Janubiy Georgiya va Sendvich orollari",
    "x": 0,
    "m": 469.811,
    "balance": -469.811,

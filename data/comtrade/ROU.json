@@ -432,7 +432,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 55732603.02,
    "m": 398104550.14,
    "balance": -342371947.12,
@@ -562,7 +562,7 @@
   {
    "code": 568,
    "iso3": null,
-   "name": "Kod 568",
+   "name": "Boshqa Yevropa (aniqlanmagan)",
    "x": 257108948.78,
    "m": 1549109.49,
    "balance": 255559839.29,
@@ -622,7 +622,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 160725644.17,
    "m": 43066517.63,
    "balance": 117659126.53999999,
@@ -1912,7 +1912,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 9579.49,
    "m": 1455.33,
    "balance": 8124.16,
@@ -1922,7 +1922,7 @@
   {
    "code": 577,
    "iso3": null,
-   "name": "Kod 577",
+   "name": "Boshqa Afrika (aniqlanmagan)",
    "x": 8644.71,
    "m": 0,
    "balance": 8644.71,
@@ -1952,7 +1952,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 0,
    "m": 5914.49,
    "balance": -5914.49,
@@ -2072,7 +2072,7 @@
   {
    "code": 162,
    "iso3": null,
-   "name": "Kod 162",
+   "name": "Christmas oroli",
    "x": 0,
    "m": 437.18,
    "balance": -437.18,
@@ -2092,7 +2092,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 0,
    "m": 344.28,
    "balance": -344.28,
@@ -2102,7 +2102,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 0,
    "m": 297,
    "balance": -297,
@@ -2132,7 +2132,7 @@
   {
    "code": 166,
    "iso3": null,
-   "name": "Kod 166",
+   "name": "Kokos orollari",
    "x": 0,
    "m": 108.92,
    "balance": -108.92,

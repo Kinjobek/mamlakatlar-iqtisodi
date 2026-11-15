@@ -312,7 +312,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 185951287.481,
    "m": 1055637253.359,
    "balance": -869685965.878,
@@ -1772,7 +1772,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 347606.731,
    "m": 628.407,
    "balance": 346978.324,
@@ -1792,7 +1792,7 @@
   {
    "code": 577,
    "iso3": null,
-   "name": "Kod 577",
+   "name": "Boshqa Afrika (aniqlanmagan)",
    "x": 257711.372,
    "m": 468.768,
    "balance": 257242.604,
@@ -1862,7 +1862,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 100948.208,
    "m": 7623.297,
    "balance": 93324.911,
@@ -1942,7 +1942,7 @@
   {
    "code": 166,
    "iso3": null,
-   "name": "Kod 166",
+   "name": "Kokos orollari",
    "x": 0,
    "m": 57398.693,
    "balance": -57398.693,
@@ -2062,7 +2062,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 12233.718,
    "m": 27.861,
    "balance": 12205.857,
@@ -2102,7 +2102,7 @@
   {
    "code": 260,
    "iso3": null,
-   "name": "Kod 260",
+   "name": "Fransiya Janubiy Antarktika hududi",
    "x": 3794.521,
    "m": 0,
    "balance": 3794.521,
@@ -2132,7 +2132,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 0,
    "m": 295.414,
    "balance": -295.414,
@@ -2172,7 +2172,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 0,
    "m": 26.834,
    "balance": -26.834,

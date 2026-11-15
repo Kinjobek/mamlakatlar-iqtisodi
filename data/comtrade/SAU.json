@@ -12,7 +12,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 223378936498.726,
    "m": 3956837.501,
    "balance": 223374979661.225,
@@ -302,7 +302,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 589343342.866,
    "m": 1463056815.957,
    "balance": -873713473.091,
@@ -722,7 +722,7 @@
   {
    "code": 568,
    "iso3": null,
-   "name": "Kod 568",
+   "name": "Boshqa Yevropa (aniqlanmagan)",
    "x": 36495.466,
    "m": 244490202.954,
    "balance": -244453707.488,
@@ -1522,7 +1522,7 @@
   {
    "code": 260,
    "iso3": null,
-   "name": "Kod 260",
+   "name": "Fransiya Janubiy Antarktika hududi",
    "x": 0,
    "m": 2636143.134,
    "balance": -2636143.134,
@@ -1692,7 +1692,7 @@
   {
    "code": 162,
    "iso3": null,
-   "name": "Kod 162",
+   "name": "Christmas oroli",
    "x": 0,
    "m": 580945.585,
    "balance": -580945.585,
@@ -1732,7 +1732,7 @@
   {
    "code": 574,
    "iso3": null,
-   "name": "Kod 574",
+   "name": "Norfolk orollari",
    "x": 450018.655,
    "m": 8100.266,
    "balance": 441918.389,
@@ -1802,7 +1802,7 @@
   {
    "code": 612,
    "iso3": null,
-   "name": "Kod 612",
+   "name": "Pitkern",
    "x": 247499.994,
    "m": 95.733,
    "balance": 247404.261,
@@ -1812,7 +1812,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 0,
    "m": 237241.594,
    "balance": -237241.594,
@@ -1832,7 +1832,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 431.2,
    "m": 188510.395,
    "balance": -188079.19499999998,
@@ -1932,7 +1932,7 @@
   {
    "code": 239,
    "iso3": null,
-   "name": "Kod 239",
+   "name": "Janubiy Georgiya va Sendvich orollari",
    "x": 0,
    "m": 45237.332,
    "balance": -45237.332,
@@ -1992,7 +1992,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 16873.333,
    "m": 13384.533,
    "balance": 3488.7999999999993,
@@ -2022,7 +2022,7 @@
   {
    "code": 10,
    "iso3": null,
-   "name": "Kod 10",
+   "name": "Antarktida",
    "x": 0,
    "m": 21084.533,
    "balance": -21084.533,
@@ -2062,7 +2062,7 @@
   {
    "code": 74,
    "iso3": null,
-   "name": "Kod 74",
+   "name": "Bouve oroli",
    "x": 0,
    "m": 12130.666,
    "balance": -12130.666,
@@ -2102,7 +2102,7 @@
   {
    "code": 334,
    "iso3": null,
-   "name": "Kod 334",
+   "name": "Herd va Makdonald orollari",
    "x": 0,
    "m": 4244.8,
    "balance": -4244.8,
@@ -2252,7 +2252,7 @@
   {
    "code": 166,
    "iso3": null,
-   "name": "Kod 166",
+   "name": "Kokos orollari",
    "x": 0,
    "m": 34.133,
    "balance": -34.133,

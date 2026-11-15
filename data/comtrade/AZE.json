@@ -512,7 +512,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 61607.33,
    "m": 53615559.57,
    "balance": -53553952.24,
@@ -892,7 +892,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 2819668.93,
    "m": 260.52,
    "balance": 2819408.41,
@@ -1512,7 +1512,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 0,
    "m": 8086.81,
    "balance": -8086.81,
@@ -1542,7 +1542,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 0,
    "m": 6130.82,
    "balance": -6130.82,

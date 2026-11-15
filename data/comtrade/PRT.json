@@ -172,7 +172,7 @@
   {
    "code": 837,
    "iso3": null,
-   "name": "Kod 837",
+   "name": "Kema yoqilığısi (bunker)",
    "x": 1711116584.398,
    "m": 0,
    "balance": 1711116584.398,
@@ -312,7 +312,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 158711884.156,
    "m": 661742068.986,
    "balance": -503030184.8299999,
@@ -732,7 +732,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 60568848.456,
    "m": 58630094.232,
    "balance": 1938754.2239999995,
@@ -852,7 +852,7 @@
   {
    "code": 577,
    "iso3": null,
-   "name": "Kod 577",
+   "name": "Boshqa Afrika (aniqlanmagan)",
    "x": 56507236.754,
    "m": 0,
    "balance": 56507236.754,
@@ -1902,7 +1902,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 325343.182,
    "m": 32378.29,
    "balance": 292964.892,
@@ -1912,7 +1912,7 @@
   {
    "code": 568,
    "iso3": null,
-   "name": "Kod 568",
+   "name": "Boshqa Yevropa (aniqlanmagan)",
    "x": 17929.141,
    "m": 216285.591,
    "balance": -198356.44999999998,
@@ -2052,7 +2052,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 30137.933,
    "m": 44.011,
    "balance": 30093.922000000002,
@@ -2122,7 +2122,7 @@
   {
    "code": 260,
    "iso3": null,
-   "name": "Kod 260",
+   "name": "Fransiya Janubiy Antarktika hududi",
    "x": 6015.85,
    "m": 0,
    "balance": 6015.85,
@@ -2162,7 +2162,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 0,
    "m": 592.049,
    "balance": -592.049,
@@ -2222,7 +2222,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 0,
    "m": 45.059,
    "balance": -45.059,

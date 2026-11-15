@@ -92,7 +92,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 55540735,
    "m": 201516898,
    "balance": -145976163,
@@ -302,7 +302,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 128909,
    "m": 29309294,
    "balance": -29180385,
@@ -962,7 +962,7 @@
   {
    "code": 568,
    "iso3": null,
-   "name": "Kod 568",
+   "name": "Boshqa Yevropa (aniqlanmagan)",
    "x": 0,
    "m": 235468,
    "balance": -235468,

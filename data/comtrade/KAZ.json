@@ -552,7 +552,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 3747108.65,
    "m": 124040060.71,
    "balance": -120292952.05999999,
@@ -1752,7 +1752,7 @@
   {
    "code": 260,
    "iso3": null,
-   "name": "Kod 260",
+   "name": "Fransiya Janubiy Antarktika hududi",
    "x": 0,
    "m": 188.05,
    "balance": -188.05,
@@ -1822,7 +1822,7 @@
   {
    "code": 612,
    "iso3": null,
-   "name": "Kod 612",
+   "name": "Pitkern",
    "x": 0,
    "m": 21.88,
    "balance": -21.88,

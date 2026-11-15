@@ -212,7 +212,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 1040032720.299,
    "m": 253943704.547,
    "balance": 786089015.7520001,
@@ -672,7 +672,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 24719483.798,
    "m": 178587806.355,
    "balance": -153868322.55699998,
@@ -1832,7 +1832,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 63671.401,
    "m": 0,
    "balance": 63671.401,
@@ -1852,7 +1852,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 0,
    "m": 48425.122,
    "balance": -48425.122,
@@ -1962,7 +1962,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 0,
    "m": 3253.465,
    "balance": -3253.465,
@@ -2012,7 +2012,7 @@
   {
    "code": 10,
    "iso3": null,
-   "name": "Kod 10",
+   "name": "Antarktida",
    "x": 0,
    "m": 232.557,
    "balance": -232.557,

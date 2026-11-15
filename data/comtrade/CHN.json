@@ -52,7 +52,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 75179857427,
    "m": 217761533826,
    "balance": -142581676399,
@@ -772,7 +772,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 5457254493,
    "m": 2780505787,
    "balance": 2676748706,
@@ -1782,7 +1782,7 @@
   {
    "code": 527,
    "iso3": null,
-   "name": "Kod 527",
+   "name": "Boshqa Okeaniya (aniqlanmagan)",
    "x": 118703042,
    "m": 66097,
    "balance": 118636945,
@@ -1882,7 +1882,7 @@
   {
    "code": 636,
    "iso3": null,
-   "name": "Kod 636",
+   "name": "Boshqa Amerika (aniqlanmagan)",
    "x": 82114903,
    "m": 495119,
    "balance": 81619784,
@@ -1922,7 +1922,7 @@
   {
    "code": 568,
    "iso3": null,
-   "name": "Kod 568",
+   "name": "Boshqa Yevropa (aniqlanmagan)",
    "x": 64918156,
    "m": 26121,
    "balance": 64892035,
@@ -2102,7 +2102,7 @@
   {
    "code": 577,
    "iso3": null,
-   "name": "Kod 577",
+   "name": "Boshqa Afrika (aniqlanmagan)",
    "x": 1810037,
    "m": 39747,
    "balance": 1770290,
@@ -2112,7 +2112,7 @@
   {
    "code": 637,
    "iso3": null,
-   "name": "Kod 637",
+   "name": "Shimoliy va Markaziy Amerika (aniqlanmagan)",
    "x": 1108521,
    "m": 102988,
    "balance": 1005533,
@@ -2132,7 +2132,7 @@
   {
    "code": 473,
    "iso3": null,
-   "name": "Kod 473",
+   "name": "LAIA davlatlari (aniqlanmagan)",
    "x": 1180123,
    "m": 1205,
    "balance": 1178918,
@@ -2142,7 +2142,7 @@
   {
    "code": 574,
    "iso3": null,
-   "name": "Kod 574",
+   "name": "Norfolk orollari",
    "x": 711892,
    "m": 3586,
    "balance": 708306,
@@ -2152,7 +2152,7 @@
   {
    "code": 732,
    "iso3": null,
-   "name": "Kod 732",
+   "name": "Ğarbiy Sahroi Kabir",
    "x": 367688,
    "m": 1789,
    "balance": 365899,

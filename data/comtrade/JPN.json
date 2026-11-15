@@ -42,7 +42,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 45333559169.279,
    "m": 30521665618.229,
    "balance": 14811893551.05,
@@ -1182,7 +1182,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 111531556.959,
    "m": 3233394.581,
    "balance": 108298162.378,
@@ -1512,7 +1512,7 @@
   {
    "code": 473,
    "iso3": null,
-   "name": "Kod 473",
+   "name": "LAIA davlatlari (aniqlanmagan)",
    "x": 31610911.727,
    "m": 205283.464,
    "balance": 31405628.263,
@@ -1962,7 +1962,7 @@
   {
    "code": 732,
    "iso3": null,
-   "name": "Kod 732",
+   "name": "Ğarbiy Sahroi Kabir",
    "x": 163794.707,
    "m": 3800132.326,
    "balance": -3636337.619,
@@ -2002,7 +2002,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 0,
    "m": 3244526.517,
    "balance": -3244526.517,
@@ -2042,7 +2042,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 2435271.131,
    "m": 127604.354,
    "balance": 2307666.7770000002,
@@ -2112,7 +2112,7 @@
   {
    "code": 527,
    "iso3": null,
-   "name": "Kod 527",
+   "name": "Boshqa Okeaniya (aniqlanmagan)",
    "x": 1035600.34,
    "m": 35186.166,
    "balance": 1000414.174,
@@ -2122,7 +2122,7 @@
   {
    "code": 577,
    "iso3": null,
-   "name": "Kod 577",
+   "name": "Boshqa Afrika (aniqlanmagan)",
    "x": 551060.544,
    "m": 246811.86,
    "balance": 304248.684,
@@ -2182,7 +2182,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 0,
    "m": 85078.378,
    "balance": -85078.378,
@@ -2202,7 +2202,7 @@
   {
    "code": 612,
    "iso3": null,
-   "name": "Kod 612",
+   "name": "Pitkern",
    "x": 0,
    "m": 20394.235,
    "balance": -20394.235,
@@ -2222,7 +2222,7 @@
   {
    "code": 80,
    "iso3": null,
-   "name": "Kod 80",
+   "name": "Britaniya Antarktika hududi",
    "x": 0,
    "m": 1790.359,
    "balance": -1790.359,

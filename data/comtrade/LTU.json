@@ -302,7 +302,7 @@
   {
    "code": 568,
    "iso3": null,
-   "name": "Kod 568",
+   "name": "Boshqa Yevropa (aniqlanmagan)",
    "x": 6633016,
    "m": 381213424,
    "balance": -374580408,
@@ -392,7 +392,7 @@
   {
    "code": 839,
    "iso3": null,
-   "name": "Kod 839",
+   "name": "Maxsus kategoriyalar (maxfiy savdo)",
    "x": 0,
    "m": 248442546,
    "balance": -248442546,
@@ -522,7 +522,7 @@
   {
    "code": 837,
    "iso3": null,
-   "name": "Kod 837",
+   "name": "Kema yoqilığısi (bunker)",
    "x": 158924524,
    "m": 0,
    "balance": 158924524,
@@ -532,7 +532,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 27209717,
    "m": 119060450,
    "balance": -91850733,
@@ -842,7 +842,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 0,
    "m": 27972718,
    "balance": -27972718,
@@ -1712,7 +1712,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 302322,
    "m": 314,
    "balance": 302008,
@@ -1992,7 +1992,7 @@
   {
    "code": 260,
    "iso3": null,
-   "name": "Kod 260",
+   "name": "Fransiya Janubiy Antarktika hududi",
    "x": 3934,
    "m": 0,
    "balance": 3934,

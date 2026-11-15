@@ -292,7 +292,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 2950800441.54,
    "m": 1380189619.1,
    "balance": 1570610822.44,
@@ -1512,7 +1512,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 10261364.72,
    "m": 17206.244,
    "balance": 10244158.476,
@@ -1982,7 +1982,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 299535.419,
    "m": 0,
    "balance": 299535.419,
@@ -1992,7 +1992,7 @@
   {
    "code": 260,
    "iso3": null,
-   "name": "Kod 260",
+   "name": "Fransiya Janubiy Antarktika hududi",
    "x": 290531.122,
    "m": 0,
    "balance": 290531.122,
@@ -2042,7 +2042,7 @@
   {
    "code": 577,
    "iso3": null,
-   "name": "Kod 577",
+   "name": "Boshqa Afrika (aniqlanmagan)",
    "x": 145335.696,
    "m": 0,
    "balance": 145335.696,
@@ -2132,7 +2132,7 @@
   {
    "code": 732,
    "iso3": null,
-   "name": "Kod 732",
+   "name": "Ğarbiy Sahroi Kabir",
    "x": 28849.887,
    "m": 0,
    "balance": 28849.887,
@@ -2182,7 +2182,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 8600.316,
    "m": 0,
    "balance": 8600.316,
@@ -2192,7 +2192,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 3923.109,
    "m": 0,
    "balance": 3923.109,

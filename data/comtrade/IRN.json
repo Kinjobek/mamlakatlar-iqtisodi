@@ -32,7 +32,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 22643781142,
    "m": 240919555,
    "balance": 22402861587,
@@ -52,7 +52,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 13012789101.3,
    "m": 160758776,
    "balance": 12852030325.3,
@@ -382,7 +382,7 @@
   {
    "code": 838,
    "iso3": null,
-   "name": "Kod 838",
+   "name": "Erkin savdo zonalari",
    "x": 1201030,
    "m": 200389250,
    "balance": -199188220,
@@ -442,7 +442,7 @@
   {
    "code": 473,
    "iso3": null,
-   "name": "Kod 473",
+   "name": "LAIA davlatlari (aniqlanmagan)",
    "x": 164975013.2,
    "m": 0,
    "balance": 164975013.2,
@@ -472,7 +472,7 @@
   {
    "code": 568,
    "iso3": null,
-   "name": "Kod 568",
+   "name": "Boshqa Yevropa (aniqlanmagan)",
    "x": 142391714.4,
    "m": 0,
    "balance": 142391714.4,

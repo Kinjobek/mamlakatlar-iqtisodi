@@ -42,7 +42,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 14637831549.868,
    "m": 23842975575.193,
    "balance": -9205144025.325,
@@ -1022,7 +1022,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 95240808.171,
    "m": 0,
    "balance": 95240808.171,
@@ -1382,7 +1382,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 27536729.191,
    "m": 421615.721,
    "balance": 27115113.47,
@@ -1412,7 +1412,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 3147249.982,
    "m": 21578178.572,
    "balance": -18430928.59,
@@ -1732,7 +1732,7 @@
   {
    "code": 162,
    "iso3": null,
-   "name": "Kod 162",
+   "name": "Christmas oroli",
    "x": 3539913.866,
    "m": 0,
    "balance": 3539913.866,
@@ -1902,7 +1902,7 @@
   {
    "code": 574,
    "iso3": null,
-   "name": "Kod 574",
+   "name": "Norfolk orollari",
    "x": 156379.385,
    "m": 1111280.453,
    "balance": -954901.068,
@@ -2162,7 +2162,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 63540.822,
    "m": 0,
    "balance": 63540.822,
@@ -2172,7 +2172,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 49988.113,
    "m": 2285.188,
    "balance": 47702.924999999996,
@@ -2182,7 +2182,7 @@
   {
    "code": 612,
    "iso3": null,
-   "name": "Kod 612",
+   "name": "Pitkern",
    "x": 50427.976,
    "m": 0,
    "balance": 50427.976,
@@ -2192,7 +2192,7 @@
   {
    "code": 260,
    "iso3": null,
-   "name": "Kod 260",
+   "name": "Fransiya Janubiy Antarktika hududi",
    "x": 12936.946,
    "m": 14780.96,
    "balance": -1844.0139999999992,
@@ -2222,7 +2222,7 @@
   {
    "code": 239,
    "iso3": null,
-   "name": "Kod 239",
+   "name": "Janubiy Georgiya va Sendvich orollari",
    "x": 10041.674,
    "m": 0,
    "balance": 10041.674,
@@ -2232,7 +2232,7 @@
   {
    "code": 10,
    "iso3": null,
-   "name": "Kod 10",
+   "name": "Antarktida",
    "x": 0,
    "m": 919.713,
    "balance": -919.713,
@@ -2262,7 +2262,7 @@
   {
    "code": 74,
    "iso3": null,
-   "name": "Kod 74",
+   "name": "Bouve oroli",
    "x": 27.314,
    "m": 0,
    "balance": 27.314,
@@ -2272,7 +2272,7 @@
   {
    "code": 166,
    "iso3": null,
-   "name": "Kod 166",
+   "name": "Kokos orollari",
    "x": 14.203,
    "m": 0,
    "balance": 14.203,

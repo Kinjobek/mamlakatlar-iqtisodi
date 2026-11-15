@@ -140,6 +140,29 @@ const BASE_PARAMS = {
   motCode: '0'
 };
 
+/* Comtrade maxsus kodlari — statistik guruhlar va mayda hududlar (özbekçe) */
+const SPECIAL_UZ = {
+  0: 'Jahon',
+  899: 'Aniqlanmagan hududlar',
+  839: 'Maxsus kategoriyalar (maxfiy savdo)',
+  837: 'Kema yoqilığısi (bunker)',
+  838: 'Erkin savdo zonalari',
+  568: 'Boshqa Yevropa (aniqlanmagan)',
+  577: 'Boshqa Afrika (aniqlanmagan)',
+  527: 'Boshqa Okeaniya (aniqlanmagan)',
+  473: 'LAIA davlatlari (aniqlanmagan)',
+  636: 'Boshqa Amerika (aniqlanmagan)',
+  637: 'Shimoliy va Markaziy Amerika (aniqlanmagan)',
+  490: 'Boshqa Osiyo (aniqlanmagan)',
+  10: 'Antarktida', 16: 'Amerika Samoasi', 74: 'Bouve oroli',
+  80: 'Britaniya Antarktika hududi', 86: 'Britaniya Hind okeani hududi',
+  162: 'Christmas oroli', 166: 'Kokos orollari',
+  239: 'Janubiy Georgiya va Sendvich orollari', 260: 'Fransiya Janubiy Antarktika hududi',
+  316: 'Guam', 334: 'Herd va Makdonald orollari', 574: 'Norfolk orollari',
+  581: 'AQSH Tashqi orollari', 612: 'Pitkern', 732: 'Ğarbiy Sahroi Kabir',
+  97: 'Yevropa İttifoqi'
+};
+
 /* ---- davlat uçun töliq ma'lumot ---- */
 async function fetchCountry(iso3, refs) {
   const code = refs.iso3Code[iso3];
@@ -203,7 +226,7 @@ async function fetchCountry(iso3, refs) {
       return {
         code: p.code,
         iso3: ref?.iso3 ?? null,
-        name: our?.nameUz ?? ref?.nameEn ?? `Kod ${p.code}`,
+        name: SPECIAL_UZ[p.code] ?? our?.nameUz ?? ref?.nameEn ?? `Kod ${p.code}`,
         x: p.x,
         m: p.m,
         balance: p.x - p.m,

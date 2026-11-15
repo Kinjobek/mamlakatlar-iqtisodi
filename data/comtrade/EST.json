@@ -112,7 +112,7 @@
   {
    "code": 568,
    "iso3": null,
-   "name": "Kod 568",
+   "name": "Boshqa Yevropa (aniqlanmagan)",
    "x": 7733661.89,
    "m": 1122788331.35,
    "balance": -1115054669.4599998,
@@ -342,7 +342,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 177861555.47,
    "m": 13094273.57,
    "balance": 164767281.9,
@@ -382,7 +382,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 10099455.34,
    "m": 122308800.49,
    "balance": -112209345.14999999,
@@ -1022,7 +1022,7 @@
   {
    "code": 837,
    "iso3": null,
-   "name": "Kod 837",
+   "name": "Kema yoqilığısi (bunker)",
    "x": 5619689.48,
    "m": 0,
    "balance": 5619689.48,
@@ -1572,7 +1572,7 @@
   {
    "code": 574,
    "iso3": null,
-   "name": "Kod 574",
+   "name": "Norfolk orollari",
    "x": 379513.12,
    "m": 0,
    "balance": 379513.12,
@@ -1902,7 +1902,7 @@
   {
    "code": 577,
    "iso3": null,
-   "name": "Kod 577",
+   "name": "Boshqa Afrika (aniqlanmagan)",
    "x": 15564.94,
    "m": 0,
    "balance": 15564.94,
@@ -1952,7 +1952,7 @@
   {
    "code": 260,
    "iso3": null,
-   "name": "Kod 260",
+   "name": "Fransiya Janubiy Antarktika hududi",
    "x": 8770.68,
    "m": 0,
    "balance": 8770.68,
@@ -1982,7 +1982,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 5108.86,
    "m": 0,
    "balance": 5108.86,
@@ -2012,7 +2012,7 @@
   {
    "code": 10,
    "iso3": null,
-   "name": "Kod 10",
+   "name": "Antarktida",
    "x": 0,
    "m": 3877,
    "balance": -3877,
@@ -2032,7 +2032,7 @@
   {
    "code": 839,
    "iso3": null,
-   "name": "Kod 839",
+   "name": "Maxsus kategoriyalar (maxfiy savdo)",
    "x": 2651.78,
    "m": 0,
    "balance": 2651.78,
@@ -2082,7 +2082,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 0,
    "m": 1361.21,
    "balance": -1361.21,
@@ -2092,7 +2092,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 0,
    "m": 1323.3,
    "balance": -1323.3,
@@ -2112,7 +2112,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 0,
    "m": 898.03,
    "balance": -898.03,
@@ -2132,7 +2132,7 @@
   {
    "code": 162,
    "iso3": null,
-   "name": "Kod 162",
+   "name": "Christmas oroli",
    "x": 0,
    "m": 424.86,
    "balance": -424.86,
@@ -2222,7 +2222,7 @@
   {
    "code": 732,
    "iso3": null,
-   "name": "Kod 732",
+   "name": "Ğarbiy Sahroi Kabir",
    "x": 0,
    "m": 9.41,
    "balance": -9.41,

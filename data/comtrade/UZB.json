@@ -32,7 +32,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 9205995855,
    "m": 1237105,
    "balance": 9204758750,
@@ -632,7 +632,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 351188,
    "m": 17615832.68,
    "balance": -17264644.68,
@@ -1592,7 +1592,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 0,
    "m": 1530,
    "balance": -1530,

@@ -72,7 +72,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 4868902128,
    "m": 17693638678,
    "balance": -12824736550,
@@ -112,7 +112,7 @@
   {
    "code": 637,
    "iso3": null,
-   "name": "Kod 637",
+   "name": "Shimoliy va Markaziy Amerika (aniqlanmagan)",
    "x": 12712405047,
    "m": 447,
    "balance": 12712404600,
@@ -152,7 +152,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 6036522186,
    "m": 3834413702,
    "balance": 2202108484,
@@ -192,7 +192,7 @@
   {
    "code": 568,
    "iso3": null,
-   "name": "Kod 568",
+   "name": "Boshqa Yevropa (aniqlanmagan)",
    "x": 5182267827,
    "m": 163919975,
    "balance": 5018347852,
@@ -1422,7 +1422,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 588923,
    "m": 149,
    "balance": 588774,
@@ -1582,7 +1582,7 @@
   {
    "code": 612,
    "iso3": null,
-   "name": "Kod 612",
+   "name": "Pitkern",
    "x": 0,
    "m": 169656,
    "balance": -169656,
@@ -1832,7 +1832,7 @@
   {
    "code": 334,
    "iso3": null,
-   "name": "Kod 334",
+   "name": "Herd va Makdonald orollari",
    "x": 0,
    "m": 2888,
    "balance": -2888,
@@ -1852,7 +1852,7 @@
   {
    "code": 162,
    "iso3": null,
-   "name": "Kod 162",
+   "name": "Christmas oroli",
    "x": 0,
    "m": 2463,
    "balance": -2463,
@@ -1982,7 +1982,7 @@
   {
    "code": 166,
    "iso3": null,
-   "name": "Kod 166",
+   "name": "Kokos orollari",
    "x": 0,
    "m": 1250,
    "balance": -1250,
@@ -2032,7 +2032,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 0,
    "m": 1042,
    "balance": -1042,
@@ -2062,7 +2062,7 @@
   {
    "code": 732,
    "iso3": null,
-   "name": "Kod 732",
+   "name": "Ğarbiy Sahroi Kabir",
    "x": 0,
    "m": 758,
    "balance": -758,
@@ -2152,7 +2152,7 @@
   {
    "code": 574,
    "iso3": null,
-   "name": "Kod 574",
+   "name": "Norfolk orollari",
    "x": 0,
    "m": 114,
    "balance": -114,

@@ -442,7 +442,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 20733179.08,
    "m": 332560331.15,
    "balance": -311827152.07,
@@ -912,7 +912,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 21476807.07,
    "m": 19398080.33,
    "balance": 2078726.740000002,
@@ -1752,7 +1752,7 @@
   {
    "code": 732,
    "iso3": null,
-   "name": "Kod 732",
+   "name": "Ğarbiy Sahroi Kabir",
    "x": 15812.41,
    "m": 153007.71,
    "balance": -137195.3,
@@ -2062,7 +2062,7 @@
   {
    "code": 260,
    "iso3": null,
-   "name": "Kod 260",
+   "name": "Fransiya Janubiy Antarktika hududi",
    "x": 0,
    "m": 407.47,
    "balance": -407.47,
@@ -2112,7 +2112,7 @@
   {
    "code": 574,
    "iso3": null,
-   "name": "Kod 574",
+   "name": "Norfolk orollari",
    "x": 138.24,
    "m": 0,
    "balance": 138.24,
@@ -2122,7 +2122,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 0,
    "m": 127.33,
    "balance": -127.33,
@@ -2142,7 +2142,7 @@
   {
    "code": 612,
    "iso3": null,
-   "name": "Kod 612",
+   "name": "Pitkern",
    "x": 0,
    "m": 82.15,
    "balance": -82.15,
@@ -2152,7 +2152,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 0,
    "m": 68.68,
    "balance": -68.68,
@@ -2172,7 +2172,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 0,
    "m": 31.78,
    "balance": -31.78,
@@ -2182,7 +2182,7 @@
   {
    "code": 166,
    "iso3": null,
-   "name": "Kod 166",
+   "name": "Kokos orollari",
    "x": 0,
    "m": 17.69,
    "balance": -17.69,
@@ -2192,7 +2192,7 @@
   {
    "code": 162,
    "iso3": null,
-   "name": "Kod 162",
+   "name": "Christmas oroli",
    "x": 0,
    "m": 11.35,
    "balance": -11.35,

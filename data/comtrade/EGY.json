@@ -332,7 +332,7 @@
   {
    "code": 837,
    "iso3": null,
-   "name": "Kod 837",
+   "name": "Kema yoqilığısi (bunker)",
    "x": 929240299,
    "m": 2865.088,
    "balance": 929237433.912,
@@ -562,7 +562,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 15977119.247,
    "m": 387230069.433,
    "balance": -371252950.18600005,
@@ -592,7 +592,7 @@
   {
    "code": 568,
    "iso3": null,
-   "name": "Kod 568",
+   "name": "Boshqa Yevropa (aniqlanmagan)",
    "x": 0,
    "m": 348658101.408,
    "balance": -348658101.408,
@@ -832,7 +832,7 @@
   {
    "code": 899,
    "iso3": null,
-   "name": "Kod 899",
+   "name": "Aniqlanmagan hududlar",
    "x": 51872609.037,
    "m": 73509418.859,
    "balance": -21636809.821999997,
@@ -1782,7 +1782,7 @@
   {
    "code": 473,
    "iso3": null,
-   "name": "Kod 473",
+   "name": "LAIA davlatlari (aniqlanmagan)",
    "x": 0,
    "m": 160137.659,
    "balance": -160137.659,
@@ -1882,7 +1882,7 @@
   {
    "code": 527,
    "iso3": null,
-   "name": "Kod 527",
+   "name": "Boshqa Okeaniya (aniqlanmagan)",
    "x": 27400,
    "m": 0,
    "balance": 27400,

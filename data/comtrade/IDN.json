@@ -122,7 +122,7 @@
   {
    "code": 490,
    "iso3": "S19",
-   "name": "Other Asia, nes",
+   "name": "Boshqa Osiyo (aniqlanmagan)",
    "x": 6686535054.124,
    "m": 3963852929,
    "balance": 2722682125.1239996,
@@ -1262,7 +1262,7 @@
   {
    "code": 316,
    "iso3": null,
-   "name": "Kod 316",
+   "name": "Guam",
    "x": 52477232.426,
    "m": 2503,
    "balance": 52474729.426,
@@ -1682,7 +1682,7 @@
   {
    "code": 162,
    "iso3": null,
-   "name": "Kod 162",
+   "name": "Christmas oroli",
    "x": 4446.454,
    "m": 4702465,
    "balance": -4698018.546,
@@ -1692,7 +1692,7 @@
   {
    "code": 16,
    "iso3": null,
-   "name": "Kod 16",
+   "name": "Amerika Samoasi",
    "x": 3940957.33,
    "m": 635270,
    "balance": 3305687.33,
@@ -2112,7 +2112,7 @@
   {
    "code": 581,
    "iso3": null,
-   "name": "Kod 581",
+   "name": "AQSH Tashqi orollari",
    "x": 0,
    "m": 172698,
    "balance": -172698,
@@ -2162,7 +2162,7 @@
   {
    "code": 74,
    "iso3": null,
-   "name": "Kod 74",
+   "name": "Bouve oroli",
    "x": 0,
    "m": 91133,
    "balance": -91133,
@@ -2182,7 +2182,7 @@
   {
    "code": 10,
    "iso3": null,
-   "name": "Kod 10",
+   "name": "Antarktida",
    "x": 26115.52,
    "m": 54727,
    "balance": -28611.48,
@@ -2202,7 +2202,7 @@
   {
    "code": 574,
    "iso3": null,
-   "name": "Kod 574",
+   "name": "Norfolk orollari",
    "x": 14738.52,
    "m": 389,
    "balance": 14349.52,
@@ -2212,7 +2212,7 @@
   {
    "code": 86,
    "iso3": null,
-   "name": "Kod 86",
+   "name": "Britaniya Hind okeani hududi",
    "x": 0,
    "m": 15042,
    "balance": -15042,
@@ -2232,7 +2232,7 @@
   {
    "code": 334,
    "iso3": null,
-   "name": "Kod 334",
+   "name": "Herd va Makdonald orollari",
    "x": 0,
    "m": 6359,
    "balance": -6359,
@@ -2242,7 +2242,7 @@
   {
    "code": 166,
    "iso3": null,
-   "name": "Kod 166",
+   "name": "Kokos orollari",
    "x": 0,
    "m": 6241,
    "balance": -6241,
@@ -2272,7 +2272,7 @@
   {
    "code": 239,
    "iso3": null,
-   "name": "Kod 239",
+   "name": "Janubiy Georgiya va Sendvich orollari",
    "x": 0,
    "m": 1879,
    "balance": -1879,
@@ -2302,7 +2302,7 @@
   {
    "code": 612,
    "iso3": null,
-   "name": "Kod 612",
+   "name": "Pitkern",
    "x": 0,
    "m": 212,
    "balance": -212,
@@ -2312,7 +2312,7 @@
   {
    "code": 260,
    "iso3": null,
-   "name": "Kod 260",
+   "name": "Fransiya Janubiy Antarktika hududi",
    "x": 0,
    "m": 187,
    "balance": -187,
