@@ -76,12 +76,22 @@ async function ensureRefs() {
       isGroup: !!r.isGroup
     };
   }
+  /* ISO3 → to'g'ri (legacy bo'lmagan) kod: "USA and Puerto Rico (...1980)"
+     kabi "(..." izli yozuvlar — eski kodlar; ular o'sish tartibida
+     birinchi tushib, to'g'ri kodni soya qiladi (masalan USA: 841/842). */
+  const iso3Code = {};
+  for (const r of repArr) {
+    const iso = r.reporterCodeIsoAlpha3;
+    if (!iso) continue;
+    if (/\(\.\.\./.test(r.reporterDesc || '')) continue; // legacy yozuv
+    iso3Code[iso] = r.reporterCode;
+  }
   const h6 = JSON.parse(readFileSync(resolve(RAW, 'H6.json'), 'utf8'));
   const h6Arr = Array.isArray(h6) ? h6 : h6.results || [];
   const hs6 = {};
   for (const c of h6Arr) hs6[String(c.id)] = c.text;
   hs6['999999'] ??= '999999 - Commodities not elsewhere specified';
-  return { partnerMap, hs6 };
+  return { partnerMap, hs6, iso3Code };
 }
 
 /* ---- API sörovi: 1 sörov/~1.3s; 429 → 20s kutiş; böş javob → bir marta qayta ---- */
@@ -97,8 +107,8 @@ async function comtradeGet(params, tries = 3) {
       try {
         const res = await fetch(url, { headers: { Accept: 'application/json' } });
         if (res.status === 429) {
-          console.log('  … 429 (limit), 20 s kutamiz');
-          await sleep(20000);
+          console.log('  … 429 (limit), 3 s kutamiz');
+          await sleep(3000);
           continue;
         }
         if (res.status === 403) {
@@ -109,6 +119,7 @@ async function comtradeGet(params, tries = 3) {
         }
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const json = await res.json();
+        if (process.env.CT_DEBUG) console.log(`    [debug] HTTP ${res.status} | count=${json.count ?? 0} | ${url.slice(url.indexOf('?') + 1, url.indexOf('?') + 90)}`);
         return { count: json.count ?? 0, rows: json.data ?? [] };
       } catch (e) {
         if (i === tries) throw e;
@@ -117,15 +128,8 @@ async function comtradeGet(params, tries = 3) {
     }
   };
   const first = await call();
-  if (first.count === 0) {
-    /* limit ostida API böş javob qaytarişi mumkin — sabr bilan 3 marta qaytamiz */
-    for (let i = 1; i <= 3; i++) {
-      await sleep(8000 * i);
-      const again = await call();
-      if (again.count > 0) return again;
-    }
-    return first;
-  }
+  /* Bo'sh javob (count=0) — odatda haqiqiy "ma'lumot yo'q"; qayta urinmaymiz
+     (eski o'rganish: bo'sh javoblar throttle emas, noto'g'ri kod/yil bo'lgan) */
   return first;
 }
 
@@ -137,12 +141,12 @@ const BASE_PARAMS = {
 };
 
 /* ---- davlat uçun töliq ma'lumot ---- */
-async function fetchCountry(iso3, partnerMap, hs6) {
-  const code = parseInt(Object.entries(partnerMap).find(([, p]) => p.iso3 === iso3)?.[0], 10);
+async function fetchCountry(iso3, refs) {
+  const code = refs.iso3Code[iso3];
   if (!Number.isFinite(code)) throw new Error(`${iso3} uçun Comtrade kodi topilmadi`);
   const rep = String(code);
 
-  const YEARS = [2024, 2023, 2022];
+  const YEARS = [2024, 2023, 2022, 2021, 2020, 2019, 2018];
   let year = null;
   let partnerRowsX = null;
   let worldX = null;
@@ -194,7 +198,7 @@ async function fetchCountry(iso3, partnerMap, hs6) {
 
   const partners = [...byPartner.values()]
     .map((p) => {
-      const ref = partnerMap[p.code];
+      const ref = refs.partnerMap[p.code];
       const our = ref?.iso3 ? byIso.get(ref.iso3) : null;
       return {
         code: p.code,
@@ -203,8 +207,8 @@ async function fetchCountry(iso3, partnerMap, hs6) {
         x: p.x,
         m: p.m,
         balance: p.x - p.m,
-        şareX: totX ? (p.x / totX) * 100 : 0,
-        şareM: totM ? (p.m / totM) * 100 : 0
+        shareX: totX ? (p.x / totX) * 100 : 0,
+        shareM: totM ? (p.m / totM) * 100 : 0
       };
     })
     .sort((a, b) => b.x + b.m - (a.x + a.m));
@@ -229,9 +233,9 @@ async function fetchCountry(iso3, partnerMap, hs6) {
       if (!best.has(codeStr) || v > best.get(codeStr).value) {
         best.set(codeStr, {
           code: codeStr,
-          name: hs6[codeStr] ?? `HS ${codeStr}`,
+          name: refs.hs6[codeStr] ?? `HS ${codeStr}`,
           value: v,
-          şare: total ? (v / total) * 100 : 0
+          share: total ? (v / total) * 100 : 0
         });
       }
     }
@@ -260,20 +264,24 @@ async function fetchCountry(iso3, partnerMap, hs6) {
 
 /* ---- boşqaruv ---- */
 async function main() {
-  const { partnerMap, hs6 } = await ensureRefs();
-  writeFileSync(resolve(OUT, '_refs.json'), JSON.stringify({ partners: partnerMap, hs6 }, null, 0));
+  const refs = await ensureRefs();
+  writeFileSync(resolve(OUT, '_refs.json'), JSON.stringify({ partners: refs.partnerMap, hs6: refs.hs6, iso3Code: refs.iso3Code }, null, 0));
 
   const PRIORITY = [
-    'UZB', 'KAZ', 'KGZ', 'TJK', 'TKM', 'RUS', 'ÇN', 'TUR', 'AFG', 'PAK',
+    'UZB', 'KAZ', 'KGZ', 'TJK', 'RUS', 'CHN', 'TUR', 'PAK',
     'IRN', 'IND', 'KOR', 'JPN', 'DEU', 'FRA', 'ITA', 'NLD', 'POL', 'GBR',
-    'USA', 'BLR', 'UKR', 'MDA', 'GEO', 'AZE', 'ARM', 'VNM', 'THA', 'IDN',
-    'MYS', 'BGD', 'SAU', 'ARE', 'ISR', 'EGY', 'BRA', 'MEX', 'CAN', 'ÇE',
+    'USA', 'UKR', 'MDA', 'GEO', 'AZE', 'ARM', 'VNM', 'THA', 'IDN',
+    'MYS', 'SAU', 'ARE', 'ISR', 'EGY', 'BRA', 'MEX', 'CAN', 'CHE',
     'SWE', 'BEL', 'AUT', 'CZE', 'HUN', 'ROU', 'ESP', 'PRT', 'GRC', 'BGR',
-    'EST', 'LVA', 'LTU', 'FIN', 'DNK', 'ZAF', 'NGA', 'ETH', 'KEN', 'MAR'
+    'EST', 'LVA', 'LTU', 'FIN', 'DNK', 'ZAF', 'NGA', 'KEN', 'MAR'
   ];
+  /* Bu davlatlar UN Comtrade bazasiga 2018-2024 da umuman ma'lumot bermagan
+     (tekshirildi: 15.11.2026). --force bilan qayta tekshirish mumkin. */
+  const KNOWN_EMPTY = ['TKM', 'AFG', 'BGD'];
   const list = ONLY ?? PRIORITY;
   const queue = list.filter((iso3) => {
-    if (ONLY || force) return true;
+    if (ONLY) return true;
+    if (!force && KNOWN_EMPTY.includes(iso3)) return false;
     return !existsSync(resolve(OUT, `${iso3}.json`));
   });
 
@@ -287,7 +295,7 @@ async function main() {
     }
     console.log(`→ ${iso3}...`);
     try {
-      await fetchCountry(iso3, partnerMap, hs6);
+      await fetchCountry(iso3, refs);
       done++;
     } catch (e) {
       if (e.quotaOver) {
