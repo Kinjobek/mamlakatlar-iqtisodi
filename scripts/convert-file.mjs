@@ -8,7 +8,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 
 const APOS = "['\u2019\u02BB\u02BC\u2018]";
 const LETTER = '[A-Za-z\u00e7\u00c7\u015f\u015e\u00f6\u00d6\u011f\u011e]'; // lotin + yangi alifbo harflari
-const CODE_WORDS = ['fetch', 'chart', 'search', 'cache', 'charset', 'catch', 'shadow', 'push', 'show', 'shown', 'each', 'Each', 'share', 'Share', 'hash', 'flush', 'shell'];
+const CODE_WORDS = ['fetch', 'chart', 'search', 'cache', 'charset', 'catch', 'shadow', 'push', 'show', 'shown', 'each', 'Each', 'share', 'Share', 'hash', 'flush', 'shell', 'change', 'dispatch', 'Dispatch', 'channel', 'child', 'Child'];
 
 function convertText(text) {
   if (text == null) return text;

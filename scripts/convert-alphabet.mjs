@@ -28,7 +28,8 @@ const CODE_SUBSTRINGS = [
   'fetch', 'Fetch', 'chart', 'Chart', 'cache', 'Cache', 'charset', 'catch', 'Catch',
   'shadow', 'push', 'show', 'shown', 'search', 'Search', 'each', 'Each', 'match',
   'check', 'chunk', 'switch', 'Change', 'character', 'Character', 'querySelector',
-  'share', 'Share', 'hash', 'flush', 'shell'
+  'share', 'Share', 'hash', 'flush', 'shell',
+  'change', 'dispatch', 'Dispatch', 'channel', 'child', 'Child'
 ];
 
 /* ---------- himoya: sluglar va kategoriya kalitlari (chegarali) ---------- */

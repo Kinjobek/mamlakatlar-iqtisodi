@@ -364,7 +364,7 @@ const desc = `${country.nameUz}: YaIM ${gdpL ? fmtValue(gdp, gdpL.value) : '—'
           tbl +
           '<div class="hist-more">Manba: ' + esc(info.src) + ' · <a href="' + det.dataset.link + '">Barça davlatlar üçün bu körsatkiç →</a></div>';
 
-        document.dispatçEvent(new Event('tables:render'));
+        document.dispatchEvent(new Event('tables:render'));
       }
 
       document.addEventListener('toggle', (e) => {
