@@ -77,7 +77,7 @@ const countries = R.countries;
       if (!l) return '—';
       const v = l.value;
       if (moneyUnits.has(ind.u)) return fmt(v, ind.d) + '\u00A0$';
-      if (ind.u === '%') return fmt(v, ind.d) + '%';
+      if (ind.u && ind.u[0] === '%') return fmt(v, ind.d) + '%';
       if (ind.u === "örin") return fmt(v, 0) + "-örin";
       return fmt(v, ind.d);
     }

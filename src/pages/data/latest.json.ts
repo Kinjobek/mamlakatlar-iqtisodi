@@ -15,6 +15,7 @@ export const GET: APIRoute = () => {
       n: ind.name,
       u: ind.unit,
       c: ind.cat,
+      d: ind.dec,
       v: ind.latest
     };
   }
